@@ -1,0 +1,3690 @@
+{
+	"info": {
+		"name": "ServicesService",
+		"description": {
+		    "content": "",
+		    "type": "text/markdown"
+		},
+		"version": "2.1.2.5285",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
+	            "item": [
+	                        {
+    "name": "/Account/Logout",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountLogoutPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Logout",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Logout"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageDownloadPersonalDataPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/confirmEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "mapIdentityApi/confirmEmail",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/confirmEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "confirmEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "userId",
+        "value": "userId_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "code",
+        "value": "code_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "changedEmail",
+        "value": "changedEmail_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/forgotPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "forgotPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/forgotPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "forgotPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/health",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "healthGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/health",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "health"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/hello",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "helloGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/hello",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "hello"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/login",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "loginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"twoFactorRecoveryCode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/login",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "login"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "useCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "useSessionCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/2fa",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manage2faPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enable\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"resetSharedKey\": \"<string>\",\n \"resetRecoveryCodes\": \"<string>\",\n \"forgetMachine\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/2fa",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "2fa"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newEmail\": \"<string>\",\n \"newPassword\": \"<string>\",\n \"oldPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/refresh",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "refreshPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"refreshToken\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/refresh",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "refresh"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/register",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "registerPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/register",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "register"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resendConfirmationEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resendConfirmationEmailPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resendConfirmationEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resendConfirmationEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resetPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resetPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"resetCode\": \"<string>\",\n \"newPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resetPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resetPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/version",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "versionGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/version",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "version"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceQueues",
+	            "description": "ServiceQueues tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues",
+                "description": "Creates a new service queue for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service queue",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service queue for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues",
+                "description": "Retrieves all service queues for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service queues",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service queues for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Deletes a service queue by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service queue",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service queue by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Retrieves a service queue by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service queue by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service queue by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Updates an existing service queue.",
+                 "item": [
+                            {
+                                "name": "Update a service queue",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service queue."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/Count",
+                "description": "Returns the count of service queues for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get service queues count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service queues for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceCases",
+	            "description": "ServiceCases tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases",
+                "description": "Creates a new service case for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service case",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"taxable\": \"<string>\",\n \"workLocation\": \"<string>\",\n \"serviceId\": \"<string>\",\n \"serviceQueueId\": \"<string>\",\n \"serviceCaseTypeId\": \"<string>\",\n \"serviceLevelAgreementId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"accountHolderId\": \"<string>\",\n \"receiverBusinessId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"territoryId\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service case for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases",
+                "description": "Retrieves all service cases for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service cases",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service cases for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+                "description": "Deletes a service case by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service case",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases",
+        ":serviceCaseId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service case by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+                "description": "Retrieves a service case by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service case by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases",
+        ":serviceCaseId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service case by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+                "description": "Updates an existing service case.",
+                 "item": [
+                            {
+                                "name": "Update a service case",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"taxable\": \"<string>\",\n \"workLocation\": \"<string>\",\n \"serviceId\": \"<string>\",\n \"serviceQueueId\": \"<string>\",\n \"serviceCaseTypeId\": \"<string>\",\n \"serviceLevelAgreementId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"accountHolderId\": \"<string>\",\n \"receiverBusinessId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"territoryId\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases",
+        ":serviceCaseId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service case."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases/Count",
+                "description": "Returns the count of service cases for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get service cases count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service cases for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceLevelAgreements",
+	            "description": "ServiceLevelAgreements tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements",
+                "description": "Creates a new service level agreement for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service level agreement",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"serviceId\": \"<string>\",\n \"serviceLevelId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service level agreement for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements",
+                "description": "Retrieves all service level agreements for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service level agreements",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service level agreements for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+                "description": "Deletes a service level agreement by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service level agreement",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements",
+        ":serviceLevelAgreementId"
+    ],
+    "variable": [
+        {
+        "key": "serviceLevelAgreementId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service level agreement by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+                "description": "Retrieves a service level agreement by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service level agreement by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements",
+        ":serviceLevelAgreementId"
+    ],
+    "variable": [
+        {
+        "key": "serviceLevelAgreementId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service level agreement by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+                "description": "Updates an existing service level agreement.",
+                 "item": [
+                            {
+                                "name": "Update a service level agreement",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"serviceId\": \"<string>\",\n \"serviceLevelId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements",
+        ":serviceLevelAgreementId"
+    ],
+    "variable": [
+        {
+        "key": "serviceLevelAgreementId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service level agreement."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements/Count",
+                "description": "Returns the count of service level agreements for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get service level agreements count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service level agreements for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceCaseTypes",
+	            "description": "ServiceCaseTypes tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes",
+                "description": "Creates a new service case type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service case type",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service case type for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes",
+                "description": "Retrieves all service case types for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service case types",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service case types for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+                "description": "Deletes a service case type by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service case type",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes",
+        ":serviceCaseTypeId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service case type by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+                "description": "Retrieves a service case type by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service case type by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes",
+        ":serviceCaseTypeId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service case type by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+                "description": "Updates an existing service case type.",
+                 "item": [
+                            {
+                                "name": "Update a service case type",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes",
+        ":serviceCaseTypeId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service case type."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes/Count",
+                "description": "Returns the count of service case types for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get service case types count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service case types for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceLevels",
+	            "description": "ServiceLevels tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevels",
+                "description": "Retrieves all service levels for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service levels",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevels",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevels"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service levels for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevels/Count",
+                "description": "Returns the count of all service levels for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service levels count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevels/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevels",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of all service levels for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels",
+                "description": "Creates a new service level for the specified service.",
+                 "item": [
+                            {
+                                "name": "Create a service level",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"sku\": \"<string>\",\n \"upc\": \"<string>\",\n \"ean\": \"<string>\",\n \"mpn\": \"<string>\",\n \"isbn\": \"<string>\",\n \"asin\": \"<string>\",\n \"gtin\": \"<string>\",\n \"skUs\": \"<string>\",\n \"upCs\": \"<string>\",\n \"eaNs\": \"<string>\",\n \"part\": \"<string>\",\n \"name\": \"<string>\",\n \"type\": \"<string>\",\n \"mpNs\": \"<string>\",\n \"isbNs\": \"<string>\",\n \"asiNs\": \"<string>\",\n \"gtiNs\": \"<string>\",\n \"model\": \"<string>\",\n \"title\": \"<string>\",\n \"color\": \"<string>\",\n \"unspsc\": \"<string>\",\n \"unitId\": \"<string>\",\n \"series\": \"<string>\",\n \"barcode\": \"<string>\",\n \"unspsCs\": \"<string>\",\n \"summary\": \"<string>\",\n \"brandId\": \"<string>\",\n \"pattern\": \"<string>\",\n \"features\": \"<string>\",\n \"material\": \"<string>\",\n \"permalink\": \"<string>\",\n \"brandName\": \"<string>\",\n \"variations\": \"<string>\",\n \"categories\": \"<string>\",\n \"languageId\": \"<string>\",\n \"itemTypeId\": \"<string>\",\n \"categoryId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"description\": \"<string>\",\n \"ingredients\": \"<string>\",\n \"supplierCode\": \"<string>\",\n \"shipsToRules\": \"<string>\",\n \"parentItemId\": \"<string>\",\n \"purchaseNote\": \"<string>\",\n \"tariffHeading\": \"<string>\",\n \"mozaicCoverURL\": \"<string>\",\n \"youtubeVideoId\": \"<string>\",\n \"nutritionFacts\": \"<string>\",\n \"packageContent\": \"<string>\",\n \"primaryImageUrl\": \"<string>\",\n \"googleCategories\": \"<string>\",\n \"shortDescription\": \"<string>\",\n \"supplierProfileId\": \"<string>\",\n \"shippingCountryId\": \"<string>\",\n \"systemRequirements\": \"<string>\",\n \"customTaxDescription\": \"<string>\",\n \"pageCoverBackgroundUrl\": \"<string>\",\n \"officialDescriptionUrl\": \"<string>\",\n \"recentlyViewedRecordId\": \"<string>\",\n \"primaryGoogleCategoryId\": \"<string>\",\n \"supportedOperatingSystem\": \"<string>\",\n \"primaryGoogleCategoryName\": \"<string>\",\n \"hot\": \"<string>\",\n \"onSale\": \"<string>\",\n \"auction\": \"<string>\",\n \"deleted\": \"<string>\",\n \"digital\": \"<string>\",\n \"preSale\": \"<string>\",\n \"taxable\": \"<string>\",\n \"inStock\": \"<string>\",\n \"trending\": \"<string>\",\n \"featured\": \"<string>\",\n \"lowStock\": \"<string>\",\n \"published\": \"<string>\",\n \"byRequest\": \"<string>\",\n \"onDiscount\": \"<string>\",\n \"isDailyDeal\": \"<string>\",\n \"isNewArrival\": \"<string>\",\n \"isWeeklyDeal\": \"<string>\",\n \"isBestSeller\": \"<string>\",\n \"isMonthlyDeal\": \"<string>\",\n \"hasVariations\": \"<string>\",\n \"isFixedDiscount\": \"<string>\",\n \"manageInventory\": \"<string>\",\n \"isDealersChoice\": \"<string>\",\n \"isOfficialChoice\": \"<string>\",\n \"validPrimaryImage\": \"<string>\",\n \"isDeadlineDiscount\": \"<string>\",\n \"taxIncludedInPrice\": \"<string>\",\n \"displayShowcaseTab\": \"<string>\",\n \"isProductOfTheWeek\": \"<string>\",\n \"isProductOfTheMonth\": \"<string>\",\n \"isPercentageDiscount\": \"<string>\",\n \"displayOnGlobalMozaic\": \"<string>\",\n \"displayOnBrandsMozaic\": \"<string>\",\n \"disableDefaultPolicies\": \"<string>\",\n \"displayOnCategoryMozaic\": \"<string>\",\n \"displayDescriptionEditor\": \"<string>\",\n \"displayShortDescriptionEditor\": \"<string>\",\n \"displayOnBannerMarketingRotation\": \"<string>\",\n \"viewsCount\": \"<number>\",\n \"reviewsCount\": \"<number>\",\n \"packagedQuantity\": \"<number>\",\n \"recurrency\": \"<number>\",\n \"currentStock\": \"<number>\",\n \"customTaxValue\": \"<number>\",\n \"width\": \"<number>\",\n \"weight\": \"<number>\",\n \"length\": \"<number>\",\n \"height\": \"<number>\",\n \"totalTax\": \"<number>\",\n \"finalPrice\": \"<number>\",\n \"reviewsAvg\": \"<number>\",\n \"paymentCost\": \"<number>\",\n \"regularPrice\": \"<number>\",\n \"discountPrice\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"discountPercentage\": \"<number>\",\n \"estimatedTaxesInUsd\": \"<number>\",\n \"customTaxPercentage\": \"<number>\",\n \"estimatedProfitInUsd\": \"<number>\",\n \"estimatedBasePriceInUsd\": \"<number>\",\n \"estimatedDiscountsInUsd\": \"<number>\",\n \"estimatedSurchargesInUsd\": \"<number>\",\n \"estimatedPaymentTaxInUsd\": \"<number>\",\n \"estimatedTotalPriceInUsd\": \"<number>\",\n \"estimatedPaymentCostInUsd\": \"<number>\",\n \"estimatedDealSavingsInUsd\": \"<number>\",\n \"estimatedRegularPriceInUsd\": \"<number>\",\n \"estimatedTaxBasePriceInUsd\": \"<number>\",\n \"estimatedWitholdingTaxesInUsd\": \"<number>\",\n \"estimatedWithholdingTaxesInUsd\": \"<number>\",\n \"estimatedDefaultShippingTaxInUsd\": \"<number>\",\n \"estimatedDefaultShippingCostInUsd\": \"<number>\",\n \"auctionEnd\": \"<string>\",\n \"releaseDate\": \"<string>\",\n \"auctionStart\": \"<string>\",\n \"publishedDate\": \"<string>\",\n \"discountDeadLine\": \"<string>\",\n \"deadlineDiscountDueDate\": \"<string>\",\n \"deadlineDiscountFromDate\": \"<string>\",\n \"lastFixedPricesUpdateDateTime\": \"<string>\",\n \"selectedTags\": \"<string>\",\n \"selectedTypes\": \"<string>\",\n \"selectedBrands\": \"<string>\",\n \"selectedCategories\": \"<string>\",\n \"selectedTaxPolicies\": \"<string>\",\n \"selectedPricingRules\": \"<string>\",\n \"selectedRefundPolicies\": \"<string>\",\n \"selectedReturnPolicies\": \"<string>\",\n \"selectedPricingPolicies\": \"<string>\",\n \"selectedWarrantyPolicies\": \"<string>\",\n \"selectedShipmentPolicies\": \"<string>\",\n \"selectedGoogleCategories\": \"<string>\",\n \"selectedAttributesOptions\": \"<string>\",\n \"selectedSellingMarginPolicies\": \"<string>\",\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service level for the specified service."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels",
+                "description": "Retrieves all service levels for the specified service.",
+                 "item": [
+                            {
+                                "name": "Get all service levels",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service levels for the specified service."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+                "description": "Deletes a service level by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service level",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels",
+        ":serviceLevelId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "serviceLevelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service level by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+                "description": "Retrieves a service level by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service level by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels",
+        ":serviceLevelId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "serviceLevelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service level by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+                "description": "Updates an existing service level.",
+                 "item": [
+                            {
+                                "name": "Update a service level",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"hot\": \"<string>\",\n \"sku\": \"<string>\",\n \"upc\": \"<string>\",\n \"ean\": \"<string>\",\n \"mpn\": \"<string>\",\n \"skUs\": \"<string>\",\n \"isbn\": \"<string>\",\n \"upCs\": \"<string>\",\n \"eaNs\": \"<string>\",\n \"asin\": \"<string>\",\n \"gtin\": \"<string>\",\n \"mpNs\": \"<string>\",\n \"part\": \"<string>\",\n \"name\": \"<string>\",\n \"onSale\": \"<string>\",\n \"isbNs\": \"<string>\",\n \"asiNs\": \"<string>\",\n \"gtiNs\": \"<string>\",\n \"width\": \"<number>\",\n \"model\": \"<string>\",\n \"auction\": \"<string>\",\n \"title\": \"<string>\",\n \"color\": \"<string>\",\n \"deleted\": \"<string>\",\n \"digital\": \"<string>\",\n \"preSale\": \"<string>\",\n \"taxable\": \"<string>\",\n \"inStock\": \"<string>\",\n \"isbN13\": \"<string>\",\n \"unspsc\": \"<string>\",\n \"weight\": \"<number>\",\n \"length\": \"<number>\",\n \"height\": \"<number>\",\n \"unitId\": \"<string>\",\n \"series\": \"<string>\",\n \"featured\": \"<string>\",\n \"brands\": \"<string>\",\n \"trending\": \"<string>\",\n \"lowStock\": \"<string>\",\n \"barcode\": \"<string>\",\n \"unspsCs\": \"<string>\",\n \"pattern\": \"<string>\",\n \"published\": \"<string>\",\n \"byRequest\": \"<string>\",\n \"summary\": \"<string>\",\n \"brandId\": \"<string>\",\n \"viewsCount\": \"<number>\",\n \"features\": \"<string>\",\n \"material\": \"<string>\",\n \"onDiscount\": \"<string>\",\n \"totalTax\": \"<number>\",\n \"permalink\": \"<string>\",\n \"brandName\": \"<string>\",\n \"reviewsCount\": \"<number>\",\n \"isDailyDeal\": \"<string>\",\n \"languageId\": \"<string>\",\n \"categories\": \"<string>\",\n \"finalPrice\": \"<number>\",\n \"itemTypeId\": \"<string>\",\n \"categoryId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"reviewsAvg\": \"<number>\",\n \"isNewArrival\": \"<string>\",\n \"isWeeklyDeal\": \"<string>\",\n \"isBestSeller\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"description\": \"<string>\",\n \"ingredients\": \"<string>\",\n \"releaseDate\": \"<string>\",\n \"isMonthlyDeal\": \"<string>\",\n \"recurrency\": \"<number>\",\n \"paymentCost\": \"<number>\",\n \"customTaxValue\": \"<number>\",\n \"hasVariations\": \"<string>\",\n \"questionsCount\": \"<number>\",\n \"supplierCode\": \"<string>\",\n \"auctionEnd\": \"<string>\",\n \"purchaseNote\": \"<string>\",\n \"shipsToRules\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"images\": \"<string>\",\n \"shippingCost\": \"<number>\",\n \"parentItemId\": \"<string>\",\n \"itemTypeName\": \"<string>\",\n \"cartRecordId\": \"<string>\",\n \"variations\": \"<string>\",\n \"tariffHeading\": \"<string>\",\n \"packagedQuantity\": \"<number>\",\n \"isFixedDiscount\": \"<string>\",\n \"discountPrice\": \"<number>\",\n \"isDealersChoice\": \"<string>\",\n \"currentStock\": \"<number>\",\n \"manageInventory\": \"<string>\",\n \"auctionStart\": \"<string>\",\n \"nutritionFacts\": \"<string>\",\n \"mozaicCoverUrl\": \"<string>\",\n \"packageContent\": \"<string>\",\n \"discountAmount\": \"<number>\",\n \"youtubeVideoId\": \"<string>\",\n \"inCartQuantity\": \"<number>\",\n \"isOfficialChoice\": \"<string>\",\n \"publishedDate\": \"<string>\",\n \"primaryImageUrl\": \"<string>\",\n \"validPrimaryImage\": \"<string>\",\n \"customTaxAmount\": \"<number>\",\n \"longDescription\": \"<string>\",\n \"compareRecordId\": \"<string>\",\n \"measurementUnit\": \"<string>\",\n \"shortDescription\": \"<string>\",\n \"googleCategories\": \"<string>\",\n \"isDeadlineDiscount\": \"<string>\",\n \"displayShowcaseTab\": \"<string>\",\n \"taxIncludedInPrice\": \"<string>\",\n \"isProductOfTheWeek\": \"<string>\",\n \"supplierProfileId\": \"<string>\",\n \"shippingCountryId\": \"<string>\",\n \"isProductOfTheMonth\": \"<string>\",\n \"systemRequirements\": \"<string>\",\n \"isPorcentualDiscount\": \"<string>\",\n \"discountPercentage\": \"<number>\",\n \"discountDeadLine\": \"<string>\",\n \"displayOnGlobalMozaic\": \"<string>\",\n \"displayOnBrandsMozaic\": \"<string>\",\n \"customTaxPercentage\": \"<number>\",\n \"estimatedTaxesInUsd\": \"<number>\",\n \"customTaxDescription\": \"<string>\",\n \"disableDefaultPolicies\": \"<string>\",\n \"estimatedProfitInUsd\": \"<number>\",\n \"displayOnCategoryMozaic\": \"<string>\",\n \"officialDescriptionUrl\": \"<string>\",\n \"energyEfficiencyRating\": \"<string>\",\n \"pageCoverBackgroundUrl\": \"<string>\",\n \"estimatedBasePriceInUsd\": \"<number>\",\n \"estimatedDiscountsInUsd\": \"<number>\",\n \"operatingSystemSupported\": \"<string>\",\n \"estimatedSurchargesInUsd\": \"<number>\",\n \"deadlineDiscountDueDate\": \"<string>\",\n \"deadlineDiscountFromDate\": \"<string>\",\n \"estimatedRegularPriceInUsd\": \"<number>\",\n \"estimatedTaxBasePriceInUsd\": \"<number>\",\n \"displayOnBannerMarketingRotation\": \"<string>\",\n \"lastFixedPricesUpdateDateTime\": \"<string>\",\n \"estimatedWitholdingTaxesInUsd\": \"<number>\",\n \"estimatedPaymentCostInUsd\": \"<number>\",\n \"estimatedPaymentTaxInUsd\": \"<number>\",\n \"estimatedDefaultShippingCostInUsd\": \"<number>\",\n \"estimatedDefaultShippingTaxInUsd\": \"<number>\",\n \"estimatedTotalPriceInUsd\": \"<number>\",\n \"recentlyViewedRecordId\": \"<string>\",\n \"displayDescriptionEditor\": \"<string>\",\n \"primaryGoogleCategoryId\": \"<string>\",\n \"supportedOperatingSystem\": \"<string>\",\n \"estimatedDealSavingsInUsd\": \"<number>\",\n \"primaryGoogleCategoryName\": \"<string>\",\n \"displayShortDescriptionEditor\": \"<string>\",\n \"estimatedWithholdingTaxesInUsd\": \"<number>\",\n \"selectedTags\": \"<string>\",\n \"selectedTypes\": \"<string>\",\n \"selectedBrands\": \"<string>\",\n \"selectedCategories\": \"<string>\",\n \"selectedTaxPolicies\": \"<string>\",\n \"selectedPricingRules\": \"<string>\",\n \"selectedRefundPolicies\": \"<string>\",\n \"selectedReturnPolicies\": \"<string>\",\n \"selectedPricingPolicies\": \"<string>\",\n \"selectedGoogleCategories\": \"<string>\",\n \"selectedWarrantyPolicies\": \"<string>\",\n \"selectedShipmentPolicies\": \"<string>\",\n \"selectedAttributesOptions\": \"<string>\",\n \"selectedSellingMarginPolicies\": \"<string>\",\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels",
+        ":serviceLevelId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "serviceLevelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service level."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/Count",
+                "description": "Returns the count of service levels for the specified service.",
+                 "item": [
+                            {
+                                "name": "Get service levels count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service levels for the specified service."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Services",
+	            "description": "Services tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/Services",
+                "description": "Creates a new service for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"sku\": \"<string>\",\n \"upc\": \"<string>\",\n \"ean\": \"<string>\",\n \"mpn\": \"<string>\",\n \"isbn\": \"<string>\",\n \"asin\": \"<string>\",\n \"gtin\": \"<string>\",\n \"skUs\": \"<string>\",\n \"upCs\": \"<string>\",\n \"eaNs\": \"<string>\",\n \"part\": \"<string>\",\n \"name\": \"<string>\",\n \"type\": \"<string>\",\n \"mpNs\": \"<string>\",\n \"isbNs\": \"<string>\",\n \"asiNs\": \"<string>\",\n \"gtiNs\": \"<string>\",\n \"model\": \"<string>\",\n \"title\": \"<string>\",\n \"color\": \"<string>\",\n \"unspsc\": \"<string>\",\n \"unitId\": \"<string>\",\n \"series\": \"<string>\",\n \"barcode\": \"<string>\",\n \"unspsCs\": \"<string>\",\n \"summary\": \"<string>\",\n \"brandId\": \"<string>\",\n \"pattern\": \"<string>\",\n \"features\": \"<string>\",\n \"material\": \"<string>\",\n \"permalink\": \"<string>\",\n \"brandName\": \"<string>\",\n \"variations\": \"<string>\",\n \"categories\": \"<string>\",\n \"languageId\": \"<string>\",\n \"itemTypeId\": \"<string>\",\n \"categoryId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"description\": \"<string>\",\n \"ingredients\": \"<string>\",\n \"supplierCode\": \"<string>\",\n \"shipsToRules\": \"<string>\",\n \"parentItemId\": \"<string>\",\n \"purchaseNote\": \"<string>\",\n \"tariffHeading\": \"<string>\",\n \"mozaicCoverURL\": \"<string>\",\n \"youtubeVideoId\": \"<string>\",\n \"nutritionFacts\": \"<string>\",\n \"packageContent\": \"<string>\",\n \"primaryImageUrl\": \"<string>\",\n \"googleCategories\": \"<string>\",\n \"shortDescription\": \"<string>\",\n \"supplierProfileId\": \"<string>\",\n \"shippingCountryId\": \"<string>\",\n \"systemRequirements\": \"<string>\",\n \"customTaxDescription\": \"<string>\",\n \"pageCoverBackgroundUrl\": \"<string>\",\n \"officialDescriptionUrl\": \"<string>\",\n \"recentlyViewedRecordId\": \"<string>\",\n \"primaryGoogleCategoryId\": \"<string>\",\n \"supportedOperatingSystem\": \"<string>\",\n \"primaryGoogleCategoryName\": \"<string>\",\n \"hot\": \"<string>\",\n \"onSale\": \"<string>\",\n \"auction\": \"<string>\",\n \"deleted\": \"<string>\",\n \"digital\": \"<string>\",\n \"preSale\": \"<string>\",\n \"taxable\": \"<string>\",\n \"inStock\": \"<string>\",\n \"trending\": \"<string>\",\n \"featured\": \"<string>\",\n \"lowStock\": \"<string>\",\n \"published\": \"<string>\",\n \"byRequest\": \"<string>\",\n \"onDiscount\": \"<string>\",\n \"isDailyDeal\": \"<string>\",\n \"isNewArrival\": \"<string>\",\n \"isWeeklyDeal\": \"<string>\",\n \"isBestSeller\": \"<string>\",\n \"isMonthlyDeal\": \"<string>\",\n \"hasVariations\": \"<string>\",\n \"isFixedDiscount\": \"<string>\",\n \"manageInventory\": \"<string>\",\n \"isDealersChoice\": \"<string>\",\n \"isOfficialChoice\": \"<string>\",\n \"validPrimaryImage\": \"<string>\",\n \"isDeadlineDiscount\": \"<string>\",\n \"taxIncludedInPrice\": \"<string>\",\n \"displayShowcaseTab\": \"<string>\",\n \"isProductOfTheWeek\": \"<string>\",\n \"isProductOfTheMonth\": \"<string>\",\n \"isPercentageDiscount\": \"<string>\",\n \"displayOnGlobalMozaic\": \"<string>\",\n \"displayOnBrandsMozaic\": \"<string>\",\n \"disableDefaultPolicies\": \"<string>\",\n \"displayOnCategoryMozaic\": \"<string>\",\n \"displayDescriptionEditor\": \"<string>\",\n \"displayShortDescriptionEditor\": \"<string>\",\n \"displayOnBannerMarketingRotation\": \"<string>\",\n \"viewsCount\": \"<number>\",\n \"reviewsCount\": \"<number>\",\n \"packagedQuantity\": \"<number>\",\n \"recurrency\": \"<number>\",\n \"currentStock\": \"<number>\",\n \"customTaxValue\": \"<number>\",\n \"width\": \"<number>\",\n \"weight\": \"<number>\",\n \"length\": \"<number>\",\n \"height\": \"<number>\",\n \"totalTax\": \"<number>\",\n \"finalPrice\": \"<number>\",\n \"reviewsAvg\": \"<number>\",\n \"paymentCost\": \"<number>\",\n \"regularPrice\": \"<number>\",\n \"discountPrice\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"discountPercentage\": \"<number>\",\n \"estimatedTaxesInUsd\": \"<number>\",\n \"customTaxPercentage\": \"<number>\",\n \"estimatedProfitInUsd\": \"<number>\",\n \"estimatedBasePriceInUsd\": \"<number>\",\n \"estimatedDiscountsInUsd\": \"<number>\",\n \"estimatedSurchargesInUsd\": \"<number>\",\n \"estimatedPaymentTaxInUsd\": \"<number>\",\n \"estimatedTotalPriceInUsd\": \"<number>\",\n \"estimatedPaymentCostInUsd\": \"<number>\",\n \"estimatedDealSavingsInUsd\": \"<number>\",\n \"estimatedRegularPriceInUsd\": \"<number>\",\n \"estimatedTaxBasePriceInUsd\": \"<number>\",\n \"estimatedWitholdingTaxesInUsd\": \"<number>\",\n \"estimatedWithholdingTaxesInUsd\": \"<number>\",\n \"estimatedDefaultShippingTaxInUsd\": \"<number>\",\n \"estimatedDefaultShippingCostInUsd\": \"<number>\",\n \"auctionEnd\": \"<string>\",\n \"releaseDate\": \"<string>\",\n \"auctionStart\": \"<string>\",\n \"publishedDate\": \"<string>\",\n \"discountDeadLine\": \"<string>\",\n \"deadlineDiscountDueDate\": \"<string>\",\n \"deadlineDiscountFromDate\": \"<string>\",\n \"lastFixedPricesUpdateDateTime\": \"<string>\",\n \"selectedTags\": \"<string>\",\n \"selectedTypes\": \"<string>\",\n \"selectedBrands\": \"<string>\",\n \"selectedCategories\": \"<string>\",\n \"selectedTaxPolicies\": \"<string>\",\n \"selectedPricingRules\": \"<string>\",\n \"selectedRefundPolicies\": \"<string>\",\n \"selectedReturnPolicies\": \"<string>\",\n \"selectedPricingPolicies\": \"<string>\",\n \"selectedWarrantyPolicies\": \"<string>\",\n \"selectedShipmentPolicies\": \"<string>\",\n \"selectedGoogleCategories\": \"<string>\",\n \"selectedAttributesOptions\": \"<string>\",\n \"selectedSellingMarginPolicies\": \"<string>\",\n \"individualId\": \"<string>\",\n \"servicePlanId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services",
+                "description": "Retrieves all services for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all services",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all services for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId",
+                "description": "Deletes a service by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId",
+                "description": "Retrieves a service by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId",
+                "description": "Updates an existing service.",
+                 "item": [
+                            {
+                                "name": "Update a service",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"hot\": \"<string>\",\n \"sku\": \"<string>\",\n \"upc\": \"<string>\",\n \"ean\": \"<string>\",\n \"mpn\": \"<string>\",\n \"skUs\": \"<string>\",\n \"isbn\": \"<string>\",\n \"upCs\": \"<string>\",\n \"eaNs\": \"<string>\",\n \"asin\": \"<string>\",\n \"gtin\": \"<string>\",\n \"mpNs\": \"<string>\",\n \"part\": \"<string>\",\n \"name\": \"<string>\",\n \"onSale\": \"<string>\",\n \"isbNs\": \"<string>\",\n \"asiNs\": \"<string>\",\n \"gtiNs\": \"<string>\",\n \"width\": \"<number>\",\n \"model\": \"<string>\",\n \"auction\": \"<string>\",\n \"title\": \"<string>\",\n \"color\": \"<string>\",\n \"deleted\": \"<string>\",\n \"digital\": \"<string>\",\n \"preSale\": \"<string>\",\n \"taxable\": \"<string>\",\n \"inStock\": \"<string>\",\n \"isbN13\": \"<string>\",\n \"unspsc\": \"<string>\",\n \"weight\": \"<number>\",\n \"length\": \"<number>\",\n \"height\": \"<number>\",\n \"unitId\": \"<string>\",\n \"series\": \"<string>\",\n \"featured\": \"<string>\",\n \"brands\": \"<string>\",\n \"trending\": \"<string>\",\n \"lowStock\": \"<string>\",\n \"barcode\": \"<string>\",\n \"unspsCs\": \"<string>\",\n \"pattern\": \"<string>\",\n \"published\": \"<string>\",\n \"byRequest\": \"<string>\",\n \"summary\": \"<string>\",\n \"brandId\": \"<string>\",\n \"viewsCount\": \"<number>\",\n \"features\": \"<string>\",\n \"material\": \"<string>\",\n \"onDiscount\": \"<string>\",\n \"totalTax\": \"<number>\",\n \"permalink\": \"<string>\",\n \"brandName\": \"<string>\",\n \"reviewsCount\": \"<number>\",\n \"isDailyDeal\": \"<string>\",\n \"languageId\": \"<string>\",\n \"categories\": \"<string>\",\n \"finalPrice\": \"<number>\",\n \"itemTypeId\": \"<string>\",\n \"categoryId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"reviewsAvg\": \"<number>\",\n \"isNewArrival\": \"<string>\",\n \"isWeeklyDeal\": \"<string>\",\n \"isBestSeller\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"description\": \"<string>\",\n \"ingredients\": \"<string>\",\n \"releaseDate\": \"<string>\",\n \"isMonthlyDeal\": \"<string>\",\n \"recurrency\": \"<number>\",\n \"paymentCost\": \"<number>\",\n \"customTaxValue\": \"<number>\",\n \"hasVariations\": \"<string>\",\n \"questionsCount\": \"<number>\",\n \"supplierCode\": \"<string>\",\n \"auctionEnd\": \"<string>\",\n \"purchaseNote\": \"<string>\",\n \"shipsToRules\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"images\": \"<string>\",\n \"shippingCost\": \"<number>\",\n \"parentItemId\": \"<string>\",\n \"itemTypeName\": \"<string>\",\n \"cartRecordId\": \"<string>\",\n \"variations\": \"<string>\",\n \"tariffHeading\": \"<string>\",\n \"packagedQuantity\": \"<number>\",\n \"isFixedDiscount\": \"<string>\",\n \"discountPrice\": \"<number>\",\n \"isDealersChoice\": \"<string>\",\n \"currentStock\": \"<number>\",\n \"manageInventory\": \"<string>\",\n \"auctionStart\": \"<string>\",\n \"nutritionFacts\": \"<string>\",\n \"mozaicCoverUrl\": \"<string>\",\n \"packageContent\": \"<string>\",\n \"discountAmount\": \"<number>\",\n \"youtubeVideoId\": \"<string>\",\n \"inCartQuantity\": \"<number>\",\n \"isOfficialChoice\": \"<string>\",\n \"publishedDate\": \"<string>\",\n \"primaryImageUrl\": \"<string>\",\n \"validPrimaryImage\": \"<string>\",\n \"customTaxAmount\": \"<number>\",\n \"longDescription\": \"<string>\",\n \"compareRecordId\": \"<string>\",\n \"measurementUnit\": \"<string>\",\n \"shortDescription\": \"<string>\",\n \"googleCategories\": \"<string>\",\n \"isDeadlineDiscount\": \"<string>\",\n \"displayShowcaseTab\": \"<string>\",\n \"taxIncludedInPrice\": \"<string>\",\n \"isProductOfTheWeek\": \"<string>\",\n \"supplierProfileId\": \"<string>\",\n \"shippingCountryId\": \"<string>\",\n \"isProductOfTheMonth\": \"<string>\",\n \"systemRequirements\": \"<string>\",\n \"isPorcentualDiscount\": \"<string>\",\n \"discountPercentage\": \"<number>\",\n \"discountDeadLine\": \"<string>\",\n \"displayOnGlobalMozaic\": \"<string>\",\n \"displayOnBrandsMozaic\": \"<string>\",\n \"customTaxPercentage\": \"<number>\",\n \"estimatedTaxesInUsd\": \"<number>\",\n \"customTaxDescription\": \"<string>\",\n \"disableDefaultPolicies\": \"<string>\",\n \"estimatedProfitInUsd\": \"<number>\",\n \"displayOnCategoryMozaic\": \"<string>\",\n \"officialDescriptionUrl\": \"<string>\",\n \"energyEfficiencyRating\": \"<string>\",\n \"pageCoverBackgroundUrl\": \"<string>\",\n \"estimatedBasePriceInUsd\": \"<number>\",\n \"estimatedDiscountsInUsd\": \"<number>\",\n \"operatingSystemSupported\": \"<string>\",\n \"estimatedSurchargesInUsd\": \"<number>\",\n \"deadlineDiscountDueDate\": \"<string>\",\n \"deadlineDiscountFromDate\": \"<string>\",\n \"estimatedRegularPriceInUsd\": \"<number>\",\n \"estimatedTaxBasePriceInUsd\": \"<number>\",\n \"displayOnBannerMarketingRotation\": \"<string>\",\n \"lastFixedPricesUpdateDateTime\": \"<string>\",\n \"estimatedWitholdingTaxesInUsd\": \"<number>\",\n \"estimatedPaymentCostInUsd\": \"<number>\",\n \"estimatedPaymentTaxInUsd\": \"<number>\",\n \"estimatedDefaultShippingCostInUsd\": \"<number>\",\n \"estimatedDefaultShippingTaxInUsd\": \"<number>\",\n \"estimatedTotalPriceInUsd\": \"<number>\",\n \"recentlyViewedRecordId\": \"<string>\",\n \"displayDescriptionEditor\": \"<string>\",\n \"primaryGoogleCategoryId\": \"<string>\",\n \"supportedOperatingSystem\": \"<string>\",\n \"estimatedDealSavingsInUsd\": \"<number>\",\n \"primaryGoogleCategoryName\": \"<string>\",\n \"displayShortDescriptionEditor\": \"<string>\",\n \"estimatedWithholdingTaxesInUsd\": \"<number>\",\n \"selectedTags\": \"<string>\",\n \"selectedTypes\": \"<string>\",\n \"selectedBrands\": \"<string>\",\n \"selectedCategories\": \"<string>\",\n \"selectedTaxPolicies\": \"<string>\",\n \"selectedPricingRules\": \"<string>\",\n \"selectedRefundPolicies\": \"<string>\",\n \"selectedReturnPolicies\": \"<string>\",\n \"selectedPricingPolicies\": \"<string>\",\n \"selectedGoogleCategories\": \"<string>\",\n \"selectedWarrantyPolicies\": \"<string>\",\n \"selectedShipmentPolicies\": \"<string>\",\n \"selectedAttributesOptions\": \"<string>\",\n \"selectedSellingMarginPolicies\": \"<string>\",\n \"individualId\": \"<string>\",\n \"servicePlanId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/Count",
+                "description": "Returns the count of services for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get services count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of services for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+        }
+	]
+}
+

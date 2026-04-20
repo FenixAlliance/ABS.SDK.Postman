@@ -1,0 +1,2443 @@
+{
+	"info": {
+		"name": "WalletsService",
+		"description": {
+		    "content": "",
+		    "type": "text/markdown"
+		},
+		"version": "2.1.2.5285",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
+	            "item": [
+	                        {
+    "name": "/Account/Logout",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountLogoutPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Logout",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Logout"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageDownloadPersonalDataPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/confirmEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "mapIdentityApi/confirmEmail",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/confirmEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "confirmEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "userId",
+        "value": "userId_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "code",
+        "value": "code_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "changedEmail",
+        "value": "changedEmail_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/forgotPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "forgotPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/forgotPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "forgotPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/health",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "healthGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/health",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "health"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/hello",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "helloGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/hello",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "hello"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/login",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "loginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"twoFactorRecoveryCode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/login",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "login"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "useCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "useSessionCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/2fa",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manage2faPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enable\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"resetSharedKey\": \"<string>\",\n \"resetRecoveryCodes\": \"<string>\",\n \"forgetMachine\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/2fa",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "2fa"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newEmail\": \"<string>\",\n \"newPassword\": \"<string>\",\n \"oldPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/refresh",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "refreshPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"refreshToken\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/refresh",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "refresh"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/register",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "registerPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/register",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "register"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resendConfirmationEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resendConfirmationEmailPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resendConfirmationEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resendConfirmationEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resetPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resetPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"resetCode\": \"<string>\",\n \"newPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resetPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resetPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/version",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "versionGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/version",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "version"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Wallets",
+	            "description": "Wallets tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId",
+                "description": "Get details of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Details",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get details of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices",
+                "description": "Get invoices of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Invoices",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get invoices of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices/Count",
+                "description": "Get invoices count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Invoices Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get invoices count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices/Incoming",
+                "description": "Get incoming invoices of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Incoming Wallet Invoices",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices/Incoming",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices",
+        "Incoming"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get incoming invoices of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices/Incoming/Count",
+                "description": "Get incoming invoices count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Incoming Wallet Invoices Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices/Incoming/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices",
+        "Incoming",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get incoming invoices count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices/Outgoing",
+                "description": "Get outgoing invoices of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Outgoing Wallet Invoices",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices/Outgoing",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices",
+        "Outgoing"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get outgoing invoices of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices/Outgoing/Count",
+                "description": "Get outgoing invoices count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Outgoing Wallet Invoices Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Invoices/Outgoing/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Invoices",
+        "Outgoing",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get outgoing invoices count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations",
+                "description": "Create a new location for a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Create Wallet Location",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"email\": \"<string>\",\n \"phone\": \"<string>\",\n \"fax\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"address3\": \"<string>\",\n \"unit\": \"<string>\",\n \"cityId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"longitude\": \"<number>\",\n \"latitude\": \"<number>\",\n \"isRoutable\": \"<string>\",\n \"isGlobalPrimary\": \"<string>\",\n \"isCountryPrimary\": \"<string>\",\n \"canGenerateLabels\": \"<string>\",\n \"isDefaultSenderAddress\": \"<string>\",\n \"isDefaultReturnAddress\": \"<string>\",\n \"isDefaultSuppingLocation\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new location for a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations",
+                "description": "Get locations of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Locations",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get locations of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+                "description": "Delete a specific location of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Delete Wallet Location",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations",
+        ":locationId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "locationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a specific location of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+                "description": "Get a specific location of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Location",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations",
+        ":locationId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "locationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a specific location of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+                "description": "Update a specific location of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Update Wallet Location",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"email\": \"<string>\",\n \"phone\": \"<string>\",\n \"fax\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"address3\": \"<string>\",\n \"unit\": \"<string>\",\n \"cityId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"longitude\": \"<number>\",\n \"latitude\": \"<number>\",\n \"isRoutable\": \"<string>\",\n \"isGlobalPrimary\": \"<string>\",\n \"isCountryPrimary\": \"<string>\",\n \"canGenerateLabels\": \"<string>\",\n \"isDefaultSenderAddress\": \"<string>\",\n \"isDefaultReturnAddress\": \"<string>\",\n \"isDefaultSuppingLocation\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations/:locationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations",
+        ":locationId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "locationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Update a specific location of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Locations/Count",
+                "description": "Get locations count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Locations Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Locations/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Locations",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get locations count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Orders",
+                "description": "Get orders of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Orders",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Orders",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Orders"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get orders of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Orders/Count",
+                "description": "Get orders count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Orders Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Orders/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Orders",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get orders count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Orders/Extended",
+                "description": "Get extended orders of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Extended Orders",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Orders/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Orders",
+        "Extended"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get extended orders of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments",
+                "description": "Get payments of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Payments",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get payments of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments/Count",
+                "description": "Get payments count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Payments Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get payments count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments/Incoming",
+                "description": "Get incoming payments of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Incoming Payments",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments/Incoming",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments",
+        "Incoming"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get incoming payments of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments/Incoming/Count",
+                "description": "Get incoming payments count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Incoming Payments Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments/Incoming/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments",
+        "Incoming",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get incoming payments count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments/Outgoing",
+                "description": "Get outgoing payments of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Outgoing Payments",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments/Outgoing",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments",
+        "Outgoing"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get outgoing payments of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments/Outgoing/Count",
+                "description": "Get outgoing payments count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Outgoing Payments Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments/Outgoing/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments",
+        "Outgoing",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get outgoing payments count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+        }
+	]
+}
+

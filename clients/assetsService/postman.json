@@ -1,0 +1,4310 @@
+{
+	"info": {
+		"name": "AssetsService",
+		"description": {
+		    "content": "",
+		    "type": "text/markdown"
+		},
+		"version": "2.1.2.5285",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
+	            "item": [
+	                        {
+    "name": "/Account/Logout",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountLogoutPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Logout",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Logout"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageDownloadPersonalDataPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/confirmEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "mapIdentityApi/confirmEmail",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/confirmEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "confirmEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "userId",
+        "value": "userId_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "code",
+        "value": "code_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "changedEmail",
+        "value": "changedEmail_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/forgotPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "forgotPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/forgotPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "forgotPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/health",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "healthGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/health",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "health"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/hello",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "helloGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/hello",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "hello"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/login",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "loginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"twoFactorRecoveryCode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/login",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "login"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "useCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "useSessionCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/2fa",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manage2faPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enable\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"resetSharedKey\": \"<string>\",\n \"resetRecoveryCodes\": \"<string>\",\n \"forgetMachine\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/2fa",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "2fa"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newEmail\": \"<string>\",\n \"newPassword\": \"<string>\",\n \"oldPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/refresh",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "refreshPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"refreshToken\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/refresh",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "refresh"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/register",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "registerPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/register",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "register"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resendConfirmationEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resendConfirmationEmailPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resendConfirmationEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resendConfirmationEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resetPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resetPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"resetCode\": \"<string>\",\n \"newPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resetPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resetPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/version",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "versionGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/version",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "version"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "AssetTransfers",
+	            "description": "AssetTransfers tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers",
+                "description": "Creates a new asset transfer for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Creates a new asset transfer",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"isRootTransfer\": \"<string>\",\n \"serialList\": \"<string>\",\n \"quantity\": \"<string>\",\n \"serial\": \"<string>\",\n \"previousAssetTransferId\": \"<string>\",\n \"sourceLocationId\": \"<string>\",\n \"destinationLocationId\": \"<string>\",\n \"sourceContactId\": \"<string>\",\n \"destinationContactId\": \"<string>\",\n \"sourceDepartmentId\": \"<string>\",\n \"destinationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new asset transfer for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers",
+                "description": "Retrieves all asset transfers for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets a list of asset transfers",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all asset transfers for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers/:transferId",
+                "description": "Deletes an asset transfer for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Deletes an asset transfer",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an asset transfer for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers/:transferId",
+                "description": "Retrieves a specific asset transfer by its ID for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets a single asset transfer by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific asset transfer by its ID for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers/:transferId",
+                "description": "Updates an existing asset transfer for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Updates an existing asset transfer",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"serialList\": \"<string>\",\n \"quantity\": \"<string>\",\n \"serial\": \"<string>\",\n \"destinationLocationId\": \"<string>\",\n \"destinationContactId\": \"<string>\",\n \"destinationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing asset transfer for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers/Count",
+                "description": "Returns the total number of asset transfers for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets the count of asset transfers",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of asset transfers for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Assets",
+	            "description": "Assets tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AssetsService/Assets",
+                "description": "Creates a new asset for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Creates a new asset",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetClass\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"isExistingAsset\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new asset for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets",
+                "description": "Retrieves all assets for the authenticated tenant with optional filtering.",
+                 "item": [
+                            {
+                                "name": "Gets all assets for the current tenant",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all assets for the authenticated tenant with optional filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId",
+                "description": "Deletes an existing asset for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Deletes an existing asset",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing asset for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId",
+                "description": "Retrieves a specific asset for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets a specific asset by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific asset for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId",
+                "description": "Updates an existing asset for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Updates an existing asset",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetType\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"currencyCode\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing asset for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords",
+                "description": "Creates a new depreciation record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Creates a new depreciation record for an asset",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"assetDepreciationPolicyId\": \"<string>\",\n \"depreciationAmount\": \"<number>\",\n \"accumulatedDepreciation\": \"<number>\",\n \"bookValue\": \"<number>\",\n \"depreciationDate\": \"<string>\",\n \"year\": \"<number>\",\n \"month\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new depreciation record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords",
+                "description": "Retrieves all depreciation records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets depreciation records for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all depreciation records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+                "description": "Deletes a depreciation record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Deletes a depreciation record for an asset",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords",
+        ":recordId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a depreciation record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+                "description": "Retrieves a specific depreciation record by ID for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets a specific depreciation record for an asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords",
+        ":recordId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific depreciation record by ID for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+                "description": "Updates an existing depreciation record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Updates a depreciation record for an asset",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"depreciationAmount\": \"<number>\",\n \"accumulatedDepreciation\": \"<number>\",\n \"bookValue\": \"<number>\",\n \"depreciationDate\": \"<string>\",\n \"year\": \"<number>\",\n \"month\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords",
+        ":recordId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing depreciation record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/Count",
+                "description": "Returns the total number of depreciation records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets count of depreciation records for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of depreciation records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs",
+                "description": "Creates a new repair record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Creates a new repair for an asset",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"repairStatus\": \"<string>\",\n \"scheduledDate\": \"<string>\",\n \"completionDate\": \"<string>\",\n \"reportedDate\": \"<string>\",\n \"estimatedCost\": \"<number>\",\n \"actualCost\": \"<number>\",\n \"problemDescription\": \"<string>\",\n \"repairDescription\": \"<string>\",\n \"notes\": \"<string>\",\n \"assetMaintenanceTeamId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new repair record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs",
+                "description": "Retrieves all repair records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets repairs for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all repair records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+                "description": "Deletes a repair record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Deletes a repair for an asset",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs",
+        ":repairId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "repairId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a repair record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+                "description": "Retrieves a specific repair record by ID for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets a specific repair for an asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs",
+        ":repairId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "repairId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific repair record by ID for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+                "description": "Updates an existing repair record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Updates a repair for an asset",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"repairStatus\": \"<string>\",\n \"scheduledDate\": \"<string>\",\n \"completionDate\": \"<string>\",\n \"estimatedCost\": \"<number>\",\n \"actualCost\": \"<number>\",\n \"problemDescription\": \"<string>\",\n \"repairDescription\": \"<string>\",\n \"notes\": \"<string>\",\n \"assetMaintenanceTeamId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs",
+        ":repairId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "repairId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing repair record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/Count",
+                "description": "Returns the total number of repair records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets count of repairs for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of repair records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers",
+                "description": "Creates a new transfer record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Creates a new transfer for an asset",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"isRootTransfer\": \"<string>\",\n \"serialList\": \"<string>\",\n \"quantity\": \"<string>\",\n \"serial\": \"<string>\",\n \"previousAssetTransferId\": \"<string>\",\n \"sourceLocationId\": \"<string>\",\n \"destinationLocationId\": \"<string>\",\n \"sourceContactId\": \"<string>\",\n \"destinationContactId\": \"<string>\",\n \"sourceDepartmentId\": \"<string>\",\n \"destinationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new transfer record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers",
+                "description": "Retrieves all transfer records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets transfers for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all transfer records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+                "description": "Deletes a transfer record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Deletes a transfer for an asset",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a transfer record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+                "description": "Retrieves a specific transfer record by ID for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets a specific transfer for an asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific transfer record by ID for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+                "description": "Updates an existing transfer record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Updates a transfer for an asset",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"serialList\": \"<string>\",\n \"quantity\": \"<string>\",\n \"serial\": \"<string>\",\n \"destinationLocationId\": \"<string>\",\n \"destinationContactId\": \"<string>\",\n \"destinationDepartmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing transfer record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/Count",
+                "description": "Returns the total number of transfer records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets count of transfers for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of transfer records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends",
+                "description": "Creates a new value amendment record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Creates a new value amendment for an asset",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"previousValue\": \"<number>\",\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\",\n \"approvedBy\": \"<string>\",\n \"approvalDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new value amendment record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends",
+                "description": "Retrieves all value amendment records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets value amendments for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all value amendment records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+                "description": "Deletes a value amendment record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Deletes a value amendment for an asset",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends",
+        ":amendId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "amendId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a value amendment record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+                "description": "Retrieves a specific value amendment record by ID for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets a specific value amendment for an asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends",
+        ":amendId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "amendId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific value amendment record by ID for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+                "description": "Updates an existing value amendment record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Updates a value amendment for an asset",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\",\n \"approvedBy\": \"<string>\",\n \"approvalDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends",
+        ":amendId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "amendId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing value amendment record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/Count",
+                "description": "Returns the total number of value amendment records for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Gets count of value amendments for a specific asset",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of value amendment records for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories",
+                "description": "Creates a new asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Creates a new asset category",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories",
+                "description": "Retrieves all asset categories for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets all asset categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all asset categories for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories/:categoryId",
+                "description": "Deletes an existing asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Deletes an existing asset category",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories/:categoryId",
+                "description": "Retrieves a specific asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets a specific asset category",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories/:categoryId",
+                "description": "Updates an existing asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Updates an existing asset category",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories/count",
+                "description": "Returns the total number of asset categories for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets the count of asset categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories/count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories",
+        "count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of asset categories for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/count",
+                "description": "Returns the total number of assets for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets the count of assets",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of assets for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "AssetTypes",
+	            "description": "AssetTypes tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes",
+                "description": "Creates a new asset type for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Creates a new asset type",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new asset type for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes",
+                "description": "Retrieves all asset types for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets all asset types for the current tenant",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all asset types for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes/:typeId",
+                "description": "Deletes an asset type for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Deletes an asset type",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes/:typeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes",
+        ":typeId"
+    ],
+    "variable": [
+        {
+        "key": "typeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an asset type for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes/:typeId",
+                "description": "Retrieves a specific asset type by ID.",
+                 "item": [
+                            {
+                                "name": "Gets a specific asset type",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes/:typeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes",
+        ":typeId"
+    ],
+    "variable": [
+        {
+        "key": "typeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific asset type by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes/:typeId",
+                "description": "Updates an existing asset type for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Updates an existing asset type",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes/:typeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes",
+        ":typeId"
+    ],
+    "variable": [
+        {
+        "key": "typeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing asset type for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes/count",
+                "description": "Returns the total number of asset types for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets the count of asset types",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes/count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes",
+        "count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of asset types for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "AssetCategories",
+	            "description": "AssetCategories tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories",
+                "description": "Creates a new asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Creates a new asset category",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories",
+                "description": "Retrieves all asset categories for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets all asset categories for the current tenant",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves all asset categories for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories/:categoryId",
+                "description": "Deletes an asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Deletes an asset category",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories/:categoryId",
+                "description": "Retrieves a specific asset category by ID.",
+                 "item": [
+                            {
+                                "name": "Gets a specific asset category",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a specific asset category by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories/:categoryId",
+                "description": "Updates an existing asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Updates an existing asset category",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories/count",
+                "description": "Returns the total number of asset categories for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Gets the count of asset categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories/count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories",
+        "count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total number of asset categories for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+        }
+	]
+}
+

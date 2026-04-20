@@ -1,0 +1,7250 @@
+{
+	"info": {
+		"name": "ContentService",
+		"description": {
+		    "content": "",
+		    "type": "text/markdown"
+		},
+		"version": "2.1.2.5285",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BusinessDomains",
+	            "description": "BusinessDomains tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/BusinessDomains",
+                "description": "Retrieves business domains for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get business domains",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BusinessDomains",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BusinessDomains"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves business domains for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BusinessDomains/:businessDomainId",
+                "description": "Retrieves a specific business domain.",
+                 "item": [
+                            {
+                                "name": "Get business domain by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BusinessDomains/:businessDomainId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BusinessDomains",
+        ":businessDomainId"
+    ],
+    "variable": [
+        {
+        "key": "businessDomainId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific business domain."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BusinessDomains/Count",
+                "description": "Retrieves the count of business domains for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get business domains count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BusinessDomains/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BusinessDomains",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the count of business domains for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WebPageCategories",
+	            "description": "WebPageCategories tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories",
+                "description": "Creates a new web page category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a web page category",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new web page category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories",
+                "description": "Retrieves all web page categories for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get web page categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all web page categories for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+                "description": "Deletes a web page category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a web page category",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories",
+        ":webPageCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "webPageCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a web page category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+                "description": "Retrieves a specific web page category by its ID.",
+                 "item": [
+                            {
+                                "name": "Get web page category by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories",
+        ":webPageCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "webPageCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific web page category by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+                "description": "Updates an existing web page category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a web page category",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories/:webPageCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories",
+        ":webPageCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "webPageCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing web page category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageCategories/Count",
+                "description": "Counts all web page categories for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count web page categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageCategories/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageCategories",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all web page categories for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BlogPostCategories",
+	            "description": "BlogPostCategories tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories",
+                "description": "Creates a new blog post category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a blog post category",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new blog post category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories",
+                "description": "Retrieves all blog post categories for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get blog post categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all blog post categories for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+                "description": "Deletes a blog post category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a blog post category",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories",
+        ":blogPostCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a blog post category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+                "description": "Retrieves a specific blog post category by its ID.",
+                 "item": [
+                            {
+                                "name": "Get blog post category by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories",
+        ":blogPostCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific blog post category by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+                "description": "Updates an existing blog post category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a blog post category",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories/:blogPostCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories",
+        ":blogPostCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing blog post category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostCategories/Count",
+                "description": "Counts all blog post categories for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count blog post categories",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostCategories/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostCategories",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all blog post categories for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WebContents",
+	            "description": "WebContents tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/WebContents",
+                "description": "Creates a new web content for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a web content",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"code\": \"<string>\",\n \"published\": \"<string>\",\n \"description\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"codeType\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new web content for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebContents",
+                "description": "Retrieves all web contents for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get web contents",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all web contents for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebContents/:webContentId",
+                "description": "Deletes a web content for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a web content",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents/:webContentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents",
+        ":webContentId"
+    ],
+    "variable": [
+        {
+        "key": "webContentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a web content for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebContents/:webContentId",
+                "description": "Retrieves a specific web content by its ID.",
+                 "item": [
+                            {
+                                "name": "Get web content by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents/:webContentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents",
+        ":webContentId"
+    ],
+    "variable": [
+        {
+        "key": "webContentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific web content by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebContents/:webContentId",
+                "description": "Updates an existing web content for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a web content",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"order\": \"<number>\",\n \"slug\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"excerpt\": \"<string>\",\n \"password\": \"<string>\",\n \"description\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"seoKeyWords\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"twitterImage\": \"<string>\",\n \"twitterTitle\": \"<string>\",\n \"twitterDescription\": \"<string>\",\n \"facebookImage\": \"<string>\",\n \"facebookTitle\": \"<string>\",\n \"facebookDescription\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"content\": \"<string>\",\n \"code\": \"<string>\",\n \"namespace\": \"<string>\",\n \"typeName\": \"<string>\",\n \"generatedCode\": \"<string>\",\n \"compilationPath\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"codeType\": \"<string>\",\n \"cSharpContent\": \"<string>\",\n \"razorContent\": \"<string>\",\n \"cssContent\": \"<string>\",\n \"jsContent\": \"<string>\",\n \"cssFiles\": \"<string>\",\n \"jsFiles\": \"<string>\",\n \"razorGeneratedCode\": \"<string>\",\n \"cSharpGeneratedCode\": \"<string>\",\n \"precompiledLogicSize\": \"<number>\",\n \"precompiledLogicSizeLong\": \"<number>\",\n \"precompiledViewSize\": \"<number>\",\n \"precompiledViewSizeLong\": \"<number>\",\n \"precompiledLogicViewSize\": \"<number>\",\n \"template\": \"<string>\",\n \"default\": \"<string>\",\n \"enable\": \"<string>\",\n \"enableComments\": \"<string>\",\n \"displaySocialBox\": \"<string>\",\n \"published\": \"<string>\",\n \"inTrashCan\": \"<string>\",\n \"systemLocked\": \"<string>\",\n \"allowPingbacks\": \"<string>\",\n \"allowTrackbacks\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"isEssentialContent\": \"<string>\",\n \"allowSearchEngineIndexing\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents/:webContentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents",
+        ":webContentId"
+    ],
+    "variable": [
+        {
+        "key": "webContentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing web content for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebContents/Count",
+                "description": "Counts all web contents for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count web contents",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebContents/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebContents",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all web contents for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WebPages",
+	            "description": "WebPages tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/WebPages",
+                "description": "Creates a new web page for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a web page",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"code\": \"<string>\",\n \"published\": \"<string>\",\n \"description\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"codeType\": \"<string>\",\n \"webTemplateID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new web page for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages",
+                "description": "Retrieves all web pages for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get web pages",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all web pages for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId",
+                "description": "Deletes a web page for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a web page",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a web page for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId",
+                "description": "Retrieves a specific web page by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get web page by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific web page by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId",
+                "description": "Updates an existing web page for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a web page",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"order\": \"<number>\",\n \"slug\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"excerpt\": \"<string>\",\n \"password\": \"<string>\",\n \"description\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"seoKeyWords\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"twitterImage\": \"<string>\",\n \"twitterTitle\": \"<string>\",\n \"twitterDescription\": \"<string>\",\n \"facebookImage\": \"<string>\",\n \"facebookTitle\": \"<string>\",\n \"facebookDescription\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"content\": \"<string>\",\n \"code\": \"<string>\",\n \"namespace\": \"<string>\",\n \"typeName\": \"<string>\",\n \"generatedCode\": \"<string>\",\n \"compilationPath\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"codeType\": \"<string>\",\n \"cSharpContent\": \"<string>\",\n \"razorContent\": \"<string>\",\n \"cssContent\": \"<string>\",\n \"jsContent\": \"<string>\",\n \"cssFiles\": \"<string>\",\n \"jsFiles\": \"<string>\",\n \"razorGeneratedCode\": \"<string>\",\n \"cSharpGeneratedCode\": \"<string>\",\n \"precompiledLogicSize\": \"<number>\",\n \"precompiledLogicSizeLong\": \"<number>\",\n \"precompiledViewSize\": \"<number>\",\n \"precompiledViewSizeLong\": \"<number>\",\n \"precompiledLogicViewSize\": \"<number>\",\n \"template\": \"<string>\",\n \"default\": \"<string>\",\n \"enable\": \"<string>\",\n \"enableComments\": \"<string>\",\n \"displaySocialBox\": \"<string>\",\n \"published\": \"<string>\",\n \"inTrashCan\": \"<string>\",\n \"systemLocked\": \"<string>\",\n \"allowPingbacks\": \"<string>\",\n \"allowTrackbacks\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"isEssentialContent\": \"<string>\",\n \"allowSearchEngineIndexing\": \"<string>\",\n \"isHomePage\": \"<string>\",\n \"isStorePage\": \"<string>\",\n \"isCartPage\": \"<string>\",\n \"isBlogPage\": \"<string>\",\n \"isAccountPage\": \"<string>\",\n \"isCheckoutPage\": \"<string>\",\n \"isWishListsPage\": \"<string>\",\n \"isContactPage\": \"<string>\",\n \"isPrivacyPolicyPage\": \"<string>\",\n \"isTermsOfServicePage\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing web page for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Categories",
+                "description": "Creates a new category and relates it to a web page.",
+                 "item": [
+                            {
+                                "name": "Create a web page category relation",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Categories"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new category and relates it to a web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Categories",
+                "description": "Retrieves all categories related to a specific web page.",
+                 "item": [
+                            {
+                                "name": "Get categories by web page",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Categories"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all categories related to a specific web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Categories/:categoryId",
+                "description": "Relates an existing category to a web page.",
+                 "item": [
+                            {
+                                "name": "Relate web page to category",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Relates an existing category to a web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Categories/:categoryId",
+                "description": "Removes the relationship between a web page and a category.",
+                 "item": [
+                            {
+                                "name": "Unrelate web page from category",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes the relationship between a web page and a category."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Tags",
+                "description": "Creates a new tag and relates it to a web page.",
+                 "item": [
+                            {
+                                "name": "Create a web page tag relation",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Tags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Tags"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new tag and relates it to a web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Tags",
+                "description": "Retrieves all tags related to a specific web page.",
+                 "item": [
+                            {
+                                "name": "Get tags by web page",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Tags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Tags"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all tags related to a specific web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Tags/:tagId",
+                "description": "Relates an existing tag to a web page.",
+                 "item": [
+                            {
+                                "name": "Relate web page to tag",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Tags/:tagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Tags",
+        ":tagId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Relates an existing tag to a web page."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/:webPageId/Tags/:tagId",
+                "description": "Removes the relationship between a web page and a tag.",
+                 "item": [
+                            {
+                                "name": "Unrelate web page from tag",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/:webPageId/Tags/:tagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        ":webPageId",
+        "Tags",
+        ":tagId"
+    ],
+    "variable": [
+        {
+        "key": "webPageId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes the relationship between a web page and a tag."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPages/Count",
+                "description": "Counts all web pages for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count web pages",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPages/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPages",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all web pages for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WebTemplates",
+	            "description": "WebTemplates tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates",
+                "description": "Creates a new web template for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a web template",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"cssContent\": \"<string>\",\n \"jsContent\": \"<string>\",\n \"razorContent\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"order\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new web template for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates",
+                "description": "Retrieves all web templates for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get web templates",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all web templates for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates/:webTemplateId",
+                "description": "Deletes a web template for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a web template",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates/:webTemplateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates",
+        ":webTemplateId"
+    ],
+    "variable": [
+        {
+        "key": "webTemplateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a web template for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates/:webTemplateId",
+                "description": "Retrieves a specific web template by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get web template by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates/:webTemplateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates",
+        ":webTemplateId"
+    ],
+    "variable": [
+        {
+        "key": "webTemplateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific web template by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates/:webTemplateId",
+                "description": "Updates an existing web template for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a web template",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"cssContent\": \"<string>\",\n \"jsContent\": \"<string>\",\n \"razorContent\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"order\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates/:webTemplateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates",
+        ":webTemplateId"
+    ],
+    "variable": [
+        {
+        "key": "webTemplateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing web template for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebTemplates/Count",
+                "description": "Counts all web templates for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count web templates",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebTemplates/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebTemplates",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all web templates for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
+	            "item": [
+	                        {
+    "name": "/Account/Logout",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountLogoutPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Logout",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Logout"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageDownloadPersonalDataPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/confirmEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "mapIdentityApi/confirmEmail",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/confirmEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "confirmEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "userId",
+        "value": "userId_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "code",
+        "value": "code_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "changedEmail",
+        "value": "changedEmail_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/forgotPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "forgotPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/forgotPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "forgotPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/health",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "healthGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/health",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "health"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/hello",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "helloGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/hello",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "hello"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/login",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "loginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"twoFactorRecoveryCode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/login",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "login"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "useCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "useSessionCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/2fa",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manage2faPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enable\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"resetSharedKey\": \"<string>\",\n \"resetRecoveryCodes\": \"<string>\",\n \"forgetMachine\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/2fa",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "2fa"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newEmail\": \"<string>\",\n \"newPassword\": \"<string>\",\n \"oldPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/refresh",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "refreshPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"refreshToken\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/refresh",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "refresh"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/register",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "registerPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/register",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "register"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resendConfirmationEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resendConfirmationEmailPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resendConfirmationEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resendConfirmationEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resetPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resetPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"resetCode\": \"<string>\",\n \"newPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resetPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resetPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/version",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "versionGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/version",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "version"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Portals",
+	            "description": "Portals tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/Portals",
+                "description": "Create a new web portal",
+                 "item": [
+                            {
+                                "name": "Create a new web portal",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new web portal"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals",
+                "description": "Retrieves all portals for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get portals",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all portals for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId",
+                "description": "Delete a web portal",
+                 "item": [
+                            {
+                                "name": "Delete a web portal",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a web portal"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId",
+                "description": "Get a web portal by its ID",
+                 "item": [
+                            {
+                                "name": "Get a web portal by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a web portal by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId",
+                "description": "Partially update a web portal",
+                 "item": [
+                            {
+                                "name": "Partially update a web portal",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a web portal"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId",
+                "description": "Update an existing web portal",
+                 "item": [
+                            {
+                                "name": "Update an existing web portal",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Update an existing web portal"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId/Options",
+                "description": "Get a web portal's options by its ID",
+                 "item": [
+                            {
+                                "name": "Get a web portal's options by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a web portal's options by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/:portalId/Settings",
+                "description": "Get a web portal's settings by its ID",
+                 "item": [
+                            {
+                                "name": "Get a web portal's settings by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/:portalId/Settings",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        ":portalId",
+        "Settings"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a web portal's settings by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Count",
+                "description": "Counts all portals for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count portals",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all portals for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Current",
+                "description": "Get the current portal of the this server instance",
+                 "item": [
+                            {
+                                "name": "Get the current portal",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Current",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Current"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the current portal of the this server instance"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Current/Options",
+                "description": "Get the current portal's options for the current user.",
+                 "item": [
+                            {
+                                "name": "Get the current portal's options",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Current/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Current",
+        "Options"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the current portal's options for the current user."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Initialize",
+                "description": "Initialize the current portal for the current user.",
+                 "item": [
+                            {
+                                "name": "Initialize the current portal",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Initialize",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Initialize"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Initialize the current portal for the current user."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Root",
+                "description": "Get the root portal of the this server instance",
+                 "item": [
+                            {
+                                "name": "Get the root portal",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Root",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Root"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the root portal of the this server instance"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/Portals/Search",
+                "description": "Search for a portal by its domain",
+                 "item": [
+                            {
+                                "name": "Search for a portal by its domain",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Portals/Search",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Portals",
+        "Search"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "domain",
+        "value": "domain_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Search for a portal by its domain"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Themes",
+	            "description": "Themes tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/Themes/Update",
+                "description": "Triggers an update of the base web content themes.",
+                 "item": [
+                            {
+                                "name": "Update base web content themes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/Themes/Update",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "Themes",
+        "Update"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Triggers an update of the base web content themes."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WebPageTags",
+	            "description": "WebPageTags tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags",
+                "description": "Creates a new web page tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a web page tag",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new web page tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags",
+                "description": "Retrieves all web page tags for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get web page tags",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all web page tags for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags/:webPageTagId",
+                "description": "Deletes a web page tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a web page tag",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags/:webPageTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags",
+        ":webPageTagId"
+    ],
+    "variable": [
+        {
+        "key": "webPageTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a web page tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags/:webPageTagId",
+                "description": "Retrieves a specific web page tag by its ID.",
+                 "item": [
+                            {
+                                "name": "Get web page tag by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags/:webPageTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags",
+        ":webPageTagId"
+    ],
+    "variable": [
+        {
+        "key": "webPageTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific web page tag by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags/:webPageTagId",
+                "description": "Updates an existing web page tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a web page tag",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"slug\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags/:webPageTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags",
+        ":webPageTagId"
+    ],
+    "variable": [
+        {
+        "key": "webPageTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing web page tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/WebPageTags/Count",
+                "description": "Counts all web page tags for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count web page tags",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/WebPageTags/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "WebPageTags",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all web page tags for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BlogPostTags",
+	            "description": "BlogPostTags tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags",
+                "description": "Creates a new blog post tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a blog post tag",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new blog post tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags",
+                "description": "Retrieves all blog post tags for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get blog post tags",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all blog post tags for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+                "description": "Deletes a blog post tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a blog post tag",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags",
+        ":blogPostTagId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a blog post tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+                "description": "Retrieves a specific blog post tag by its ID.",
+                 "item": [
+                            {
+                                "name": "Get blog post tag by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags",
+        ":blogPostTagId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific blog post tag by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+                "description": "Updates an existing blog post tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a blog post tag",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags/:blogPostTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags",
+        ":blogPostTagId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing blog post tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostTags/Count",
+                "description": "Counts all blog post tags for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count blog post tags",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostTags/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostTags",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts all blog post tags for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BlogPosts",
+	            "description": "BlogPosts tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts",
+                "description": "Creates a new blog post for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a new blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"code\": \"<string>\",\n \"published\": \"<string>\",\n \"description\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"codeType\": \"<string>\",\n \"blogPostCategoryID\": \"<string>\",\n \"webTemplateID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new blog post for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts",
+                "description": "Retrieves all blog posts, optionally filtered by tenant using OData query options.",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of blog posts",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all blog posts, optionally filtered by tenant using OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId",
+                "description": "Deletes a blog post for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a blog post",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a blog post for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId",
+                "description": "Retrieves a single blog post by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get a blog post by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Retrieves a single blog post by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId",
+                "description": "Updates an existing blog post for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a blog post",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"order\": \"<number>\",\n \"slug\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"excerpt\": \"<string>\",\n \"password\": \"<string>\",\n \"description\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"seoKeyWords\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"twitterImage\": \"<string>\",\n \"twitterTitle\": \"<string>\",\n \"twitterDescription\": \"<string>\",\n \"facebookImage\": \"<string>\",\n \"facebookTitle\": \"<string>\",\n \"facebookDescription\": \"<string>\",\n \"featuredImageUrl\": \"<string>\",\n \"content\": \"<string>\",\n \"code\": \"<string>\",\n \"namespace\": \"<string>\",\n \"typeName\": \"<string>\",\n \"generatedCode\": \"<string>\",\n \"compilationPath\": \"<string>\",\n \"htmlContent\": \"<string>\",\n \"codeType\": \"<string>\",\n \"cSharpContent\": \"<string>\",\n \"razorContent\": \"<string>\",\n \"cssContent\": \"<string>\",\n \"jsContent\": \"<string>\",\n \"cssFiles\": \"<string>\",\n \"jsFiles\": \"<string>\",\n \"razorGeneratedCode\": \"<string>\",\n \"cSharpGeneratedCode\": \"<string>\",\n \"precompiledLogicSize\": \"<number>\",\n \"precompiledLogicSizeLong\": \"<number>\",\n \"precompiledViewSize\": \"<number>\",\n \"precompiledViewSizeLong\": \"<number>\",\n \"precompiledLogicViewSize\": \"<number>\",\n \"template\": \"<string>\",\n \"default\": \"<string>\",\n \"enable\": \"<string>\",\n \"enableComments\": \"<string>\",\n \"displaySocialBox\": \"<string>\",\n \"published\": \"<string>\",\n \"inTrashCan\": \"<string>\",\n \"systemLocked\": \"<string>\",\n \"allowPingbacks\": \"<string>\",\n \"allowTrackbacks\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"isEssentialContent\": \"<string>\",\n \"allowSearchEngineIndexing\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing blog post for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Categories",
+                "description": "Creates a new category and relates it to a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Create a category for a blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Categories"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new category and relates it to a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Categories",
+                "description": "Retrieves all categories related to a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Get categories for a blog post",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Categories",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Categories"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Retrieves all categories related to a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Categories/:categoryId",
+                "description": "Creates a relationship between an existing category and a blog post.",
+                 "item": [
+                            {
+                                "name": "Relate an existing category to a blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a relationship between an existing category and a blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Categories/:categoryId",
+                "description": "Removes the relationship between a category and a blog post.",
+                 "item": [
+                            {
+                                "name": "Remove a category from a blog post",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Removes the relationship between a category and a blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Comments",
+                "description": "Creates a new comment on a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Create a comment for a blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"message\": \"<string>\",\n \"ownerSocialProfileID\": \"<string>\",\n \"socialPostID\": \"<string>\",\n \"parentCommentID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Comments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Comments"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new comment on a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Comments",
+                "description": "Retrieves all comments for a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Get comments for a blog post",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Comments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Comments"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Retrieves all comments for a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId",
+                "description": "Deletes a comment from a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Delete a blog post comment",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Comments",
+        ":commentId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "commentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes a comment from a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId/Replies",
+                "description": "Retrieves all replies for a specific blog post comment.",
+                 "item": [
+                            {
+                                "name": "Get replies for a comment",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId/Replies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Comments",
+        ":commentId",
+        "Replies"
+    ],
+    "variable": [
+        {
+        "key": "commentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Retrieves all replies for a specific blog post comment."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId/Reply",
+                "description": "Creates a reply to an existing comment on a blog post.",
+                 "item": [
+                            {
+                                "name": "Reply to a blog post comment",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"message\": \"<string>\",\n \"ownerSocialProfileID\": \"<string>\",\n \"socialPostID\": \"<string>\",\n \"parentCommentID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Comments/:commentId/Reply",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Comments",
+        ":commentId",
+        "Reply"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "commentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a reply to an existing comment on a blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Tags",
+                "description": "Creates a new tag and relates it to a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Create a tag for a blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"slug\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"cornerstoneContent\": \"<string>\",\n \"allowSerachEngines\": \"<string>\",\n \"seoKeyPhrases\": \"<string>\",\n \"canonicalUrl\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"image\": \"<string>\",\n \"webPortalID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Tags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Tags"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new tag and relates it to a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Tags",
+                "description": "Retrieves all tags related to a specific blog post.",
+                 "item": [
+                            {
+                                "name": "Get tags for a blog post",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Tags",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Tags"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Retrieves all tags related to a specific blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Tags/:tagId",
+                "description": "Creates a relationship between an existing tag and a blog post.",
+                 "item": [
+                            {
+                                "name": "Relate an existing tag to a blog post",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Tags/:tagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Tags",
+        ":tagId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a relationship between an existing tag and a blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/:blogPostId/Tags/:tagId",
+                "description": "Removes the relationship between a tag and a blog post.",
+                 "item": [
+                            {
+                                "name": "Remove a tag from a blog post",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/:blogPostId/Tags/:tagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        ":blogPostId",
+        "Tags",
+        ":tagId"
+    ],
+    "variable": [
+        {
+        "key": "blogPostId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Removes the relationship between a tag and a blog post."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPosts/Count",
+                "description": "Returns the total count of blog posts, optionally filtered by tenant using OData query options.",
+                 "item": [
+                            {
+                                "name": "Get the count of blog posts",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPosts/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPosts",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total count of blog posts, optionally filtered by tenant using OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BlogPostAuthors",
+	            "description": "BlogPostAuthors tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ContentService/BlogPostAuthors",
+                "description": "Retrieves all blog authors, optionally filtered by tenant.",
+                 "item": [
+                            {
+                                "name": "Get blog authors",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostAuthors",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostAuthors"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all blog authors, optionally filtered by tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostAuthors/:authorId",
+                "description": "Retrieves a specific blog author by their identifier.",
+                 "item": [
+                            {
+                                "name": "Get blog author by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostAuthors/:authorId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostAuthors",
+        ":authorId"
+    ],
+    "variable": [
+        {
+        "key": "authorId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific blog author by their identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostAuthors/:authorId/BlogPosts",
+                "description": "Retrieves all blog posts written by a specific author.",
+                 "item": [
+                            {
+                                "name": "Get blog posts by author",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostAuthors/:authorId/BlogPosts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostAuthors",
+        ":authorId",
+        "BlogPosts"
+    ],
+    "variable": [
+        {
+        "key": "authorId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all blog posts written by a specific author."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ContentService/BlogPostAuthors/:authorId/BlogPosts/Count",
+                "description": "Returns the count of blog posts written by a specific author.",
+                 "item": [
+                            {
+                                "name": "Count blog posts by author",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ContentService/BlogPostAuthors/:authorId/BlogPosts/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ContentService",
+        "BlogPostAuthors",
+        ":authorId",
+        "BlogPosts",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "authorId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of blog posts written by a specific author."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+        }
+	]
+}
+

@@ -1,0 +1,3100 @@
+{
+	"info": {
+		"name": "DealsService",
+		"description": {
+		    "content": "",
+		    "type": "text/markdown"
+		},
+		"version": "2.1.2.5285",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
+	            "item": [
+	                        {
+    "name": "/Account/Logout",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountLogoutPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Logout",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Logout"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageDownloadPersonalDataPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/confirmEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "mapIdentityApi/confirmEmail",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/confirmEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "confirmEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "userId",
+        "value": "userId_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "code",
+        "value": "code_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "changedEmail",
+        "value": "changedEmail_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/forgotPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "forgotPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/forgotPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "forgotPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/health",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "healthGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/health",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "health"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/hello",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "helloGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/hello",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "hello"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/login",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "loginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"twoFactorRecoveryCode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/login",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "login"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "useCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "useSessionCookies",
+        "value": "true",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/2fa",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manage2faPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enable\": \"<string>\",\n \"twoFactorCode\": \"<string>\",\n \"resetSharedKey\": \"<string>\",\n \"resetRecoveryCodes\": \"<string>\",\n \"forgetMachine\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/2fa",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "2fa"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/manage/info",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "manageInfoPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"newEmail\": \"<string>\",\n \"newPassword\": \"<string>\",\n \"oldPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/manage/info",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "manage",
+        "info"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/refresh",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "refreshPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"refreshToken\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/refresh",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "refresh"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/register",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "registerPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/register",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "register"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resendConfirmationEmail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resendConfirmationEmailPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resendConfirmationEmail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resendConfirmationEmail"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/resetPassword",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "resetPasswordPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/problem+json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"resetCode\": \"<string>\",\n \"newPassword\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/resetPassword",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "resetPassword"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/version",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "versionGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/version",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "version"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "SalesLiteratures",
+	            "description": "SalesLiteratures tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures",
+                "description": "Creates a new sales literature for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a sales literature",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"content\": \"<string>\",\n \"description\": \"<string>\",\n \"modifiedDate\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"salesLiteratureTypeId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new sales literature for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures",
+                "description": "Retrieves a list of sales literatures for the specified tenant with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get sales literatures",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of sales literatures for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+                "description": "Deletes an existing sales literature by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a sales literature",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures",
+        ":salesLiteratureId"
+    ],
+    "variable": [
+        {
+        "key": "salesLiteratureId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing sales literature by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+                "description": "Retrieves a single sales literature by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get sales literature by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures",
+        ":salesLiteratureId"
+    ],
+    "variable": [
+        {
+        "key": "salesLiteratureId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single sales literature by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+                "description": "Updates an existing sales literature by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Update a sales literature",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"content\": \"<string>\",\n \"description\": \"<string>\",\n \"modifiedDate\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"salesLiteratureTypeId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures",
+        ":salesLiteratureId"
+    ],
+    "variable": [
+        {
+        "key": "salesLiteratureId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing sales literature by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures/Count",
+                "description": "Returns the total count of sales literatures for the specified tenant with OData filter support.",
+                 "item": [
+                            {
+                                "name": "Get sales literatures count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total count of sales literatures for the specified tenant with OData filter support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/SalesLiteratures/Extended",
+                "description": "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get extended sales literatures",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "SalesLiteratures",
+        "Extended"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "DealUnitFlows",
+	            "description": "DealUnitFlows tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows",
+                "description": "Creates a new deal unit flow for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a deal unit flow",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"parentBusinessProcessId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new deal unit flow for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows",
+                "description": "Retrieves a list of deal unit flows for the specified tenant with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get deal unit flows",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of deal unit flows for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+                "description": "Deletes an existing deal unit flow by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a deal unit flow",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing deal unit flow by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+                "description": "Retrieves a single deal unit flow by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get deal unit flow by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single deal unit flow by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+                "description": "Updates an existing deal unit flow by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Update a deal unit flow",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"parentBusinessProcessId\": \"<string>\",\n \"tenantEnrollmentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing deal unit flow by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages",
+                "description": "Creates a new stage within a specific deal unit flow.",
+                 "item": [
+                            {
+                                "name": "Create a deal unit flow stage",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"order\": \"<number>\",\n \"name\": \"<string>\",\n \"dealUnitFlowId\": \"<string>\",\n \"description\": \"<string>\",\n \"parentBusinessProcessStageId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new stage within a specific deal unit flow."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages",
+                "description": "Retrieves a list of stages for a specific deal unit flow with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get stages for a deal unit flow",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of stages for a specific deal unit flow with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+                "description": "Deletes an existing stage from a specific deal unit flow.",
+                 "item": [
+                            {
+                                "name": "Delete a deal unit flow stage",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages",
+        ":dealUnitFlowStageId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitFlowStageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing stage from a specific deal unit flow."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+                "description": "Retrieves a single stage for a specific deal unit flow by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get a deal unit flow stage by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages",
+        ":dealUnitFlowStageId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitFlowStageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single stage for a specific deal unit flow by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+                "description": "Updates an existing stage within a specific deal unit flow.",
+                 "item": [
+                            {
+                                "name": "Update a deal unit flow stage",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"order\": \"<number>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dealUnitFlowId\": \"<string>\",\n \"parentBusinessProcessStageId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/:dealUnitFlowStageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages",
+        ":dealUnitFlowStageId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitFlowStageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing stage within a specific deal unit flow."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/Count",
+                "description": "Returns the total count of stages for a specific deal unit flow with OData filter support.",
+                 "item": [
+                            {
+                                "name": "Get stages count for a deal unit flow",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/:dealUnitFlowId/Stages/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        ":dealUnitFlowId",
+        "Stages",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitFlowId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total count of stages for a specific deal unit flow with OData filter support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnitFlows/Count",
+                "description": "Returns the total count of deal unit flows for the specified tenant with OData filter support.",
+                 "item": [
+                            {
+                                "name": "Get deal unit flows count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnitFlows/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnitFlows",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total count of deal unit flows for the specified tenant with OData filter support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "DealUnits",
+	            "description": "DealUnits tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/DealsService/DealUnits",
+                "description": "Creates a new deal unit for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a deal unit",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"dealUnitFlowId\": \"<string>\",\n \"dealUnitFlowStageId\": \"<string>\",\n \"partnerCreated\": \"<string>\",\n \"partnerCollaboration\": \"<string>\",\n \"proposedSolution\": \"<string>\",\n \"currentSituation\": \"<string>\",\n \"customerNeed\": \"<string>\",\n \"wonDate\": \"<string>\",\n \"lostDate\": \"<string>\",\n \"expiryDate\": \"<string>\",\n \"deliveredDate\": \"<string>\",\n \"closedTimestamp\": \"<string>\",\n \"expectedCloseDate\": \"<string>\",\n \"dealUnitStatus\": \"<string>\",\n \"dealUnitPurchaseProcess\": \"<string>\",\n \"dealUnitForecastCategory\": \"<string>\",\n \"dealUnitAmountsCalculation\": \"<string>\",\n \"dealUnitLines\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new deal unit for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits",
+                "description": "Retrieves a list of deal units for the specified tenant with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get deal units",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of deal units for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId",
+                "description": "Deletes an existing deal unit by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a deal unit",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing deal unit by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId",
+                "description": "Retrieves a single deal unit by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get deal unit by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single deal unit by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId",
+                "description": "Updates an existing deal unit by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Update a deal unit",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"userId\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"billingLocationId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"shippingMethodId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"ordered\": \"<string>\",\n \"cartId\": \"<string>\",\n \"dealUnitFeedId\": \"<string>\",\n \"dealUnitFlowId\": \"<string>\",\n \"dealUnitFlowStageId\": \"<string>\",\n \"partnerCreated\": \"<string>\",\n \"partnerCollaboration\": \"<string>\",\n \"proposedSolution\": \"<string>\",\n \"currentSituation\": \"<string>\",\n \"customerNeed\": \"<string>\",\n \"wonDate\": \"<string>\",\n \"lostDate\": \"<string>\",\n \"expiryDate\": \"<string>\",\n \"deliveredDate\": \"<string>\",\n \"closedTimestamp\": \"<string>\",\n \"expectedCloseDate\": \"<string>\",\n \"dealUnitStatus\": \"<string>\",\n \"dealUnitPurchaseProcess\": \"<string>\",\n \"dealUnitForecastCategory\": \"<string>\",\n \"dealUnitAmountsCalculation\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing deal unit by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Calculate",
+                "description": "Triggers recalculation of totals and derived values for a specific deal unit.",
+                 "item": [
+                            {
+                                "name": "Calculate a deal unit",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Calculate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Calculate"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Triggers recalculation of totals and derived values for a specific deal unit."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Extended",
+                "description": "Retrieves a single deal unit with extended details by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get extended deal unit by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Extended"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single deal unit with extended details by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines",
+                "description": "Creates a new line within a specific deal unit.",
+                 "item": [
+                            {
+                                "name": "Create a deal unit line",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"closed\": \"<string>\",\n \"itemId\": \"<string>\",\n \"itemTitle\": \"<string>\",\n \"itemShortDescription\": \"<string>\",\n \"itemPrimaryImageUrl\": \"<string>\",\n \"shippingPolicyId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"quantity\": \"<number>\",\n \"free\": \"<string>\",\n \"freeReason\": \"<string>\",\n \"freeReasonCode\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"priceListItemId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"forexRatesSnapshot\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"totalBaseAmountInUsd\": \"<number>\",\n \"totalProfitInUsd\": \"<number>\",\n \"totalDetailAmountInUsd\": \"<number>\",\n \"totalTaxBaseInUsd\": \"<number>\",\n \"totalDiscountsInUsd\": \"<number>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"totalWithheldTaxesInUsd\": \"<number>\",\n \"totalShippingCostInUsd\": \"<number>\",\n \"totalShippingTaxesInUsd\": \"<number>\",\n \"totalWarrantyCostInUsd\": \"<number>\",\n \"totalReturnCostInUsd\": \"<number>\",\n \"totalRefundCostInUsd\": \"<number>\",\n \"totalSurchargesInUsd\": \"<number>\",\n \"totalAmountInUsd\": \"<number>\",\n \"totalGlobalDiscountsInUsd\": \"<number>\",\n \"totalGlobalSurchargesInUsd\": \"<number>\",\n \"customGlobalSurchargesAmount\": \"<number>\",\n \"customGlobalSurchargesAmountCurrencyId\": \"<string>\",\n \"customGlobalDiscountsAmount\": \"<number>\",\n \"customGlobalDiscountsAmountCurrencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"returnPolicyId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\",\n \"shipmentPolicyId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"locationId\": \"<string>\",\n \"quoteItemRecordId\": \"<string>\",\n \"parentBillingItemRecordId\": \"<string>\",\n \"dealUnitId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Creates a new line within a specific deal unit."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines",
+                "description": "Retrieves a list of lines for a specific deal unit with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get deal unit lines",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "itemId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a list of lines for a specific deal unit with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+                "description": "Deletes an existing line from a specific deal unit.",
+                 "item": [
+                            {
+                                "name": "Delete a deal unit line",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines",
+        ":dealUnitLineId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Deletes an existing line from a specific deal unit."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+                "description": "Retrieves a single deal unit line by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get a deal unit line by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines",
+        ":dealUnitLineId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a single deal unit line by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+                "description": "Updates an existing line within a specific deal unit.",
+                 "item": [
+                            {
+                                "name": "Update a deal unit line",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"closed\": \"<string>\",\n \"itemId\": \"<string>\",\n \"itemTitle\": \"<string>\",\n \"itemShortDescription\": \"<string>\",\n \"itemPrimaryImageUrl\": \"<string>\",\n \"shippingPolicyId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"quantity\": \"<number>\",\n \"free\": \"<string>\",\n \"freeReason\": \"<string>\",\n \"freeReasonCode\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"priceListItemId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"forexRatesSnapshot\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"totalBaseAmountInUsd\": \"<number>\",\n \"totalProfitInUsd\": \"<number>\",\n \"totalDetailAmountInUsd\": \"<number>\",\n \"totalTaxBaseInUsd\": \"<number>\",\n \"totalDiscountsInUsd\": \"<number>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"totalWithheldTaxesInUsd\": \"<number>\",\n \"totalShippingCostInUsd\": \"<number>\",\n \"totalShippingTaxesInUsd\": \"<number>\",\n \"totalWarrantyCostInUsd\": \"<number>\",\n \"totalReturnCostInUsd\": \"<number>\",\n \"totalRefundCostInUsd\": \"<number>\",\n \"totalSurchargesInUsd\": \"<number>\",\n \"totalAmountInUsd\": \"<number>\",\n \"totalGlobalDiscountsInUsd\": \"<number>\",\n \"totalGlobalSurchargesInUsd\": \"<number>\",\n \"customGlobalSurchargesAmount\": \"<number>\",\n \"customGlobalSurchargesAmountCurrencyId\": \"<string>\",\n \"customGlobalDiscountsAmount\": \"<number>\",\n \"customGlobalDiscountsAmountCurrencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"returnPolicyId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\",\n \"shipmentPolicyId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"locationId\": \"<string>\",\n \"quoteItemRecordId\": \"<string>\",\n \"parentBillingItemRecordId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines",
+        ":dealUnitLineId"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Updates an existing line within a specific deal unit."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId/Calculate",
+                "description": "Triggers recalculation of totals and derived values for a specific deal unit line.",
+                 "item": [
+                            {
+                                "name": "Calculate a deal unit line",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines/:dealUnitLineId/Calculate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines",
+        ":dealUnitLineId",
+        "Calculate"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "dealUnitLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Triggers recalculation of totals and derived values for a specific deal unit line."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/:dealUnitId/Lines/Count",
+                "description": "Returns the total count of lines for a specific deal unit with OData filter support.",
+                 "item": [
+                            {
+                                "name": "Get deal unit lines count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/:dealUnitId/Lines/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        ":dealUnitId",
+        "Lines",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "dealUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total count of lines for a specific deal unit with OData filter support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/Count",
+                "description": "Returns the total count of deal units for the specified tenant with OData filter support.",
+                 "item": [
+                            {
+                                "name": "Get deal units count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Returns the total count of deal units for the specified tenant with OData filter support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/DealsService/DealUnits/Extended",
+                "description": "Retrieves a list of deal units with extended details for the specified tenant with OData query support.",
+                 "item": [
+                            {
+                                "name": "Get extended deal units",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/DealsService/DealUnits/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "DealsService",
+        "DealUnits",
+        "Extended"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Retrieves a list of deal units with extended details for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+        }
+	]
+}
+
