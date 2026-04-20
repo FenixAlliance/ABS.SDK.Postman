@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5285",
+		"version": "2.0.0.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2237,262 +2237,9 @@
 	                    ]
 	        },
 	        {
-	            "name": "Completions",
-	            "description": "Completions tag",
+	            "name": "FenixAlliance.ABP.Web",
+	            "description": "FenixAlliance.ABP.Web tag",
 	            "item": [
-	                        {
-    "name": "/api/v2/AiService/Completions/Complete",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiV2AiServiceCompletionsCompleteGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AiService",
-        "Completions",
-        "Complete"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "conversationId",
-        "value": "conversationId_example",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "message",
-        "value": "message_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.Portals.Website",
-	            "description": "FenixAlliance.Portals.Website tag",
-	            "item": [
-	                        {
-    "name": "/Account/Logout",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountLogoutPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Logout",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Logout"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/DownloadPersonalData",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageDownloadPersonalDataPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "DownloadPersonalData"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/LinkExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageLinkExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "LinkExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/PerformExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountPerformExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "PerformExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -4098,9 +3845,14 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "{server}",
 			"type": "string"
-        }
+        },
+		{
+			"key": "server",
+			"value": "https://absuite.net",
+			"type": "string"
+		}
 	]
 }
 

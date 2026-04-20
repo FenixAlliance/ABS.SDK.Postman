@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5285",
+		"version": "2.0.0.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -365,28 +365,40 @@
 	                    ]
 	        },
 	        {
-	            "name": "Completions",
-	            "description": "Completions tag",
+	            "name": "PaymentTerms",
+	            "description": "PaymentTerms tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/AiService/Completions/Complete",
-                "description": "",
+    "name": "/api/v2/PaymentsService/PaymentTerms",
+                "description": "Creates a new payment term for the current tenant.",
                  "item": [
                             {
-                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "name": "Creates a new payment term",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "key": "Content-Type",
+        "value": "application/json",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -394,16 +406,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "AiService",
-        "Completions",
-        "Complete"
+        "PaymentsService",
+        "PaymentTerms"
     ],
     "variable": [
     ],
@@ -415,20 +426,369 @@
         "disabled": false
         },
         {
-        "key": "conversationId",
-        "value": "conversationId_example",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "message",
-        "value": "message_example",
+        "key": "apiVersion",
+        "value": "apiVersion_example",
         "description": "",
         "disabled": true
         }
     ]
     },
-    "description": ""
+    "description": "Creates a new payment term for the current tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms",
+                "description": "Gets all payment terms for the current tenant with OData support.",
+                 "item": [
+                            {
+                                "name": "Retrieves all payment terms",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Gets all payment terms for the current tenant with OData support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+                "description": "Deletes the specified payment term.",
+                 "item": [
+                            {
+                                "name": "Deletes a payment term",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms",
+        ":paymentTermId"
+    ],
+    "variable": [
+        {
+        "key": "paymentTermId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes the specified payment term."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+                "description": "Retrieves the details of a payment term using its unique ID.",
+                 "item": [
+                            {
+                                "name": "Gets a payment term by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms",
+        ":paymentTermId"
+    ],
+    "variable": [
+        {
+        "key": "paymentTermId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the details of a payment term using its unique ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+                "description": "Updates the specified payment term.",
+                 "item": [
+                            {
+                                "name": "Updates a payment term",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms",
+        ":paymentTermId"
+    ],
+    "variable": [
+        {
+        "key": "paymentTermId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates the specified payment term."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms/Count",
+                "description": "Gets the count of payment terms for the current tenant.",
+                 "item": [
+                            {
+                                "name": "Counts payment terms",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Gets the count of payment terms for the current tenant."
 }
                                 ,"response": [
                             ]
@@ -438,189 +798,9 @@
 	                    ]
 	        },
 	        {
-	            "name": "FenixAlliance.Portals.Website",
-	            "description": "FenixAlliance.Portals.Website tag",
+	            "name": "FenixAlliance.ABP.Web",
+	            "description": "FenixAlliance.ABP.Web tag",
 	            "item": [
-	                        {
-    "name": "/Account/Logout",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountLogoutPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Logout",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Logout"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/DownloadPersonalData",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageDownloadPersonalDataPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "DownloadPersonalData"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/LinkExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageLinkExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "LinkExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/PerformExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountPerformExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "PerformExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -1251,439 +1431,6 @@
     ]
     },
     "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "PaymentTerms",
-	            "description": "PaymentTerms tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms",
-                "description": "Creates a new payment term for the current tenant.",
-                 "item": [
-                            {
-                                "name": "Creates a new payment term",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Creates a new payment term for the current tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms",
-                "description": "Gets all payment terms for the current tenant with OData support.",
-                 "item": [
-                            {
-                                "name": "Retrieves all payment terms",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Gets all payment terms for the current tenant with OData support."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-                "description": "Deletes the specified payment term.",
-                 "item": [
-                            {
-                                "name": "Deletes a payment term",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms",
-        ":paymentTermId"
-    ],
-    "variable": [
-        {
-        "key": "paymentTermId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Deletes the specified payment term."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-                "description": "Retrieves the details of a payment term using its unique ID.",
-                 "item": [
-                            {
-                                "name": "Gets a payment term by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms",
-        ":paymentTermId"
-    ],
-    "variable": [
-        {
-        "key": "paymentTermId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the details of a payment term using its unique ID."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-                "description": "Updates the specified payment term.",
-                 "item": [
-                            {
-                                "name": "Updates a payment term",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms",
-        ":paymentTermId"
-    ],
-    "variable": [
-        {
-        "key": "paymentTermId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Updates the specified payment term."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/PaymentsService/PaymentTerms/Count",
-                "description": "Gets the count of payment terms for the current tenant.",
-                 "item": [
-                            {
-                                "name": "Counts payment terms",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "PaymentsService",
-        "PaymentTerms",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Gets the count of payment terms for the current tenant."
 }
                                 ,"response": [
                             ]
@@ -2563,9 +2310,14 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "{server}",
 			"type": "string"
-        }
+        },
+		{
+			"key": "server",
+			"value": "https://absuite.net",
+			"type": "string"
+		}
 	]
 }
 

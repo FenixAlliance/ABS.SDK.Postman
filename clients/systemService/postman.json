@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5285",
+		"version": "2.0.0.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -666,15 +666,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "Completions",
-	            "description": "Completions tag",
+	            "name": "Licensing",
+	            "description": "Licensing tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/AiService/Completions/Complete",
-                "description": "",
+    "name": "/api/v2/SystemService/Licensing/Licenses",
+                "description": "Retrieves a list of suite licenses, optionally filtered by tenant.",
                  "item": [
                             {
-                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "name": "Retrieve a list of licenses",
                                 "request": {
     "method": "GET",
     "header": [
@@ -683,6 +683,12 @@
         "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
@@ -695,16 +701,453 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "AiService",
-        "Completions",
-        "Complete"
+        "SystemService",
+        "Licensing",
+        "Licenses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a list of suite licenses, optionally filtered by tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId",
+                "description": "Retrieves a single suite license by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Retrieve a license by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single suite license by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
+                "description": "Retrieves all license assignments for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license assignments",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Assignments"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all license assignments for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
+                "description": "Retrieves all additional attributes for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license attributes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Attributes"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all additional attributes for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
+                "description": "Retrieves all features for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license features",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Features"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all features for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
+                "description": "Retrieves the record quota for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license record quota",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Quota"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the record quota for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/Redeem",
+                "description": "Redeems a license for the current tenant user.",
+                 "item": [
+                            {
+                                "name": "Redeem a license",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Redeem",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        "Redeem"
     ],
     "variable": [
     ],
@@ -716,20 +1159,82 @@
         "disabled": false
         },
         {
-        "key": "conversationId",
-        "value": "conversationId_example",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "message",
-        "value": "message_example",
+        "key": "apiVersion",
+        "value": "apiVersion_example",
         "description": "",
         "disabled": true
         }
     ]
     },
-    "description": ""
+    "description": "Redeems a license for the current tenant user."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/Validate",
+                "description": "Validates a license key and returns validation failures if any.",
+                 "item": [
+                            {
+                                "name": "Validate a license",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Validate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        "Validate"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Validates a license key and returns validation failures if any."
 }
                                 ,"response": [
                             ]
@@ -739,189 +1244,9 @@
 	                    ]
 	        },
 	        {
-	            "name": "FenixAlliance.Portals.Website",
-	            "description": "FenixAlliance.Portals.Website tag",
+	            "name": "FenixAlliance.ABP.Web",
+	            "description": "FenixAlliance.ABP.Web tag",
 	            "item": [
-	                        {
-    "name": "/Account/Logout",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountLogoutPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Logout",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Logout"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/DownloadPersonalData",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageDownloadPersonalDataPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "DownloadPersonalData"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/Manage/LinkExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountManageLinkExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "Manage",
-        "LinkExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/Account/PerformExternalLogin",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "accountPerformExternalLoginPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "multipart/form-data",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "Account",
-        "PerformExternalLogin"
-    ],
-    "variable": [
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -1552,880 +1877,6 @@
     ]
     },
     "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Licenses",
-	            "description": "Licenses tag",
-	            "item": [
-	                        {
-    "name": "/api/Licensing/Licenses/Generate",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiLicensingLicensesGeneratePost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"userId\": \"<string>\",\n \"tenantId\": \"<string>\",\n \"orderId\": \"<string>\",\n \"paymentId\": \"<string>\",\n \"invoiceId\": \"<string>\",\n \"enrollmentId\": \"<string>\",\n \"entitlementId\": \"<string>\",\n \"seats\": \"<number>\",\n \"licenseType\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"features\": \"<string>\",\n \"additionalAttributes\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/Licensing/Licenses/Generate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "Licensing",
-        "Licenses",
-        "Generate"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/Licensing/Licenses/Validate",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiLicensingLicensesValidateGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"key\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "Licensing",
-        "Licenses",
-        "Validate"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/Licensing/Licenses/Validate/Attributes",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiLicensingLicensesValidateAttributesGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"key\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate/Attributes",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "Licensing",
-        "Licenses",
-        "Validate",
-        "Attributes"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/Licensing/Licenses/Validate/Errors",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiLicensingLicensesValidateErrorsGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"key\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate/Errors",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "Licensing",
-        "Licenses",
-        "Validate",
-        "Errors"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Licensing",
-	            "description": "Licensing tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses",
-                "description": "Retrieves a list of suite licenses, optionally filtered by tenant.",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of licenses",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves a list of suite licenses, optionally filtered by tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId",
-                "description": "Retrieves a single suite license by its unique identifier.",
-                 "item": [
-                            {
-                                "name": "Retrieve a license by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves a single suite license by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
-                "description": "Retrieves all license assignments for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license assignments",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Assignments"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all license assignments for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
-                "description": "Retrieves all additional attributes for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license attributes",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Attributes"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all additional attributes for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
-                "description": "Retrieves all features for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license features",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Features"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all features for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
-                "description": "Retrieves the record quota for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license record quota",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Quota"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the record quota for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/Redeem",
-                "description": "Redeems a license for the current tenant user.",
-                 "item": [
-                            {
-                                "name": "Redeem a license",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Redeem",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        "Redeem"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Redeems a license for the current tenant user."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/Validate",
-                "description": "Validates a license key and returns validation failures if any.",
-                 "item": [
-                            {
-                                "name": "Validate a license",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Validate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        "Validate"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Validates a license key and returns validation failures if any."
 }
                                 ,"response": [
                             ]
@@ -4269,9 +3720,14 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "{server}",
 			"type": "string"
-        }
+        },
+		{
+			"key": "server",
+			"value": "https://absuite.net",
+			"type": "string"
+		}
 	]
 }
 
