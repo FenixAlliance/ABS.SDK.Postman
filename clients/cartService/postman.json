@@ -4593,95 +4593,23 @@
 	                    ]
 	        },
 	        {
-	            "name": "Compare",
-	            "description": "Compare tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/CartService/Compare",
-                "description": "Adds a product to the compare table for the specified cart with tracking.",
+    "name": "/Account/Logout",
+                "description": "",
                  "item": [
                             {
-                                "name": "Add an item to the compare table",
+                                "name": "accountLogoutPost",
                                 "request": {
     "method": "POST",
     "header": [
         {
         "key": "Content-Type",
-        "value": "application/json",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"cartId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/CartService/Compare",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "CartService",
-        "Compare"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Adds a product to the compare table for the specified cart with tracking."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/CartService/Compare/:cartId",
-                "description": "Retrieves all items added to the compare table for the specified cart.",
-                 "item": [
-                            {
-                                "name": "Get items to compare in a cart",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -4694,34 +4622,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:cartId",
+    "raw": "{{baseUrl}}/Account/Logout",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "CartService",
-        "Compare",
-        ":cartId"
+        "Account",
+        "Logout"
     ],
     "variable": [
-        {
-        "key": "cartId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves all items added to the compare table for the specified cart."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -4729,25 +4643,60 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/CartService/Compare/:recordId",
-                "description": "Removes a specific record from the compare table by its record ID.",
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
                  "item": [
                             {
-                                "name": "Remove an item from the compare table",
+                                "name": "accountManageDownloadPersonalDataPost",
                                 "request": {
-    "method": "DELETE",
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountManageLinkExternalLoginPost",
+                                "request": {
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -4760,34 +4709,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:recordId",
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "CartService",
-        "Compare",
-        ":recordId"
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
     ],
     "variable": [
-        {
-        "key": "recordId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Removes a specific record from the compare table by its record ID."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -4795,25 +4731,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/CartService/Compare/:recordId/Details",
-                "description": "Retrieves the details of a specific item-to-compare cart record.",
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get compare record details",
+                                "name": "accountPerformExternalLoginPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -4826,47 +4756,26 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:recordId/Details",
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "CartService",
-        "Compare",
-        ":recordId",
-        "Details"
+        "Account",
+        "PerformExternalLogin"
     ],
     "variable": [
-        {
-        "key": "recordId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves the details of a specific item-to-compare cart record."
+    "description": ""
 }
                                 ,"response": [
                             ]
                             }
                             ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.ABP.Web",
-	            "description": "FenixAlliance.ABP.Web tag",
-	            "item": [
+                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -5497,6 +5406,277 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Compare",
+	            "description": "Compare tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/CartService/Compare",
+                "description": "Adds a product to the compare table for the specified cart with tracking.",
+                 "item": [
+                            {
+                                "name": "Add an item to the compare table",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"cartId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CartService/Compare",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CartService",
+        "Compare"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Adds a product to the compare table for the specified cart with tracking."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CartService/Compare/:cartId",
+                "description": "Retrieves all items added to the compare table for the specified cart.",
+                 "item": [
+                            {
+                                "name": "Get items to compare in a cart",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:cartId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CartService",
+        "Compare",
+        ":cartId"
+    ],
+    "variable": [
+        {
+        "key": "cartId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all items added to the compare table for the specified cart."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CartService/Compare/:recordId",
+                "description": "Removes a specific record from the compare table by its record ID.",
+                 "item": [
+                            {
+                                "name": "Remove an item from the compare table",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:recordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CartService",
+        "Compare",
+        ":recordId"
+    ],
+    "variable": [
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes a specific record from the compare table by its record ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CartService/Compare/:recordId/Details",
+                "description": "Retrieves the details of a specific item-to-compare cart record.",
+                 "item": [
+                            {
+                                "name": "Get compare record details",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CartService/Compare/:recordId/Details",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CartService",
+        "Compare",
+        ":recordId",
+        "Details"
+    ],
+    "variable": [
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the details of a specific item-to-compare cart record."
 }
                                 ,"response": [
                             ]

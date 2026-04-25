@@ -10,101 +10,23 @@
 	},
 	"item": [
 	        {
-	            "name": "ServiceQueues",
-	            "description": "ServiceQueues tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues",
-                "description": "Creates a new service queue for the specified tenant.",
+    "name": "/Account/Logout",
+                "description": "",
                  "item": [
                             {
-                                "name": "Create a service queue",
+                                "name": "accountLogoutPost",
                                 "request": {
     "method": "POST",
     "header": [
         {
         "key": "Content-Type",
-        "value": "application/json",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"serviceId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Creates a new service queue for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues",
-                "description": "Retrieves all service queues for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Get all service queues",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -117,34 +39,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
+    "raw": "{{baseUrl}}/Account/Logout",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues"
+        "Account",
+        "Logout"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves all service queues for the specified tenant."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -152,26 +60,14 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
-                "description": "Deletes a service queue by its identifier.",
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
                  "item": [
                             {
-                                "name": "Delete a service queue",
+                                "name": "accountManageDownloadPersonalDataPost",
                                 "request": {
-    "method": "DELETE",
+    "method": "POST",
     "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
     ],
     "body": {
     "mode": "raw",
@@ -183,40 +79,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues",
-        ":serviceQueueId"
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
     ],
     "variable": [
-        {
-        "key": "serviceQueueId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Deletes a service queue by its identifier."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -224,175 +101,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
-                "description": "Retrieves a service queue by its identifier.",
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get a service queue by ID",
+                                "name": "accountManageLinkExternalLoginPost",
                                 "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues",
-        ":serviceQueueId"
-    ],
-    "variable": [
-        {
-        "key": "serviceQueueId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves a service queue by its identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
-                "description": "Updates an existing service queue.",
-                 "item": [
-                            {
-                                "name": "Update a service queue",
-                                "request": {
-    "method": "PUT",
+    "method": "POST",
     "header": [
         {
         "key": "Content-Type",
-        "value": "application/json",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"serviceId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues",
-        ":serviceQueueId"
-    ],
-    "variable": [
-        {
-        "key": "serviceQueueId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Updates an existing service queue."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ServicesService/ServiceQueues/Count",
-                "description": "Returns the count of service queues for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Get service queues count",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -405,47 +126,73 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/Count",
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ServicesService",
-        "ServiceQueues",
-        "Count"
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Returns the count of service queues for the specified tenant."
+    "description": ""
 }
                                 ,"response": [
                             ]
                             }
                             ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.ABP.Web",
-	            "description": "FenixAlliance.ABP.Web tag",
-	            "item": [
+                        },
+	                        {
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "accountPerformExternalLoginPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "Account",
+        "PerformExternalLogin"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -1076,6 +823,439 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ServiceQueues",
+	            "description": "ServiceQueues tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues",
+                "description": "Creates a new service queue for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a service queue",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new service queue for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues",
+                "description": "Retrieves all service queues for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all service queues",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all service queues for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Deletes a service queue by its identifier.",
+                 "item": [
+                            {
+                                "name": "Delete a service queue",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a service queue by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Retrieves a service queue by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a service queue by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a service queue by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Updates an existing service queue.",
+                 "item": [
+                            {
+                                "name": "Update a service queue",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"serviceId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing service queue."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/Count",
+                "description": "Returns the count of service queues for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get service queues count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of service queues for the specified tenant."
 }
                                 ,"response": [
                             ]
