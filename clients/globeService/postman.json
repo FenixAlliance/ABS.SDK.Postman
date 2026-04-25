@@ -10,29 +10,23 @@
 	},
 	"item": [
 	        {
-	            "name": "Timezones",
-	            "description": "Timezones tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/GlobeService/Timezones",
-                "description": "Retrieves the list of all supported timezones with optional OData pagination and filtering.",
+    "name": "/Account/Logout",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get all timezones",
+                                "name": "accountLogoutPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -45,28 +39,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones",
+    "raw": "{{baseUrl}}/Account/Logout",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Timezones"
+        "Account",
+        "Logout"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves the list of all supported timezones with optional OData pagination and filtering."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -74,26 +60,14 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/GlobeService/Timezones/:timeZoneId",
-                "description": "Retrieves a single timezone by its unique identifier.",
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get timezone by ID",
+                                "name": "accountManageDownloadPersonalDataPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
     ],
     "body": {
     "mode": "raw",
@@ -105,34 +79,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones/:timeZoneId",
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Timezones",
-        ":timeZoneId"
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
     ],
     "variable": [
-        {
-        "key": "timeZoneId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves a single timezone by its unique identifier."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -140,25 +101,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/GlobeService/Timezones/Count",
-                "description": "Returns the total number of supported timezones, with optional OData filtering.",
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Count timezones",
+                                "name": "accountManageLinkExternalLoginPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -171,95 +126,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones/Count",
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Timezones",
-        "Count"
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Returns the total number of supported timezones, with optional OData filtering."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Currencies",
-	            "description": "Currencies tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/GlobeService/Currencies",
-                "description": "Retrieves the list of all enabled currencies with optional OData pagination and filtering.",
-                 "item": [
-                            {
-                                "name": "Get all currencies",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Currencies"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the list of all enabled currencies with optional OData pagination and filtering."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -267,25 +148,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/GlobeService/Currencies/:currencyId",
-                "description": "Retrieves a single currency by its unique identifier.",
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get currency by ID",
+                                "name": "accountPerformExternalLoginPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -298,107 +173,26 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies/:currencyId",
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Currencies",
-        ":currencyId"
+        "Account",
+        "PerformExternalLogin"
     ],
     "variable": [
-        {
-        "key": "currencyId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves a single currency by its unique identifier."
+    "description": ""
 }
                                 ,"response": [
                             ]
                             }
                             ]
                         },
-	                        {
-    "name": "/api/v2/GlobeService/Currencies/Count",
-                "description": "Returns the total number of enabled currencies, with optional OData filtering.",
-                 "item": [
-                            {
-                                "name": "Count currencies",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "GlobeService",
-        "Currencies",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns the total number of enabled currencies, with optional OData filtering."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.ABP.Web",
-	            "description": "FenixAlliance.ABP.Web tag",
-	            "item": [
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -1029,6 +823,392 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Timezones",
+	            "description": "Timezones tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/GlobeService/Timezones",
+                "description": "Retrieves the list of all supported timezones with optional OData pagination and filtering.",
+                 "item": [
+                            {
+                                "name": "Get all timezones",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Timezones"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the list of all supported timezones with optional OData pagination and filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Timezones/:timeZoneId",
+                "description": "Retrieves a single timezone by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get timezone by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones/:timeZoneId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Timezones",
+        ":timeZoneId"
+    ],
+    "variable": [
+        {
+        "key": "timeZoneId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single timezone by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Timezones/Count",
+                "description": "Returns the total number of supported timezones, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count timezones",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Timezones/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Timezones",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of supported timezones, with optional OData filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Currencies",
+	            "description": "Currencies tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/GlobeService/Currencies",
+                "description": "Retrieves the list of all enabled currencies with optional OData pagination and filtering.",
+                 "item": [
+                            {
+                                "name": "Get all currencies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Currencies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the list of all enabled currencies with optional OData pagination and filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Currencies/:currencyId",
+                "description": "Retrieves a single currency by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Get currency by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies/:currencyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Currencies",
+        ":currencyId"
+    ],
+    "variable": [
+        {
+        "key": "currencyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single currency by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Currencies/Count",
+                "description": "Returns the total number of enabled currencies, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count currencies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Currencies/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Currencies",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of enabled currencies, with optional OData filtering."
 }
                                 ,"response": [
                             ]

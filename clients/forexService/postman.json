@@ -10,29 +10,23 @@
 	},
 	"item": [
 	        {
-	            "name": "Rates",
-	            "description": "Rates tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ForexService/Rates/History",
-                "description": "Retrieves exchange rates for all supported currencies as of a specific historical date.",
+    "name": "/Account/Logout",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get historical currency rates",
+                                "name": "accountLogoutPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -45,35 +39,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/History",
+    "raw": "{{baseUrl}}/Account/Logout",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ForexService",
-        "Rates",
-        "History"
+        "Account",
+        "Logout"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "date",
-        "value": "2013-10-20T19:20:30+01:00",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves exchange rates for all supported currencies as of a specific historical date."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -81,26 +60,14 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ForexService/Rates/History/:currencyId",
-                "description": "Retrieves the exchange rate for a specific currency as of a specific historical date.",
+    "name": "/Account/Manage/DownloadPersonalData",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get historical rate for a currency",
+                                "name": "accountManageDownloadPersonalDataPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
     ],
     "body": {
     "mode": "raw",
@@ -112,41 +79,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/History/:currencyId",
+    "raw": "{{baseUrl}}/Account/Manage/DownloadPersonalData",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ForexService",
-        "Rates",
-        "History",
-        ":currencyId"
+        "Account",
+        "Manage",
+        "DownloadPersonalData"
     ],
     "variable": [
-        {
-        "key": "currencyId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "date",
-        "value": "2013-10-20T19:20:30+01:00",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves the exchange rate for a specific currency as of a specific historical date."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -154,25 +101,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ForexService/Rates/Latest",
-                "description": "Retrieves the latest exchange rates for all supported currencies.",
+    "name": "/Account/Manage/LinkExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get latest currency rates",
+                                "name": "accountManageLinkExternalLoginPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -185,29 +126,21 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/Latest",
+    "raw": "{{baseUrl}}/Account/Manage/LinkExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ForexService",
-        "Rates",
-        "Latest"
+        "Account",
+        "Manage",
+        "LinkExternalLogin"
     ],
     "variable": [
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves the latest exchange rates for all supported currencies."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -215,25 +148,19 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ForexService/Rates/Latest/:currencyId",
-                "description": "Retrieves the latest exchange rate for a specific currency by its identifier.",
+    "name": "/Account/PerformExternalLogin",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get latest rate for a currency",
+                                "name": "accountPerformExternalLoginPost",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "Content-Type",
+        "value": "multipart/form-data",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
         }
     ],
     "body": {
@@ -246,47 +173,26 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/Latest/:currencyId",
+    "raw": "{{baseUrl}}/Account/PerformExternalLogin",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
-        "api",
-        "v2",
-        "ForexService",
-        "Rates",
-        "Latest",
-        ":currencyId"
+        "Account",
+        "PerformExternalLogin"
     ],
     "variable": [
-        {
-        "key": "currencyId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
     ]
     },
-    "description": "Retrieves the latest exchange rate for a specific currency by its identifier."
+    "description": ""
 }
                                 ,"response": [
                             ]
                             }
                             ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.ABP.Web",
-	            "description": "FenixAlliance.ABP.Web tag",
-	            "item": [
+                        },
 	                        {
     "name": "/confirmEmail",
                 "description": "",
@@ -917,6 +823,280 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Rates",
+	            "description": "Rates tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ForexService/Rates/History",
+                "description": "Retrieves exchange rates for all supported currencies as of a specific historical date.",
+                 "item": [
+                            {
+                                "name": "Get historical currency rates",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/History",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ForexService",
+        "Rates",
+        "History"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "date",
+        "value": "2013-10-20T19:20:30+01:00",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves exchange rates for all supported currencies as of a specific historical date."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ForexService/Rates/History/:currencyId",
+                "description": "Retrieves the exchange rate for a specific currency as of a specific historical date.",
+                 "item": [
+                            {
+                                "name": "Get historical rate for a currency",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/History/:currencyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ForexService",
+        "Rates",
+        "History",
+        ":currencyId"
+    ],
+    "variable": [
+        {
+        "key": "currencyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "date",
+        "value": "2013-10-20T19:20:30+01:00",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the exchange rate for a specific currency as of a specific historical date."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ForexService/Rates/Latest",
+                "description": "Retrieves the latest exchange rates for all supported currencies.",
+                 "item": [
+                            {
+                                "name": "Get latest currency rates",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/Latest",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ForexService",
+        "Rates",
+        "Latest"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the latest exchange rates for all supported currencies."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ForexService/Rates/Latest/:currencyId",
+                "description": "Retrieves the latest exchange rate for a specific currency by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get latest rate for a currency",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ForexService/Rates/Latest/:currencyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ForexService",
+        "Rates",
+        "Latest",
+        ":currencyId"
+    ],
+    "variable": [
+        {
+        "key": "currencyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the latest exchange rate for a specific currency by its identifier."
 }
                                 ,"response": [
                             ]
