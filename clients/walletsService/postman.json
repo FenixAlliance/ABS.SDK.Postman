@@ -902,6 +902,574 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts",
+                "description": "Create a new bank account for a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Create Wallet Bank Account",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new bank account for a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts",
+                "description": "Get bank accounts of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Bank Accounts",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get bank accounts of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+                "description": "Delete a specific bank account of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Delete Wallet Bank Account",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts",
+        ":bankAccountId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "bankAccountId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a specific bank account of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+                "description": "Get a specific bank account of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Bank Account",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts",
+        ":bankAccountId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "bankAccountId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a specific bank account of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+                "description": "Update a specific bank account of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Update Wallet Bank Account",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts",
+        ":bankAccountId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "bankAccountId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Update a specific bank account of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/Count",
+                "description": "Get bank accounts count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Bank Accounts Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get bank accounts count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Chargebacks",
+                "description": "Get chargebacks of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Chargebacks",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Chargebacks",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Chargebacks"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get chargebacks of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Chargebacks/Count",
+                "description": "Get chargebacks count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Chargebacks Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Chargebacks/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Chargebacks",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get chargebacks count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/WalletsService/Wallets/:walletId/Invoices",
                 "description": "Get invoices of a specific wallet by ID.",
                  "item": [
@@ -1948,6 +2516,79 @@
                         },
 	                        {
     "name": "/api/v2/WalletsService/Wallets/:walletId/Payments",
+                "description": "Create a new payment for a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Create Wallet Payment",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"invoiceId\": \"<string>\",\n \"emisorWalletId\": \"<string>\",\n \"receiverWalletId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"totalCost\": \"<number>\",\n \"totalTaxes\": \"<number>\",\n \"closed\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"response\": \"<string>\",\n \"authorization\": \"<string>\",\n \"referenceCode\": \"<string>\",\n \"correlationCode\": \"<string>\",\n \"lastUpdated\": \"<string>\",\n \"onBehalfOf\": \"<string>\",\n \"paymentType\": \"<string>\",\n \"paymentStatus\": \"<string>\",\n \"baseCost\": \"<number>\",\n \"signature\": \"<string>\",\n \"signatureMismatch\": \"<string>\",\n \"isExternal\": \"<string>\",\n \"markedForRevision\": \"<string>\",\n \"forexRatesSnapshot\": \"<string>\",\n \"officialId\": \"<string>\",\n \"officialIdExpeditionDate\": \"<string>\",\n \"fiscalIdentificationTypeId\": \"<string>\",\n \"billingAddress\": \"<string>\",\n \"phone\": \"<string>\",\n \"cellphone\": \"<string>\",\n \"department\": \"<string>\",\n \"city\": \"<string>\",\n \"countryId\": \"<string>\",\n \"locationId\": \"<string>\",\n \"entitlementId\": \"<string>\",\n \"antiFraudScore\": \"<number>\",\n \"callRecordURL\": \"<string>\",\n \"called\": \"<string>\",\n \"verified\": \"<string>\",\n \"payerPictureTimestamp\": \"<string>\",\n \"payerPicture\": \"<string>\",\n \"identificationPictureTimestamp\": \"<string>\",\n \"identificationPicture\": \"<string>\",\n \"identificationBackPicture\": \"<string>\",\n \"identificationBackPictureTimestamp\": \"<string>\",\n \"ipLookupId\": \"<string>\",\n \"orderId\": \"<string>\",\n \"accountingEntryId\": \"<string>\",\n \"paymentGatewayId\": \"<string>\",\n \"bankAccountId\": \"<string>\",\n \"bankId\": \"<string>\",\n \"paymentTokenId\": \"<string>\",\n \"emisorWalletAccountId\": \"<string>\",\n \"receiverWalletAccountId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Payments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Payments"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new payment for a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Payments",
                 "description": "Get payments of a specific wallet by ID.",
                  "item": [
                             {
@@ -2349,6 +2990,1052 @@
     ]
     },
     "description": "Get outgoing payments count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Quotes",
+                "description": "Get quotes of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Quotes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Quotes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Quotes"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get quotes of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Quotes/Count",
+                "description": "Get quotes count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Quotes Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Quotes/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Quotes",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get quotes count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Refunds",
+                "description": "Get refunds of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Refunds",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Refunds",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Refunds"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get refunds of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Refunds/Count",
+                "description": "Get refunds count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Refunds Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Refunds/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Refunds",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get refunds count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens",
+                "description": "Create a new payment token for a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Create Wallet Token",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"mask\": \"<string>\",\n \"tokenType\": \"<string>\",\n \"cardFranchise\": \"<string>\",\n \"cardExpirationMonth\": \"<string>\",\n \"cardExpirationYear\": \"<string>\",\n \"validUntil\": \"<string>\",\n \"paymentGatewayId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new payment token for a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens",
+                "description": "Get payment tokens of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Tokens",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get payment tokens of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+                "description": "Delete a specific payment token of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Delete Wallet Token",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens",
+        ":tokenId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tokenId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a specific payment token of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+                "description": "Get a specific payment token of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Token",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens",
+        ":tokenId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tokenId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get a specific payment token of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+                "description": "Update a specific payment token of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Update Wallet Token",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"mask\": \"<string>\",\n \"tokenType\": \"<string>\",\n \"cardFranchise\": \"<string>\",\n \"cardExpirationMonth\": \"<string>\",\n \"cardExpirationYear\": \"<string>\",\n \"status\": \"<string>\",\n \"validUntil\": \"<string>\",\n \"paymentGatewayId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens",
+        ":tokenId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tokenId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Update a specific payment token of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens/Count",
+                "description": "Get payment tokens count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Tokens Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get payment tokens count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/WithdrawRequests",
+                "description": "Get withdraw requests of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Withdraw Requests",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/WithdrawRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "WithdrawRequests"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get withdraw requests of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/WithdrawRequests/Count",
+                "description": "Get withdraw requests count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Withdraw Requests Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/WithdrawRequests/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "WithdrawRequests",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get withdraw requests count of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Withdraws",
+                "description": "Create a new withdraw request for a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Create Wallet Withdraw Request",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"requestedWithdrawAmount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"bankAccountId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Withdraws",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Withdraws"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new withdraw request for a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Withdraws",
+                "description": "Get withdraws of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Withdraws",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Withdraws",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Withdraws"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get withdraws of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Withdraws/Count",
+                "description": "Get withdraws count of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Get Wallet Withdraws Count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Withdraws/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Withdraws",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get withdraws count of a specific wallet by ID."
 }
                                 ,"response": [
                             ]

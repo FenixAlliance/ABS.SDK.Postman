@@ -10,6 +10,439 @@
 	},
 	"item": [
 	        {
+	            "name": "ShippingLabels",
+	            "description": "ShippingLabels tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels",
+                "description": "Creates a new shipping label.",
+                 "item": [
+                            {
+                                "name": "Create a shipping label",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationID\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping label."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels",
+                "description": "Retrieves all shipping labels for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping labels",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping labels for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels/:labelId",
+                "description": "Deletes a shipping label.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping label",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels/:labelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels",
+        ":labelId"
+    ],
+    "variable": [
+        {
+        "key": "labelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping label."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels/:labelId",
+                "description": "Retrieves a specific shipping label.",
+                 "item": [
+                            {
+                                "name": "Get shipping label by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels/:labelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels",
+        ":labelId"
+    ],
+    "variable": [
+        {
+        "key": "labelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping label."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels/:labelId",
+                "description": "Updates an existing shipping label.",
+                 "item": [
+                            {
+                                "name": "Update a shipping label",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationID\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels/:labelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels",
+        ":labelId"
+    ],
+    "variable": [
+        {
+        "key": "labelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping label."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels/Count",
+                "description": "Returns the count of shipping labels.",
+                 "item": [
+                            {
+                                "name": "Get shipping labels count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping labels."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "FenixAlliance.ABS.Web",
 	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
@@ -837,10 +1270,82 @@
 	            "item": [
 	                        {
     "name": "/api/v2/ShipmentsService/Shipments",
-                "description": "Retrieves a list of shipments for the specified tenant.",
+                "description": "Creates a new shipment for the specified tenant.",
                  "item": [
                             {
-                                "name": "Retrieve a list of shipments",
+                                "name": "Create a shipment",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipment for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments",
+                "description": "Retrieves all shipments for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipments",
                                 "request": {
     "method": "GET",
     "header": [
@@ -894,7 +1399,2894 @@
         }
     ]
     },
-    "description": "Retrieves a list of shipments for the specified tenant."
+    "description": "Retrieves all shipments for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments/:shipmentId",
+                "description": "Deletes a shipment.",
+                 "item": [
+                            {
+                                "name": "Delete a shipment",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments/:shipmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments",
+        ":shipmentId"
+    ],
+    "variable": [
+        {
+        "key": "shipmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipment."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments/:shipmentId",
+                "description": "Retrieves a specific shipment by its ID.",
+                 "item": [
+                            {
+                                "name": "Get shipment by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments/:shipmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments",
+        ":shipmentId"
+    ],
+    "variable": [
+        {
+        "key": "shipmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipment by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments/:shipmentId",
+                "description": "Updates an existing shipment.",
+                 "item": [
+                            {
+                                "name": "Update a shipment",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"shipped\": \"<string>\",\n \"delivered\": \"<string>\",\n \"shipmentTimestamp\": \"<string>\",\n \"deliveryTimestamp\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments/:shipmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments",
+        ":shipmentId"
+    ],
+    "variable": [
+        {
+        "key": "shipmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipment."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments/Count",
+                "description": "Returns the count of shipments for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get shipments count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipments for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ShippingMethods",
+	            "description": "ShippingMethods tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods",
+                "description": "Creates a new shipping method.",
+                 "item": [
+                            {
+                                "name": "Create a shipping method",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping method."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods",
+                "description": "Retrieves all shipping methods for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping methods",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping methods for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods/:methodId",
+                "description": "Deletes a shipping method.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping method",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods/:methodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods",
+        ":methodId"
+    ],
+    "variable": [
+        {
+        "key": "methodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping method."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods/:methodId",
+                "description": "Retrieves a specific shipping method.",
+                 "item": [
+                            {
+                                "name": "Get shipping method by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods/:methodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods",
+        ":methodId"
+    ],
+    "variable": [
+        {
+        "key": "methodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping method."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods/:methodId",
+                "description": "Updates an existing shipping method.",
+                 "item": [
+                            {
+                                "name": "Update a shipping method",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods/:methodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods",
+        ":methodId"
+    ],
+    "variable": [
+        {
+        "key": "methodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping method."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods/Count",
+                "description": "Returns the count of shipping methods.",
+                 "item": [
+                            {
+                                "name": "Get shipping methods count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping methods."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ShippingCouriers",
+	            "description": "ShippingCouriers tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers",
+                "description": "Creates a new shipping courier.",
+                 "item": [
+                            {
+                                "name": "Create a shipping courier",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryID\": \"<string>\",\n \"businessProfileRecordID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping courier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers",
+                "description": "Retrieves all shipping couriers for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping couriers",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping couriers for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+                "description": "Deletes a shipping courier.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping courier",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers",
+        ":courierId"
+    ],
+    "variable": [
+        {
+        "key": "courierId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping courier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+                "description": "Retrieves a specific shipping courier by its ID.",
+                 "item": [
+                            {
+                                "name": "Get shipping courier by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers",
+        ":courierId"
+    ],
+    "variable": [
+        {
+        "key": "courierId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping courier by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+                "description": "Updates an existing shipping courier.",
+                 "item": [
+                            {
+                                "name": "Update a shipping courier",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryID\": \"<string>\",\n \"businessProfileRecordID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers",
+        ":courierId"
+    ],
+    "variable": [
+        {
+        "key": "courierId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping courier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers/Count",
+                "description": "Returns the count of shipping couriers for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get shipping couriers count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping couriers for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ShippingRegions",
+	            "description": "ShippingRegions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions",
+                "description": "Creates a new shipping region.",
+                 "item": [
+                            {
+                                "name": "Create a shipping region",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"postalCodes\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping region."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions",
+                "description": "Retrieves all shipping regions for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping regions",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping regions for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions/:regionId",
+                "description": "Deletes a shipping region.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping region",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions/:regionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions",
+        ":regionId"
+    ],
+    "variable": [
+        {
+        "key": "regionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping region."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions/:regionId",
+                "description": "Retrieves a specific shipping region.",
+                 "item": [
+                            {
+                                "name": "Get shipping region by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions/:regionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions",
+        ":regionId"
+    ],
+    "variable": [
+        {
+        "key": "regionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping region."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions/:regionId",
+                "description": "Updates an existing shipping region.",
+                 "item": [
+                            {
+                                "name": "Update a shipping region",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"postalCodes\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions/:regionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions",
+        ":regionId"
+    ],
+    "variable": [
+        {
+        "key": "regionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping region."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions/Count",
+                "description": "Returns the count of shipping regions.",
+                 "item": [
+                            {
+                                "name": "Get shipping regions count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping regions."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ShippingZones",
+	            "description": "ShippingZones tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones",
+                "description": "Creates a new shipping zone.",
+                 "item": [
+                            {
+                                "name": "Create a shipping zone",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"default\": \"<string>\",\n \"everywhere\": \"<string>\",\n \"postalCodes\": \"<string>\",\n \"countryCodes\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping zone."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones",
+                "description": "Retrieves all shipping zones for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping zones",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping zones for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones/:zoneId",
+                "description": "Deletes a shipping zone.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping zone",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones/:zoneId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones",
+        ":zoneId"
+    ],
+    "variable": [
+        {
+        "key": "zoneId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping zone."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones/:zoneId",
+                "description": "Retrieves a specific shipping zone.",
+                 "item": [
+                            {
+                                "name": "Get shipping zone by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones/:zoneId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones",
+        ":zoneId"
+    ],
+    "variable": [
+        {
+        "key": "zoneId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping zone."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones/:zoneId",
+                "description": "Updates an existing shipping zone.",
+                 "item": [
+                            {
+                                "name": "Update a shipping zone",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"default\": \"<string>\",\n \"everywhere\": \"<string>\",\n \"postalCodes\": \"<string>\",\n \"countryCodes\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones/:zoneId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones",
+        ":zoneId"
+    ],
+    "variable": [
+        {
+        "key": "zoneId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping zone."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones/Count",
+                "description": "Returns the count of shipping zones.",
+                 "item": [
+                            {
+                                "name": "Get shipping zones count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping zones."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ItemShippingPolicies",
+	            "description": "ItemShippingPolicies tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies",
+                "description": "Creates a new item shipping policy.",
+                 "item": [
+                            {
+                                "name": "Create an item shipping policy",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"type\": \"<string>\",\n \"code\": \"<string>\",\n \"isExpressShipmentPolicy\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new item shipping policy."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies",
+                "description": "Retrieves all item shipping policies for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all item shipping policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all item shipping policies for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+                "description": "Deletes an item shipping policy.",
+                 "item": [
+                            {
+                                "name": "Delete an item shipping policy",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies",
+        ":policyId"
+    ],
+    "variable": [
+        {
+        "key": "policyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes an item shipping policy."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+                "description": "Retrieves a specific item shipping policy.",
+                 "item": [
+                            {
+                                "name": "Get item shipping policy by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies",
+        ":policyId"
+    ],
+    "variable": [
+        {
+        "key": "policyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific item shipping policy."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+                "description": "Updates an existing item shipping policy.",
+                 "item": [
+                            {
+                                "name": "Update an item shipping policy",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"type\": \"<string>\",\n \"code\": \"<string>\",\n \"isExpressShipmentPolicy\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies",
+        ":policyId"
+    ],
+    "variable": [
+        {
+        "key": "policyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing item shipping policy."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies/Count",
+                "description": "Returns the count of item shipping policies.",
+                 "item": [
+                            {
+                                "name": "Get item shipping policies count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of item shipping policies."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ShippingClasses",
+	            "description": "ShippingClasses tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses",
+                "description": "Creates a new shipping class.",
+                 "item": [
+                            {
+                                "name": "Create a shipping class",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"slug\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new shipping class."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses",
+                "description": "Retrieves all shipping classes for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all shipping classes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all shipping classes for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses/:classId",
+                "description": "Deletes a shipping class.",
+                 "item": [
+                            {
+                                "name": "Delete a shipping class",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses/:classId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses",
+        ":classId"
+    ],
+    "variable": [
+        {
+        "key": "classId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a shipping class."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses/:classId",
+                "description": "Retrieves a specific shipping class.",
+                 "item": [
+                            {
+                                "name": "Get shipping class by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses/:classId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses",
+        ":classId"
+    ],
+    "variable": [
+        {
+        "key": "classId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific shipping class."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses/:classId",
+                "description": "Updates an existing shipping class.",
+                 "item": [
+                            {
+                                "name": "Update a shipping class",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"slug\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses/:classId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses",
+        ":classId"
+    ],
+    "variable": [
+        {
+        "key": "classId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing shipping class."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses/Count",
+                "description": "Returns the count of shipping classes.",
+                 "item": [
+                            {
+                                "name": "Get shipping classes count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of shipping classes."
 }
                                 ,"response": [
                             ]

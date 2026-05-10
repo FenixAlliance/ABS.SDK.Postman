@@ -10,6 +10,469 @@
 	},
 	"item": [
 	        {
+	            "name": "ContactOptions",
+	            "description": "ContactOptions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options",
+                "description": "Admin endpoint to create an option for any contact",
+                 "item": [
+                            {
+                                "name": "Create a new contact option (admin)",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "key",
+        "value": "key_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to create an option for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options",
+                "description": "Admin endpoint to retrieve options for any contact",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of contact options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve options for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+                "description": "Admin endpoint to delete an option for any contact",
+                 "item": [
+                            {
+                                "name": "Delete a contact option (admin)",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to delete an option for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+                "description": "Admin endpoint to retrieve a single option for any contact",
+                 "item": [
+                            {
+                                "name": "Retrieve a single contact option by its ID (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve a single option for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+                "description": "Admin endpoint to update an option for any contact",
+                 "item": [
+                            {
+                                "name": "Update a contact option (admin)",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to update an option for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options/Count",
+                "description": "Admin endpoint to get the count of options for any contact",
+                 "item": [
+                            {
+                                "name": "Get the count of contact options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to get the count of options for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "Tenants",
 	            "description": "Tenants tag",
 	            "item": [
@@ -657,6 +1120,265 @@
     ]
     },
     "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Carts",
+	            "description": "Carts tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Carts",
+                "description": "Retrieve a list of all carts in the system",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of system carts",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Carts",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Carts"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a list of all carts in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Carts/:cartId",
+                "description": "Delete a system cart by its ID",
+                 "item": [
+                            {
+                                "name": "Delete a system cart",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Carts/:cartId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Carts",
+        ":cartId"
+    ],
+    "variable": [
+        {
+        "key": "cartId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a system cart by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Carts/:cartId",
+                "description": "Retrieve a single system cart by its ID",
+                 "item": [
+                            {
+                                "name": "Retrieve a single system cart by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Carts/:cartId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Carts",
+        ":cartId"
+    ],
+    "variable": [
+        {
+        "key": "cartId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a single system cart by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Carts/Count",
+                "description": "Get the count of all carts in the system",
+                 "item": [
+                            {
+                                "name": "Get the count of system carts",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Carts/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Carts",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the count of all carts in the system"
 }
                                 ,"response": [
                             ]
@@ -1479,6 +2201,469 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "UserOptions",
+	            "description": "UserOptions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options",
+                "description": "Admin endpoint to create an option for any user",
+                 "item": [
+                            {
+                                "name": "Create a new user option (admin)",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "key",
+        "value": "key_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to create an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options",
+                "description": "Admin endpoint to retrieve options for any user",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of user options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve options for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to delete an option for any user",
+                 "item": [
+                            {
+                                "name": "Delete a user option (admin)",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to delete an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to retrieve a single option for any user",
+                 "item": [
+                            {
+                                "name": "Retrieve a single user option by its ID (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve a single option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to update an option for any user",
+                 "item": [
+                            {
+                                "name": "Update a user option (admin)",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to update an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/Count",
+                "description": "Admin endpoint to get the count of options for any user",
+                 "item": [
+                            {
+                                "name": "Get the count of user options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to get the count of options for any user"
 }
                                 ,"response": [
                             ]
@@ -2940,18 +4125,30 @@
 	                    ]
 	        },
 	        {
-	            "name": "Antiforgery",
-	            "description": "Antiforgery tag",
+	            "name": "TenantOptions",
+	            "description": "TenantOptions tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/SystemService/Antiforgery/GetAndStoreTokens",
-                "description": "Generates antiforgery tokens and stores them in the current HTTP context.",
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
+                "description": "Admin endpoint to create an option for any tenant",
                  "item": [
                             {
-                                "name": "Get and store antiforgery tokens",
+                                "name": "Create a new tenant option (admin)",
                                 "request": {
-    "method": "GET",
+    "method": "POST",
     "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
         {
         "key": "x-api-version",
         "value": "",
@@ -2961,7 +4158,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2969,7 +4166,7 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Antiforgery/GetAndStoreTokens",
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
     "host": [
     "{{baseUrl}}"
     ],
@@ -2977,12 +4174,30 @@
         "api",
         "v2",
         "SystemService",
-        "Antiforgery",
-        "GetAndStoreTokens"
+        "Tenants",
+        ":tenantId",
+        "Options"
     ],
     "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
+        {
+        "key": "key",
+        "value": "key_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -2991,7 +4206,7 @@
         }
     ]
     },
-    "description": "Generates antiforgery tokens and stores them in the current HTTP context."
+    "description": "Admin endpoint to create an option for any tenant"
 }
                                 ,"response": [
                             ]
@@ -2999,14 +4214,20 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/SystemService/Antiforgery/IsRequestValid",
-                "description": "Validates whether the current HTTP request contains a valid antiforgery token.",
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
+                "description": "Admin endpoint to retrieve options for any tenant",
                  "item": [
                             {
-                                "name": "Validate antiforgery request",
+                                "name": "Retrieve a list of tenant options (admin)",
                                 "request": {
     "method": "GET",
     "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
         {
         "key": "x-api-version",
         "value": "",
@@ -3024,7 +4245,7 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Antiforgery/IsRequestValid",
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
     "host": [
     "{{baseUrl}}"
     ],
@@ -3032,8 +4253,385 @@
         "api",
         "v2",
         "SystemService",
-        "Antiforgery",
-        "IsRequestValid"
+        "Tenants",
+        ":tenantId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve options for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to delete an option for any tenant",
+                 "item": [
+                            {
+                                "name": "Delete a tenant option (admin)",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to delete an option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to retrieve a single option for any tenant",
+                 "item": [
+                            {
+                                "name": "Retrieve a single tenant option by its ID (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve a single option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to update an option for any tenant",
+                 "item": [
+                            {
+                                "name": "Update a tenant option (admin)",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to update an option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/Count",
+                "description": "Admin endpoint to get the count of options for any tenant",
+                 "item": [
+                            {
+                                "name": "Get the count of tenant options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to get the count of options for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Overview",
+	            "description": "Overview tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Overview",
+                "description": "Returns runtime, memory, and entity count information for the system",
+                 "item": [
+                            {
+                                "name": "Get system overview information",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Overview",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Overview"
     ],
     "variable": [
     ],
@@ -3046,7 +4644,7 @@
         }
     ]
     },
-    "description": "Validates whether the current HTTP request contains a valid antiforgery token."
+    "description": "Returns runtime, memory, and entity count information for the system"
 }
                                 ,"response": [
                             ]
@@ -3181,6 +4779,778 @@
     ]
     },
     "description": "This action is only available for global administrators (business_owner role)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "IPLookups",
+	            "description": "IPLookups tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/IPLookups",
+                "description": "Retrieve a list of all IP lookups in the system",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of system IP lookups",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/IPLookups",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "IPLookups"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a list of all IP lookups in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/IPLookups/:ipLookupId",
+                "description": "Delete a system IP lookup by its ID",
+                 "item": [
+                            {
+                                "name": "Delete a system IP lookup",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/IPLookups/:ipLookupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "IPLookups",
+        ":ipLookupId"
+    ],
+    "variable": [
+        {
+        "key": "ipLookupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a system IP lookup by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/IPLookups/:ipLookupId",
+                "description": "Retrieve a single system IP lookup by its ID",
+                 "item": [
+                            {
+                                "name": "Retrieve a single system IP lookup by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/IPLookups/:ipLookupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "IPLookups",
+        ":ipLookupId"
+    ],
+    "variable": [
+        {
+        "key": "ipLookupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a single system IP lookup by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/IPLookups/Count",
+                "description": "Get the count of all IP lookups in the system",
+                 "item": [
+                            {
+                                "name": "Get the count of system IP lookups",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/IPLookups/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "IPLookups",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the count of all IP lookups in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Portals",
+	            "description": "Portals tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Portals",
+                "description": "Create a new web portal in the system",
+                 "item": [
+                            {
+                                "name": "Create a new system portal",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Create a new web portal in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals",
+                "description": "Retrieve a list of all web portals in the system",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of system portals",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a list of all web portals in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals/:portalId",
+                "description": "Delete a web portal from the system",
+                 "item": [
+                            {
+                                "name": "Delete a system portal",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Delete a web portal from the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals/:portalId",
+                "description": "Retrieve a single system portal by its ID",
+                 "item": [
+                            {
+                                "name": "Retrieve a single system portal by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve a single system portal by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals/:portalId",
+                "description": "Update an existing web portal in the system",
+                 "item": [
+                            {
+                                "name": "Update a system portal",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Update an existing web portal in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals/Count",
+                "description": "Get the count of all web portals in the system",
+                 "item": [
+                            {
+                                "name": "Get the count of system portals",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the count of all web portals in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Antiforgery",
+	            "description": "Antiforgery tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Antiforgery/GetAndStoreTokens",
+                "description": "Generates antiforgery tokens and stores them in the current HTTP context.",
+                 "item": [
+                            {
+                                "name": "Get and store antiforgery tokens",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Antiforgery/GetAndStoreTokens",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Antiforgery",
+        "GetAndStoreTokens"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Generates antiforgery tokens and stores them in the current HTTP context."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Antiforgery/IsRequestValid",
+                "description": "Validates whether the current HTTP request contains a valid antiforgery token.",
+                 "item": [
+                            {
+                                "name": "Validate antiforgery request",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Antiforgery/IsRequestValid",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Antiforgery",
+        "IsRequestValid"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Validates whether the current HTTP request contains a valid antiforgery token."
 }
                                 ,"response": [
                             ]

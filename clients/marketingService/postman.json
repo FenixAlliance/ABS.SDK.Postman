@@ -1265,6 +1265,439 @@
 	                    ]
 	        },
 	        {
+	            "name": "MarketingLeads",
+	            "description": "MarketingLeads tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a marketing lead",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"email\": \"<string>\",\n \"phone\": \"<string>\",\n \"company\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"source\": \"<string>\",\n \"notes\": \"<string>\",\n \"score\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads",
+                "description": "Retrieves a collection of marketing leads for the specified tenant using OData query options.",
+                 "item": [
+                            {
+                                "name": "Get marketing leads",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a collection of marketing leads for the specified tenant using OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a marketing lead",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads",
+        ":marketingLeadId"
+    ],
+    "variable": [
+        {
+        "key": "marketingLeadId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get marketing lead by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads",
+        ":marketingLeadId"
+    ],
+    "variable": [
+        {
+        "key": "marketingLeadId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a marketing lead",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"email\": \"<string>\",\n \"phone\": \"<string>\",\n \"company\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"source\": \"<string>\",\n \"status\": \"<string>\",\n \"notes\": \"<string>\",\n \"score\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads",
+        ":marketingLeadId"
+    ],
+    "variable": [
+        {
+        "key": "marketingLeadId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get marketing leads count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "TrackingPixels",
 	            "description": "TrackingPixels tag",
 	            "item": [

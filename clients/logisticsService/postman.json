@@ -902,6 +902,3554 @@
                             ]
                         }
 	                    ]
+	        },
+	        {
+	            "name": "Warehousing",
+	            "description": "Warehousing tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips",
+                "description": "Creates a new item packing slip.",
+                 "item": [
+                            {
+                                "name": "Create an item packing slip",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"instructions\": \"<string>\",\n \"deliveryNoteId\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new item packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips",
+                "description": "Retrieves all item packing slips for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all item packing slips",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all item packing slips for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+                "description": "Deletes an item packing slip.",
+                 "item": [
+                            {
+                                "name": "Delete an item packing slip",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes an item packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+                "description": "Retrieves a specific item packing slip.",
+                 "item": [
+                            {
+                                "name": "Get item packing slip by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific item packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+                "description": "Updates an existing item packing slip.",
+                 "item": [
+                            {
+                                "name": "Update an item packing slip",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"instructions\": \"<string>\",\n \"deliveryNoteId\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing item packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries",
+                "description": "Creates a new packing slip entry.",
+                 "item": [
+                            {
+                                "name": "Create a packing slip entry",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemId\": \"<string>\",\n \"itemPackingSlipId\": \"<string>\",\n \"quantity\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new packing slip entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries",
+                "description": "Retrieves all entries for the specified packing slip.",
+                 "item": [
+                            {
+                                "name": "Get packing slip entries",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all entries for the specified packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+                "description": "Deletes a packing slip entry.",
+                 "item": [
+                            {
+                                "name": "Delete a packing slip entry",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a packing slip entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+                "description": "Retrieves a specific packing slip entry.",
+                 "item": [
+                            {
+                                "name": "Get packing slip entry by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific packing slip entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+                "description": "Updates an existing packing slip entry.",
+                 "item": [
+                            {
+                                "name": "Update a packing slip entry",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"itemId\": \"<string>\",\n \"quantity\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing packing slip entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/Count",
+                "description": "Returns the count of packing slip entries.",
+                 "item": [
+                            {
+                                "name": "Get packing slip entries count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of packing slip entries."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/Count",
+                "description": "Returns the count of item packing slips.",
+                 "item": [
+                            {
+                                "name": "Get item packing slips count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of item packing slips."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists",
+                "description": "Creates a new item pick list.",
+                 "item": [
+                            {
+                                "name": "Create an item pick list",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new item pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists",
+                "description": "Retrieves all item pick lists for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all item pick lists",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all item pick lists for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId",
+                "description": "Deletes an item pick list.",
+                 "item": [
+                            {
+                                "name": "Delete an item pick list",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes an item pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId",
+                "description": "Retrieves a specific item pick list.",
+                 "item": [
+                            {
+                                "name": "Get item pick list by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific item pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId",
+                "description": "Updates an existing item pick list.",
+                 "item": [
+                            {
+                                "name": "Update an item pick list",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing item pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries",
+                "description": "Creates a new pick list entry.",
+                 "item": [
+                            {
+                                "name": "Create a pick list entry",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemId\": \"<string>\",\n \"warehouseId\": \"<string>\",\n \"itemPickListId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"orderItemRecordId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new pick list entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries",
+                "description": "Retrieves all entries for the specified pick list.",
+                 "item": [
+                            {
+                                "name": "Get pick list entries",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all entries for the specified pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+                "description": "Deletes a pick list entry.",
+                 "item": [
+                            {
+                                "name": "Delete a pick list entry",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a pick list entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+                "description": "Retrieves a specific pick list entry.",
+                 "item": [
+                            {
+                                "name": "Get pick list entry by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific pick list entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+                "description": "Updates an existing pick list entry.",
+                 "item": [
+                            {
+                                "name": "Update a pick list entry",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"itemId\": \"<string>\",\n \"warehouseId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"orderItemRecordId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing pick list entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/Count",
+                "description": "Returns the count of pick list entries.",
+                 "item": [
+                            {
+                                "name": "Get pick list entries count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of pick list entries."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/Count",
+                "description": "Returns the count of item pick lists.",
+                 "item": [
+                            {
+                                "name": "Get item pick lists count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of item pick lists."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks",
+                "description": "Creates a new item restock.",
+                 "item": [
+                            {
+                                "name": "Create an item restock",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new item restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks",
+                "description": "Retrieves all item restocks for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all item restocks",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all item restocks for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId",
+                "description": "Deletes an item restock.",
+                 "item": [
+                            {
+                                "name": "Delete an item restock",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes an item restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId",
+                "description": "Retrieves a specific item restock.",
+                 "item": [
+                            {
+                                "name": "Get item restock by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific item restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId",
+                "description": "Updates an existing item restock.",
+                 "item": [
+                            {
+                                "name": "Update an item restock",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing item restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries",
+                "description": "Creates a new restock entry.",
+                 "item": [
+                            {
+                                "name": "Create a restock entry",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemId\": \"<string>\",\n \"warehouseId\": \"<string>\",\n \"itemRestockId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"orderItemRecordId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new restock entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries",
+                "description": "Retrieves all entries for the specified restock.",
+                 "item": [
+                            {
+                                "name": "Get restock entries",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all entries for the specified restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+                "description": "Deletes a restock entry.",
+                 "item": [
+                            {
+                                "name": "Delete a restock entry",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a restock entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+                "description": "Retrieves a specific restock entry.",
+                 "item": [
+                            {
+                                "name": "Get restock entry by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific restock entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+                "description": "Updates an existing restock entry.",
+                 "item": [
+                            {
+                                "name": "Update a restock entry",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"itemId\": \"<string>\",\n \"warehouseId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"orderItemRecordId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing restock entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/Count",
+                "description": "Returns the count of restock entries.",
+                 "item": [
+                            {
+                                "name": "Get restock entries count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of restock entries."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/Count",
+                "description": "Returns the count of item restocks.",
+                 "item": [
+                            {
+                                "name": "Get item restocks count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of item restocks."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples",
+                "description": "Creates a new item retain sample.",
+                 "item": [
+                            {
+                                "name": "Create an item retain sample",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"warehouseId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new item retain sample."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples",
+                "description": "Retrieves all item retain samples for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all item retain samples",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all item retain samples for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+                "description": "Deletes an item retain sample.",
+                 "item": [
+                            {
+                                "name": "Delete an item retain sample",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples",
+        ":retainSampleId"
+    ],
+    "variable": [
+        {
+        "key": "retainSampleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes an item retain sample."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+                "description": "Retrieves a specific item retain sample.",
+                 "item": [
+                            {
+                                "name": "Get item retain sample by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples",
+        ":retainSampleId"
+    ],
+    "variable": [
+        {
+        "key": "retainSampleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific item retain sample."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+                "description": "Updates an existing item retain sample.",
+                 "item": [
+                            {
+                                "name": "Update an item retain sample",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"warehouseId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples",
+        ":retainSampleId"
+    ],
+    "variable": [
+        {
+        "key": "retainSampleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing item retain sample."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples/Count",
+                "description": "Returns the count of item retain samples.",
+                 "item": [
+                            {
+                                "name": "Get item retain samples count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of item retain samples."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses",
+                "description": "Creates a new warehouse.",
+                 "item": [
+                            {
+                                "name": "Create a warehouse",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"address3\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"phone\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"isGroup\": \"<string>\",\n \"shipwireWarehouseId\": \"<string>\",\n \"parentWarehouseId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new warehouse."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses",
+                "description": "Retrieves all warehouses for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all warehouses",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all warehouses for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses/:warehouseId",
+                "description": "Deletes a warehouse.",
+                 "item": [
+                            {
+                                "name": "Delete a warehouse",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses/:warehouseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses",
+        ":warehouseId"
+    ],
+    "variable": [
+        {
+        "key": "warehouseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a warehouse."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses/:warehouseId",
+                "description": "Retrieves a specific warehouse.",
+                 "item": [
+                            {
+                                "name": "Get warehouse by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses/:warehouseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses",
+        ":warehouseId"
+    ],
+    "variable": [
+        {
+        "key": "warehouseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific warehouse."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses/:warehouseId",
+                "description": "Updates an existing warehouse.",
+                 "item": [
+                            {
+                                "name": "Update a warehouse",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"address3\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"phone\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"isGroup\": \"<string>\",\n \"shipwireWarehouseId\": \"<string>\",\n \"parentWarehouseId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses/:warehouseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses",
+        ":warehouseId"
+    ],
+    "variable": [
+        {
+        "key": "warehouseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing warehouse."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses/Count",
+                "description": "Returns the count of warehouses.",
+                 "item": [
+                            {
+                                "name": "Get warehouses count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of warehouses."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
 	        }
     ],
     

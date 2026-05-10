@@ -1667,6 +1667,1293 @@
 	                    ]
 	        },
 	        {
+	            "name": "Policies",
+	            "description": "Policies tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a new refund policy",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of refund policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a refund policy",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies",
+        ":refundPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "refundPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a refund policy by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies",
+        ":refundPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "refundPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a refund policy",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies",
+        ":refundPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "refundPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get the count of refund policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a new return policy",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierID\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of return policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a return policy",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies",
+        ":returnPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "returnPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a return policy by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies",
+        ":returnPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "returnPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a return policy",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierID\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies",
+        ":returnPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "returnPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get the count of return policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a new warranty policy",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of warranty policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a warranty policy",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies",
+        ":warrantyPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a warranty policy by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies",
+        ":warrantyPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a warranty policy",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies",
+        ":warrantyPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get the count of warranty policies",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "SupportEntitlements",
 	            "description": "SupportEntitlements tag",
 	            "item": [
@@ -3335,6 +4622,2574 @@
     ]
     },
     "description": "Returns the total count of support requests for the specified tenant with OData query support."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Helpdesk",
+	            "description": "Helpdesk tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create an inquiry request",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"type\": \"<string>\",\n \"name\": \"<string>\",\n \"lastName\": \"<string>\",\n \"email\": \"<string>\",\n \"organizationName\": \"<string>\",\n \"jobRole\": \"<string>\",\n \"organizationDomain\": \"<string>\",\n \"countryId\": \"<string>\",\n \"phone\": \"<string>\",\n \"message\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve inquiry requests",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete an inquiry request",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests",
+        ":inquiryRequestId"
+    ],
+    "variable": [
+        {
+        "key": "inquiryRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve an inquiry request by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests",
+        ":inquiryRequestId"
+    ],
+    "variable": [
+        {
+        "key": "inquiryRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update an inquiry request",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"type\": \"<string>\",\n \"name\": \"<string>\",\n \"lastName\": \"<string>\",\n \"email\": \"<string>\",\n \"organizationName\": \"<string>\",\n \"jobRole\": \"<string>\",\n \"organizationDomain\": \"<string>\",\n \"countryId\": \"<string>\",\n \"phone\": \"<string>\",\n \"message\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests",
+        ":inquiryRequestId"
+    ],
+    "variable": [
+        {
+        "key": "inquiryRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get inquiry requests count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a knowledge article",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"slug\": \"<string>\",\n \"excerpt\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"seoKeyWords\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"published\": \"<string>\",\n \"enable\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve knowledge articles",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a knowledge article",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles",
+        ":knowledgeArticleId"
+    ],
+    "variable": [
+        {
+        "key": "knowledgeArticleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a knowledge article by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles",
+        ":knowledgeArticleId"
+    ],
+    "variable": [
+        {
+        "key": "knowledgeArticleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a knowledge article",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"slug\": \"<string>\",\n \"excerpt\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"highlightImage\": \"<string>\",\n \"seoTitle\": \"<string>\",\n \"seoKeyWords\": \"<string>\",\n \"metaDescription\": \"<string>\",\n \"published\": \"<string>\",\n \"enable\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles",
+        ":knowledgeArticleId"
+    ],
+    "variable": [
+        {
+        "key": "knowledgeArticleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get knowledge articles count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a maintenance visit",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve maintenance visits",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a maintenance visit",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits",
+        ":maintenanceVisitId"
+    ],
+    "variable": [
+        {
+        "key": "maintenanceVisitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a maintenance visit by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits",
+        ":maintenanceVisitId"
+    ],
+    "variable": [
+        {
+        "key": "maintenanceVisitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a maintenance visit",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits",
+        ":maintenanceVisitId"
+    ],
+    "variable": [
+        {
+        "key": "maintenanceVisitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get maintenance visits count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a refund request",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"paymentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve refund requests",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests/:refundRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a refund request",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests/:refundRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests",
+        ":refundRequestId"
+    ],
+    "variable": [
+        {
+        "key": "refundRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests/:refundRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a refund request by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests/:refundRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests",
+        ":refundRequestId"
+    ],
+    "variable": [
+        {
+        "key": "refundRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests/:refundRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a refund request",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"paymentId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests/:refundRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests",
+        ":refundRequestId"
+    ],
+    "variable": [
+        {
+        "key": "refundRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get refund requests count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a return request",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"returnPolicyId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve return requests",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests/:returnRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a return request",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests/:returnRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests",
+        ":returnRequestId"
+    ],
+    "variable": [
+        {
+        "key": "returnRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests/:returnRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a return request by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests/:returnRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests",
+        ":returnRequestId"
+    ],
+    "variable": [
+        {
+        "key": "returnRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests/:returnRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a return request",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"returnPolicyId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests/:returnRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests",
+        ":returnRequestId"
+    ],
+    "variable": [
+        {
+        "key": "returnRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get return requests count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Create a warranty request",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve warranty requests",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Delete a warranty request",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests",
+        ":warrantyRequestId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Retrieve a warranty request by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests",
+        ":warrantyRequestId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Update a warranty request",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests",
+        ":warrantyRequestId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get warranty requests count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
 }
                                 ,"response": [
                             ]
