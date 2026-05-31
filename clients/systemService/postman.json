@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.0.0.0",
+		"version": "2.1.2.5401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -808,10 +808,10 @@
                         },
 	                        {
     "name": "/api/v2/SystemService/Tenants/:tenantId/Emails/Preview",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
+                "description": "This action is only available for global administrators.",
                  "item": [
                             {
-                                "name": "Preview the rendered email for a user.",
+                                "name": "Preview the rendered email for a tenant.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -867,7 +867,7 @@
         }
     ]
     },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
+    "description": "This action is only available for global administrators."
 }
                                 ,"response": [
                             ]
@@ -876,10 +876,10 @@
                         },
 	                        {
     "name": "/api/v2/SystemService/Tenants/:tenantId/Emails/Send",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
+                "description": "This action is only available for global administrators.",
                  "item": [
                             {
-                                "name": "Send an email to a user.",
+                                "name": "Send an email to a tenant.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -935,7 +935,7 @@
         }
     ]
     },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
+    "description": "This action is only available for global administrators."
 }
                                 ,"response": [
                             ]
@@ -1388,8 +1388,2665 @@
 	                    ]
 	        },
 	        {
-	            "name": "FenixAlliance.ABS.Web",
-	            "description": "FenixAlliance.ABS.Web tag",
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "UserOptions",
+	            "description": "UserOptions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options",
+                "description": "Admin endpoint to create an option for any user",
+                 "item": [
+                            {
+                                "name": "Create a new user option (admin)",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "key",
+        "value": "key_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to create an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options",
+                "description": "Admin endpoint to retrieve options for any user",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of user options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve options for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to delete an option for any user",
+                 "item": [
+                            {
+                                "name": "Delete a user option (admin)",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to delete an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to retrieve a single option for any user",
+                 "item": [
+                            {
+                                "name": "Retrieve a single user option by its ID (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve a single option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to update an option for any user",
+                 "item": [
+                            {
+                                "name": "Update a user option (admin)",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to update an option for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/Count",
+                "description": "Admin endpoint to get the count of options for any user",
+                 "item": [
+                            {
+                                "name": "Get the count of user options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to get the count of options for any user"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Licensing",
+	            "description": "Licensing tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses",
+                "description": "Retrieves a list of suite licenses, optionally filtered by tenant.",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of licenses",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a list of suite licenses, optionally filtered by tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId",
+                "description": "Retrieves a single suite license by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Retrieve a license by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single suite license by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
+                "description": "Retrieves all license assignments for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license assignments",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Assignments"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all license assignments for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
+                "description": "Retrieves all additional attributes for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license attributes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Attributes"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all additional attributes for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
+                "description": "Retrieves all features for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license features",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Features"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all features for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
+                "description": "Retrieves the record quota for a given license.",
+                 "item": [
+                            {
+                                "name": "Retrieve license record quota",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        ":licenseId",
+        "Quota"
+    ],
+    "variable": [
+        {
+        "key": "licenseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the record quota for a given license."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/Redeem",
+                "description": "Redeems a license for the current tenant user.",
+                 "item": [
+                            {
+                                "name": "Redeem a license",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Redeem",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        "Redeem"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Redeems a license for the current tenant user."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Licensing/Licenses/Validate",
+                "description": "Validates a license key and returns validation failures if any.",
+                 "item": [
+                            {
+                                "name": "Validate a license",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Validate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Licensing",
+        "Licenses",
+        "Validate"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Validates a license key and returns validation failures if any."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Modules",
+	            "description": "Modules tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/StudioService/Modules",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get all modules available on this suite server instance.",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/StudioService/Modules",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "StudioService",
+        "Modules"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/StudioService/Modules/Data",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Get all modules available to a tenant user.",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/StudioService/Modules/Data",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "StudioService",
+        "Modules",
+        "Data"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Users",
+	            "description": "Users tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Users",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Create a new user",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"birthday\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"publicName\": \"<string>\",\n \"idProvider\": \"<string>\",\n \"gender\": \"<string>\",\n \"email\": \"<string>\",\n \"about\": \"<string>\",\n \"status\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"gitHubUrl\": \"<string>\",\n \"websiteUrl\": \"<string>\",\n \"twitterUrl\": \"<string>\",\n \"facebookUrl\": \"<string>\",\n \"youTubeUrl\": \"<string>\",\n \"linkedInUrl\": \"<string>\",\n \"instagramUrl\": \"<string>\",\n \"timezoneId\": \"<string>\",\n \"languageId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"password\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of users",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Delete a user",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Retrieve a user by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Update a user",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"qualifiedName\": \"<string>\",\n \"birthday\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"publicName\": \"<string>\",\n \"idProvider\": \"<string>\",\n \"gender\": \"<string>\",\n \"email\": \"<string>\",\n \"about\": \"<string>\",\n \"status\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"timezoneId\": \"<string>\",\n \"languageId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"gitHubUrl\": \"<string>\",\n \"websiteUrl\": \"<string>\",\n \"twitterUrl\": \"<string>\",\n \"facebookUrl\": \"<string>\",\n \"youTubeUrl\": \"<string>\",\n \"linkedInUrl\": \"<string>\",\n \"instagramUrl\": \"<string>\",\n \"webUrl\": \"<string>\",\n \"availability\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Emails/Preview",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Preview the rendered email for a user.",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Emails/Preview",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Emails",
+        "Preview"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Emails/Send",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Send an email to a user.",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Emails/Send",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Emails",
+        "Send"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Extended",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Retrieve an extended user by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Extended"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/Count",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Get the count of users",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/Extended",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of extended users",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Extended",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        "Extended"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/Extended/Count",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Get the count of extended users",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Extended/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        "Extended",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "TenantOptions",
+	            "description": "TenantOptions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
+                "description": "Admin endpoint to create an option for any tenant",
+                 "item": [
+                            {
+                                "name": "Create a new tenant option (admin)",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "key",
+        "value": "key_example",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to create an option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
+                "description": "Admin endpoint to retrieve options for any tenant",
+                 "item": [
+                            {
+                                "name": "Retrieve a list of tenant options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve options for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to delete an option for any tenant",
+                 "item": [
+                            {
+                                "name": "Delete a tenant option (admin)",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to delete an option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to retrieve a single option for any tenant",
+                 "item": [
+                            {
+                                "name": "Retrieve a single tenant option by its ID (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to retrieve a single option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to update an option for any tenant",
+                 "item": [
+                            {
+                                "name": "Update a tenant option (admin)",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to update an option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/Count",
+                "description": "Admin endpoint to get the count of options for any tenant",
+                 "item": [
+                            {
+                                "name": "Get the count of tenant options (admin)",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "portalId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to get the count of options for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Overview",
+	            "description": "Overview tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Overview",
+                "description": "Returns runtime, memory, and entity count information for the system",
+                 "item": [
+                            {
+                                "name": "Get system overview information",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Overview",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Overview"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns runtime, memory, and entity count information for the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Emails",
+	            "description": "Emails tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/Emails/Preview",
+                "description": "This action is only available for global administrators (business_owner role).",
+                 "item": [
+                            {
+                                "name": "Preview a rendered basic email template.",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\",\n \"payload\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Emails/Preview",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Emails",
+        "Preview"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators (business_owner role)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Emails/SendBasic",
+                "description": "This action is only available for global administrators (business_owner role).",
+                 "item": [
+                            {
+                                "name": "Send a basic transactional email to recipients.",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\",\n \"payload\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Emails/SendBasic",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Emails",
+        "SendBasic"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators (business_owner role)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -2210,2584 +4867,6 @@
 	                    ]
 	        },
 	        {
-	            "name": "UserOptions",
-	            "description": "UserOptions tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options",
-                "description": "Admin endpoint to create an option for any user",
-                 "item": [
-                            {
-                                "name": "Create a new user option (admin)",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "key",
-        "value": "key_example",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to create an option for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options",
-                "description": "Admin endpoint to retrieve options for any user",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of user options (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to retrieve options for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
-                "description": "Admin endpoint to delete an option for any user",
-                 "item": [
-                            {
-                                "name": "Delete a user option (admin)",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to delete an option for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
-                "description": "Admin endpoint to retrieve a single option for any user",
-                 "item": [
-                            {
-                                "name": "Retrieve a single user option by its ID (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to retrieve a single option for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
-                "description": "Admin endpoint to update an option for any user",
-                 "item": [
-                            {
-                                "name": "Update a user option (admin)",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to update an option for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Options/Count",
-                "description": "Admin endpoint to get the count of options for any user",
-                 "item": [
-                            {
-                                "name": "Get the count of user options (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Options",
-        "Count"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to get the count of options for any user"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Licensing",
-	            "description": "Licensing tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses",
-                "description": "Retrieves a list of suite licenses, optionally filtered by tenant.",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of licenses",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves a list of suite licenses, optionally filtered by tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId",
-                "description": "Retrieves a single suite license by its unique identifier.",
-                 "item": [
-                            {
-                                "name": "Retrieve a license by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves a single suite license by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
-                "description": "Retrieves all license assignments for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license assignments",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Assignments",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Assignments"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all license assignments for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
-                "description": "Retrieves all additional attributes for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license attributes",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Attributes",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Attributes"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all additional attributes for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
-                "description": "Retrieves all features for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license features",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Features",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Features"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all features for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
-                "description": "Retrieves the record quota for a given license.",
-                 "item": [
-                            {
-                                "name": "Retrieve license record quota",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/:licenseId/Quota",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        ":licenseId",
-        "Quota"
-    ],
-    "variable": [
-        {
-        "key": "licenseId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the record quota for a given license."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/Redeem",
-                "description": "Redeems a license for the current tenant user.",
-                 "item": [
-                            {
-                                "name": "Redeem a license",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Redeem",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        "Redeem"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Redeems a license for the current tenant user."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Licensing/Licenses/Validate",
-                "description": "Validates a license key and returns validation failures if any.",
-                 "item": [
-                            {
-                                "name": "Validate a license",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"licenseKey\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Licensing/Licenses/Validate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Licensing",
-        "Licenses",
-        "Validate"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Validates a license key and returns validation failures if any."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Modules",
-	            "description": "Modules tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/StudioService/Modules",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "Get all modules available on this suite server instance.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/StudioService/Modules",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "StudioService",
-        "Modules"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/StudioService/Modules/Data",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "Get all modules available to a tenant user.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/StudioService/Modules/Data",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "StudioService",
-        "Modules",
-        "Data"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Users",
-	            "description": "Users tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Users",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Create a new user",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"birthday\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"publicName\": \"<string>\",\n \"idProvider\": \"<string>\",\n \"gender\": \"<string>\",\n \"email\": \"<string>\",\n \"about\": \"<string>\",\n \"status\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"gitHubUrl\": \"<string>\",\n \"websiteUrl\": \"<string>\",\n \"twitterUrl\": \"<string>\",\n \"facebookUrl\": \"<string>\",\n \"youTubeUrl\": \"<string>\",\n \"linkedInUrl\": \"<string>\",\n \"instagramUrl\": \"<string>\",\n \"timezoneId\": \"<string>\",\n \"languageId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"password\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of users",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Delete a user",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Retrieve a user by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Update a user",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"qualifiedName\": \"<string>\",\n \"birthday\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"publicName\": \"<string>\",\n \"idProvider\": \"<string>\",\n \"gender\": \"<string>\",\n \"email\": \"<string>\",\n \"about\": \"<string>\",\n \"status\": \"<string>\",\n \"jobTitle\": \"<string>\",\n \"timezoneId\": \"<string>\",\n \"languageId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"gitHubUrl\": \"<string>\",\n \"websiteUrl\": \"<string>\",\n \"twitterUrl\": \"<string>\",\n \"facebookUrl\": \"<string>\",\n \"youTubeUrl\": \"<string>\",\n \"linkedInUrl\": \"<string>\",\n \"instagramUrl\": \"<string>\",\n \"webUrl\": \"<string>\",\n \"availability\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Emails/Preview",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Preview the rendered email for a user.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Emails/Preview",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Emails",
-        "Preview"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Emails/Send",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Send an email to a user.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Emails/Send",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Emails",
-        "Send"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/:userId/Extended",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Retrieve an extended user by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Extended",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        ":userId",
-        "Extended"
-    ],
-    "variable": [
-        {
-        "key": "userId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/Count",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Get the count of users",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/Extended",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of extended users",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Extended",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        "Extended"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Users/Extended/Count",
-                "description": "This action is only available for users with the 'business_owner' role (global administrators).",
-                 "item": [
-                            {
-                                "name": "Get the count of extended users",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Users/Extended/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Users",
-        "Extended",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for users with the 'business_owner' role (global administrators)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "TenantOptions",
-	            "description": "TenantOptions tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
-                "description": "Admin endpoint to create an option for any tenant",
-                 "item": [
-                            {
-                                "name": "Create a new tenant option (admin)",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "key",
-        "value": "key_example",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to create an option for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options",
-                "description": "Admin endpoint to retrieve options for any tenant",
-                 "item": [
-                            {
-                                "name": "Retrieve a list of tenant options (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to retrieve options for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-                "description": "Admin endpoint to delete an option for any tenant",
-                 "item": [
-                            {
-                                "name": "Delete a tenant option (admin)",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to delete an option for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-                "description": "Admin endpoint to retrieve a single option for any tenant",
-                 "item": [
-                            {
-                                "name": "Retrieve a single tenant option by its ID (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to retrieve a single option for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-                "description": "Admin endpoint to update an option for any tenant",
-                 "item": [
-                            {
-                                "name": "Update a tenant option (admin)",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"key\": \"<string>\",\n \"value\": \"<string>\",\n \"portalId\": \"<string>\",\n \"frozen\": \"<string>\",\n \"autoload\": \"<string>\",\n \"transient\": \"<string>\",\n \"expiration\": \"<number>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options",
-        ":optionId"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "optionId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to update an option for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/Count",
-                "description": "Admin endpoint to get the count of options for any tenant",
-                 "item": [
-                            {
-                                "name": "Get the count of tenant options (admin)",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Tenants",
-        ":tenantId",
-        "Options",
-        "Count"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "portalId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Admin endpoint to get the count of options for any tenant"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Overview",
-	            "description": "Overview tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Overview",
-                "description": "Returns runtime, memory, and entity count information for the system",
-                 "item": [
-                            {
-                                "name": "Get system overview information",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Overview",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Overview"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns runtime, memory, and entity count information for the system"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Emails",
-	            "description": "Emails tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/SystemService/Emails/Preview",
-                "description": "This action is only available for global administrators (business_owner role).",
-                 "item": [
-                            {
-                                "name": "Preview a rendered basic email template.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\",\n \"payload\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Emails/Preview",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Emails",
-        "Preview"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for global administrators (business_owner role)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/SystemService/Emails/SendBasic",
-                "description": "This action is only available for global administrators (business_owner role).",
-                 "item": [
-                            {
-                                "name": "Send a basic transactional email to recipients.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\",\n \"payload\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/SystemService/Emails/SendBasic",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "SystemService",
-        "Emails",
-        "SendBasic"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "This action is only available for global administrators (business_owner role)."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
 	            "name": "IPLookups",
 	            "description": "IPLookups tag",
 	            "item": [
@@ -5435,6 +5514,302 @@
     ]
     },
     "description": "Get the count of all web portals in the system"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Licenses",
+	            "description": "Licenses tag",
+	            "item": [
+	                        {
+    "name": "/api/Licensing/Licenses/Generate",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiLicensingLicensesGeneratePost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"userId\": \"<string>\",\n \"tenantId\": \"<string>\",\n \"orderId\": \"<string>\",\n \"paymentId\": \"<string>\",\n \"invoiceId\": \"<string>\",\n \"enrollmentId\": \"<string>\",\n \"entitlementId\": \"<string>\",\n \"seats\": \"<number>\",\n \"licenseType\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"features\": \"<string>\",\n \"additionalAttributes\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/Licensing/Licenses/Generate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "Licensing",
+        "Licenses",
+        "Generate"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/Licensing/Licenses/Validate",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiLicensingLicensesValidateGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "Licensing",
+        "Licenses",
+        "Validate"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/Licensing/Licenses/Validate/Attributes",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiLicensingLicensesValidateAttributesGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate/Attributes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "Licensing",
+        "Licenses",
+        "Validate",
+        "Attributes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/Licensing/Licenses/Validate/Errors",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiLicensingLicensesValidateErrorsGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"key\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/Licensing/Licenses/Validate/Errors",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "Licensing",
+        "Licenses",
+        "Validate",
+        "Errors"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -6270,14 +6645,9 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "{server}",
+			"value": "",
 			"type": "string"
-        },
-		{
-			"key": "server",
-			"value": "https://absuite.net",
-			"type": "string"
-		}
+        }
 	]
 }
 

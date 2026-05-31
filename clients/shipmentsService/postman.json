@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.0.0.0",
+		"version": "2.1.2.5401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -443,8 +443,81 @@
 	                    ]
 	        },
 	        {
-	            "name": "FenixAlliance.ABS.Web",
-	            "description": "FenixAlliance.ABS.Web tag",
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -1689,6 +1762,908 @@
     ]
     },
     "description": "Returns the count of shipments for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "BillsOfLading",
+	            "description": "BillsOfLading tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading",
+                "description": "Creates a new bill of lading for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a bill of lading",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"billOfLadingNumber\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"billOfLadingType\": \"<string>\",\n \"isNegotiable\": \"<string>\",\n \"isClean\": \"<string>\",\n \"numberOfOriginals\": \"<number>\",\n \"freightPaymentType\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"freightChargesDescription\": \"<string>\",\n \"declaredValueAmount\": \"<number>\",\n \"declaredValueCurrencyId\": \"<string>\",\n \"vesselName\": \"<string>\",\n \"voyageNumber\": \"<string>\",\n \"shipperContactId\": \"<string>\",\n \"consigneeContactId\": \"<string>\",\n \"notifyPartyContactId\": \"<string>\",\n \"shippingCourierId\": \"<string>\",\n \"portOfLoadingId\": \"<string>\",\n \"portOfDischargeId\": \"<string>\",\n \"placeOfReceiptId\": \"<string>\",\n \"placeOfDeliveryId\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"orderId\": \"<string>\",\n \"voyageId\": \"<string>\",\n \"marksAndNumbers\": \"<string>\",\n \"totalPackages\": \"<number>\",\n \"totalGrossWeightKg\": \"<number>\",\n \"totalVolumeM3\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new bill of lading for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading",
+                "description": "Retrieves all bills of lading for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all bills of lading",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all bills of lading for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+                "description": "Deletes a bill of lading.",
+                 "item": [
+                            {
+                                "name": "Delete a bill of lading",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+                "description": "Retrieves a specific bill of lading by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get bill of lading by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific bill of lading by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+                "description": "Updates an existing bill of lading.",
+                 "item": [
+                            {
+                                "name": "Update a bill of lading",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"billOfLadingNumber\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"billOfLadingType\": \"<string>\",\n \"isNegotiable\": \"<string>\",\n \"isClean\": \"<string>\",\n \"numberOfOriginals\": \"<number>\",\n \"freightPaymentType\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"freightChargesDescription\": \"<string>\",\n \"declaredValueAmount\": \"<number>\",\n \"declaredValueCurrencyId\": \"<string>\",\n \"expiryDate\": \"<string>\",\n \"vesselName\": \"<string>\",\n \"voyageNumber\": \"<string>\",\n \"shipperContactId\": \"<string>\",\n \"consigneeContactId\": \"<string>\",\n \"notifyPartyContactId\": \"<string>\",\n \"shippingCourierId\": \"<string>\",\n \"portOfLoadingId\": \"<string>\",\n \"portOfDischargeId\": \"<string>\",\n \"placeOfReceiptId\": \"<string>\",\n \"placeOfDeliveryId\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"orderId\": \"<string>\",\n \"voyageId\": \"<string>\",\n \"marksAndNumbers\": \"<string>\",\n \"totalPackages\": \"<number>\",\n \"totalGrossWeightKg\": \"<number>\",\n \"totalVolumeM3\": \"<number>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines",
+                "description": "Creates a new line for a bill of lading.",
+                 "item": [
+                            {
+                                "name": "Create a bill of lading line",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"quantity\": \"<number>\",\n \"packageType\": \"<string>\",\n \"grossWeightKg\": \"<number>\",\n \"volumeM3\": \"<number>\",\n \"marksAndNumbers\": \"<string>\",\n \"hsCode\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new line for a bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines",
+                "description": "Retrieves all lines for a specific bill of lading.",
+                 "item": [
+                            {
+                                "name": "Get bill of lading lines",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all lines for a specific bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+                "description": "Deletes a line from a bill of lading.",
+                 "item": [
+                            {
+                                "name": "Delete a bill of lading line",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a line from a bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+                "description": "Retrieves a specific line from a bill of lading.",
+                 "item": [
+                            {
+                                "name": "Get bill of lading line by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific line from a bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+                "description": "Updates an existing line on a bill of lading.",
+                 "item": [
+                            {
+                                "name": "Update a bill of lading line",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"description\": \"<string>\",\n \"quantity\": \"<number>\",\n \"packageType\": \"<string>\",\n \"grossWeightKg\": \"<number>\",\n \"volumeM3\": \"<number>\",\n \"marksAndNumbers\": \"<string>\",\n \"hsCode\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing line on a bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/Count",
+                "description": "Returns the count of lines for a specific bill of lading.",
+                 "item": [
+                            {
+                                "name": "Get bill of lading lines count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of lines for a specific bill of lading."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/Count",
+                "description": "Returns the count of bills of lading for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get bills of lading count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of bills of lading for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -4300,14 +5275,9 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "{server}",
+			"value": "",
 			"type": "string"
-        },
-		{
-			"key": "server",
-			"value": "https://absuite.net",
-			"type": "string"
-		}
+        }
 	]
 }
 

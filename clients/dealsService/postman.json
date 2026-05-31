@@ -5,13 +5,86 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.0.0.0",
+		"version": "2.1.2.5401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 	        {
-	            "name": "FenixAlliance.ABS.Web",
-	            "description": "FenixAlliance.ABS.Web tag",
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -823,422 +896,6 @@
     ]
     },
     "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "SalesLiteratures",
-	            "description": "SalesLiteratures tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures",
-                "description": "Creates a new sales literature for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Create a sales literature",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"content\": \"<string>\",\n \"description\": \"<string>\",\n \"modifiedDate\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"salesLiteratureTypeId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Creates a new sales literature for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures",
-                "description": "Retrieves a list of sales literatures for the specified tenant with OData query support.",
-                 "item": [
-                            {
-                                "name": "Get sales literatures",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves a list of sales literatures for the specified tenant with OData query support."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-                "description": "Deletes an existing sales literature by its unique identifier.",
-                 "item": [
-                            {
-                                "name": "Delete a sales literature",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures",
-        ":salesLiteratureId"
-    ],
-    "variable": [
-        {
-        "key": "salesLiteratureId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Deletes an existing sales literature by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-                "description": "Retrieves a single sales literature by its unique identifier.",
-                 "item": [
-                            {
-                                "name": "Get sales literature by ID",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures",
-        ":salesLiteratureId"
-    ],
-    "variable": [
-        {
-        "key": "salesLiteratureId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves a single sales literature by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-                "description": "Updates an existing sales literature by its unique identifier.",
-                 "item": [
-                            {
-                                "name": "Update a sales literature",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"content\": \"<string>\",\n \"description\": \"<string>\",\n \"modifiedDate\": \"<string>\",\n \"expirationDate\": \"<string>\",\n \"salesLiteratureTypeId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/:salesLiteratureId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures",
-        ":salesLiteratureId"
-    ],
-    "variable": [
-        {
-        "key": "salesLiteratureId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Updates an existing sales literature by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures/Count",
-                "description": "Returns the total count of sales literatures for the specified tenant with OData filter support.",
-                 "item": [
-                            {
-                                "name": "Get sales literatures count",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Returns the total count of sales literatures for the specified tenant with OData filter support."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/DealsService/SalesLiteratures/Extended",
-                "description": "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support.",
-                 "item": [
-                            {
-                                "name": "Get extended sales literatures",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/DealsService/SalesLiteratures/Extended",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "DealsService",
-        "SalesLiteratures",
-        "Extended"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support."
 }
                                 ,"response": [
                             ]
@@ -3019,14 +2676,9 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "{server}",
+			"value": "",
 			"type": "string"
-        },
-		{
-			"key": "server",
-			"value": "https://absuite.net",
-			"type": "string"
-		}
+        }
 	]
 }
 

@@ -5,13 +5,86 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.0.0.0",
+		"version": "2.1.2.5401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 	        {
-	            "name": "FenixAlliance.ABS.Web",
-	            "description": "FenixAlliance.ABS.Web tag",
+	            "name": "Completions",
+	            "description": "Completions tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AiService/Completions/Complete",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AiServiceCompletionsCompleteGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AiService",
+        "Completions",
+        "Complete"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "conversationId",
+        "value": "conversationId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "message",
+        "value": "message_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "FenixAlliance.Portals.Website",
+	            "description": "FenixAlliance.Portals.Website tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -1608,6 +1681,74 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/GlobeService/Countries/:countryId/CallingCodes/Count",
+                "description": "Returns the total number of calling codes for the specified country, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count calling codes for a country",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Countries/:countryId/CallingCodes/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Countries",
+        ":countryId",
+        "CallingCodes",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "countryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of calling codes for the specified country, with optional OData filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/GlobeService/Countries/:countryId/Currencies",
                 "description": "Retrieves the list of enabled currencies for the specified country.",
                  "item": [
@@ -1889,6 +2030,149 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/GlobeService/Countries/:countryId/States/:countryStateId/Cities/Count",
+                "description": "Returns the total number of cities for the specified state, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count cities for a state",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Countries/:countryId/States/:countryStateId/Cities/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Countries",
+        ":countryId",
+        "States",
+        ":countryStateId",
+        "Cities",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "countryStateId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "countryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of cities for the specified state, with optional OData filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Countries/:countryId/States/Count",
+                "description": "Returns the total number of states or provinces for the specified country, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count states for a country",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Countries/:countryId/States/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Countries",
+        ":countryId",
+        "States",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "countryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of states or provinces for the specified country, with optional OData filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/GlobeService/Countries/:countryId/Timezones",
                 "description": "Retrieves the list of timezones associated with the specified country.",
                  "item": [
@@ -1956,6 +2240,74 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/GlobeService/Countries/:countryId/Timezones/Count",
+                "description": "Returns the total number of timezones for the specified country, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count timezones for a country",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Countries/:countryId/Timezones/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Countries",
+        ":countryId",
+        "Timezones",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "countryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of timezones for the specified country, with optional OData filtering."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/GlobeService/Countries/:countryId/TopLevelDomains",
                 "description": "Retrieves the list of internet top-level domains (TLDs) associated with the specified country.",
                  "item": [
@@ -2016,6 +2368,74 @@
     ]
     },
     "description": "Retrieves the list of internet top-level domains (TLDs) associated with the specified country."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/GlobeService/Countries/:countryId/TopLevelDomains/Count",
+                "description": "Returns the total number of top-level domains for the specified country, with optional OData filtering.",
+                 "item": [
+                            {
+                                "name": "Count top-level domains for a country",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/GlobeService/Countries/:countryId/TopLevelDomains/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "GlobeService",
+        "Countries",
+        ":countryId",
+        "TopLevelDomains",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "countryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the total number of top-level domains for the specified country, with optional OData filtering."
 }
                                 ,"response": [
                             ]
@@ -2151,20 +2571,82 @@
                             ]
                         }
 	                    ]
+	        },
+	        {
+	            "name": "Migrations",
+	            "description": "Migrations tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/Global/System/Migrate",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2GlobalSystemMigratePost",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/Global/System/Migrate",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "Global",
+        "System",
+        "Migrate"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
 	        }
     ],
     
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "{server}",
+			"value": "",
 			"type": "string"
-        },
-		{
-			"key": "server",
-			"value": "https://absuite.net",
-			"type": "string"
-		}
+        }
 	]
 }
 
