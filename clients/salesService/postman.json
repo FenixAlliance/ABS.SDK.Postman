@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1144,6 +1144,72 @@
                         },
 	                        {
     "name": "/api/v2/SalesService/LoyaltyPrograms/:loyaltyProgramId",
+                "description": "Partially updates an existing loyalty program using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a loyalty program",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SalesService/LoyaltyPrograms/:loyaltyProgramId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SalesService",
+        "LoyaltyPrograms",
+        ":loyaltyProgramId"
+    ],
+    "variable": [
+        {
+        "key": "loyaltyProgramId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing loyalty program using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SalesService/LoyaltyPrograms/:loyaltyProgramId",
                 "description": "Updates an existing loyalty program by its unique identifier.",
                  "item": [
                             {
@@ -1505,6 +1571,72 @@
                         },
 	                        {
     "name": "/api/v2/SalesService/PointOfSales/:pointOfSaleId",
+                "description": "Partially updates an existing point of sale using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a point of sale",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SalesService/PointOfSales/:pointOfSaleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SalesService",
+        "PointOfSales",
+        ":pointOfSaleId"
+    ],
+    "variable": [
+        {
+        "key": "pointOfSaleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing point of sale using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SalesService/PointOfSales/:pointOfSaleId",
                 "description": "Updates an existing point of sale by its unique identifier.",
                  "item": [
                             {
@@ -1858,6 +1990,72 @@
     ]
     },
     "description": "Retrieves a single sales literature by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SalesService/SalesLiteratures/:salesLiteratureId",
+                "description": "Partially updates an existing sales literature using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a sales literature",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SalesService/SalesLiteratures/:salesLiteratureId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SalesService",
+        "SalesLiteratures",
+        ":salesLiteratureId"
+    ],
+    "variable": [
+        {
+        "key": "salesLiteratureId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing sales literature using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -2274,6 +2472,72 @@
     ]
     },
     "description": "Retrieves a single store by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SalesService/Stores/:storeId",
+                "description": "Partially updates an existing store using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a store",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SalesService/Stores/:storeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SalesService",
+        "Stores",
+        ":storeId"
+    ],
+    "variable": [
+        {
+        "key": "storeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing store using a JSON Patch document."
 }
                                 ,"response": [
                             ]

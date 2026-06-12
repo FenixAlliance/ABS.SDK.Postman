@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1004,7 +1004,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"walletId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1262,6 +1262,85 @@
                         },
 	                        {
     "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+                "description": "Partially update a specific bank account of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Patch Wallet Bank Account",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "BankAccounts",
+        ":bankAccountId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "bankAccountId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a specific bank account of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/BankAccounts/:bankAccountId",
                 "description": "Update a specific bank account of a specific wallet by ID.",
                  "item": [
                             {
@@ -1290,7 +1369,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"walletId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3619,6 +3698,85 @@
     ]
     },
     "description": "Get a specific payment token of a specific wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+                "description": "Partially update a specific payment token of a specific wallet by ID.",
+                 "item": [
+                            {
+                                "name": "Patch Wallet Token",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/WalletsService/Wallets/:walletId/Tokens/:tokenId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "WalletsService",
+        "Wallets",
+        ":walletId",
+        "Tokens",
+        ":tokenId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tokenId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a specific payment token of a specific wallet by ID."
 }
                                 ,"response": [
                             ]

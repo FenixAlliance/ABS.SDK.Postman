@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -43,7 +43,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationID\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationId\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"shippingCourierId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -297,6 +297,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/ShippingLabels/:labelId",
+                "description": "Partially updates an existing shipping label using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping label",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingLabels/:labelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingLabels",
+        ":labelId"
+    ],
+    "variable": [
+        {
+        "key": "labelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping label using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingLabels/:labelId",
                 "description": "Updates an existing shipping label.",
                  "item": [
                             {
@@ -325,7 +403,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationID\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"shippingCourierID\": \"<string>\"\n}",
+    "raw": "{\n \"trackingCode\": \"<string>\",\n \"expectedDelivery\": \"<string>\",\n \"locationId\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"shippingCourierId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1371,7 +1449,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1625,6 +1703,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/Shipments/:shipmentId",
+                "description": "Partially updates an existing shipment using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/Shipments/:shipmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "Shipments",
+        ":shipmentId"
+    ],
+    "variable": [
+        {
+        "key": "shipmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipment using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/Shipments/:shipmentId",
                 "description": "Updates an existing shipment.",
                  "item": [
                             {
@@ -1653,7 +1809,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"shipped\": \"<string>\",\n \"delivered\": \"<string>\",\n \"shipmentTimestamp\": \"<string>\",\n \"deliveryTimestamp\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderID\": \"<string>\"\n}",
+    "raw": "{\n \"trackingCode\": \"<string>\",\n \"isInternational\": \"<string>\",\n \"shipped\": \"<string>\",\n \"delivered\": \"<string>\",\n \"shipmentTimestamp\": \"<string>\",\n \"deliveryTimestamp\": \"<string>\",\n \"expectedShippingDate\": \"<string>\",\n \"expectedDeliveryDate\": \"<string>\",\n \"shippingTerms\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2058,6 +2214,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+                "description": "Partially updates an existing bill of lading using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a bill of lading",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing bill of lading using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId",
                 "description": "Updates an existing bill of lading.",
                  "item": [
                             {
@@ -2446,6 +2680,91 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+                "description": "Partially updates an existing line on a bill of lading using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a bill of lading line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "BillsOfLading",
+        ":billOfLadingId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billOfLadingId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing line on a bill of lading using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/BillsOfLading/:billOfLadingId/Lines/:lineId",
                 "description": "Updates an existing line on a bill of lading.",
                  "item": [
                             {
@@ -2706,7 +3025,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2960,6 +3279,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/ShippingMethods/:methodId",
+                "description": "Partially updates an existing shipping method using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping method",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingMethods/:methodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingMethods",
+        ":methodId"
+    ],
+    "variable": [
+        {
+        "key": "methodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping method using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingMethods/:methodId",
                 "description": "Updates an existing shipping method.",
                  "item": [
                             {
@@ -2988,7 +3385,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"cost\": \"<number>\",\n \"taxable\": \"<string>\",\n \"taxIncluded\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"shippingClassCalculationType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3139,7 +3536,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryID\": \"<string>\",\n \"businessProfileRecordID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3393,6 +3790,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+                "description": "Partially updates an existing shipping courier using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping courier",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingCouriers/:courierId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingCouriers",
+        ":courierId"
+    ],
+    "variable": [
+        {
+        "key": "courierId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping courier using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingCouriers/:courierId",
                 "description": "Updates an existing shipping courier.",
                  "item": [
                             {
@@ -3421,7 +3896,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryID\": \"<string>\",\n \"businessProfileRecordID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"logoURL\": \"<string>\",\n \"countryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3818,6 +4293,84 @@
     ]
     },
     "description": "Retrieves a specific shipping region."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingRegions/:regionId",
+                "description": "Partially updates an existing shipping region using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping region",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingRegions/:regionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingRegions",
+        ":regionId"
+    ],
+    "variable": [
+        {
+        "key": "regionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping region using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -4259,6 +4812,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/ShippingZones/:zoneId",
+                "description": "Partially updates an existing shipping zone using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping zone",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingZones/:zoneId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingZones",
+        ":zoneId"
+    ],
+    "variable": [
+        {
+        "key": "zoneId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping zone using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingZones/:zoneId",
                 "description": "Updates an existing shipping zone.",
                  "item": [
                             {
@@ -4692,6 +5323,84 @@
                         },
 	                        {
     "name": "/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+                "description": "Partially updates an existing item shipping policy using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch an item shipping policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ItemShippingPolicies",
+        ":policyId"
+    ],
+    "variable": [
+        {
+        "key": "policyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item shipping policy using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ItemShippingPolicies/:policyId",
                 "description": "Updates an existing item shipping policy.",
                  "item": [
                             {
@@ -5117,6 +5826,84 @@
     ]
     },
     "description": "Retrieves a specific shipping class."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ShipmentsService/ShippingClasses/:classId",
+                "description": "Partially updates an existing shipping class using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a shipping class",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ShipmentsService/ShippingClasses/:classId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ShipmentsService",
+        "ShippingClasses",
+        ":classId"
+    ],
+    "variable": [
+        {
+        "key": "classId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing shipping class using JSON Patch."
 }
                                 ,"response": [
                             ]

@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2700,7 +2700,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"avatarURL\": \"<string>\",\n \"socialProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"title\": \"<string>\",\n \"avatarURL\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2958,6 +2958,90 @@
     ]
     },
     "description": "Retrieves a specific social group by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/SocialGroups/:socialGroupId",
+                "description": "Partially updates an existing social group using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a social group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/SocialGroups/:socialGroupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "SocialGroups",
+        ":socialGroupId"
+    ],
+    "variable": [
+        {
+        "key": "socialGroupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing social group using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -3397,6 +3481,84 @@
     ]
     },
     "description": "Retrieves a specific social post by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/SocialPosts/:socialPostId",
+                "description": "Partially updates an existing social post by its ID using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a social post",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/SocialPosts/:socialPostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "SocialPosts",
+        ":socialPostId"
+    ],
+    "variable": [
+        {
+        "key": "socialPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing social post by its ID using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -5379,6 +5541,91 @@
     ]
     },
     "description": "Retrieves a specific post from a social feed by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/SocialFeeds/:socialFeedId/Posts/:feedPostId",
+                "description": "Partially updates an existing post in a specific social feed using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a social feed post",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/SocialFeeds/:socialFeedId/Posts/:feedPostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "SocialFeeds",
+        ":socialFeedId",
+        "Posts",
+        ":feedPostId"
+    ],
+    "variable": [
+        {
+        "key": "socialFeedId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "feedPostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing post in a specific social feed using a JSON Patch document."
 }
                                 ,"response": [
                             ]

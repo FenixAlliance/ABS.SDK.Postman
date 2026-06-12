@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1144,6 +1144,72 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/AssetTransfers/:transferId",
+                "description": "Applies a JSON Patch document to an existing asset transfer for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Partially updates an existing asset transfer",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTransfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTransfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing asset transfer for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTransfers/:transferId",
                 "description": "Updates an existing asset transfer for the authenticated tenant.",
                  "item": [
                             {
@@ -1293,7 +1359,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetClass\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"isExistingAsset\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetClass\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"isExistingAsset\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetTypeId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1505,6 +1571,72 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/Assets/:assetId",
+                "description": "Applies a JSON Patch document to an existing asset for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Partially updates an existing asset",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing asset for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId",
                 "description": "Updates an existing asset for the authenticated tenant.",
                  "item": [
                             {
@@ -1527,7 +1659,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetType\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"currencyCode\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"assetClass\": \"<string>\",\n \"assetOwner\": \"<string>\",\n \"calculateDepreciation\": \"<string>\",\n \"allowMonthlyDepreciation\": \"<string>\",\n \"openingDepreciation\": \"<number>\",\n \"purchaseDate\": \"<string>\",\n \"purchasePrice\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"itemId\": \"<string>\",\n \"assetTypeId\": \"<string>\",\n \"assetCategoryId\": \"<string>\",\n \"purchaseInvoiceId\": \"<string>\",\n \"purchaseReceiptId\": \"<string>\",\n \"assetLocationId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"organizationDepartmentId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1825,6 +1957,79 @@
     ]
     },
     "description": "Retrieves a specific depreciation record by ID for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+                "description": "Applies a JSON Patch document to an existing depreciation record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Partially updates a depreciation record for an asset",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/DepreciationRecords/:recordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "DepreciationRecords",
+        ":recordId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing depreciation record for the specified asset."
 }
                                 ,"response": [
                             ]
@@ -2230,6 +2435,79 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+                "description": "Applies a JSON Patch document to an existing repair record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Partially updates a repair for an asset",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Repairs",
+        ":repairId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "repairId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing repair record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Repairs/:repairId",
                 "description": "Updates an existing repair record for the specified asset.",
                  "item": [
                             {
@@ -2627,6 +2905,79 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+                "description": "Applies a JSON Patch document to an existing transfer record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Partially updates a transfer for an asset",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "Transfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing transfer record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/Transfers/:transferId",
                 "description": "Updates an existing transfer record for the specified asset.",
                  "item": [
                             {
@@ -2784,7 +3135,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"previousValue\": \"<number>\",\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\",\n \"approvedBy\": \"<string>\",\n \"approvalDate\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"assetId\": \"<string>\",\n \"previousValue\": \"<number>\",\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\",\n \"currencyId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3024,6 +3375,79 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+                "description": "Applies a JSON Patch document to an existing value amendment record for the specified asset.",
+                 "item": [
+                            {
+                                "name": "Partially updates a value amendment for an asset",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        ":assetId",
+        "ValueAmends",
+        ":amendId"
+    ],
+    "variable": [
+        {
+        "key": "assetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "amendId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing value amendment record for the specified asset."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/:assetId/ValueAmends/:amendId",
                 "description": "Updates an existing value amendment record for the specified asset.",
                  "item": [
                             {
@@ -3046,7 +3470,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\",\n \"approvedBy\": \"<string>\",\n \"approvalDate\": \"<string>\"\n}",
+    "raw": "{\n \"newValue\": \"<number>\",\n \"reason\": \"<string>\",\n \"amendmentDate\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3389,6 +3813,73 @@
     ]
     },
     "description": "Retrieves a specific asset category for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/Assets/Categories/:categoryId",
+                "description": "Applies a JSON Patch document to an existing asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Partially updates an existing asset category",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/Assets/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "Assets",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing asset category for the authenticated tenant."
 }
                                 ,"response": [
                             ]
@@ -3815,6 +4306,72 @@
                         },
 	                        {
     "name": "/api/v2/AssetsService/AssetTypes/:typeId",
+                "description": "Applies a JSON Patch document to an existing asset type for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Partially updates an existing asset type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetTypes/:typeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetTypes",
+        ":typeId"
+    ],
+    "variable": [
+        {
+        "key": "typeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing asset type for the authenticated tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetTypes/:typeId",
                 "description": "Updates an existing asset type for the authenticated tenant.",
                  "item": [
                             {
@@ -4168,6 +4725,72 @@
     ]
     },
     "description": "Retrieves a specific asset category by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AssetsService/AssetCategories/:categoryId",
+                "description": "Applies a JSON Patch document to an existing asset category for the authenticated tenant.",
+                 "item": [
+                            {
+                                "name": "Partially updates an existing asset category",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AssetsService/AssetCategories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AssetsService",
+        "AssetCategories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an existing asset category for the authenticated tenant."
 }
                                 ,"response": [
                             ]

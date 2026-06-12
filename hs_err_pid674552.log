@@ -1,0 +1,230 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes. Error detail: AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:44), pid=674552, tid=674608
+#
+# JRE version:  (23.0+37) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23+37-2369, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true C:\ProgramData\nvm\v23.10.0\node_modules\@openapitools\openapi-generator-cli\versions\7.21.0.jar help
+
+Host: AMD Ryzen 9 3950X 16-Core Processor            , 32 cores, 63G,  Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+Time: Fri Jun 12 03:50:39 2026 SA Pacific Standard Time elapsed time: 1.137007 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000016b115e5500):  JavaThread "Unknown thread" [_thread_in_vm, id=674608, stack(0x00000019baf00000,0x00000019bb000000) (1024K)]
+
+Stack: [0x00000019baf00000,0x00000019bb000000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6e08a9]  (no source info available)
+V  [jvm.dll+0x87da63]  (no source info available)
+V  [jvm.dll+0x87feee]  (no source info available)
+V  [jvm.dll+0x8805c3]  (no source info available)
+V  [jvm.dll+0x27aee6]  (no source info available)
+V  [jvm.dll+0xb6a17]  (no source info available)
+V  [jvm.dll+0x326ad8]  (no source info available)
+V  [jvm.dll+0x8442a9]  (no source info available)
+V  [jvm.dll+0x3b9848]  (no source info available)
+V  [jvm.dll+0x82d0dc]  (no source info available)
+V  [jvm.dll+0x454d4e]  (no source info available)
+V  [jvm.dll+0x456bd1]  (no source info available)
+C  [jli.dll+0x52a3]  (no source info available)
+C  [ucrtbase.dll+0x2cd30]  (no source info available)
+C  [KERNEL32.DLL+0x2e957]  (no source info available)
+C  [ntdll.dll+0x87c1c]  (no source info available)
+
+Lock stack of current Java thread (top to bottom):
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fff84fe3618, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+
+=>0x0000016b115e5500 (exited) JavaThread "Unknown thread"    [_thread_in_vm, id=674608, stack(0x00000019baf00000,0x00000019bb000000) (1024K)]
+Total: 1
+
+Threads with active compile tasks:
+Total: 0
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000000000000, size: 0 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 64 size 144 Howl #buckets 8 coarsen threshold 14745 Howl Bitmap #cards 2048 size 272 coarsen threshold 1843 Card regions per heap region 1 cards per card region 16384
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.051 Loaded shared library C:\Program Files\Java\jdk-23\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7ba700000 - 0x00007ff7ba710000 	C:\Program Files\Java\jdk-23\bin\java.exe
+0x00007ff8c9bc0000 - 0x00007ff8c9e26000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8c8070000 - 0x00007ff8c8139000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff8c7200000 - 0x00007ff8c75fa000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff8c7730000 - 0x00007ff8c787c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff816f00000 - 0x00007ff816f1b000 	C:\Program Files\Java\jdk-23\bin\VCRUNTIME140.dll
+0x00007ffff2ea0000 - 0x00007ffff2eb7000 	C:\Program Files\Java\jdk-23\bin\jli.dll
+0x00007ff8c7c30000 - 0x00007ff8c7df7000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff8c6ee0000 - 0x00007ff8c6f07000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8c7a80000 - 0x00007ff8c7aab000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff8c7600000 - 0x00007ff8c772b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff8c7880000 - 0x00007ff8c7923000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff89a770000 - 0x00007ff89aa02000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3\COMCTL32.dll
+0x00007ff8c7ab0000 - 0x00007ff8c7b59000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff8c8490000 - 0x00007ff8c84c2000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8bdc90000 - 0x00007ff8bdc9c000 	C:\Program Files\Java\jdk-23\bin\vcruntime140_1.dll
+0x00007fffd6c40000 - 0x00007fffd6cce000 	C:\Program Files\Java\jdk-23\bin\msvcp140.dll
+0x00007fff843f0000 - 0x00007fff8513f000 	C:\Program Files\Java\jdk-23\bin\server\jvm.dll
+0x00007ff8c9130000 - 0x00007ff8c91e6000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8c8d00000 - 0x00007ff8c8daa000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8c95d0000 - 0x00007ff8c96e8000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff8c8c70000 - 0x00007ff8c8cf0000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff8c6b00000 - 0x00007ff8c6b5e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff8b5330000 - 0x00007ff8b5366000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff8bc4b0000 - 0x00007ff8bc4bb000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff8c6ae0000 - 0x00007ff8c6af4000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff8c5a70000 - 0x00007ff8c5a8b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff870f60000 - 0x00007ff870f6a000 	C:\Program Files\Java\jdk-23\bin\jimage.dll
+0x00007ff8c4280000 - 0x00007ff8c44c2000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff8c9240000 - 0x00007ff8c95c3000 	C:\WINDOWS\System32\combase.dll
+0x00007ff8c8240000 - 0x00007ff8c8319000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff8a9fe0000 - 0x00007ff8aa01b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff8c7150000 - 0x00007ff8c71f8000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fffef450000 - 0x00007fffef46e000 	C:\Program Files\Java\jdk-23\bin\java.dll
+0x00007ff8c8f90000 - 0x00007ff8c9128000 	C:\WINDOWS\System32\ole32.dll
+0x00007ff8c84e0000 - 0x00007ff8c8c64000 	C:\WINDOWS\System32\SHELL32.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.8521_none_3e08b75ce33403b3;C:\Program Files\Java\jdk-23\bin\server
+
+VM Arguments:
+jvm_args: -Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true 
+java_command: C:\ProgramData\nvm\v23.10.0\node_modules\@openapitools\openapi-generator-cli\versions\7.21.0.jar help
+java_class_path (initial): C:\ProgramData\nvm\v23.10.0\node_modules\@openapitools\openapi-generator-cli\versions\7.21.0.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 15                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 6                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 23                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 8388608                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 1073741824                                {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 17171480576                               {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 8388608                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 8192000                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 121765888                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 121700352                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 17171480576                            {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Microsoft\jdk-11.0.10.9-hotspot
+JAVA_TOOL_OPTIONS=-Dio.swagger.parser.util.RemoteUrl.trustAll=true -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true
+PATH=C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\HashiCorp\Consul;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\GitHub CLI\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Nmap;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\CMake\bin;C:\Program Files\doxygen\bin;C:\Program Files\Geth;C:\Program Files\Git\cmd;C:\Program Files\Graphviz\bin;C:\Program Files\IBM\Cloud\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\bin;C:\Program Files\JetBrains\PyCharm 2021.1.3\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.3\bin;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft\jdk-11.0.10.9-hotspot\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\nodejs;C:\Program Files\Nuget;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\libnvvp;C:\Program Files\Oracle\VirtualBox;C:\Program Files\PHP\v8.0;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\Ruby30-x64\bin;C:\ProgramData\chocolatey\bin;C:\ProgramData\nvm;C:\Python27;C:\Python27\Scripts\;C:\Python36;C:\Python36\Scripts\;C:\siege-windows;C:\WINDOWS;C:\WINDOWS\system32;C:\windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\HashiCorp\Vault;C:\HashiCorp\Nomad;C:\Program Files\Microsoft VS Code;F:\Solr\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Multipass\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Go\bin;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\JetBrains\DataGrip 2026.1.1\bin;C:\Program Files\Obsidian;C:\Program Files\Docker\Docker\resources\bin;C:\Users\PC\AppData\Roaming\npm;C:\Users\PC\.dotnet\tools;C:\Users\PC\AppData\Roaming\Code - Insiders\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\PC\.local\bin\;C:\Users\PC\AppData\Local\Programs\Azure Dev CLI\;C:\Users\PC\go\bin;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\.dotnet\tools
+USERNAME=PC
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+TMP=C:\Users\PC\AppData\Local\Temp
+TEMP=C:\Users\PC\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.8521)
+OS uptime: 2 days 13:28 hours
+Hyper-V role detected
+
+CPU: total 32 (initial active 32) (32 cores per cpu, 2 threads per core) family 23 model 113 stepping 0 microcode 0x8701021, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for the first 32 processors :
+  Max Mhz: 3501, Current Mhz: 3501, Mhz Limit: 3501
+
+Memory: 4k page, system-wide physical 65478M (11439M free)
+TotalPageFile size 130453M (AvailPageFile size 4M)
+current process WorkingSet (physical memory assigned to process): 13M, peak: 13M
+current process commit charge ("private bytes"): 11M, peak: 12M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23+37-2369) for windows-amd64 JRE (23+37-2369), built on 2024-08-20T16:01:23Z with MS VC++ 17.6 (VS2022)
+
+END.

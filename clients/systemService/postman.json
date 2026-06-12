@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -311,6 +311,85 @@
     ]
     },
     "description": "Admin endpoint to retrieve a single option for any contact"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+                "description": "Admin endpoint to partially update an option for any contact using a JSON Patch document",
+                 "item": [
+                            {
+                                "name": "Partially update a contact option (admin)",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Contacts/:contactId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Contacts",
+        ":contactId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "contactId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to partially update an option for any contact using a JSON Patch document"
 }
                                 ,"response": [
                             ]
@@ -693,6 +772,78 @@
     "body": {
     "mode": "raw",
     "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Partially update a specific tenant by ID.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1770,6 +1921,85 @@
                         },
 	                        {
     "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
+                "description": "Admin endpoint to partially update an option for any user using a JSON Patch document",
+                 "item": [
+                            {
+                                "name": "Partially update a user option (admin)",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to partially update an option for any user using a JSON Patch document"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId/Options/:optionId",
                 "description": "Admin endpoint to update an option for any user",
                  "item": [
                             {
@@ -2508,6 +2738,332 @@
 	                    ]
 	        },
 	        {
+	            "name": "BusinessDomains",
+	            "description": "BusinessDomains tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SystemService/BusinessDomains",
+                "description": "Retrieve all registered business domains across every tenant (global administrators only).",
+                 "item": [
+                            {
+                                "name": "Retrieve all business domains in the system",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/BusinessDomains",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "BusinessDomains"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve all registered business domains across every tenant (global administrators only)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/BusinessDomains/:businessDomainId",
+                "description": "Removes any business domain from the system, regardless of owning tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a business domain",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/BusinessDomains/:businessDomainId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "BusinessDomains",
+        ":businessDomainId"
+    ],
+    "variable": [
+        {
+        "key": "businessDomainId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes any business domain from the system, regardless of owning tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/BusinessDomains/:businessDomainId",
+                "description": "Retrieve any business domain by its ID, regardless of owning tenant.",
+                 "item": [
+                            {
+                                "name": "Retrieve a business domain by its ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/BusinessDomains/:businessDomainId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "BusinessDomains",
+        ":businessDomainId"
+    ],
+    "variable": [
+        {
+        "key": "businessDomainId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieve any business domain by its ID, regardless of owning tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/BusinessDomains/:businessDomainId/Verify",
+                "description": "Checks the domain's DNS TXT records for the verification token and marks it verified.",
+                 "item": [
+                            {
+                                "name": "Verify a business domain",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/BusinessDomains/:businessDomainId/Verify",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "BusinessDomains",
+        ":businessDomainId",
+        "Verify"
+    ],
+    "variable": [
+        {
+        "key": "businessDomainId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Checks the domain's DNS TXT records for the verification token and marks it verified."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/BusinessDomains/Count",
+                "description": "Get the count of all registered business domains across every tenant.",
+                 "item": [
+                            {
+                                "name": "Get the count of all business domains in the system",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/BusinessDomains/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "BusinessDomains",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Get the count of all registered business domains across every tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "Modules",
 	            "description": "Modules tag",
 	            "item": [
@@ -2867,6 +3423,78 @@
     "body": {
     "mode": "raw",
     "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Users/:userId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Users",
+        ":userId"
+    ],
+    "variable": [
+        {
+        "key": "userId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "This action is only available for global administrators."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Users/:userId",
+                "description": "This action is only available for global administrators.",
+                 "item": [
+                            {
+                                "name": "Partially update a user",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3683,6 +4311,85 @@
     ]
     },
     "description": "Admin endpoint to retrieve a single option for any tenant"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+                "description": "Admin endpoint to partially update an option for any tenant using a JSON Patch document",
+                 "item": [
+                            {
+                                "name": "Partially update a tenant option (admin)",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Tenants/:tenantId/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Tenants",
+        ":tenantId",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Admin endpoint to partially update an option for any tenant using a JSON Patch document"
 }
                                 ,"response": [
                             ]
@@ -5159,7 +5866,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeId\": \"<string>\",\n \"businessDomainId\": \"<string>\",\n \"businessPortalApplicationId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5389,6 +6096,78 @@
                         },
 	                        {
     "name": "/api/v2/SystemService/Portals/:portalId",
+                "description": "Partially update an existing web portal in the system using a JSON Patch document",
+                 "item": [
+                            {
+                                "name": "Partially update a system portal",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Portals/:portalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Portals",
+        ":portalId"
+    ],
+    "variable": [
+        {
+        "key": "portalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update an existing web portal in the system using a JSON Patch document"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Portals/:portalId",
                 "description": "Update an existing web portal in the system",
                  "item": [
                             {
@@ -5417,7 +6196,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"businessDomainID\": \"<string>\",\n \"businessPortalApplicationID\": \"<string>\"\n}",
+    "raw": "{\n \"root\": \"<string>\",\n \"title\": \"<string>\",\n \"domain\": \"<string>\",\n \"disabled\": \"<string>\",\n \"description\": \"<string>\",\n \"websiteThemeId\": \"<string>\",\n \"businessDomainId\": \"<string>\",\n \"businessPortalApplicationId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6341,6 +7120,78 @@
     ]
     },
     "description": "Retrieve a single system option by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SystemService/Options/:optionId",
+                "description": "Partially update a system option using a JSON Patch document",
+                 "item": [
+                            {
+                                "name": "Partially update a system option",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SystemService/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SystemService",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a system option using a JSON Patch document"
 }
                                 ,"response": [
                             ]

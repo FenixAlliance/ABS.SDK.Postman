@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -37,7 +37,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"currencyId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"discountListType\": \"<string>\",\n \"currencyId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -249,6 +249,72 @@
                         },
 	                        {
     "name": "/api/v2/PricingService/DiscountLists/:discountListId",
+                "description": "Partially updates the specified discount list using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a discount list",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/DiscountLists/:discountListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "DiscountLists",
+        ":discountListId"
+    ],
+    "variable": [
+        {
+        "key": "discountListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified discount list using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PricingService/DiscountLists/:discountListId",
                 "description": "Updates the specified discount list.",
                  "item": [
                             {
@@ -271,7 +337,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"currencyId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"discountListType\": \"<string>\",\n \"currencyId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -337,7 +403,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"beginQuantity\": \"<number>\",\n \"endQuantity\": \"<number>\",\n \"percent\": \"<number>\",\n \"value\": \"<number>\",\n \"discountListId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"beginQuantity\": \"<number>\",\n \"endQuantity\": \"<number>\",\n \"percent\": \"<number>\",\n \"value\": \"<number>\",\n \"itemId\": \"<string>\",\n \"discountListId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -577,6 +643,79 @@
                         },
 	                        {
     "name": "/api/v2/PricingService/DiscountLists/:discountListId/Discounts/:discountListEntryId",
+                "description": "Partially updates the specified discount entry using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a discount list entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/DiscountLists/:discountListId/Discounts/:discountListEntryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "DiscountLists",
+        ":discountListId",
+        "Discounts",
+        ":discountListEntryId"
+    ],
+    "variable": [
+        {
+        "key": "discountListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "discountListEntryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified discount entry using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PricingService/DiscountLists/:discountListId/Discounts/:discountListEntryId",
                 "description": "Updates the specified discount entry in a discount list.",
                  "item": [
                             {
@@ -599,7 +738,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"description\": \"<string>\",\n \"beginQuantity\": \"<number>\",\n \"endQuantity\": \"<number>\",\n \"percent\": \"<number>\",\n \"value\": \"<number>\",\n \"discountListId\": \"<string>\"\n}",
+    "raw": "{\n \"description\": \"<string>\",\n \"beginQuantity\": \"<number>\",\n \"endQuantity\": \"<number>\",\n \"percent\": \"<number>\",\n \"value\": \"<number>\",\n \"itemId\": \"<string>\",\n \"discountListId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1047,6 +1186,84 @@
     ]
     },
     "description": "Retrieves the details of a rounding policy using its unique ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PricingService/RoundingPolicies/:roundingPolicyId",
+                "description": "Partially updates the specified rounding policy using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a rounding policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/RoundingPolicies/:roundingPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "RoundingPolicies",
+        ":roundingPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "roundingPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates the specified rounding policy using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -2445,7 +2662,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"code\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"code\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2698,6 +2915,84 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/PricingService/PricingRules/:pricingRuleId",
+                "description": "Partially updates a pricing rule using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a pricing rule",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/PricingRules/:pricingRuleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "PricingRules",
+        ":pricingRuleId"
+    ],
+    "variable": [
+        {
+        "key": "pricingRuleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a pricing rule using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/PricingService/PricingRules/Count",
                 "description": "Gets the count of pricing rules for the current tenant.",
                  "item": [
@@ -2794,7 +3089,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2873,7 +3168,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"context\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"partnerVisible\": \"<string>\",\n \"unitOfMeasureDependant\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3085,6 +3380,72 @@
                         },
 	                        {
     "name": "/api/v2/PricingService/PriceLists/:priceListId",
+                "description": "Partially updates the specified price list using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a price list",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/PriceLists/:priceListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "PriceLists",
+        ":priceListId"
+    ],
+    "variable": [
+        {
+        "key": "priceListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified price list using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PricingService/PriceLists/:priceListId",
                 "description": "Updates the specified price list.",
                  "item": [
                             {
@@ -3107,7 +3468,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"context\": \"<string>\",\n \"startDate\": \"<string>\",\n \"endDate\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"partnerVisible\": \"<string>\",\n \"unitOfMeasureDependant\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3411,6 +3772,79 @@
     ]
     },
     "description": "Retrieves a specific price entry from a price list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PricingService/PriceLists/:priceListId/Prices/:priceId",
+                "description": "Partially updates the specified price entry in a price list using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a price list entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PricingService/PriceLists/:priceListId/Prices/:priceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PricingService",
+        "PriceLists",
+        ":priceListId",
+        "Prices",
+        ":priceId"
+    ],
+    "variable": [
+        {
+        "key": "priceListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "priceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified price entry in a price list using a JSON Patch document."
 }
                                 ,"response": [
                             ]

@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -362,6 +362,84 @@
     ]
     },
     "description": "Retrieves a specific proof of delivery by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ProofsOfDelivery/:podId",
+                "description": "Partially updates an existing proof of delivery using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a proof of delivery",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ProofsOfDelivery/:podId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ProofsOfDelivery",
+        ":podId"
+    ],
+    "variable": [
+        {
+        "key": "podId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing proof of delivery using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -976,6 +1054,91 @@
     ]
     },
     "description": "Retrieves all lines for a specific proof of delivery."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ProofsOfDelivery/:podId/Lines/:lineId",
+                "description": "Partially updates an existing proof of delivery line using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a proof of delivery line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ProofsOfDelivery/:podId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ProofsOfDelivery",
+        ":podId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "podId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing proof of delivery line using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -1735,6 +1898,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/Ports/:portId",
+                "description": "Partially updates an existing port using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a port",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Ports/:portId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Ports",
+        ":portId"
+    ],
+    "variable": [
+        {
+        "key": "portId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing port using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Ports/:portId",
                 "description": "Updates an existing port.",
                  "item": [
                             {
@@ -2160,6 +2401,84 @@
     ]
     },
     "description": "Retrieves a specific truck driver by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/TruckDrivers/:driverId",
+                "description": "Partially updates an existing truck driver using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a truck driver",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/TruckDrivers/:driverId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "TruckDrivers",
+        ":driverId"
+    ],
+    "variable": [
+        {
+        "key": "driverId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing truck driver using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -2747,6 +3066,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/ItemRestocks/:restockId",
+                "description": "Applies a JSON Patch document to an item restock.",
+                 "item": [
+                            {
+                                "name": "Patch an item restock",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an item restock."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId",
                 "description": "Updates an existing item restock.",
                  "item": [
                             {
@@ -3127,6 +3524,91 @@
     ]
     },
     "description": "Retrieves a specific restock entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+                "description": "Applies a JSON Patch document to a restock entry.",
+                 "item": [
+                            {
+                                "name": "Patch a restock entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRestocks/:restockId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRestocks",
+        ":restockId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "restockId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to a restock entry."
 }
                                 ,"response": [
                             ]
@@ -3649,6 +4131,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/Trucks/:truckId",
+                "description": "Partially updates an existing truck using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a truck",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Trucks/:truckId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Trucks",
+        ":truckId"
+    ],
+    "variable": [
+        {
+        "key": "truckId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing truck using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Trucks/:truckId",
                 "description": "Updates an existing truck.",
                  "item": [
                             {
@@ -3950,6 +4510,91 @@
     ]
     },
     "description": "Deletes a truck trip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Trucks/:truckId/Trips/:tripId",
+                "description": "Partially updates an existing truck trip using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a truck trip",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Trucks/:truckId/Trips/:tripId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Trucks",
+        ":truckId",
+        "Trips",
+        ":tripId"
+    ],
+    "variable": [
+        {
+        "key": "truckId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "tripId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing truck trip using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -4872,6 +5517,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/Voyages/:voyageId",
+                "description": "Partially updates an existing voyage using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a voyage",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Voyages/:voyageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Voyages",
+        ":voyageId"
+    ],
+    "variable": [
+        {
+        "key": "voyageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing voyage using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Voyages/:voyageId",
                 "description": "Updates an existing voyage.",
                  "item": [
                             {
@@ -5319,6 +6042,91 @@
     ]
     },
     "description": "Deletes a port call."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Voyages/:voyageId/PortCalls/:portCallId",
+                "description": "Partially updates an existing voyage port call using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a voyage port call",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Voyages/:voyageId/PortCalls/:portCallId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Voyages",
+        ":voyageId",
+        "PortCalls",
+        ":portCallId"
+    ],
+    "variable": [
+        {
+        "key": "voyageId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "portCallId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing voyage port call using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -5914,6 +6722,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+                "description": "Applies a JSON Patch document to an item retain sample.",
+                 "item": [
+                            {
+                                "name": "Patch an item retain sample",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemRetainSamples",
+        ":retainSampleId"
+    ],
+    "variable": [
+        {
+        "key": "retainSampleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an item retain sample."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemRetainSamples/:retainSampleId",
                 "description": "Updates an existing item retain sample.",
                  "item": [
                             {
@@ -6347,6 +7233,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/AirwayBills/:billId",
+                "description": "Partially updates an existing airway bill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an airway bill",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/AirwayBills/:billId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "AirwayBills",
+        ":billId"
+    ],
+    "variable": [
+        {
+        "key": "billId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing airway bill using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/AirwayBills/:billId",
                 "description": "Updates an existing airway bill.",
                  "item": [
                             {
@@ -6715,6 +7679,91 @@
     ]
     },
     "description": "Retrieves all lines for a specific airway bill."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/AirwayBills/:billId/Lines/:lineId",
+                "description": "Partially updates a line on an airway bill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an airway bill line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/AirwayBills/:billId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "AirwayBills",
+        ":billId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a line on an airway bill using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -7535,6 +8584,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+                "description": "Applies a JSON Patch document to an item packing slip.",
+                 "item": [
+                            {
+                                "name": "Patch an item packing slip",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an item packing slip."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId",
                 "description": "Updates an existing item packing slip.",
                  "item": [
                             {
@@ -7915,6 +9042,91 @@
     ]
     },
     "description": "Retrieves a specific packing slip entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+                "description": "Applies a JSON Patch document to a packing slip entry.",
+                 "item": [
+                            {
+                                "name": "Patch a packing slip entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPackingSlips/:packingSlipId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPackingSlips",
+        ":packingSlipId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "packingSlipId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to a packing slip entry."
 }
                                 ,"response": [
                             ]
@@ -8437,6 +9649,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/Vessels/:vesselId",
+                "description": "Partially updates an existing vessel using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a vessel",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Vessels/:vesselId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Vessels",
+        ":vesselId"
+    ],
+    "variable": [
+        {
+        "key": "vesselId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing vessel using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Vessels/:vesselId",
                 "description": "Updates an existing vessel.",
                  "item": [
                             {
@@ -8862,6 +10152,84 @@
     ]
     },
     "description": "Retrieves a specific supplier profile by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/SupplierProfiles/:supplierProfileId",
+                "description": "Applies a JSON Patch document to a supplier profile.",
+                 "item": [
+                            {
+                                "name": "Patch a supplier profile",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/SupplierProfiles/:supplierProfileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "SupplierProfiles",
+        ":supplierProfileId"
+    ],
+    "variable": [
+        {
+        "key": "supplierProfileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to a supplier profile."
 }
                                 ,"response": [
                             ]
@@ -9871,7 +11239,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"proofOfDeliveryID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"proofOfDeliveryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -10153,7 +11521,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shipmentID\": \"<string>\",\n \"proofOfDeliveryID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shipmentId\": \"<string>\",\n \"proofOfDeliveryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -10558,6 +11926,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/RailWaybills/:waybillId",
+                "description": "Partially updates an existing rail waybill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a rail waybill",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/RailWaybills/:waybillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "RailWaybills",
+        ":waybillId"
+    ],
+    "variable": [
+        {
+        "key": "waybillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing rail waybill using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/RailWaybills/:waybillId",
                 "description": "Updates an existing rail waybill.",
                  "item": [
                             {
@@ -10926,6 +12372,91 @@
     ]
     },
     "description": "Retrieves all lines for a specific rail waybill."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/RailWaybills/:waybillId/Lines/:lineId",
+                "description": "Partially updates a line on a rail waybill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a rail waybill line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/RailWaybills/:waybillId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "RailWaybills",
+        ":waybillId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "waybillId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a line on a rail waybill using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -11673,6 +13204,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/RoadWaybills/:waybillId",
+                "description": "Partially updates an existing road waybill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a road waybill",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/RoadWaybills/:waybillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "RoadWaybills",
+        ":waybillId"
+    ],
+    "variable": [
+        {
+        "key": "waybillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing road waybill using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/RoadWaybills/:waybillId",
                 "description": "Updates an existing road waybill.",
                  "item": [
                             {
@@ -12114,6 +13723,91 @@
     ]
     },
     "description": "Retrieves all lines for a specific road waybill."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/RoadWaybills/:waybillId/Lines/:lineId",
+                "description": "Partially updates a line on a road waybill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a road waybill line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/RoadWaybills/:waybillId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "RoadWaybills",
+        ":waybillId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "waybillId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a line on a road waybill using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -12861,6 +14555,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/SeawayBills/:billId",
+                "description": "Partially updates an existing seaway bill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a seaway bill",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/SeawayBills/:billId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "SeawayBills",
+        ":billId"
+    ],
+    "variable": [
+        {
+        "key": "billId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing seaway bill using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/SeawayBills/:billId",
                 "description": "Updates an existing seaway bill.",
                  "item": [
                             {
@@ -13229,6 +15001,91 @@
     ]
     },
     "description": "Retrieves all lines for a specific seaway bill."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/SeawayBills/:billId/Lines/:lineId",
+                "description": "Partially updates a line on a seaway bill using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a seaway bill line",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/SeawayBills/:billId/Lines/:lineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "SeawayBills",
+        ":billId",
+        "Lines",
+        ":lineId"
+    ],
+    "variable": [
+        {
+        "key": "billId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "lineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a line on a seaway bill using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -14049,6 +15906,84 @@
                         },
 	                        {
     "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId",
+                "description": "Applies a JSON Patch document to an item pick list.",
+                 "item": [
+                            {
+                                "name": "Patch an item pick list",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to an item pick list."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId",
                 "description": "Updates an existing item pick list.",
                  "item": [
                             {
@@ -14429,6 +16364,91 @@
     ]
     },
     "description": "Retrieves a specific pick list entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+                "description": "Applies a JSON Patch document to a pick list entry.",
+                 "item": [
+                            {
+                                "name": "Patch a pick list entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/ItemPickLists/:pickListId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "ItemPickLists",
+        ":pickListId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "pickListId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a JSON Patch document to a pick list entry."
 }
                                 ,"response": [
                             ]
@@ -14943,6 +16963,84 @@
     ]
     },
     "description": "Retrieves a specific warehouse."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LogisticsService/Warehouses/:warehouseId",
+                "description": "Partially updates an existing warehouse using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a warehouse",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LogisticsService/Warehouses/:warehouseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LogisticsService",
+        "Warehouses",
+        ":warehouseId"
+    ],
+    "variable": [
+        {
+        "key": "warehouseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing warehouse using JSON Patch."
 }
                                 ,"response": [
                             ]

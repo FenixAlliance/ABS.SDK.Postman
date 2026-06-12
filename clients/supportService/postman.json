@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -370,6 +370,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/RefundRequests/:refundRequestId",
+                "description": "Partially updates an existing refund request by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a refund request",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundRequests/:refundRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundRequests",
+        ":refundRequestId"
+    ],
+    "variable": [
+        {
+        "key": "refundRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing refund request by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundRequests/:refundRequestId",
                 "description": "",
                  "item": [
                             {
@@ -549,7 +627,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"nextInvoiceDateTime\": \"<string>\",\n \"code\": \"<string>\",\n \"signature\": \"<string>\",\n \"quantity\": \"<number>\",\n \"repetitions\": \"<number>\",\n \"chargeAttempts\": \"<number>\",\n \"freeTrialInDays\": \"<number>\",\n \"gracePeriodInDays\": \"<number>\",\n \"customRenewalPeriod\": \"<number>\",\n \"enableAutomaticRenew\": \"<string>\",\n \"enableProRateBilling\": \"<string>\",\n \"enableUsageThreshold\": \"<string>\",\n \"enableAutomaticDisable\": \"<string>\",\n \"enableAutomaticPayments\": \"<string>\",\n \"usageThreshold\": \"<number>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"individualID\": \"<string>\",\n \"organizationID\": \"<string>\",\n \"receiverBusinessID\": \"<string>\",\n \"paymentTokenID\": \"<string>\",\n \"walletAccountID\": \"<string>\",\n \"securityCertificateID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"nextInvoiceDateTime\": \"<string>\",\n \"code\": \"<string>\",\n \"signature\": \"<string>\",\n \"quantity\": \"<number>\",\n \"repetitions\": \"<number>\",\n \"chargeAttempts\": \"<number>\",\n \"freeTrialInDays\": \"<number>\",\n \"gracePeriodInDays\": \"<number>\",\n \"customRenewalPeriod\": \"<number>\",\n \"enableAutomaticRenew\": \"<string>\",\n \"enableProRateBilling\": \"<string>\",\n \"enableUsageThreshold\": \"<string>\",\n \"enableAutomaticDisable\": \"<string>\",\n \"enableAutomaticPayments\": \"<string>\",\n \"usageThreshold\": \"<number>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"paymentTokenId\": \"<string>\",\n \"walletAccountId\": \"<string>\",\n \"securityCertificateId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -803,6 +881,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/SupportEntitlements/:supportEntitlementId",
+                "description": "Partially updates an existing support entitlement by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support entitlement",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportEntitlements/:supportEntitlementId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportEntitlements",
+        ":supportEntitlementId"
+    ],
+    "variable": [
+        {
+        "key": "supportEntitlementId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support entitlement by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportEntitlements/:supportEntitlementId",
                 "description": "Updates an existing support entitlement by its unique identifier.",
                  "item": [
                             {
@@ -831,7 +987,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"nextInvoiceDateTime\": \"<string>\",\n \"code\": \"<string>\",\n \"signature\": \"<string>\",\n \"quantity\": \"<number>\",\n \"repetitions\": \"<number>\",\n \"chargeAttempts\": \"<number>\",\n \"freeTrialInDays\": \"<number>\",\n \"gracePeriodInDays\": \"<number>\",\n \"customRenewalPeriod\": \"<number>\",\n \"enableAutomaticRenew\": \"<string>\",\n \"enableProRateBilling\": \"<string>\",\n \"enableUsageThreshold\": \"<string>\",\n \"enableAutomaticDisable\": \"<string>\",\n \"enableAutomaticPayments\": \"<string>\",\n \"usageThreshold\": \"<number>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"individualID\": \"<string>\",\n \"organizationID\": \"<string>\",\n \"receiverBusinessID\": \"<string>\",\n \"paymentTokenID\": \"<string>\",\n \"walletAccountID\": \"<string>\",\n \"securityCertificateID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"nextInvoiceDateTime\": \"<string>\",\n \"code\": \"<string>\",\n \"signature\": \"<string>\",\n \"quantity\": \"<number>\",\n \"repetitions\": \"<number>\",\n \"chargeAttempts\": \"<number>\",\n \"freeTrialInDays\": \"<number>\",\n \"gracePeriodInDays\": \"<number>\",\n \"customRenewalPeriod\": \"<number>\",\n \"enableAutomaticRenew\": \"<string>\",\n \"enableProRateBilling\": \"<string>\",\n \"enableUsageThreshold\": \"<string>\",\n \"enableAutomaticDisable\": \"<string>\",\n \"enableAutomaticPayments\": \"<string>\",\n \"usageThreshold\": \"<number>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"paymentTokenId\": \"<string>\",\n \"walletAccountId\": \"<string>\",\n \"securityCertificateId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -982,7 +1138,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1236,6 +1392,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+                "description": "Partially updates an existing refund policy by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a refund policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/RefundPolicies/:refundPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "RefundPolicies",
+        ":refundPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "refundPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing refund policy by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/RefundPolicies/:refundPolicyId",
                 "description": "",
                  "item": [
                             {
@@ -1264,7 +1498,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1415,7 +1649,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"metadata\": \"<string>\",\n \"supportRequestID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"metadata\": \"<string>\",\n \"supportRequestId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1661,6 +1895,84 @@
     ]
     },
     "description": "Retrieves a single support request attachment by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportRequestAttachments/:supportRequestAttachmentId",
+                "description": "Partially updates an existing support request attachment by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support request attachment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportRequestAttachments/:supportRequestAttachmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportRequestAttachments",
+        ":supportRequestAttachmentId"
+    ],
+    "variable": [
+        {
+        "key": "supportRequestAttachmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support request attachment by its unique identifier."
 }
                                 ,"response": [
                             ]
@@ -2102,6 +2414,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+                "description": "Partially updates an existing knowledge article by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a knowledge article",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "KnowledgeArticles",
+        ":knowledgeArticleId"
+    ],
+    "variable": [
+        {
+        "key": "knowledgeArticleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing knowledge article by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/KnowledgeArticles/:knowledgeArticleId",
                 "description": "",
                  "item": [
                             {
@@ -2281,7 +2671,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"contactID\": \"<string>\",\n \"supportTicketTypeID\": \"<string>\",\n \"supportEntitlementID\": \"<string>\",\n \"supportPriorityID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"supportTicketStatus\": \"<string>\",\n \"contactId\": \"<string>\",\n \"supportTicketTypeId\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"supportPriorityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2535,6 +2925,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/SupportTickets/:supportTicketId",
+                "description": "Partially updates an existing support ticket by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support ticket",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportTickets/:supportTicketId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportTickets",
+        ":supportTicketId"
+    ],
+    "variable": [
+        {
+        "key": "supportTicketId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support ticket by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportTickets/:supportTicketId",
                 "description": "Updates an existing support ticket by its unique identifier.",
                  "item": [
                             {
@@ -2563,7 +3031,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"description\": \"<string>\",\n \"contactID\": \"<string>\",\n \"supportTicketTypeID\": \"<string>\",\n \"supportEntitlementID\": \"<string>\",\n \"supportPriorityID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"supportTicketStatus\": \"<string>\",\n \"contactId\": \"<string>\",\n \"supportTicketTypeId\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"supportPriorityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2714,7 +3182,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"topic\": \"<string>\",\n \"closed\": \"<string>\",\n \"closedTimestamp\": \"<string>\",\n \"socialProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"topic\": \"<string>\",\n \"closed\": \"<string>\",\n \"closedTimestamp\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3370,6 +3838,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+                "description": "Partially updates an existing warranty request by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a warranty request",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyRequests",
+        ":warrantyRequestId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing warranty request by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyRequests/:warrantyRequestId",
                 "description": "",
                  "item": [
                             {
@@ -3795,6 +4341,84 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnRequests/:returnRequestId",
+                "description": "Partially updates an existing return request by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a return request",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnRequests/:returnRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnRequests",
+        ":returnRequestId"
+    ],
+    "variable": [
+        {
+        "key": "returnRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing return request by its unique identifier."
 }
                                 ,"response": [
                             ]
@@ -5058,6 +5682,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+                "description": "Partially updates an existing inquiry request by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch an inquiry request",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "InquiryRequests",
+        ":inquiryRequestId"
+    ],
+    "variable": [
+        {
+        "key": "inquiryRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing inquiry request by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/InquiryRequests/:inquiryRequestId",
                 "description": "",
                  "item": [
                             {
@@ -5483,6 +6185,84 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+                "description": "Partially updates an existing maintenance visit by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a maintenance visit",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/MaintenanceVisits/:maintenanceVisitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "MaintenanceVisits",
+        ":maintenanceVisitId"
+    ],
+    "variable": [
+        {
+        "key": "maintenanceVisitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing maintenance visit by its unique identifier."
 }
                                 ,"response": [
                             ]
@@ -5924,6 +6704,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/SupportTicketTypes/:supportTicketTypeId",
+                "description": "Partially updates an existing support ticket type by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support ticket type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportTicketTypes/:supportTicketTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportTicketTypes",
+        ":supportTicketTypeId"
+    ],
+    "variable": [
+        {
+        "key": "supportTicketTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support ticket type by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportTicketTypes/:supportTicketTypeId",
                 "description": "Updates an existing support ticket type by its unique identifier.",
                  "item": [
                             {
@@ -6103,7 +6961,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementID\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6357,6 +7215,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/SupportRequests/:supportRequestId",
+                "description": "Partially updates an existing support request by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support request",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportRequests/:supportRequestId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportRequests",
+        ":supportRequestId"
+    ],
+    "variable": [
+        {
+        "key": "supportRequestId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support request by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportRequests/:supportRequestId",
                 "description": "Updates an existing support request by its unique identifier.",
                  "item": [
                             {
@@ -6385,7 +7321,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"approved\": \"<string>\",\n \"approvedTimestamp\": \"<string>\",\n \"supportEntitlementId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6536,7 +7472,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"metadata\": \"<string>\",\n \"supportRequestID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"metadata\": \"<string>\",\n \"supportRequestId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6914,7 +7850,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7168,6 +8104,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+                "description": "Partially updates an existing warranty policy by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a warranty policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "WarrantyPolicies",
+        ":warrantyPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "warrantyPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing warranty policy by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/WarrantyPolicies/:warrantyPolicyId",
                 "description": "",
                  "item": [
                             {
@@ -7196,7 +8210,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"isExtendedWarranty\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7347,7 +8361,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierID\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierId\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7601,6 +8615,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+                "description": "Partially updates an existing return policy by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a return policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "ReturnPolicies",
+        ":returnPolicyId"
+    ],
+    "variable": [
+        {
+        "key": "returnPolicyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing return policy by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/ReturnPolicies/:returnPolicyId",
                 "description": "",
                  "item": [
                             {
@@ -7629,7 +8721,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierID\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyID\": \"<string>\",\n \"countryID\": \"<string>\",\n \"countryStateID\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"shippingCourierId\": \"<string>\",\n \"isFree\": \"<string>\",\n \"reduce\": \"<string>\",\n \"isEnabled\": \"<string>\",\n \"isDefault\": \"<string>\",\n \"allowInternational\": \"<string>\",\n \"hours\": \"<number>\",\n \"days\": \"<number>\",\n \"weeks\": \"<number>\",\n \"months\": \"<number>\",\n \"years\": \"<number>\",\n \"value\": \"<number>\",\n \"percentage\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"countryId\": \"<string>\",\n \"countryStateId\": \"<string>\",\n \"customState\": \"<string>\",\n \"customCity\": \"<string>\",\n \"cityId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7780,7 +8872,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"supportEntitlementID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"supportEntitlementId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8034,6 +9126,84 @@
                         },
 	                        {
     "name": "/api/v2/SupportService/SupportTicketPriorities/:supportTicketPriorityId",
+                "description": "Partially updates an existing support ticket priority by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a support ticket priority",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SupportService/SupportTicketPriorities/:supportTicketPriorityId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SupportService",
+        "SupportTicketPriorities",
+        ":supportTicketPriorityId"
+    ],
+    "variable": [
+        {
+        "key": "supportTicketPriorityId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing support ticket priority by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SupportService/SupportTicketPriorities/:supportTicketPriorityId",
                 "description": "Updates an existing support ticket priority by its unique identifier.",
                  "item": [
                             {
@@ -8062,7 +9232,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"supportEntitlementId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"

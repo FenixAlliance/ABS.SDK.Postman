@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -241,6 +241,72 @@
     ]
     },
     "description": "Retrieves the details of a payment using its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/Payments/:paymentId",
+                "description": "Patch a payment",
+                 "item": [
+                            {
+                                "name": "Patch a payment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/Payments/:paymentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "Payments",
+        ":paymentId"
+    ],
+    "variable": [
+        {
+        "key": "paymentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Patch a payment"
 }
                                 ,"response": [
                             ]
@@ -1305,7 +1371,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1559,6 +1625,84 @@
                         },
 	                        {
     "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+                "description": "Patch a payment term",
+                 "item": [
+                            {
+                                "name": "Patch a payment term",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentTerms",
+        ":paymentTermId"
+    ],
+    "variable": [
+        {
+        "key": "paymentTermId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a payment term"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentTerms/:paymentTermId",
                 "description": "Updates the specified payment term.",
                  "item": [
                             {
@@ -1587,7 +1731,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"isTemplate\": \"<string>\",\n \"percentage\": \"<number>\",\n \"creditDays\": \"<number>\",\n \"creditWeeks\": \"<number>\",\n \"creditMonths\": \"<number>\",\n \"creditYears\": \"<number>\",\n \"paymentModeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1984,6 +2128,84 @@
     ]
     },
     "description": "Retrieves the details of a payment method using its unique ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentMethods/:paymentMethodId",
+                "description": "Patch a payment method",
+                 "item": [
+                            {
+                                "name": "Patch a payment method",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentMethods/:paymentMethodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentMethods",
+        ":paymentMethodId"
+    ],
+    "variable": [
+        {
+        "key": "paymentMethodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a payment method"
 }
                                 ,"response": [
                             ]
@@ -2417,6 +2639,84 @@
     ]
     },
     "description": "Retrieves the details of a payment mode using its unique ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentModes/:paymentModeId",
+                "description": "Patch a payment mode",
+                 "item": [
+                            {
+                                "name": "Patch a payment mode",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentModes/:paymentModeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentModes",
+        ":paymentModeId"
+    ],
+    "variable": [
+        {
+        "key": "paymentModeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a payment mode"
 }
                                 ,"response": [
                             ]

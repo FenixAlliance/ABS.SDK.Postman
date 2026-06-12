@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1144,6 +1144,72 @@
                         },
 	                        {
     "name": "/api/v2/QuotesService/Quotes/:quoteId",
+                "description": "Partially updates an existing quote for the specified tenant and quote ID using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an existing quote.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/QuotesService/Quotes/:quoteId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "QuotesService",
+        "Quotes",
+        ":quoteId"
+    ],
+    "variable": [
+        {
+        "key": "quoteId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing quote for the specified tenant and quote ID using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/QuotesService/Quotes/:quoteId",
                 "description": "Updates an existing quote for the specified tenant and quote ID.",
                  "item": [
                             {
@@ -1722,6 +1788,79 @@
     ]
     },
     "description": "Retrieves a single quote line by its unique identifier for the specified quote and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/QuotesService/Quotes/:quoteId/Lines/:quoteLineId",
+                "description": "Partially updates an existing quote line for the specified quote and tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a quote line.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/QuotesService/Quotes/:quoteId/Lines/:quoteLineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "QuotesService",
+        "Quotes",
+        ":quoteId",
+        "Lines",
+        ":quoteLineId"
+    ],
+    "variable": [
+        {
+        "key": "quoteId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "quoteLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates an existing quote line for the specified quote and tenant using a JSON Patch document."
 }
                                 ,"response": [
                             ]

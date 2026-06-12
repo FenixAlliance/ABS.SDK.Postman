@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -434,6 +434,84 @@
     ]
     },
     "description": "Retrieves the details of a specific marketing campaign by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingCampaigns/:marketingcampaignId",
+                "description": "Partially updates a marketing campaign by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a marketing campaign",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingCampaigns/:marketingcampaignId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingCampaigns",
+        ":marketingcampaignId"
+    ],
+    "variable": [
+        {
+        "key": "marketingcampaignId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a marketing campaign by its ID using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -875,6 +953,84 @@
                         },
 	                        {
     "name": "/api/v2/MarketingService/MarketingAreas/:marketingAreaId",
+                "description": "Partially updates a marketing area by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a marketing area",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingAreas/:marketingAreaId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingAreas",
+        ":marketingAreaId"
+    ],
+    "variable": [
+        {
+        "key": "marketingAreaId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a marketing area by its ID using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingAreas/:marketingAreaId",
                 "description": "Updates an existing marketing area for the specified tenant.",
                  "item": [
                             {
@@ -1300,6 +1456,84 @@
     ]
     },
     "description": "Retrieves the details of a specific marketing list by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLists/:marketinglistId",
+                "description": "Partially updates a marketing list by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a marketing list",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLists/:marketinglistId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLists",
+        ":marketinglistId"
+    ],
+    "variable": [
+        {
+        "key": "marketinglistId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a marketing list by its ID using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -2563,6 +2797,84 @@
                         },
 	                        {
     "name": "/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+                "description": "Partially updates a marketing lead by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a marketing lead",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "MarketingLeads",
+        ":marketingLeadId"
+    ],
+    "variable": [
+        {
+        "key": "marketingLeadId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a marketing lead by its ID using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/MarketingLeads/:marketingLeadId",
                 "description": "",
                  "item": [
                             {
@@ -2988,6 +3300,84 @@
     ]
     },
     "description": "Retrieves the details of a specific email signature by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/EmailSignatures/:emailsignatureId",
+                "description": "Partially updates an email signature by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch an email signature",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/EmailSignatures/:emailsignatureId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "EmailSignatures",
+        ":emailsignatureId"
+    ],
+    "variable": [
+        {
+        "key": "emailsignatureId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an email signature by its ID using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -3429,6 +3819,84 @@
                         },
 	                        {
     "name": "/api/v2/MarketingService/EmailTemplates/:emailTemplateId",
+                "description": "Partially updates an email template by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch an email template",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/EmailTemplates/:emailTemplateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "EmailTemplates",
+        ":emailTemplateId"
+    ],
+    "variable": [
+        {
+        "key": "emailTemplateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an email template by its ID using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/EmailTemplates/:emailTemplateId",
                 "description": "Updates an existing email template by its ID.",
                  "item": [
                             {
@@ -3854,6 +4322,84 @@
     ]
     },
     "description": "Retrieves the details of a specific email group by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/EmailGroups/:emailgroupId",
+                "description": "Partially updates an email group by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch an email group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/EmailGroups/:emailgroupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "EmailGroups",
+        ":emailgroupId"
+    ],
+    "variable": [
+        {
+        "key": "emailgroupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an email group by its ID using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -4295,6 +4841,84 @@
                         },
 	                        {
     "name": "/api/v2/MarketingService/SocialMediaPosts/:socialmediapostId",
+                "description": "Partially updates a social media post by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a social media post",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/SocialMediaPosts/:socialmediapostId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "SocialMediaPosts",
+        ":socialmediapostId"
+    ],
+    "variable": [
+        {
+        "key": "socialmediapostId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a social media post by its ID using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/SocialMediaPosts/:socialmediapostId",
                 "description": "Updates an existing social media post by its ID.",
                  "item": [
                             {
@@ -4728,6 +5352,84 @@
                         },
 	                        {
     "name": "/api/v2/MarketingService/Newsletters/:newsletterId",
+                "description": "Partially updates a newsletter by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a newsletter",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/Newsletters/:newsletterId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "Newsletters",
+        ":newsletterId"
+    ],
+    "variable": [
+        {
+        "key": "newsletterId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a newsletter by its ID using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/Newsletters/:newsletterId",
                 "description": "Updates an existing newsletter by its ID.",
                  "item": [
                             {
@@ -5153,6 +5855,84 @@
     ]
     },
     "description": "Retrieves the details of a specific social post bucket by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/SocialPostBuckets/:socialpostbucketId",
+                "description": "Partially updates a social post bucket by its ID using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patch a social post bucket",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/SocialPostBuckets/:socialpostbucketId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "SocialPostBuckets",
+        ":socialpostbucketId"
+    ],
+    "variable": [
+        {
+        "key": "socialpostbucketId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a social post bucket by its ID using JSON Patch."
 }
                                 ,"response": [
                             ]

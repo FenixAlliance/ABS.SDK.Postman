@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -249,6 +249,72 @@
                         },
 	                        {
     "name": "/api/v2/InvoicingService/Invoices/:invoiceId",
+                "description": "Partially updates the specified invoice for the tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/InvoicingService/Invoices/:invoiceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "InvoicingService",
+        "Invoices",
+        ":invoiceId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified invoice for the tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/InvoicingService/Invoices/:invoiceId",
                 "description": "Updates the specified invoice for the tenant.",
                  "item": [
                             {
@@ -337,7 +403,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"surchargePercent\": \"<number>\",\n \"surchargeAmount\": \"<number>\",\n \"discountPercent\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"totalSurcharge\": \"<number>\",\n \"totalDiscount\": \"<number>\",\n \"type\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"priority\": \"<number>\",\n \"code\": \"<string>\",\n \"description\": \"<string>\",\n \"surchargePercent\": \"<number>\",\n \"surchargeAmount\": \"<number>\",\n \"discountPercent\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"totalSurcharge\": \"<number>\",\n \"totalDiscount\": \"<number>\",\n \"type\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -577,6 +643,79 @@
                         },
 	                        {
     "name": "/api/v2/InvoicingService/Invoices/:invoiceId/Adjustments/:invoiceAdjustmentId",
+                "description": "Partially updates the specified adjustment for the invoice.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice adjustment.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/InvoicingService/Invoices/:invoiceId/Adjustments/:invoiceAdjustmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "InvoicingService",
+        "Invoices",
+        ":invoiceId",
+        "Adjustments",
+        ":invoiceAdjustmentId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "invoiceAdjustmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified adjustment for the invoice."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/InvoicingService/Invoices/:invoiceId/Adjustments/:invoiceAdjustmentId",
                 "description": "Updates the specified adjustment for the invoice.",
                  "item": [
                             {
@@ -599,7 +738,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"currencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"surchargePercent\": \"<number>\",\n \"surchargeAmount\": \"<number>\",\n \"discountPercent\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"totalSurcharge\": \"<number>\",\n \"totalDiscount\": \"<number>\",\n \"type\": \"<string>\"\n}",
+    "raw": "{\n \"currencyId\": \"<string>\",\n \"priority\": \"<number>\",\n \"code\": \"<string>\",\n \"description\": \"<string>\",\n \"surchargePercent\": \"<number>\",\n \"surchargeAmount\": \"<number>\",\n \"discountPercent\": \"<number>\",\n \"discountAmount\": \"<number>\",\n \"totalSurcharge\": \"<number>\",\n \"totalDiscount\": \"<number>\",\n \"type\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1232,6 +1371,79 @@
                         },
 	                        {
     "name": "/api/v2/InvoicingService/Invoices/:invoiceId/Lines/:invoiceLineId",
+                "description": "Partially updates the specified invoice line.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice line.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/InvoicingService/Invoices/:invoiceId/Lines/:invoiceLineId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "InvoicingService",
+        "Invoices",
+        ":invoiceId",
+        "Lines",
+        ":invoiceLineId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "invoiceLineId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified invoice line."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/InvoicingService/Invoices/:invoiceId/Lines/:invoiceLineId",
                 "description": "Updates the specified invoice line.",
                  "item": [
                             {
@@ -1581,6 +1793,86 @@
     ]
     },
     "description": "Deletes the specified tax entry from the invoice line."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/InvoicingService/Invoices/:invoiceId/Lines/:invoiceLineId/Taxes/:invoiceLineTaxId",
+                "description": "Partially updates the specified tax entry for the invoice line.",
+                 "item": [
+                            {
+                                "name": "Patch a tax for an invoice line.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/InvoicingService/Invoices/:invoiceId/Lines/:invoiceLineId/Taxes/:invoiceLineTaxId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "InvoicingService",
+        "Invoices",
+        ":invoiceId",
+        "Lines",
+        ":invoiceLineId",
+        "Taxes",
+        ":invoiceLineTaxId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "invoiceLineId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "invoiceLineTaxId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified tax entry for the invoice line."
 }
                                 ,"response": [
                             ]
@@ -2177,6 +2469,79 @@
     ]
     },
     "description": "Retrieves the reference details for the specified invoice reference ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/InvoicingService/Invoices/:invoiceId/References/:invoiceReferenceId",
+                "description": "Partially updates the specified reference for the invoice.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice reference.",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/InvoicingService/Invoices/:invoiceId/References/:invoiceReferenceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "InvoicingService",
+        "Invoices",
+        ":invoiceId",
+        "References",
+        ":invoiceReferenceId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "invoiceReferenceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified reference for the invoice."
 }
                                 ,"response": [
                             ]

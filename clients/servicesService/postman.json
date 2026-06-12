@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1192,6 +1192,84 @@
                         },
 	                        {
     "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+                "description": "Partially updates an existing service queue using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service queue",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceQueues",
+        ":serviceQueueId"
+    ],
+    "variable": [
+        {
+        "key": "serviceQueueId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service queue using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceQueues/:serviceQueueId",
                 "description": "Updates an existing service queue.",
                  "item": [
                             {
@@ -1617,6 +1695,84 @@
     ]
     },
     "description": "Retrieves a service case by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+                "description": "Partially updates an existing service case using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service case",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCases/:serviceCaseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCases",
+        ":serviceCaseId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service case using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -2058,6 +2214,84 @@
                         },
 	                        {
     "name": "/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+                "description": "Partially updates an existing service level agreement using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service level agreement",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceLevelAgreements",
+        ":serviceLevelAgreementId"
+    ],
+    "variable": [
+        {
+        "key": "serviceLevelAgreementId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service level agreement using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceLevelAgreements/:serviceLevelAgreementId",
                 "description": "Updates an existing service level agreement.",
                  "item": [
                             {
@@ -2483,6 +2717,84 @@
     ]
     },
     "description": "Retrieves a service case type by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+                "description": "Partially updates an existing service case type using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service case type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/ServiceCaseTypes/:serviceCaseTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "ServiceCaseTypes",
+        ":serviceCaseTypeId"
+    ],
+    "variable": [
+        {
+        "key": "serviceCaseTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service case type using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -3085,6 +3397,91 @@
                         },
 	                        {
     "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+                "description": "Partially updates an existing service level using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service level",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId",
+        "ServiceLevels",
+        ":serviceLevelId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "serviceLevelId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service level using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId/ServiceLevels/:serviceLevelId",
                 "description": "Updates an existing service level.",
                  "item": [
                             {
@@ -3524,6 +3921,84 @@
     ]
     },
     "description": "Retrieves a service by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ServicesService/Services/:serviceId",
+                "description": "Partially updates an existing service using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch a service",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ServicesService/Services/:serviceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ServicesService",
+        "Services",
+        ":serviceId"
+    ],
+    "variable": [
+        {
+        "key": "serviceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing service using a JSON Patch document."
 }
                                 ,"response": [
                             ]

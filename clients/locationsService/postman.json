@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1144,6 +1144,72 @@
                         },
 	                        {
     "name": "/api/v2/LocationsService/Locations/:locationId",
+                "description": "Patch a location",
+                 "item": [
+                            {
+                                "name": "Patch a location",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LocationsService/Locations/:locationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LocationsService",
+        "Locations",
+        ":locationId"
+    ],
+    "variable": [
+        {
+        "key": "locationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Patch a location"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LocationsService/Locations/:locationId",
                 "description": "Update a specific location by ID.",
                  "item": [
                             {
@@ -1495,6 +1561,73 @@
     ]
     },
     "description": "Get a specific location of a wallet by ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LocationsService/Locations/wallet/:walletId/:locationId",
+                "description": "Patch a wallet location",
+                 "item": [
+                            {
+                                "name": "Patch a wallet location",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LocationsService/Locations/wallet/:walletId/:locationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LocationsService",
+        "Locations",
+        "wallet",
+        ":walletId",
+        ":locationId"
+    ],
+    "variable": [
+        {
+        "key": "walletId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "locationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Patch a wallet location"
 }
                                 ,"response": [
                             ]

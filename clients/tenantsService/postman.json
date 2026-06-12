@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -2578,7 +2578,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamID\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2832,6 +2832,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/TeamContactEnrollments/:tenantTeamContactEnrollmentId",
+                "description": "Patch a tenant team contact enrollment",
+                 "item": [
+                            {
+                                "name": "Patch a tenant team contact enrollment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/TeamContactEnrollments/:tenantTeamContactEnrollmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "TeamContactEnrollments",
+        ":tenantTeamContactEnrollmentId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTeamContactEnrollmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant team contact enrollment"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/TeamContactEnrollments/:tenantTeamContactEnrollmentId",
                 "description": "Update a tenant team contact enrollment",
                  "item": [
                             {
@@ -2860,7 +2938,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"businessTeamID\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"businessTeamId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3011,7 +3089,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3265,6 +3343,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/TeamRecords/:tenantTeamRecordId",
+                "description": "Patch a tenant team record",
+                 "item": [
+                            {
+                                "name": "Patch a tenant team record",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/TeamRecords/:tenantTeamRecordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "TeamRecords",
+        ":tenantTeamRecordId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTeamRecordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant team record"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/TeamRecords/:tenantTeamRecordId",
                 "description": "Update a tenant team record",
                  "item": [
                             {
@@ -3293,7 +3449,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"businessTeamID\": \"<string>\"\n}",
+    "raw": "{\n \"businessTeamId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3444,7 +3600,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"organizationProfileID\": \"<string>\",\n \"parentDepartmentID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"organizationProfileId\": \"<string>\",\n \"parentDepartmentId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3698,6 +3854,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Departments/:tenantDepartmentId",
+                "description": "Patch a tenant department",
+                 "item": [
+                            {
+                                "name": "Patch a tenant department",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Departments/:tenantDepartmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Departments",
+        ":tenantDepartmentId"
+    ],
+    "variable": [
+        {
+        "key": "tenantDepartmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant department"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Departments/:tenantDepartmentId",
                 "description": "Update a tenant department",
                  "item": [
                             {
@@ -3726,7 +3960,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"organizationProfileID\": \"<string>\",\n \"parentDepartmentID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"organizationProfileId\": \"<string>\",\n \"parentDepartmentId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4131,6 +4365,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/UnitGroups/:unitGroupId",
+                "description": "Partially updates an existing unit group by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a unit group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/UnitGroups/:unitGroupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "UnitGroups",
+        ":unitGroupId"
+    ],
+    "variable": [
+        {
+        "key": "unitGroupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing unit group by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/UnitGroups/:unitGroupId",
                 "description": "Updates an existing unit group by its unique identifier.",
                  "item": [
                             {
@@ -4519,6 +4831,91 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/UnitGroups/:unitGroupId/Units/:unitId",
+                "description": "Partially updates an existing unit within a specific unit group.",
+                 "item": [
+                            {
+                                "name": "Patch a unit within a unit group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/UnitGroups/:unitGroupId/Units/:unitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "UnitGroups",
+        ":unitGroupId",
+        "Units",
+        ":unitId"
+    ],
+    "variable": [
+        {
+        "key": "unitGroupId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "unitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing unit within a specific unit group."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/UnitGroups/:unitGroupId/Units/:unitId",
                 "description": "Updates an existing unit within a specific unit group.",
                  "item": [
                             {
@@ -4779,7 +5176,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamID\": \"<string>\",\n \"projectID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamId\": \"<string>\",\n \"projectId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5033,6 +5430,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/TeamProjectEnrollments/:tenantTeamProjectEnrollmentId",
+                "description": "Patch a tenant team project enrollment",
+                 "item": [
+                            {
+                                "name": "Patch a tenant team project enrollment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/TeamProjectEnrollments/:tenantTeamProjectEnrollmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "TeamProjectEnrollments",
+        ":tenantTeamProjectEnrollmentId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTeamProjectEnrollmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant team project enrollment"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/TeamProjectEnrollments/:tenantTeamProjectEnrollmentId",
                 "description": "Update a tenant team project enrollment",
                  "item": [
                             {
@@ -5061,7 +5536,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"businessTeamID\": \"<string>\",\n \"projectID\": \"<string>\"\n}",
+    "raw": "{\n \"businessTeamId\": \"<string>\",\n \"projectId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5701,7 +6176,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"businessUnitQualifiedName\": \"<string>\",\n \"countryID\": \"<string>\",\n \"organizationProfileID\": \"<string>\",\n \"parentBusinessUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"countryId\": \"<string>\",\n \"organizationProfileId\": \"<string>\",\n \"parentBusinessUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5955,6 +6430,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Units/:tenantUnitId",
+                "description": "Patch a tenant unit",
+                 "item": [
+                            {
+                                "name": "Patch a tenant unit",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Units/:tenantUnitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Units",
+        ":tenantUnitId"
+    ],
+    "variable": [
+        {
+        "key": "tenantUnitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant unit"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Units/:tenantUnitId",
                 "description": "Update a tenant unit",
                  "item": [
                             {
@@ -5983,7 +6536,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"businessUnitQualifiedName\": \"<string>\",\n \"countryID\": \"<string>\",\n \"organizationProfileID\": \"<string>\",\n \"parentBusinessUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"disabled\": \"<string>\",\n \"countryId\": \"<string>\",\n \"organizationProfileId\": \"<string>\",\n \"parentBusinessUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6956,7 +7509,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"parentBusinessIndustryID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"parentBusinessIndustryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7210,6 +7763,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Industries/:tenantIndustryId",
+                "description": "Patch a tenant industry",
+                 "item": [
+                            {
+                                "name": "Patch a tenant industry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Industries/:tenantIndustryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Industries",
+        ":tenantIndustryId"
+    ],
+    "variable": [
+        {
+        "key": "tenantIndustryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant industry"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Industries/:tenantIndustryId",
                 "description": "Update a tenant industry",
                  "item": [
                             {
@@ -7238,7 +7869,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"parentBusinessIndustryID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"parentBusinessIndustryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7389,7 +8020,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"revenue\": \"<string>\",\n \"minEmployees\": \"<number>\",\n \"maxEmployees\": \"<number>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"minEmployees\": \"<number>\",\n \"maxEmployees\": \"<number>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7643,6 +8274,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Segments/:tenantSegmentId",
+                "description": "Patch a tenant segment",
+                 "item": [
+                            {
+                                "name": "Patch a tenant segment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Segments/:tenantSegmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Segments",
+        ":tenantSegmentId"
+    ],
+    "variable": [
+        {
+        "key": "tenantSegmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant segment"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Segments/:tenantSegmentId",
                 "description": "Update a tenant segment",
                  "item": [
                             {
@@ -7671,7 +8380,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"revenue\": \"<string>\",\n \"minEmployees\": \"<number>\",\n \"maxEmployees\": \"<number>\"\n}",
+    "raw": "{\n \"minEmployees\": \"<number>\",\n \"maxEmployees\": \"<number>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7822,7 +8531,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"parentTerritoryID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"parentTerritoryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8076,6 +8785,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Territories/:tenantTerritoryId",
+                "description": "Patch a tenant territory",
+                 "item": [
+                            {
+                                "name": "Patch a tenant territory",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Territories/:tenantTerritoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Territories",
+        ":tenantTerritoryId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTerritoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant territory"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Territories/:tenantTerritoryId",
                 "description": "Update a tenant territory",
                  "item": [
                             {
@@ -8104,7 +8891,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"parentTerritoryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8507,6 +9294,84 @@
     ]
     },
     "description": "Retrieve a single tenant enrollment by its ID"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Enrollments/:enrollmentId",
+                "description": "Patch a tenant enrollment",
+                 "item": [
+                            {
+                                "name": "Patch a tenant enrollment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Enrollments/:enrollmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Enrollments",
+        ":enrollmentId"
+    ],
+    "variable": [
+        {
+        "key": "enrollmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant enrollment"
 }
                                 ,"response": [
                             ]
@@ -9083,6 +9948,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Types/:tenantTypeId",
+                "description": "Patch a tenant type",
+                 "item": [
+                            {
+                                "name": "Patch a tenant type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Types/:tenantTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Types",
+        ":tenantTypeId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant type"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Types/:tenantTypeId",
                 "description": "Update a tenant type",
                  "item": [
                             {
@@ -9262,7 +10205,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamID\": \"<string>\",\n \"employeeProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"businessTeamId\": \"<string>\",\n \"employeeProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9516,6 +10459,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/EmployeeEnrollments/:tenantEmployeeEnrollmentId",
+                "description": "Patch a tenant employee enrollment",
+                 "item": [
+                            {
+                                "name": "Patch a tenant employee enrollment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/EmployeeEnrollments/:tenantEmployeeEnrollmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "EmployeeEnrollments",
+        ":tenantEmployeeEnrollmentId"
+    ],
+    "variable": [
+        {
+        "key": "tenantEmployeeEnrollmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant employee enrollment"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/EmployeeEnrollments/:tenantEmployeeEnrollmentId",
                 "description": "Update a tenant employee enrollment",
                  "item": [
                             {
@@ -9544,7 +10565,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"businessTeamID\": \"<string>\",\n \"employeeProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"businessTeamId\": \"<string>\",\n \"employeeProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9695,7 +10716,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"type\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9949,6 +10970,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Positions/:tenantPositionId",
+                "description": "Patch a tenant position",
+                 "item": [
+                            {
+                                "name": "Patch a tenant position",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Positions/:tenantPositionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Positions",
+        ":tenantPositionId"
+    ],
+    "variable": [
+        {
+        "key": "tenantPositionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant position"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Positions/:tenantPositionId",
                 "description": "Update a tenant position",
                  "item": [
                             {
@@ -10128,7 +11227,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"avatarURL\": \"<string>\",\n \"isPublic\": \"<string>\",\n \"businessUnitID\": \"<string>\",\n \"organizationProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"isPublic\": \"<string>\",\n \"businessUnitId\": \"<string>\",\n \"organizationProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -10382,6 +11481,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Teams/:tenantTeamId",
+                "description": "Patch a tenant team",
+                 "item": [
+                            {
+                                "name": "Patch a tenant team",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Teams/:tenantTeamId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Teams",
+        ":tenantTeamId"
+    ],
+    "variable": [
+        {
+        "key": "tenantTeamId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant team"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Teams/:tenantTeamId",
                 "description": "Update a tenant team",
                  "item": [
                             {
@@ -10410,7 +11587,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"avatarURL\": \"<string>\",\n \"isPublic\": \"<string>\",\n \"businessUnitID\": \"<string>\",\n \"organizationProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"isPublic\": \"<string>\",\n \"businessUnitId\": \"<string>\",\n \"organizationProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -10833,6 +12010,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Options/:optionId",
+                "description": "Patch a tenant option",
+                 "item": [
+                            {
+                                "name": "Patch a tenant option",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Options/:optionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Options",
+        ":optionId"
+    ],
+    "variable": [
+        {
+        "key": "optionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant option"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Options/:optionId",
                 "description": "Update a tenant option",
                  "item": [
                             {
@@ -11182,7 +12437,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"employeeLowRangeValue\": \"<number>\",\n \"employeeHighRangeValue\": \"<number>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"employeeLowRangeValue\": \"<number>\",\n \"employeeHighRangeValue\": \"<number>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -11436,6 +12691,84 @@
                         },
 	                        {
     "name": "/api/v2/TenantsService/Sizes/:tenantSizeId",
+                "description": "Patch a tenant size",
+                 "item": [
+                            {
+                                "name": "Patch a tenant size",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/TenantsService/Sizes/:tenantSizeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "TenantsService",
+        "Sizes",
+        ":tenantSizeId"
+    ],
+    "variable": [
+        {
+        "key": "tenantSizeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a tenant size"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/TenantsService/Sizes/:tenantSizeId",
                 "description": "Update a tenant size",
                  "item": [
                             {
@@ -11464,7 +12797,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"employeeLowRangeValue\": \"<number>\",\n \"employeeHighRangeValue\": \"<number>\"\n}",
+    "raw": "{\n \"employeeLowRangeValue\": \"<number>\",\n \"employeeHighRangeValue\": \"<number>\"\n}",
     "options": {
     "raw": {
     "language": "json"

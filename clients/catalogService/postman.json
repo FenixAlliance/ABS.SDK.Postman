@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -43,7 +43,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"needsRevision\": \"<string>\",\n \"question\": \"<string>\",\n \"socialProfileID\": \"<string>\",\n \"itemID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"needsRevision\": \"<string>\",\n \"question\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -297,6 +297,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemQuestions/:itemQuestionId",
+                "description": "Partially updates an existing item question for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item question",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemQuestions/:itemQuestionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemQuestions",
+        ":itemQuestionId"
+    ],
+    "variable": [
+        {
+        "key": "itemQuestionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item question for the specified tenant using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemQuestions/:itemQuestionId",
                 "description": "Updates an existing item question for the specified tenant.",
                  "item": [
                             {
@@ -482,7 +560,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"itemID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -728,6 +806,84 @@
     ]
     },
     "description": "Retrieves a specific item attachment by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemAttachments/:itemAttachmentId",
+                "description": "Partially updates an existing item attachment for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item attachment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemAttachments/:itemAttachmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemAttachments",
+        ":itemAttachmentId"
+    ],
+    "variable": [
+        {
+        "key": "itemAttachmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item attachment for the specified tenant using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -1479,6 +1635,84 @@
     ]
     },
     "description": "Retrieves a specific item bundle by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemBundles/:itemBundleId",
+                "description": "Partially updates an existing item bundle for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item bundle",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemBundles/:itemBundleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemBundles",
+        ":itemBundleId"
+    ],
+    "variable": [
+        {
+        "key": "itemBundleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item bundle for the specified tenant using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -2305,6 +2539,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemTags/:itemTagId",
+                "description": "Partially updates an existing item tag for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item tag",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemTags/:itemTagId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemTags",
+        ":itemTagId"
+    ],
+    "variable": [
+        {
+        "key": "itemTagId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item tag for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemTags/:itemTagId",
                 "description": "Updates an existing item tag for the specified tenant.",
                  "item": [
                             {
@@ -2417,7 +2729,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"pluralTitle\": \"<string>\",\n \"singularTitle\": \"<string>\",\n \"description\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"googleCategoryTaxonomy\": \"<string>\",\n \"itemCategoryID\": \"<string>\",\n \"itemGoogleCategoryID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"pluralTitle\": \"<string>\",\n \"singularTitle\": \"<string>\",\n \"description\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"googleCategoryTaxonomy\": \"<string>\",\n \"itemCategoryId\": \"<string>\",\n \"itemGoogleCategoryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2663,6 +2975,84 @@
     ]
     },
     "description": "Retrieves a specific item type by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemTypes/:itemTypeID",
+                "description": "Partially updates an existing item type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemTypes/:itemTypeID",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemTypes",
+        ":itemTypeID"
+    ],
+    "variable": [
+        {
+        "key": "itemTypeID",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item type for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -3104,6 +3494,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemAttributes/:itemAttributeId",
+                "description": "Partially updates an existing item attribute for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item attribute",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemAttributes/:itemAttributeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemAttributes",
+        ":itemAttributeId"
+    ],
+    "variable": [
+        {
+        "key": "itemAttributeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item attribute for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemAttributes/:itemAttributeId",
                 "description": "Updates an existing item attribute for the specified tenant.",
                  "item": [
                             {
@@ -3537,6 +4005,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemBrands/:itemBrandId",
+                "description": "Partially updates an existing item brand for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item brand",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemBrands/:itemBrandId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemBrands",
+        ":itemBrandId"
+    ],
+    "variable": [
+        {
+        "key": "itemBrandId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item brand for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemBrands/:itemBrandId",
                 "description": "Updates an existing item brand for the specified tenant.",
                  "item": [
                             {
@@ -3649,7 +4195,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"parentItemCategoryID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"imageURL\": \"<string>\",\n \"parentItemCategoryId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3895,6 +4441,84 @@
     ]
     },
     "description": "Retrieves a specific item category by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemCategories/:itemCategoryId",
+                "description": "Partially updates an existing item category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item category",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemCategories/:itemCategoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemCategories",
+        ":itemCategoryId"
+    ],
+    "variable": [
+        {
+        "key": "itemCategoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item category for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -4715,6 +5339,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/Items/:itemId",
+                "description": "Partially updates an existing stock item for the specified tenant and item ID.",
+                 "item": [
+                            {
+                                "name": "Patch a stock item",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/Items/:itemId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "Items",
+        ":itemId"
+    ],
+    "variable": [
+        {
+        "key": "itemId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing stock item for the specified tenant and item ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/Items/:itemId",
                 "description": "Updates an existing stock item for the specified tenant and item ID.",
                  "item": [
                             {
@@ -4961,7 +5663,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"itemID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7171,7 +7873,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"needsRevision\": \"<string>\",\n \"question\": \"<string>\",\n \"socialProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"needsRevision\": \"<string>\",\n \"question\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8065,7 +8767,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"reviewScore\": \"<number>\",\n \"reviewMessage\": \"<string>\",\n \"socialProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"reviewScore\": \"<number>\",\n \"reviewMessage\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9855,6 +10557,152 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/CatalogService/Items/Batch",
+                "description": "Applies a targeted bulk operation (set flags, add/remove tax policies) to many items atomically.",
+                 "item": [
+                            {
+                                "name": "Bulk-update stock items",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"itemIds\": \"<string>\",\n \"published\": \"<string>\",\n \"taxable\": \"<string>\",\n \"addTaxPolicyIds\": \"<string>\",\n \"removeTaxPolicyIds\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/Items/Batch",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "Items",
+        "Batch"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Applies a targeted bulk operation (set flags, add/remove tax policies) to many items atomically."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/Items/BulkUpsert",
+                "description": "Updates scalar fields of matching tenant-owned items or creates new ones, all in one transaction.",
+                 "item": [
+                            {
+                                "name": "Bulk upsert stock items from rows",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/Items/BulkUpsert",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "Items",
+        "BulkUpsert"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates scalar fields of matching tenant-owned items or creates new ones, all in one transaction."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/api/v2/CatalogService/Items/Count",
                 "description": "Counts the number of stock items for a business, optionally filtered by tenant and OData query options.",
                  "item": [
@@ -10049,6 +10897,79 @@
     ]
     },
     "description": "Retrieves the minimum price among all stock items, optionally filtered by tenant and OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/Items/RecalculatePrices",
+                "description": "Recomputes derived prices for the given tenant-owned items via the pricing service, atomically.",
+                 "item": [
+                            {
+                                "name": "Recalculate stock item prices",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/Items/RecalculatePrices",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "Items",
+        "RecalculatePrices"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Recomputes derived prices for the given tenant-owned items via the pricing service, atomically."
 }
                                 ,"response": [
                             ]
@@ -11360,6 +12281,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemAttributeOptions/:itemAttributeOptionId",
+                "description": "Partially updates an existing item attribute option for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item attribute option",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemAttributeOptions/:itemAttributeOptionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemAttributeOptions",
+        ":itemAttributeOptionId"
+    ],
+    "variable": [
+        {
+        "key": "itemAttributeOptionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item attribute option for the specified tenant using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemAttributeOptions/:itemAttributeOptionId",
                 "description": "Updates an existing item attribute option for the specified tenant.",
                  "item": [
                             {
@@ -11539,7 +12538,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemID\": \"<string>\",\n \"reviewScore\": \"<number>\",\n \"reviewMessage\": \"<string>\",\n \"socialProfileID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemId\": \"<string>\",\n \"reviewScore\": \"<number>\",\n \"reviewMessage\": \"<string>\",\n \"socialProfileId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -11785,6 +12784,84 @@
     ]
     },
     "description": "Retrieves a specific item review by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemReviews/:itemReviewId",
+                "description": "Partially updates an existing item review for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch an item review",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemReviews/:itemReviewId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemReviews",
+        ":itemReviewId"
+    ],
+    "variable": [
+        {
+        "key": "itemReviewId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item review for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -12159,6 +13236,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemFamilies/:itemFamilyId",
+                "description": "Partially updates an existing item family for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item family",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemFamilies/:itemFamilyId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemFamilies",
+        ":itemFamilyId"
+    ],
+    "variable": [
+        {
+        "key": "itemFamilyId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item family for the specified tenant using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemFamilies/:itemFamilyId",
                 "description": "Updates an existing item family for the specified tenant.",
                  "item": [
                             {
@@ -12187,7 +13342,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"description\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -12848,7 +14003,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemID\": \"<string>\",\n \"isItemMozaicBG\": \"<string>\",\n \"mD5Hash\": \"<string>\",\n \"metadata\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"fileName\": \"<string>\",\n \"title\": \"<string>\",\n \"abstract\": \"<string>\",\n \"author\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"notes\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"validResponse\": \"<string>\",\n \"socialProfileID\": \"<string>\",\n \"parentFileUploadID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"itemId\": \"<string>\",\n \"isItemMozaicBG\": \"<string>\",\n \"mD5Hash\": \"<string>\",\n \"metadata\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"fileName\": \"<string>\",\n \"title\": \"<string>\",\n \"abstract\": \"<string>\",\n \"author\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"notes\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"validResponse\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"parentFileUploadId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13102,6 +14257,84 @@
                         },
 	                        {
     "name": "/api/v2/CatalogService/ItemImages/:itemImageId",
+                "description": "Partially updates an existing item image for the specified tenant using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patch an item image",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/CatalogService/ItemImages/:itemImageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "CatalogService",
+        "ItemImages",
+        ":itemImageId"
+    ],
+    "variable": [
+        {
+        "key": "itemImageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item image for the specified tenant using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/CatalogService/ItemImages/:itemImageId",
                 "description": "Updates an existing item image for the specified tenant.",
                  "item": [
                             {
@@ -13130,7 +14363,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"itemID\": \"<string>\",\n \"isItemMozaicBG\": \"<string>\",\n \"mD5Hash\": \"<string>\",\n \"metadata\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"fileName\": \"<string>\",\n \"title\": \"<string>\",\n \"abstract\": \"<string>\",\n \"author\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"notes\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadID\": \"<string>\"\n}",
+    "raw": "{\n \"itemId\": \"<string>\",\n \"isItemMozaicBG\": \"<string>\",\n \"mD5Hash\": \"<string>\",\n \"metadata\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"fileName\": \"<string>\",\n \"title\": \"<string>\",\n \"abstract\": \"<string>\",\n \"author\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"notes\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"

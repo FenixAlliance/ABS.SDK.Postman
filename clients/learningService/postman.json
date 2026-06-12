@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -43,7 +43,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"slug\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"slug\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -291,6 +291,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CoursePages/:pageId",
+                "description": "Partially updates an existing course page for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course page",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CoursePages/:pageId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CoursePages",
+        ":pageId"
+    ],
+    "variable": [
+        {
+        "key": "pageId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course page for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CoursePages/:pageId",
                 "description": "Updates an existing course page for the specified tenant.",
                  "item": [
                             {
@@ -470,7 +548,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -718,6 +796,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseContentGroups/:groupId",
+                "description": "Partially updates a course content group for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course content group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseContentGroups/:groupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseContentGroups",
+        ":groupId"
+    ],
+    "variable": [
+        {
+        "key": "groupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course content group for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseContentGroups/:groupId",
                 "description": "Updates an existing course content group for the specified tenant.",
                  "item": [
                             {
@@ -746,7 +902,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1032,7 +1188,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"courseID\": \"<string>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"expectedStartDateTime\": \"<string>\",\n \"expectedEndDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"courseId\": \"<string>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"expectedStartDateTime\": \"<string>\",\n \"expectedEndDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1280,6 +1436,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseCohorts/:cohortId",
+                "description": "Partially updates a course cohort for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course cohort",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseCohorts/:cohortId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseCohorts",
+        ":cohortId"
+    ],
+    "variable": [
+        {
+        "key": "cohortId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course cohort for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseCohorts/:cohortId",
                 "description": "Updates an existing course cohort for the specified tenant.",
                  "item": [
                             {
@@ -1459,7 +1693,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"abbreviation\": \"<string>\",\n \"weight\": \"<number>\",\n \"quantity\": \"<number>\",\n \"excluded\": \"<number>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"abbreviation\": \"<string>\",\n \"weight\": \"<number>\",\n \"quantity\": \"<number>\",\n \"excluded\": \"<number>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1707,6 +1941,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseAssignmentTypes/:assignmentTypeId",
+                "description": "Partially updates a course assignment type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course assignment type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseAssignmentTypes/:assignmentTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseAssignmentTypes",
+        ":assignmentTypeId"
+    ],
+    "variable": [
+        {
+        "key": "assignmentTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course assignment type for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseAssignmentTypes/:assignmentTypeId",
                 "description": "Updates an existing course assignment type.",
                  "item": [
                             {
@@ -1886,7 +2198,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"overallScore\": \"<number>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"courseGradingRubricID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"overallScore\": \"<number>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"courseGradingRubricId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2134,6 +2446,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseProblemSets/:problemSetId",
+                "description": "Partially updates a course problem set for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course problem set",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseProblemSets/:problemSetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseProblemSets",
+        ":problemSetId"
+    ],
+    "variable": [
+        {
+        "key": "problemSetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course problem set for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseProblemSets/:problemSetId",
                 "description": "Updates an existing course problem set for the specified tenant.",
                  "item": [
                             {
@@ -2162,7 +2552,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"overallScore\": \"<number>\",\n \"courseUnitID\": \"<string>\",\n \"courseGradingRubricID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"overallScore\": \"<number>\",\n \"courseUnitId\": \"<string>\",\n \"courseGradingRubricId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2313,7 +2703,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"icon\": \"<string>\",\n \"description\": \"<string>\",\n \"courseID\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"hideFromStudents\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"icon\": \"<string>\",\n \"description\": \"<string>\",\n \"courseId\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"hideFromStudents\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2561,6 +2951,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseSections/:sectionId",
+                "description": "Partially updates a course section for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course section",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseSections/:sectionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseSections",
+        ":sectionId"
+    ],
+    "variable": [
+        {
+        "key": "sectionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course section for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseSections/:sectionId",
                 "description": "Updates an existing course section for the specified tenant.",
                  "item": [
                             {
@@ -2740,7 +3208,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2988,6 +3456,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseUnitComponents/:componentId",
+                "description": "Partially updates a course unit component for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course unit component",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseUnitComponents/:componentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseUnitComponents",
+        ":componentId"
+    ],
+    "variable": [
+        {
+        "key": "componentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course unit component for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseUnitComponents/:componentId",
                 "description": "Updates an existing course unit component for the specified tenant.",
                  "item": [
                             {
@@ -3016,7 +3562,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -3989,7 +4535,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseID\": \"<string>\",\n \"instructorProfileID\": \"<string>\",\n \"courseTeamMembershipType\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseId\": \"<string>\",\n \"instructorProfileId\": \"<string>\",\n \"courseTeamMembershipType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4237,6 +4783,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseTeamMemberships/:membershipId",
+                "description": "Partially updates a course team membership for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course team membership",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseTeamMemberships/:membershipId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseTeamMemberships",
+        ":membershipId"
+    ],
+    "variable": [
+        {
+        "key": "membershipId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course team membership for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseTeamMemberships/:membershipId",
                 "description": "Updates an existing course team membership.",
                  "item": [
                             {
@@ -4265,7 +4889,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"instructorProfileID\": \"<string>\",\n \"courseTeamMembershipType\": \"<string>\"\n}",
+    "raw": "{\n \"instructorProfileId\": \"<string>\",\n \"courseTeamMembershipType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4482,7 +5106,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4673,6 +5297,84 @@
                 "description": "",
                  "item": [
                             {
+                                "name": "apiV2LearningServiceStudentProfilesStudentProfileIdPatch",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/StudentProfiles/:studentProfileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "StudentProfiles",
+        ":studentProfileId"
+    ],
+    "variable": [
+        {
+        "key": "studentProfileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/StudentProfiles/:studentProfileId",
+                "description": "",
+                 "item": [
+                            {
                                 "name": "apiV2LearningServiceStudentProfilesStudentProfileIdPut",
                                 "request": {
     "method": "PUT",
@@ -4698,7 +5400,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4995,7 +5697,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"studentProfileID\": \"<string>\",\n \"courseEnrollmentID\": \"<string>\",\n \"courseCompletionCertificateTemplateID\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"studentProfileId\": \"<string>\",\n \"courseEnrollmentId\": \"<string>\",\n \"courseCompletionCertificateTemplateId\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5249,6 +5951,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseCertificates/:courseCertificateId",
+                "description": "Partially updates a course certificate for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course certificate",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseCertificates/:courseCertificateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseCertificates",
+        ":courseCertificateId"
+    ],
+    "variable": [
+        {
+        "key": "courseCertificateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course certificate for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseCertificates/:courseCertificateId",
                 "description": "Updates an existing course certificate for the specified tenant.",
                  "item": [
                             {
@@ -5277,7 +6057,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"studentProfileID\": \"<string>\",\n \"courseEnrollmentID\": \"<string>\",\n \"courseCompletionCertificateTemplateID\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"studentProfileId\": \"<string>\",\n \"courseEnrollmentId\": \"<string>\",\n \"courseCompletionCertificateTemplateId\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5422,7 +6202,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseID\": \"<string>\",\n \"webPortalID\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"socialProfileID\": \"<string>\",\n \"parentWebContentID\": \"<string>\",\n \"parentWebContentVersionID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseId\": \"<string>\",\n \"webPortalId\": \"<string>\",\n \"websiteThemeId\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"parentWebContentId\": \"<string>\",\n \"parentWebContentVersionId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5680,6 +6460,85 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseCertificates/Template/:courseCertificateTemplateId",
+                "description": "Partially updates a course certificate template for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a certificate template",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseCertificates/Template/:courseCertificateTemplateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseCertificates",
+        "Template",
+        ":courseCertificateTemplateId"
+    ],
+    "variable": [
+        {
+        "key": "courseCertificateTemplateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course certificate template for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseCertificates/Template/:courseCertificateTemplateId",
                 "description": "Updates an existing course certificate template for the specified tenant.",
                  "item": [
                             {
@@ -5708,7 +6567,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"webPortalID\": \"<string>\",\n \"websiteThemeID\": \"<string>\",\n \"socialProfileID\": \"<string>\",\n \"parentWebContentID\": \"<string>\",\n \"parentWebContentVersionID\": \"<string>\"\n}",
+    "raw": "{\n \"webPortalId\": \"<string>\",\n \"websiteThemeId\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"parentWebContentId\": \"<string>\",\n \"parentWebContentVersionId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5861,7 +6720,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseAssignmentID\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseAssignmentId\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6109,6 +6968,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseAssignmentComponents/:componentId",
+                "description": "Partially updates a course assignment component for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course assignment component",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseAssignmentComponents/:componentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseAssignmentComponents",
+        ":componentId"
+    ],
+    "variable": [
+        {
+        "key": "componentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course assignment component for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseAssignmentComponents/:componentId",
                 "description": "Updates an existing course assignment component.",
                  "item": [
                             {
@@ -6137,7 +7074,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseAssignmentID\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"order\": \"<number>\",\n \"courseAssignmentId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6361,7 +7298,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"points\": \"<number>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"courseCohortID\": \"<string>\",\n \"courseAssignmentTypeID\": \"<string>\",\n \"dueDateTime\": \"<string>\",\n \"asignToAllCohorts\": \"<string>\",\n \"resources\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"points\": \"<number>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"courseCohortId\": \"<string>\",\n \"courseAssignmentTypeId\": \"<string>\",\n \"dueDateTime\": \"<string>\",\n \"asignToAllCohorts\": \"<string>\",\n \"resources\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6609,6 +7546,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseAssignments/:assignmentId",
+                "description": "Partially updates a course assignment for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course assignment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseAssignments/:assignmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseAssignments",
+        ":assignmentId"
+    ],
+    "variable": [
+        {
+        "key": "assignmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course assignment for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseAssignments/:assignmentId",
                 "description": "Updates an existing course assignment for the specified tenant.",
                  "item": [
                             {
@@ -6637,7 +7652,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"points\": \"<number>\",\n \"courseUnitID\": \"<string>\",\n \"courseCohortID\": \"<string>\",\n \"courseAssignmentTypeID\": \"<string>\",\n \"dueDateTime\": \"<string>\",\n \"asignToAllCohorts\": \"<string>\",\n \"resources\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"points\": \"<number>\",\n \"courseUnitId\": \"<string>\",\n \"courseCohortId\": \"<string>\",\n \"courseAssignmentTypeId\": \"<string>\",\n \"dueDateTime\": \"<string>\",\n \"asignToAllCohorts\": \"<string>\",\n \"resources\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -6788,7 +7803,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseWikiID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseWikiId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7036,6 +8051,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseArticles/:articleId",
+                "description": "Partially updates a course article for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course article",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseArticles/:articleId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseArticles",
+        ":articleId"
+    ],
+    "variable": [
+        {
+        "key": "articleId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course article for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseArticles/:articleId",
                 "description": "Updates an existing course article for the specified tenant.",
                  "item": [
                             {
@@ -7215,7 +8308,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseCohortID\": \"<string>\",\n \"studentProfileID\": \"<string>\",\n \"courseCompletionCertificateID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseCohortId\": \"<string>\",\n \"studentProfileId\": \"<string>\",\n \"courseCompletionCertificateId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7469,6 +8562,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseEnrollments/:courseEnrollmentId",
+                "description": "Partially updates an existing course enrollment for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course enrollment",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseEnrollments/:courseEnrollmentId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseEnrollments",
+        ":courseEnrollmentId"
+    ],
+    "variable": [
+        {
+        "key": "courseEnrollmentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course enrollment for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseEnrollments/:courseEnrollmentId",
                 "description": "Updates an existing course enrollment for the specified tenant.",
                  "item": [
                             {
@@ -7497,7 +8668,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"courseCohortID\": \"<string>\",\n \"courseCompletionCertificateID\": \"<string>\"\n}",
+    "raw": "{\n \"courseCohortId\": \"<string>\",\n \"courseCompletionCertificateId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7787,7 +8958,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"authorized\": \"<string>\",\n \"contactID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"type\": \"<string>\",\n \"contactId\": \"<string>\",\n \"about\": \"<string>\",\n \"avatarUrl\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"authorized\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -7926,6 +9097,84 @@
     "body": {
     "mode": "raw",
     "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/InstructorProfiles/:instructorProfileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "InstructorProfiles",
+        ":instructorProfileId"
+    ],
+    "variable": [
+        {
+        "key": "instructorProfileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/InstructorProfiles/:instructorProfileId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8154,7 +9403,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8402,6 +9651,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseUpdates/:updateId",
+                "description": "Partially updates a course update for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course update",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseUpdates/:updateId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseUpdates",
+        ":updateId"
+    ],
+    "variable": [
+        {
+        "key": "updateId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course update for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseUpdates/:updateId",
                 "description": "Updates an existing course update for the specified tenant.",
                  "item": [
                             {
@@ -8581,7 +9908,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8829,6 +10156,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseWikis/:wikiId",
+                "description": "Partially updates a course wiki for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course wiki",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseWikis/:wikiId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseWikis",
+        ":wikiId"
+    ],
+    "variable": [
+        {
+        "key": "wikiId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course wiki for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseWikis/:wikiId",
                 "description": "Updates an existing course wiki for the specified tenant.",
                  "item": [
                             {
@@ -8857,7 +10262,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9008,7 +10413,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"sku\": \"<string>\",\n \"summary\": \"<string>\",\n \"code\": \"<string>\",\n \"version\": \"<string>\",\n \"courseCategoryID\": \"<string>\",\n \"instructorProfileID\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"maxCourseEnrollments\": \"<number>\",\n \"totalEffortInWeeks\": \"<number>\",\n \"totalHoursPerWeek\": \"<number>\",\n \"totalEffortInHours\": \"<number>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"inscriptionsStartDateTime\": \"<string>\",\n \"inscriptionsEndDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"sku\": \"<string>\",\n \"summary\": \"<string>\",\n \"code\": \"<string>\",\n \"version\": \"<string>\",\n \"courseCategoryId\": \"<string>\",\n \"instructorProfileId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"maxCourseEnrollments\": \"<number>\",\n \"totalEffortInWeeks\": \"<number>\",\n \"totalHoursPerWeek\": \"<number>\",\n \"totalEffortInHours\": \"<number>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"inscriptionsStartDateTime\": \"<string>\",\n \"inscriptionsEndDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9262,6 +10667,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/Courses/:courseId",
+                "description": "Partially updates a course for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/Courses/:courseId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "Courses",
+        ":courseId"
+    ],
+    "variable": [
+        {
+        "key": "courseId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/Courses/:courseId",
                 "description": "Updates an existing course for the specified tenant.",
                  "item": [
                             {
@@ -9290,7 +10773,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"sku\": \"<string>\",\n \"summary\": \"<string>\",\n \"code\": \"<string>\",\n \"version\": \"<string>\",\n \"courseCategoryID\": \"<string>\",\n \"instructorProfileID\": \"<string>\",\n \"currencyID\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"maxCourseEnrollments\": \"<number>\",\n \"totalEffortInWeeks\": \"<number>\",\n \"totalHoursPerWeek\": \"<number>\",\n \"totalEffortInHours\": \"<number>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"inscriptionsStartDateTime\": \"<string>\",\n \"inscriptionsEndDateTime\": \"<string>\",\n \"published\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"sku\": \"<string>\",\n \"summary\": \"<string>\",\n \"code\": \"<string>\",\n \"version\": \"<string>\",\n \"courseCategoryId\": \"<string>\",\n \"instructorProfileId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"regularPrice\": \"<number>\",\n \"maxCourseEnrollments\": \"<number>\",\n \"totalEffortInWeeks\": \"<number>\",\n \"totalHoursPerWeek\": \"<number>\",\n \"totalEffortInHours\": \"<number>\",\n \"startDateTime\": \"<string>\",\n \"endDateTime\": \"<string>\",\n \"inscriptionsStartDateTime\": \"<string>\",\n \"inscriptionsEndDateTime\": \"<string>\",\n \"published\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -12081,6 +13564,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseCategories/:categoryId",
+                "description": "Partially updates a course category for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course category",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseCategories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseCategories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course category for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseCategories/:categoryId",
                 "description": "Updates an existing course category for the specified tenant.",
                  "item": [
                             {
@@ -12260,7 +13821,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"fileName\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"fileName\": \"<string>\",\n \"fileUploadURL\": \"<string>\",\n \"contentType\": \"<string>\",\n \"fileLength\": \"<number>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -12508,6 +14069,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseFiles/:fileId",
+                "description": "Partially updates an existing course file for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course file",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseFiles/:fileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseFiles",
+        ":fileId"
+    ],
+    "variable": [
+        {
+        "key": "fileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course file for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseFiles/:fileId",
                 "description": "Updates an existing course file for the specified tenant.",
                  "item": [
                             {
@@ -12687,7 +14326,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -12935,6 +14574,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseLibraries/:libraryId",
+                "description": "Partially updates an existing course library.",
+                 "item": [
+                            {
+                                "name": "Patch a course library",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseLibraries/:libraryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseLibraries",
+        ":libraryId"
+    ],
+    "variable": [
+        {
+        "key": "libraryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course library."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseLibraries/:libraryId",
                 "description": "Updates an existing course library.",
                  "item": [
                             {
@@ -12963,7 +14680,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseUnitID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseUnitId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13114,7 +14831,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"enablePoints\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"enablePoints\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13362,6 +15079,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseGradingRubrics/:rubricId",
+                "description": "Partially updates an existing course grading rubric.",
+                 "item": [
+                            {
+                                "name": "Patch a course grading rubric",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseGradingRubrics/:rubricId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseGradingRubrics",
+        ":rubricId"
+    ],
+    "variable": [
+        {
+        "key": "rubricId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course grading rubric."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseGradingRubrics/:rubricId",
                 "description": "Updates an existing course grading rubric.",
                  "item": [
                             {
@@ -13541,7 +15336,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"courseId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13781,6 +15576,84 @@
     ]
     },
     "description": "Retrieves a specific course forum by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseForums/:forumId",
+                "description": "Partially updates an existing course forum.",
+                 "item": [
+                            {
+                                "name": "Patch a course forum",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseForums/:forumId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseForums",
+        ":forumId"
+    ],
+    "variable": [
+        {
+        "key": "forumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course forum."
 }
                                 ,"response": [
                             ]
@@ -14895,7 +16768,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"url\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"url\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -15143,6 +17016,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseHandouts/:handoutId",
+                "description": "Partially updates an existing course handout.",
+                 "item": [
+                            {
+                                "name": "Patch a course handout",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseHandouts/:handoutId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseHandouts",
+        ":handoutId"
+    ],
+    "variable": [
+        {
+        "key": "handoutId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing course handout."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseHandouts/:handoutId",
                 "description": "Updates an existing course handout.",
                  "item": [
                             {
@@ -15171,7 +17122,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"url\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"courseUnitID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"url\": \"<string>\",\n \"releaseDateTime\": \"<string>\",\n \"courseUnitId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -15322,7 +17273,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseID\": \"<string>\",\n \"courseSectionID\": \"<string>\",\n \"courseContentGroupID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseId\": \"<string>\",\n \"courseSectionId\": \"<string>\",\n \"courseContentGroupId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -15570,6 +17521,84 @@
                         },
 	                        {
     "name": "/api/v2/LearningService/CourseUnits/:unitId",
+                "description": "Partially updates a course unit for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a course unit",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/LearningService/CourseUnits/:unitId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "LearningService",
+        "CourseUnits",
+        ":unitId"
+    ],
+    "variable": [
+        {
+        "key": "unitId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a course unit for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/LearningService/CourseUnits/:unitId",
                 "description": "Updates an existing course unit for the specified tenant.",
                  "item": [
                             {
@@ -15598,7 +17627,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseContentGroupID\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"content\": \"<string>\",\n \"courseContentGroupId\": \"<string>\",\n \"releaseDateTime\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
