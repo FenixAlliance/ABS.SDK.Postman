@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5401",
+		"version": "2.1.2.5532",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -289,6 +289,84 @@
     ]
     },
     "description": "Gets detailed information for a specific grant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Grants/:grantId",
+                "description": "Partially updates a grant.",
+                 "item": [
+                            {
+                                "name": "Patch a grant",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Grants/:grantId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Grants",
+        ":grantId"
+    ],
+    "variable": [
+        {
+        "key": "grantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a grant."
 }
                                 ,"response": [
                             ]
@@ -722,6 +800,84 @@
     ]
     },
     "description": "Retrieves a specific tax class by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/TaxClasses/:id",
+                "description": "Partially updates an existing tax class identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a tax class",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/TaxClasses/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "TaxClasses",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing tax class identified by its unique identifier."
 }
                                 ,"response": [
                             ]
@@ -1264,6 +1420,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/:fiscalResponsibilityId",
+                "description": "Partially updates a fiscal responsibility.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal responsibility",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/:fiscalResponsibilityId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalResponsibilities",
+        ":fiscalResponsibilityId"
+    ],
+    "variable": [
+        {
+        "key": "fiscalResponsibilityId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal responsibility."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/:fiscalResponsibilityId",
                 "description": "Updates an existing fiscal responsibility identified by its unique identifier.",
                  "item": [
                             {
@@ -1632,6 +1868,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/InvoiceEnumerationRanges/:rangeId",
+                "description": "Partially updates an invoice enumeration range.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice enumeration range",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/InvoiceEnumerationRanges/:rangeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "InvoiceEnumerationRanges",
+        ":rangeId"
+    ],
+    "variable": [
+        {
+        "key": "rangeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an invoice enumeration range."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/InvoiceEnumerationRanges/:rangeId",
                 "description": "Updates an existing invoice enumeration range with the provided data.",
                  "item": [
                             {
@@ -1744,7 +2058,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"contactId\": \"<string>\",\n \"taxId\": \"<string>\",\n \"phone\": \"<string>\",\n \"email\": \"<string>\",\n \"address\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"businessName\": \"<string>\",\n \"commercialName\": \"<string>\",\n \"ticker\": \"<string>\",\n \"duns\": \"<string>\",\n \"isPublicCompany\": \"<string>\",\n \"isFactaCustomer\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"fiscalIdentificationTypeId\": \"<string>\",\n \"fiscalAuthorityId\": \"<string>\",\n \"fiscalRegimeId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"contactId\": \"<string>\",\n \"taxId\": \"<string>\",\n \"phone\": \"<string>\",\n \"email\": \"<string>\",\n \"address\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"businessName\": \"<string>\",\n \"commercialName\": \"<string>\",\n \"ticker\": \"<string>\",\n \"duns\": \"<string>\",\n \"isPublicCompany\": \"<string>\",\n \"isFactaCustomer\": \"<string>\",\n \"taxPayerType\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"fiscalIdentificationTypeId\": \"<string>\",\n \"fiscalAuthorityId\": \"<string>\",\n \"fiscalRegimeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1998,6 +2312,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/BillingProfiles/:billingProfileId",
+                "description": "Partially updates a billing profile.",
+                 "item": [
+                            {
+                                "name": "Patch a billing profile",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/BillingProfiles/:billingProfileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "BillingProfiles",
+        ":billingProfileId"
+    ],
+    "variable": [
+        {
+        "key": "billingProfileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a billing profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/BillingProfiles/:billingProfileId",
                 "description": "Modifies an existing billing profile using the provided data.",
                  "item": [
                             {
@@ -2026,7 +2418,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"contactId\": \"<string>\",\n \"taxId\": \"<string>\",\n \"phone\": \"<string>\",\n \"email\": \"<string>\",\n \"address\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"businessName\": \"<string>\",\n \"commercialName\": \"<string>\",\n \"ticker\": \"<string>\",\n \"duns\": \"<string>\",\n \"isPublicCompany\": \"<string>\",\n \"isFactaCustomer\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"fiscalIdentificationTypeId\": \"<string>\",\n \"fiscalAuthorityId\": \"<string>\",\n \"fiscalRegimeId\": \"<string>\"\n}",
+    "raw": "{\n \"contactId\": \"<string>\",\n \"taxId\": \"<string>\",\n \"phone\": \"<string>\",\n \"email\": \"<string>\",\n \"address\": \"<string>\",\n \"address1\": \"<string>\",\n \"address2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"businessName\": \"<string>\",\n \"commercialName\": \"<string>\",\n \"ticker\": \"<string>\",\n \"duns\": \"<string>\",\n \"isPublicCompany\": \"<string>\",\n \"isFactaCustomer\": \"<string>\",\n \"taxPayerType\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"fiscalIdentificationTypeId\": \"<string>\",\n \"fiscalAuthorityId\": \"<string>\",\n \"fiscalRegimeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2547,6 +2939,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/:fiscalResponsibilityRecordId",
+                "description": "Partially updates a fiscal responsibility record.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal responsibility record",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/:fiscalResponsibilityRecordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalResponsibilityRecords",
+        ":fiscalResponsibilityRecordId"
+    ],
+    "variable": [
+        {
+        "key": "fiscalResponsibilityRecordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal responsibility record."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/:fiscalResponsibilityRecordId",
                 "description": "Updates an existing fiscal responsibility record identified by its unique identifier.",
                  "item": [
                             {
@@ -2907,6 +3379,84 @@
     ]
     },
     "description": "Retrieves an expense claim by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/ExpenseClaims/:expenseClaimId",
+                "description": "Partially updates an existing expense claim.",
+                 "item": [
+                            {
+                                "name": "Patch an expense claim",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/ExpenseClaims/:expenseClaimId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "ExpenseClaims",
+        ":expenseClaimId"
+    ],
+    "variable": [
+        {
+        "key": "expenseClaimId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing expense claim."
 }
                                 ,"response": [
                             ]
@@ -3292,6 +3842,72 @@
     ]
     },
     "description": "Retrieves a specific receipt by its ID for the given tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Receipts/:receiptId",
+                "description": "Partially updates the specified receipt using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a receipt",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Receipts/:receiptId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Receipts",
+        ":receiptId"
+    ],
+    "variable": [
+        {
+        "key": "receiptId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Partially updates the specified receipt using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -4277,7 +4893,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"parentJournalID\": \"<string>\",\n \"journalTypeID\": \"<string>\",\n \"ledgerID\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"parentJournalId\": \"<string>\",\n \"journalTypeId\": \"<string>\",\n \"ledgerId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4531,6 +5147,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Journals/:journalId",
+                "description": "Partially updates a journal.",
+                 "item": [
+                            {
+                                "name": "Patch a journal",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Journals/:journalId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Journals",
+        ":journalId"
+    ],
+    "variable": [
+        {
+        "key": "journalId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a journal."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Journals/:journalId",
                 "description": "Updates an existing journal.",
                  "item": [
                             {
@@ -4559,7 +5253,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"parentJournalID\": \"<string>\",\n \"journalTypeID\": \"<string>\",\n \"ledgerID\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"parentJournalId\": \"<string>\",\n \"journalTypeId\": \"<string>\",\n \"ledgerId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4832,6 +5526,91 @@
     ]
     },
     "description": "Deletes a specific journal entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Journals/:journalId/Entries/:entryId",
+                "description": "Partially updates a journal entry.",
+                 "item": [
+                            {
+                                "name": "Patch a journal entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Journals/:journalId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Journals",
+        ":journalId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "journalId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a journal entry."
 }
                                 ,"response": [
                             ]
@@ -5638,6 +6417,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId",
+                "description": "Partially updates a fiscal period.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal period",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalPeriods",
+        ":fiscalPeriodId"
+    ],
+    "variable": [
+        {
+        "key": "fiscalPeriodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal period."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId",
                 "description": "Updates an existing fiscal period identified by its unique identifier.",
                  "item": [
                             {
@@ -5998,6 +6857,84 @@
     ]
     },
     "description": "Retrieves an expense type by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/ExpenseTypes/:expenseTypeId",
+                "description": "Partially updates an existing expense type.",
+                 "item": [
+                            {
+                                "name": "Patch an expense type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/ExpenseTypes/:expenseTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "ExpenseTypes",
+        ":expenseTypeId"
+    ],
+    "variable": [
+        {
+        "key": "expenseTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing expense type."
 }
                                 ,"response": [
                             ]
@@ -6443,6 +7380,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Commissions/Commissions/:commissionId",
+                "description": "Partially updates an existing commission.",
+                 "item": [
+                            {
+                                "name": "Patch a commission",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Commissions/Commissions/:commissionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Commissions",
+        "Commissions",
+        ":commissionId"
+    ],
+    "variable": [
+        {
+        "key": "commissionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing commission."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Commissions/Commissions/:commissionId",
                 "description": "Updates an existing commission.",
                  "item": [
                             {
@@ -6868,6 +7884,85 @@
     ]
     },
     "description": "Retrieves a payment commission by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Commissions/PaymentCommissions/:paymentCommissionId",
+                "description": "Partially updates an existing payment commission.",
+                 "item": [
+                            {
+                                "name": "Patch a payment commission",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Commissions/PaymentCommissions/:paymentCommissionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Commissions",
+        "PaymentCommissions",
+        ":paymentCommissionId"
+    ],
+    "variable": [
+        {
+        "key": "paymentCommissionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing payment commission."
 }
                                 ,"response": [
                             ]
@@ -7311,6 +8406,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/TaxPolicies/:id",
+                "description": "Partially updates an existing tax policy identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a tax policy",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/TaxPolicies/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "TaxPolicies",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing tax policy identified by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/TaxPolicies/:id",
                 "description": "Updates an existing tax policy identified by its unique identifier.",
                  "item": [
                             {
@@ -7691,6 +8864,91 @@
     ]
     },
     "description": "Retrieves a specific applied tax policy record by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/TaxPolicies/:taxPolicyId/AppliedTaxPolicyRecords/:appliedTaxPolicyRecordId",
+                "description": "Partially updates an existing applied tax policy record identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch an applied tax policy record",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/TaxPolicies/:taxPolicyId/AppliedTaxPolicyRecords/:appliedTaxPolicyRecordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "TaxPolicies",
+        ":taxPolicyId",
+        "AppliedTaxPolicyRecords",
+        ":appliedTaxPolicyRecordId"
+    ],
+    "variable": [
+        {
+        "key": "taxPolicyId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "appliedTaxPolicyRecordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing applied tax policy record identified by its unique identifier."
 }
                                 ,"response": [
                             ]
@@ -8168,6 +9426,91 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/TaxPolicies/:taxPolicyId/ItemTaxPolicyRecords/:itemTaxPolicyRecordId",
+                "description": "Partially updates an existing item tax policy record identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch an item tax policy record",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/TaxPolicies/:taxPolicyId/ItemTaxPolicyRecords/:itemTaxPolicyRecordId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "TaxPolicies",
+        ":taxPolicyId",
+        "ItemTaxPolicyRecords",
+        ":itemTaxPolicyRecordId"
+    ],
+    "variable": [
+        {
+        "key": "taxPolicyId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "itemTaxPolicyRecordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing item tax policy record identified by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/TaxPolicies/:taxPolicyId/ItemTaxPolicyRecords/:itemTaxPolicyRecordId",
                 "description": "Updates an existing item tax policy record identified by its unique identifier.",
                  "item": [
                             {
@@ -8196,7 +9539,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"taxPolicyId\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
+    "raw": "{\n \"taxPolicyId\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"itemId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8427,7 +9770,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"tenantId\": \"<string>\",\n \"enrollmentId\": \"<string>\",\n \"ledgerTypeId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"dateTime\": \"<string>\",\n \"ledgerTypeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -8681,6 +10024,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Ledgers/:ledgerId",
+                "description": "Patches the specified ledger.",
+                 "item": [
+                            {
+                                "name": "Patches a ledger",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Ledgers/:ledgerId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Ledgers",
+        ":ledgerId"
+    ],
+    "variable": [
+        {
+        "key": "ledgerId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patches the specified ledger."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Ledgers/:ledgerId",
                 "description": "Updates the specified ledger.",
                  "item": [
                             {
@@ -8709,7 +10130,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"tenantId\": \"<string>\",\n \"enrollmentId\": \"<string>\",\n \"ledgerTypeId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"ledgerTypeId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -9114,6 +10535,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Loans/:loanId",
+                "description": "Partially updates the specified loan using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a loan",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Loans/:loanId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Loans",
+        ":loanId"
+    ],
+    "variable": [
+        {
+        "key": "loanId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates the specified loan using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Loans/:loanId",
                 "description": "Updates the specified loan.",
                  "item": [
                             {
@@ -9470,6 +10969,85 @@
     ]
     },
     "description": "Retrieves the details of a loan application."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Loans/Applications/:applicationId",
+                "description": "Partially updates the specified loan application using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a loan application",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Loans/Applications/:applicationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Loans",
+        "Applications",
+        ":applicationId"
+    ],
+    "variable": [
+        {
+        "key": "applicationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates the specified loan application using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -9978,6 +11556,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Loans/Types/:loanTypeId",
+                "description": "Partially updates the specified loan type using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a loan type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Loans/Types/:loanTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Loans",
+        "Types",
+        ":loanTypeId"
+    ],
+    "variable": [
+        {
+        "key": "loanTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates the specified loan type using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Loans/Types/:loanTypeId",
                 "description": "Updates the specified loan type.",
                  "item": [
                             {
@@ -10405,6 +12062,84 @@
     ]
     },
     "description": "Get the currently acting tenant accounting period."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/AccountingPeriods/:accountingPeriodId",
+                "description": "Partially updates an accounting period.",
+                 "item": [
+                            {
+                                "name": "Patch an accounting period",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/AccountingPeriods/:accountingPeriodId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "AccountingPeriods",
+        ":accountingPeriodId"
+    ],
+    "variable": [
+        {
+        "key": "accountingPeriodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an accounting period."
 }
                                 ,"response": [
                             ]
@@ -10846,6 +12581,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/TaxRates/:id",
+                "description": "Partially updates an existing tax rate identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a tax rate",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/TaxRates/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "TaxRates",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing tax rate identified by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/TaxRates/:id",
                 "description": "Updates an existing tax rate identified by its unique identifier.",
                  "item": [
                             {
@@ -11098,7 +12911,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -11458,7 +13271,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
+    "raw": "{\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -12416,6 +14229,91 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Accounts/:accountId/Entries/:entryId",
+                "description": "Patch account entry.",
+                 "item": [
+                            {
+                                "name": "Patch account entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Accounts/:accountId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Accounts",
+        ":accountId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "accountId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch account entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Accounts/:accountId/Entries/:entryId",
                 "description": "Update account entry.",
                  "item": [
                             {
@@ -13032,7 +14930,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"accountId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"accountId\": \"<string>\",\n \"type\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13235,6 +15133,91 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Accounts/Relations/:accountRelationId",
+                "description": "Patch account relation.",
+                 "item": [
+                            {
+                                "name": "Patch account relation",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Accounts/Relations/:accountRelationId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Accounts",
+        "Relations",
+        ":accountRelationId"
+    ],
+    "variable": [
+        {
+        "key": "accountRelationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "accountId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch account relation."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Accounts/Relations/:accountRelationId",
                 "description": "Update account relation.",
                  "item": [
                             {
@@ -13263,7 +15246,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"accountId\": \"<string>\"\n}",
+    "raw": "{\n \"accountId\": \"<string>\",\n \"type\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13815,6 +15798,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Accounts/Types/:accountTypeId",
+                "description": "Patch account type.",
+                 "item": [
+                            {
+                                "name": "Patch account type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Accounts/Types/:accountTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Accounts",
+        "Types",
+        ":accountTypeId"
+    ],
+    "variable": [
+        {
+        "key": "accountTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch account type."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Accounts/Types/:accountTypeId",
                 "description": "Update account type.",
                  "item": [
                             {
@@ -14250,6 +16312,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/FiscalYears/:fiscalYearId",
+                "description": "Partially updates a fiscal year.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal year",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/FiscalYears/:fiscalYearId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "FiscalYears",
+        ":fiscalYearId"
+    ],
+    "variable": [
+        {
+        "key": "fiscalYearId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal year."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/FiscalYears/:fiscalYearId",
                 "description": "Updates an existing fiscal year identified by its ID.",
                  "item": [
                             {
@@ -14675,6 +16815,84 @@
     ]
     },
     "description": "Retrieves the details of a ledger type using its unique ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/LedgerTypes/:ledgerTypeId",
+                "description": "Partially updates the specified ledger type using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a ledger type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/LedgerTypes/:ledgerTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "LedgerTypes",
+        ":ledgerTypeId"
+    ],
+    "variable": [
+        {
+        "key": "ledgerTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates the specified ledger type using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -15211,6 +17429,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/:identificationTypeId",
+                "description": "Partially updates a fiscal identification type.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal identification type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/:identificationTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "IdentificationTypes",
+        ":identificationTypeId"
+    ],
+    "variable": [
+        {
+        "key": "identificationTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal identification type."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/:identificationTypeId",
                 "description": "Updates an existing fiscal identification type identified by its unique identifier.",
                  "item": [
                             {
@@ -15672,6 +17970,86 @@
     ]
     },
     "description": "Deletes a fiscal regime identified by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/:regimeId",
+                "description": "Partially updates a fiscal regime.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal regime",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/:regimeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalRegimes",
+        ":regimeId"
+    ],
+    "variable": [
+        {
+        "key": "regimeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal regime."
 }
                                 ,"response": [
                             ]
@@ -16149,6 +18527,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/:enumerationRangeId",
+                "description": "Partially updates an invoice enumeration range.",
+                 "item": [
+                            {
+                                "name": "Patch an invoice enumeration range",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/:enumerationRangeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "EnumerationRanges",
+        ":enumerationRangeId"
+    ],
+    "variable": [
+        {
+        "key": "enumerationRangeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an invoice enumeration range."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/:enumerationRangeId",
                 "description": "Updates an existing invoice enumeration range identified by its unique identifier.",
                  "item": [
                             {
@@ -16513,6 +18971,85 @@
     ]
     },
     "description": "Get a specific share class by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Shares/Classes/:shareClassId",
+                "description": "Partially updates a share class using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a share class",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Shares/Classes/:shareClassId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Shares",
+        "Classes",
+        ":shareClassId"
+    ],
+    "variable": [
+        {
+        "key": "shareClassId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a share class using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -16954,6 +19491,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Shares/Issuances/:issuanceId",
+                "description": "Partially updates a share issuance using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a share issuance",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Shares/Issuances/:issuanceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Shares",
+        "Issuances",
+        ":issuanceId"
+    ],
+    "variable": [
+        {
+        "key": "issuanceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a share issuance using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Shares/Issuances/:issuanceId",
                 "description": "Updates an existing share issuance.",
                  "item": [
                             {
@@ -17379,6 +19995,85 @@
     ]
     },
     "description": "Get a specific share transfer reason by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Shares/TransferReasons/:reasonId",
+                "description": "Partially updates a share transfer reason using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a share transfer reason",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Shares/TransferReasons/:reasonId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Shares",
+        "TransferReasons",
+        ":reasonId"
+    ],
+    "variable": [
+        {
+        "key": "reasonId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a share transfer reason using a JSON Patch document."
 }
                                 ,"response": [
                             ]
@@ -17820,6 +20515,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Shares/Transfers/:transferId",
+                "description": "Partially updates a share transfer using a JSON Patch document.",
+                 "item": [
+                            {
+                                "name": "Patches a share transfer",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Shares/Transfers/:transferId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Shares",
+        "Transfers",
+        ":transferId"
+    ],
+    "variable": [
+        {
+        "key": "transferId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a share transfer using a JSON Patch document."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Shares/Transfers/:transferId",
                 "description": "Updates an existing share transfer.",
                  "item": [
                             {
@@ -18196,6 +20970,91 @@
     ]
     },
     "description": "Deletes the specified tax entry from the billable line."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/BillableLines/:billableLineId/Taxes/:taxId",
+                "description": "Partially updates a billable line tax.",
+                 "item": [
+                            {
+                                "name": "Patch a billable line tax",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/BillableLines/:billableLineId/Taxes/:taxId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "BillableLines",
+        ":billableLineId",
+        "Taxes",
+        ":taxId"
+    ],
+    "variable": [
+        {
+        "key": "billableLineId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "taxId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a billable line tax."
 }
                                 ,"response": [
                             ]
@@ -18647,6 +21506,85 @@
     ]
     },
     "description": "Retrieves a specific fiscal authority by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/:authorityId",
+                "description": "Partially updates a fiscal authority.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal authority",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/:authorityId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        ":authorityId"
+    ],
+    "variable": [
+        {
+        "key": "authorityId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal authority."
 }
                                 ,"response": [
                             ]
@@ -19229,6 +22167,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/CostCentres/:costCentreId",
+                "description": "Partially updates an existing cost centre.",
+                 "item": [
+                            {
+                                "name": "Patch a cost centre",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/CostCentres/:costCentreId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "CostCentres",
+        ":costCentreId"
+    ],
+    "variable": [
+        {
+        "key": "costCentreId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing cost centre."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/CostCentres/:costCentreId",
                 "description": "Updates an existing cost centre.",
                  "item": [
                             {
@@ -19585,6 +22601,85 @@
     ]
     },
     "description": "Retrieves a cost centre budget by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/CostCentres/CostCentreBudgets/:budgetId",
+                "description": "Partially updates an existing cost centre budget.",
+                 "item": [
+                            {
+                                "name": "Patch a cost centre budget",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/CostCentres/CostCentreBudgets/:budgetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "CostCentres",
+        "CostCentreBudgets",
+        ":budgetId"
+    ],
+    "variable": [
+        {
+        "key": "budgetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing cost centre budget."
 }
                                 ,"response": [
                             ]
@@ -19950,6 +23045,85 @@
     ]
     },
     "description": "Retrieves a cost centre group by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/CostCentres/CostCentreGroups/:groupId",
+                "description": "Partially updates an existing cost centre group.",
+                 "item": [
+                            {
+                                "name": "Patch a cost centre group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/CostCentres/CostCentreGroups/:groupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "CostCentres",
+        "CostCentreGroups",
+        ":groupId"
+    ],
+    "variable": [
+        {
+        "key": "groupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing cost centre group."
 }
                                 ,"response": [
                             ]
@@ -20561,6 +23735,86 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalYears/:fiscalYearId",
+                "description": "Partially updates a fiscal authority year.",
+                 "item": [
+                            {
+                                "name": "Patch a fiscal authority year",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalYears/:fiscalYearId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalYears",
+        ":fiscalYearId"
+    ],
+    "variable": [
+        {
+        "key": "fiscalYearId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a fiscal authority year."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalYears/:fiscalYearId",
                 "description": "Updates an existing fiscal year identified by its unique identifier.",
                  "item": [
                             {
@@ -20921,6 +24175,84 @@
     ]
     },
     "description": "Get a budget by id"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Budgets/:budgetId",
+                "description": "Partially update a budget using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a budget",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Budgets/:budgetId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Budgets",
+        ":budgetId"
+    ],
+    "variable": [
+        {
+        "key": "budgetId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a budget using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -21309,6 +24641,91 @@
     ]
     },
     "description": "Get a budget account entry by id"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Budgets/:budgetId/AccountEntries/:entryId",
+                "description": "Partially update a budget account entry using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a budget account entry",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Budgets/:budgetId/AccountEntries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Budgets",
+        ":budgetId",
+        "AccountEntries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "budgetId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a budget account entry using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -21757,6 +25174,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/AccountGroups/:accountGroupId",
+                "description": "Partially updates an account group.",
+                 "item": [
+                            {
+                                "name": "Patch an account group",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/AccountGroups/:accountGroupId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "AccountGroups",
+        ":accountGroupId"
+    ],
+    "variable": [
+        {
+        "key": "accountGroupId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an account group."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/AccountGroups/:accountGroupId",
                 "description": "Updates an existing account group.",
                  "item": [
                             {
@@ -22190,6 +25685,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Banking/:bankId",
+                "description": "Partially update a bank using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a bank",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Banking/:bankId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Banking",
+        ":bankId"
+    ],
+    "variable": [
+        {
+        "key": "bankId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a bank using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Banking/:bankId",
                 "description": "Update a bank.",
                  "item": [
                             {
@@ -22296,7 +25869,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"walletId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -22578,6 +26151,91 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Banking/:bankId/Accounts/:accountId",
+                "description": "Partially update a bank account using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a bank account",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Banking/:bankId/Accounts/:accountId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Banking",
+        ":bankId",
+        "Accounts",
+        ":accountId"
+    ],
+    "variable": [
+        {
+        "key": "bankId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "accountId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a bank account using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Banking/:bankId/Accounts/:accountId",
                 "description": "Update a bank account.",
                  "item": [
                             {
@@ -22606,7 +26264,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"qualifiedName\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"iban\": \"<string>\",\n \"swift\": \"<string>\",\n \"branchCode\": \"<string>\",\n \"bankAccountNumber\": \"<string>\",\n \"bankId\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"walletId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -23047,6 +26705,91 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Banking/:bankId/Guarantees/:guaranteeId",
+                "description": "Partially update a bank guarantee using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a bank guarantee",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Banking/:bankId/Guarantees/:guaranteeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Banking",
+        ":bankId",
+        "Guarantees",
+        ":guaranteeId"
+    ],
+    "variable": [
+        {
+        "key": "bankId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "guaranteeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a bank guarantee using JSON Patch."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Banking/:bankId/Guarantees/:guaranteeId",
                 "description": "Update a bank guarantee.",
                  "item": [
                             {
@@ -23234,7 +26977,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"bankAccountId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"price\": \"<number>\",\n \"quantity\": \"<number>\",\n \"externalDescription\": \"<string>\",\n \"basisQuantity\": \"<number>\",\n \"basisAmount\": \"<number>\",\n \"percent\": \"<number>\",\n \"unitGroupId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"transactionCategoryId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"bankProfileId\": \"<string>\",\n \"bankAccountId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -23508,6 +27251,91 @@
     ]
     },
     "description": "Get the currently acting tenant bank transaction."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Banking/:bankId/Transactions/:transactionId",
+                "description": "Partially update a bank transaction using JSON Patch.",
+                 "item": [
+                            {
+                                "name": "Patches a bank transaction",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Banking/:bankId/Transactions/:transactionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Banking",
+        ":bankId",
+        "Transactions",
+        ":transactionId"
+    ],
+    "variable": [
+        {
+        "key": "bankId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "transactionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially update a bank transaction using JSON Patch."
 }
                                 ,"response": [
                             ]
@@ -24030,6 +27858,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/FinancialBooks/:financialBookId",
+                "description": "Partially updates a financial book.",
+                 "item": [
+                            {
+                                "name": "Patch a financial book",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/FinancialBooks/:financialBookId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "FinancialBooks",
+        ":financialBookId"
+    ],
+    "variable": [
+        {
+        "key": "financialBookId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a financial book."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/FinancialBooks/:financialBookId",
                 "description": "Updates an existing financial book.",
                  "item": [
                             {
@@ -24455,6 +28361,84 @@
     ]
     },
     "description": "Fetches the journal type matching the specified ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/JournalTypes/:journalTypeId",
+                "description": "Partially updates a journal type.",
+                 "item": [
+                            {
+                                "name": "Patch a journal type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/JournalTypes/:journalTypeId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "JournalTypes",
+        ":journalTypeId"
+    ],
+    "variable": [
+        {
+        "key": "journalTypeId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates a journal type."
 }
                                 ,"response": [
                             ]
@@ -24896,6 +28880,84 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Transactions/:transactionId",
+                "description": "Partially updates an existing transaction identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a transaction",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Transactions/:transactionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Transactions",
+        ":transactionId"
+    ],
+    "variable": [
+        {
+        "key": "transactionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing transaction identified by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Transactions/:transactionId",
                 "description": "Updates an existing transaction with the provided data.",
                  "item": [
                             {
@@ -25252,6 +29314,85 @@
     ]
     },
     "description": "Retrieves a specific transaction category by its unique identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Transactions/Categories/:categoryId",
+                "description": "Partially updates an existing transaction category identified by its unique identifier.",
+                 "item": [
+                            {
+                                "name": "Patch a transaction category",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Transactions/Categories/:categoryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Transactions",
+        "Categories",
+        ":categoryId"
+    ],
+    "variable": [
+        {
+        "key": "categoryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing transaction category identified by its unique identifier."
 }
                                 ,"response": [
                             ]
