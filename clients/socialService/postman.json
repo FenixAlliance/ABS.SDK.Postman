@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5532",
+		"version": "2.0.0.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1772,81 +1772,8 @@
 	                    ]
 	        },
 	        {
-	            "name": "Completions",
-	            "description": "Completions tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/AiService/Completions/Complete",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiV2AiServiceCompletionsCompleteGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AiService",
-        "Completions",
-        "Complete"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "conversationId",
-        "value": "conversationId_example",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "message",
-        "value": "message_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.Portals.Website",
-	            "description": "FenixAlliance.Portals.Website tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -2658,6 +2585,1672 @@
     ]
     },
     "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "CurriculumExperiences",
+	            "description": "CurriculumExperiences tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences",
+                "description": "Adds a work-experience record to a curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Create a curriculum experience",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"curriculumId\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"priority\": \"<number>\",\n \"organization\": \"<string>\",\n \"featured\": \"<string>\",\n \"current\": \"<string>\",\n \"validated\": \"<string>\",\n \"imageUrl\": \"<string>\",\n \"dateFrom\": \"<string>\",\n \"dateTo\": \"<string>\",\n \"date\": \"<string>\",\n \"countryLanguageId\": \"<string>\",\n \"proficiencyRatingValueId\": \"<string>\",\n \"proficiencyRatingModelId\": \"<string>\",\n \"achievements\": \"<string>\",\n \"responsibilities\": \"<string>\",\n \"employerProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Adds a work-experience record to a curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences",
+                "description": "Retrieves the work-experience records of a curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Get curriculum experiences",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the work-experience records of a curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+                "description": "Removes a work-experience record from a curriculum.",
+                 "item": [
+                            {
+                                "name": "Delete a curriculum experience",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences",
+        ":experienceId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "experienceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes a work-experience record from a curriculum."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+                "description": "Retrieves a specific work-experience record of a curriculum.",
+                 "item": [
+                            {
+                                "name": "Get curriculum experience by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences",
+        ":experienceId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "experienceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific work-experience record of a curriculum."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+                "description": "Partially updates an existing work-experience record of a curriculum.",
+                 "item": [
+                            {
+                                "name": "Patch a curriculum experience",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences",
+        ":experienceId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "experienceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing work-experience record of a curriculum."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+                "description": "Updates an existing work-experience record of a curriculum.",
+                 "item": [
+                            {
+                                "name": "Update a curriculum experience",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"priority\": \"<number>\",\n \"organization\": \"<string>\",\n \"featured\": \"<string>\",\n \"current\": \"<string>\",\n \"validated\": \"<string>\",\n \"imageUrl\": \"<string>\",\n \"dateFrom\": \"<string>\",\n \"dateTo\": \"<string>\",\n \"date\": \"<string>\",\n \"countryLanguageId\": \"<string>\",\n \"proficiencyRatingValueId\": \"<string>\",\n \"proficiencyRatingModelId\": \"<string>\",\n \"achievements\": \"<string>\",\n \"responsibilities\": \"<string>\",\n \"employerProfileId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences/:experienceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences",
+        ":experienceId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "experienceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing work-experience record of a curriculum."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId/Experiences/Count",
+                "description": "Returns the count of work-experience records of a curriculum.",
+                 "item": [
+                            {
+                                "name": "Count curriculum experiences",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId/Experiences/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId",
+        "Experiences",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of work-experience records of a curriculum."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Curriculums",
+	            "description": "Curriculums tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SocialService/Curriculums",
+                "description": "Creates a curriculum (CV) on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Create a curriculum",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"jobApplicantProfileId\": \"<string>\",\n \"undergraduate\": \"<string>\",\n \"certifiedProfessional\": \"<string>\",\n \"sales\": \"<string>\",\n \"others\": \"<string>\",\n \"finance\": \"<string>\",\n \"research\": \"<string>\",\n \"advocate\": \"<string>\",\n \"marketing\": \"<string>\",\n \"education\": \"<string>\",\n \"executive\": \"<string>\",\n \"commercial\": \"<string>\",\n \"graphicDesign\": \"<string>\",\n \"sustainability\": \"<string>\",\n \"administrative\": \"<string>\",\n \"humanResources\": \"<string>\",\n \"soundEngineering\": \"<string>\",\n \"cloudEngineering\": \"<string>\",\n \"firstLevelSupport\": \"<string>\",\n \"secondLevelSupport\": \"<string>\",\n \"softwareEngineering\": \"<string>\",\n \"partnerAccountRepresentative\": \"<string>\",\n \"startupSuccessRepresentative\": \"<string>\",\n \"customerSuccessRepresentative\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a curriculum (CV) on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums",
+                "description": "Retrieves the curricula (CVs) authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Get curricula",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the curricula (CVs) authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId",
+                "description": "Deletes a curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Delete a curriculum",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId",
+                "description": "Retrieves a specific curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Get curriculum by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId",
+                "description": "Partially updates an existing curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Patch a curriculum",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/:curriculumId",
+                "description": "Updates an existing curriculum authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Update a curriculum",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"jobApplicantProfileId\": \"<string>\",\n \"undergraduate\": \"<string>\",\n \"certifiedProfessional\": \"<string>\",\n \"sales\": \"<string>\",\n \"others\": \"<string>\",\n \"finance\": \"<string>\",\n \"research\": \"<string>\",\n \"advocate\": \"<string>\",\n \"marketing\": \"<string>\",\n \"education\": \"<string>\",\n \"executive\": \"<string>\",\n \"commercial\": \"<string>\",\n \"graphicDesign\": \"<string>\",\n \"sustainability\": \"<string>\",\n \"administrative\": \"<string>\",\n \"humanResources\": \"<string>\",\n \"soundEngineering\": \"<string>\",\n \"cloudEngineering\": \"<string>\",\n \"firstLevelSupport\": \"<string>\",\n \"secondLevelSupport\": \"<string>\",\n \"softwareEngineering\": \"<string>\",\n \"partnerAccountRepresentative\": \"<string>\",\n \"startupSuccessRepresentative\": \"<string>\",\n \"customerSuccessRepresentative\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/:curriculumId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        ":curriculumId"
+    ],
+    "variable": [
+        {
+        "key": "curriculumId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing curriculum authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Curriculums/Count",
+                "description": "Returns the count of curricula authored on the specified social profile.",
+                 "item": [
+                            {
+                                "name": "Count curricula",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Curriculums/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Curriculums",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "socialProfileId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of curricula authored on the specified social profile."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Skills",
+	            "description": "Skills tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/SocialService/Skills",
+                "description": "Creates a new skill catalog entry for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a skill",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"url\": \"<string>\",\n \"type\": \"<string>\",\n \"iconUrl\": \"<string>\",\n \"description\": \"<string>\",\n \"skillType\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new skill catalog entry for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills",
+                "description": "Retrieves the skill catalog for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get skills",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the skill catalog for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills/:skillId",
+                "description": "Deletes a skill for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a skill",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills/:skillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills",
+        ":skillId"
+    ],
+    "variable": [
+        {
+        "key": "skillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a skill for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills/:skillId",
+                "description": "Retrieves a specific skill by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get skill by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills/:skillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills",
+        ":skillId"
+    ],
+    "variable": [
+        {
+        "key": "skillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific skill by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills/:skillId",
+                "description": "Partially updates an existing skill for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Patch a skill",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills/:skillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills",
+        ":skillId"
+    ],
+    "variable": [
+        {
+        "key": "skillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Partially updates an existing skill for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills/:skillId",
+                "description": "Updates an existing skill for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a skill",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"url\": \"<string>\",\n \"type\": \"<string>\",\n \"iconUrl\": \"<string>\",\n \"description\": \"<string>\",\n \"skillType\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills/:skillId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills",
+        ":skillId"
+    ],
+    "variable": [
+        {
+        "key": "skillId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing skill for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/SocialService/Skills/Count",
+                "description": "Counts skill catalog entries for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Count skills",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/SocialService/Skills/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "SocialService",
+        "Skills",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Counts skill catalog entries for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -3673,7 +5266,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"socialPostId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"notes\": \"<string>\",\n \"title\": \"<string>\",\n \"author\": \"<string>\",\n \"isFolder\": \"<string>\",\n \"fileName\": \"<string>\",\n \"abstract\": \"<string>\",\n \"keyWords\": \"<string>\",\n \"validResponse\": \"<string>\",\n \"parentFileUploadId\": \"<string>\",\n \"filePath\": \"<string>\",\n \"publicAccessType\": \"<string>\",\n \"socialPostId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4124,7 +5717,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"message\": \"<string>\",\n \"parentCommentId\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"socialFeedPostId\": \"<string>\",\n \"socialPostId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"message\": \"<string>\",\n \"bodyHtml\": \"<string>\",\n \"bodyFormat\": \"<string>\",\n \"parentCommentId\": \"<string>\",\n \"socialProfileId\": \"<string>\",\n \"socialFeedPostId\": \"<string>\",\n \"socialPostId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5865,9 +7458,14 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "{server}",
 			"type": "string"
-        }
+        },
+		{
+			"key": "server",
+			"value": "https://absuite.net",
+			"type": "string"
+		}
 	]
 }
 
