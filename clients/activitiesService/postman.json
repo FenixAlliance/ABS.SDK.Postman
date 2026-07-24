@@ -194,6 +194,55 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/AIService/Agents/:agentId/agui",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AIService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
@@ -835,6 +884,73 @@
 	            "name": "ActivityFeeds",
 	            "description": "ActivityFeeds tag",
 	            "item": [
+	                        {
+    "name": "/api/v2/ActivitiesService/Activities/Count",
+                "description": "Returns the tenant-wide count of activity records across all feeds owned by the tenant.",
+                 "item": [
+                            {
+                                "name": "Count activity records",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ActivitiesService/Activities/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ActivitiesService",
+        "Activities",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the tenant-wide count of activity records across all feeds owned by the tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
 	                        {
     "name": "/api/v2/ActivitiesService/ActivityFeeds",
                 "description": "Retrieves a list of activity feeds for the specified tenant.",
@@ -2093,79 +2209,6 @@
     ]
     },
     "description": "Count activity types for the current tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "ActivityRecords",
-	            "description": "ActivityRecords tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/ActivitiesService/ActivityRecords/Count",
-                "description": "Returns the tenant-wide count of activity records across all feeds owned by the tenant.",
-                 "item": [
-                            {
-                                "name": "Count activity records",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ActivitiesService/ActivityRecords/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ActivitiesService",
-        "ActivityRecords",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns the tenant-wide count of activity records across all feeds owned by the tenant."
 }
                                 ,"response": [
                             ]

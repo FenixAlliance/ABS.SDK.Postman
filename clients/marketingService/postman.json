@@ -194,6 +194,55 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/AIService/Agents/:agentId/agui",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AIService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
@@ -5506,6 +5555,366 @@
 	            "name": "NewsletterSubscriptions",
 	            "description": "NewsletterSubscriptions tag",
 	            "item": [
+	                        {
+    "name": "/api/v2/MarketingService/NewsletterSubscriptions",
+                "description": "Creates a new newsletter subscription for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a newsletter subscription",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"email\": \"<string>\",\n \"verified\": \"<string>\",\n \"newsletterId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/NewsletterSubscriptions",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "NewsletterSubscriptions"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new newsletter subscription for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/NewsletterSubscriptions",
+                "description": "Retrieves a collection of newsletter subscriptions for the specified tenant using OData query options.",
+                 "item": [
+                            {
+                                "name": "Get newsletter subscriptions",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/NewsletterSubscriptions",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "NewsletterSubscriptions"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a collection of newsletter subscriptions for the specified tenant using OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+                "description": "Deletes a newsletter subscription by its ID.",
+                 "item": [
+                            {
+                                "name": "Delete a newsletter subscription",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "NewsletterSubscriptions",
+        ":newsletterSubscriptionId"
+    ],
+    "variable": [
+        {
+        "key": "newsletterSubscriptionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a newsletter subscription by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+                "description": "Retrieves the details of a specific newsletter subscription by its ID.",
+                 "item": [
+                            {
+                                "name": "Get newsletter subscription by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "NewsletterSubscriptions",
+        ":newsletterSubscriptionId"
+    ],
+    "variable": [
+        {
+        "key": "newsletterSubscriptionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the details of a specific newsletter subscription by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+                "description": "Updates an existing newsletter subscription by its ID.",
+                 "item": [
+                            {
+                                "name": "Update a newsletter subscription",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"email\": \"<string>\",\n \"verified\": \"<string>\",\n \"newsletterId\": \"<string>\",\n \"contactId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/MarketingService/NewsletterSubscriptions/:newsletterSubscriptionId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "MarketingService",
+        "NewsletterSubscriptions",
+        ":newsletterSubscriptionId"
+    ],
+    "variable": [
+        {
+        "key": "newsletterSubscriptionId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing newsletter subscription by its ID."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
 	                        {
     "name": "/api/v2/MarketingService/NewsletterSubscriptions/Count",
                 "description": "Returns the count of newsletter subscriptions for the specified tenant using OData query options.",

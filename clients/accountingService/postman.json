@@ -2025,15 +2025,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "JournalEntries",
-	            "description": "JournalEntries tag",
+	            "name": "Reports",
+	            "description": "Reports tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/AccountingService/JournalEntries/Expenses/Sum",
-                "description": "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range.",
+    "name": "/api/v2/AccountingService/Reports/TrialBalance",
+                "description": "Returns the per-account posted debit/credit totals for the given fiscal period (optionally scoped to a single financial book), plus grand totals and the Σdebits == Σcredits balanced flag. Amounts are normalized to the target currency (default USD) from the stored USD reporting amounts.",
                  "item": [
                             {
-                                "name": "Sum tenant expenses",
+                                "name": "Trial balance for a fiscal period",
                                 "request": {
     "method": "GET",
     "header": [
@@ -2060,7 +2060,7 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/AccountingService/JournalEntries/Expenses/Sum",
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Reports/TrialBalance",
     "host": [
     "{{baseUrl}}"
     ],
@@ -2068,9 +2068,8 @@
         "api",
         "v2",
         "AccountingService",
-        "JournalEntries",
-        "Expenses",
-        "Sum"
+        "Reports",
+        "TrialBalance"
     ],
     "variable": [
     ],
@@ -2082,74 +2081,24 @@
         "disabled": false
         },
         {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/AccountingService/JournalEntries/Incomes/Sum",
-                "description": "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range.",
-                 "item": [
-                            {
-                                "name": "Sum tenant incomes",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AccountingService/JournalEntries/Incomes/Sum",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AccountingService",
-        "JournalEntries",
-        "Incomes",
-        "Sum"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
+        "key": "fiscalPeriodId",
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
         },
         {
+        "key": "financialBookId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "currencyId",
+        "value": "currencyId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
         "key": "apiVersion",
         "value": "apiVersion_example",
         "description": "",
@@ -2157,7 +2106,7 @@
         }
     ]
     },
-    "description": "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range."
+    "description": "Returns the per-account posted debit/credit totals for the given fiscal period (optionally scoped to a single financial book), plus grand totals and the Σdebits == Σcredits balanced flag. Amounts are normalized to the target currency (default USD) from the stored USD reporting amounts."
 }
                                 ,"response": [
                             ]
@@ -4180,148 +4129,6 @@
 	                    ]
 	        },
 	        {
-	            "name": "AccountingEntries",
-	            "description": "AccountingEntries tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/AccountingService/AccountingEntries/Credits/Sum",
-                "description": "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range.",
-                 "item": [
-                            {
-                                "name": "Sum tenant accounting-entry credits",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AccountingService/AccountingEntries/Credits/Sum",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AccountingService",
-        "AccountingEntries",
-        "Credits",
-        "Sum"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/AccountingService/AccountingEntries/Debits/Sum",
-                "description": "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range.",
-                 "item": [
-                            {
-                                "name": "Sum tenant accounting-entry debits",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AccountingService/AccountingEntries/Debits/Sum",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AccountingService",
-        "AccountingEntries",
-        "Debits",
-        "Sum"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
 	            "name": "Journals",
 	            "description": "Journals tag",
 	            "item": [
@@ -4793,7 +4600,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"group\": \"<string>\",\n \"opening\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"debit\": \"<number>\",\n \"credit\": \"<number>\",\n \"journalId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"parentJournalEntryId\": \"<string>\",\n \"invoiceCode\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"journalId\": \"<string>\",\n \"fiscalPeriodId\": \"<string>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"sourceDocumentType\": \"<string>\",\n \"sourceDocumentId\": \"<string>\",\n \"idempotencyKey\": \"<string>\",\n \"isOpeningBalance\": \"<string>\",\n \"accountingEntries\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -4996,6 +4803,85 @@
                         },
 	                        {
     "name": "/api/v2/AccountingService/Journals/:journalId/Entries/:entryId",
+                "description": "Retrieves a single journal entry WITH its hydrated posting lines — each line's account, direction, description and currency facets (transaction / functional / account / USD).",
+                 "item": [
+                            {
+                                "name": "Get journal entry by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Journals/:journalId/Entries/:entryId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Journals",
+        ":journalId",
+        "Entries",
+        ":entryId"
+    ],
+    "variable": [
+        {
+        "key": "journalId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single journal entry WITH its hydrated posting lines — each line's account, direction, description and currency facets (transaction / functional / account / USD)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Journals/:journalId/Entries/:entryId",
                 "description": "Partially updates a journal entry.",
                  "item": [
                             {
@@ -5109,7 +4995,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"group\": \"<string>\",\n \"opening\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"debit\": \"<number>\",\n \"credit\": \"<number>\",\n \"journalId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"invoiceCode\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"parentJournalEntryId\": \"<string>\"\n}",
+    "raw": "{\n \"fiscalPeriodId\": \"<string>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\",\n \"sourceDocumentType\": \"<string>\",\n \"sourceDocumentId\": \"<string>\",\n \"isOpeningBalance\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -5158,6 +5044,172 @@
     ]
     },
     "description": "Updates a specific journal entry."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Journals/:journalId/Entries/:entryId/Post",
+                "description": "Posts a DRAFT journal entry into its own open fiscal period. Enforces the balanced-entry invariant and the open-period gate, then seals the entry (immutable — correct via reversal, never edit/delete). An unbalanced draft or a closed period is rejected. Requires the journals_post permission.",
+                 "item": [
+                            {
+                                "name": "Post a draft journal entry",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Journals/:journalId/Entries/:entryId/Post",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Journals",
+        ":journalId",
+        "Entries",
+        ":entryId",
+        "Post"
+    ],
+    "variable": [
+        {
+        "key": "journalId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Posts a DRAFT journal entry into its own open fiscal period. Enforces the balanced-entry invariant and the open-period gate, then seals the entry (immutable — correct via reversal, never edit/delete). An unbalanced draft or a closed period is rejected. Requires the journals_post permission."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Journals/:journalId/Entries/:entryId/Reverse",
+                "description": "Reverses a POSTED journal entry by writing a balanced compensating counter-entry into the supplied open fiscal period and marking the original Reversed — one atomic operation (append-only audit trail). Requires the journals_reverse permission.",
+                 "item": [
+                            {
+                                "name": "Reverse a posted journal entry",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"reversalPeriodId\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Journals/:journalId/Entries/:entryId/Reverse",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Journals",
+        ":journalId",
+        "Entries",
+        ":entryId",
+        "Reverse"
+    ],
+    "variable": [
+        {
+        "key": "journalId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "entryId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Reverses a POSTED journal entry by writing a balanced compensating counter-entry into the supplied open fiscal period and marking the original Reversed — one atomic operation (append-only audit trail). Requires the journals_reverse permission."
 }
                                 ,"response": [
                             ]
@@ -6036,6 +6088,156 @@
                             ]
                             }
                             ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId/Close",
+                "description": "Closes a fiscal period so no further journal entries can post into it. Rejects closing a locked (hard-sealed) period.",
+                 "item": [
+                            {
+                                "name": "Close a fiscal period",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId/Close",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalPeriods",
+        ":fiscalPeriodId",
+        "Close"
+    ],
+    "variable": [
+        {
+        "key": "fiscalPeriodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Closes a fiscal period so no further journal entries can post into it. Rejects closing a locked (hard-sealed) period."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId/Open",
+                "description": "Opens a closed fiscal period so journal entries can post into it. Rejects reopening a locked or an already-open period.",
+                 "item": [
+                            {
+                                "name": "Open a fiscal period",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/:fiscalPeriodId/Open",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Fiscals",
+        "Authorities",
+        "FiscalPeriods",
+        ":fiscalPeriodId",
+        "Open"
+    ],
+    "variable": [
+        {
+        "key": "fiscalPeriodId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Opens a closed fiscal period so journal entries can post into it. Rejects reopening a locked or an already-open period."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
                         }
 	                    ]
 	        },
@@ -6542,6 +6744,284 @@
     ]
     },
     "description": "Retrieves the count of expense types for the specified tenant using OData query options."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "AccountingSummary",
+	            "description": "AccountingSummary tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/AccountingService/Summary/Credits/Sum",
+                "description": "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range.",
+                 "item": [
+                            {
+                                "name": "Sum tenant accounting-entry credits",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Summary/Credits/Sum",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Summary",
+        "Credits",
+        "Sum"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Summary/Debits/Sum",
+                "description": "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range.",
+                 "item": [
+                            {
+                                "name": "Sum tenant accounting-entry debits",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Summary/Debits/Sum",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Summary",
+        "Debits",
+        "Sum"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Summary/Expenses/Sum",
+                "description": "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range.",
+                 "item": [
+                            {
+                                "name": "Sum tenant expenses",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Summary/Expenses/Sum",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Summary",
+        "Expenses",
+        "Sum"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AccountingService/Summary/Incomes/Sum",
+                "description": "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range.",
+                 "item": [
+                            {
+                                "name": "Sum tenant incomes",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AccountingService/Summary/Incomes/Sum",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AccountingService",
+        "Summary",
+        "Incomes",
+        "Sum"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range."
 }
                                 ,"response": [
                             ]
@@ -12451,6 +12931,55 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/AIService/Agents/:agentId/agui",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AIService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
@@ -13122,7 +13651,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\",\n \"isContra\": \"<string>\",\n \"isMonetary\": \"<string>\",\n \"incomeStatementSubType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13482,7 +14011,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\"\n}",
+    "raw": "{\n \"group\": \"<string>\",\n \"frozen\": \"<string>\",\n \"name\": \"<string>\",\n \"code\": \"<string>\",\n \"path\": \"<string>\",\n \"prefix\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"contactId\": \"<string>\",\n \"accountTypeId\": \"<string>\",\n \"parentAccountId\": \"<string>\",\n \"accountCategory\": \"<string>\",\n \"isContra\": \"<string>\",\n \"isMonetary\": \"<string>\",\n \"incomeStatementSubType\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13706,7 +14235,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"amount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountId\": \"<string>\",\n \"direction\": \"<string>\",\n \"transactionAmount\": \"<number>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -13932,7 +14461,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"amount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountId\": \"<string>\",\n \"direction\": \"<string>\",\n \"transactionAmount\": \"<number>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -14158,7 +14687,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"amount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountId\": \"<string>\",\n \"direction\": \"<string>\",\n \"transactionAmount\": \"<number>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -14553,7 +15082,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"description\": \"<string>\",\n \"amount\": \"<number>\",\n \"date\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\"\n}",
+    "raw": "{\n \"journalEntryId\": \"<string>\",\n \"accountId\": \"<string>\",\n \"direction\": \"<string>\",\n \"transactionAmount\": \"<number>\",\n \"transactionCurrencyId\": \"<string>\",\n \"description\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -24646,7 +25175,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"date\": \"<string>\",\n \"amount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\",\n \"budgetId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"description\": \"<string>\",\n \"plannedAmount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"budgetId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -25041,7 +25570,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"description\": \"<string>\",\n \"amount\": \"<number>\",\n \"date\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"journalEntryId\": \"<string>\",\n \"accountingEntryType\": \"<string>\",\n \"budgetId\": \"<string>\"\n}",
+    "raw": "{\n \"description\": \"<string>\",\n \"plannedAmount\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"debitAccountId\": \"<string>\",\n \"creditAccountId\": \"<string>\",\n \"budgetId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"

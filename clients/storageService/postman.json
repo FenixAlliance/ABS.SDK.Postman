@@ -5,7 +5,7 @@
 		    "content": "",
 		    "type": "text/markdown"
 		},
-		"version": "2.1.2.5532",
+		"version": "2.0.0.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -15,7 +15,7 @@
 	            "item": [
 	                        {
     "name": "/api/v2/StorageService/Uploads",
-                "description": "Uploads a file to tenant or user storage.",
+                "description": "Uploads a file to tenant or user storage, scanned and catalogued through the storage spine.",
                  "item": [
                             {
                                 "name": "Upload a file",
@@ -78,7 +78,7 @@
         }
     ]
     },
-    "description": "Uploads a file to tenant or user storage."
+    "description": "Uploads a file to tenant or user storage, scanned and catalogued through the storage spine."
 }
                                 ,"response": [
                             ]
@@ -88,81 +88,8 @@
 	                    ]
 	        },
 	        {
-	            "name": "Completions",
-	            "description": "Completions tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/AiService/Completions/Complete",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiV2AiServiceCompletionsCompleteGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AiService/Completions/Complete",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AiService",
-        "Completions",
-        "Complete"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "conversationId",
-        "value": "conversationId_example",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "message",
-        "value": "message_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "FenixAlliance.Portals.Website",
-	            "description": "FenixAlliance.Portals.Website tag",
+	            "name": "FenixAlliance.ABS.Web",
+	            "description": "FenixAlliance.ABS.Web tag",
 	            "item": [
 	                        {
     "name": "/Account/Logout",
@@ -333,6 +260,55 @@
         "PerformExternalLogin"
     ],
     "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/AIService/Agents/:agentId/agui",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AIService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
     ]
@@ -1418,6 +1394,146 @@
                             ]
                             }
                             ]
+                        },
+	                        {
+    "name": "/api/v2/StorageService/Files/:fileId/Thumbnail",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "getFileThumbnailAsync",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/StorageService/Files/:fileId/Thumbnail",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "StorageService",
+        "Files",
+        ":fileId",
+        "Thumbnail"
+    ],
+    "variable": [
+        {
+        "key": "fileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/StorageService/Files/Count",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "getFilesCountAsync",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/StorageService/Files/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "StorageService",
+        "Files",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
                         }
 	                    ]
 	        },
@@ -2160,11 +2276,11 @@
 	            "description": "RadzenEditor tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/StorageService/RadzenEditor/Uploads/:id",
-                "description": "Uploads files associated with a specific resource ID.",
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/image",
+                "description": "",
                  "item": [
                             {
-                                "name": "Upload files by ID",
+                                "name": "Upload an editor image scoped to a record.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2191,29 +2307,55 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/StorageService/RadzenEditor/Uploads/:id",
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/image",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "StorageService",
-        "RadzenEditor",
-        "Uploads",
-        ":id"
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        ":recordType",
+        ":recordId",
+        "upload",
+        "image"
     ],
     "variable": [
         {
-        "key": "id",
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordType",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
         "value": "",
         "description": ""
         }
     ],
     "query": [
         {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "key": "visibility",
+        "value": "visibility_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "socialProfileId",
+        "value": "socialProfileId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "purpose",
+        "value": "purpose_example",
         "description": "",
         "disabled": true
         },
@@ -2225,7 +2367,7 @@
         }
     ]
     },
-    "description": "Uploads files associated with a specific resource ID."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -2233,11 +2375,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/StorageService/RadzenEditor/Uploads/Image",
-                "description": "Uploads an image file and returns its URL for editor embedding.",
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/single",
+                "description": "",
                  "item": [
                             {
-                                "name": "Upload an image file",
+                                "name": "Upload a single editor file scoped to a record.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2264,27 +2406,40 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/StorageService/RadzenEditor/Uploads/Image",
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/single",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "StorageService",
-        "RadzenEditor",
-        "Uploads",
-        "Image"
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        ":recordType",
+        ":recordId",
+        "upload",
+        "single"
     ],
     "variable": [
-    ],
-    "query": [
         {
         "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
+        "value": "",
+        "description": ""
         },
+        {
+        "key": "recordType",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -2293,7 +2448,7 @@
         }
     ]
     },
-    "description": "Uploads an image file and returns its URL for editor embedding."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -2301,11 +2456,86 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/StorageService/RadzenEditor/Uploads/Multiple",
-                "description": "Uploads multiple files to tenant or user storage.",
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/stream",
+                "description": "",
                  "item": [
                             {
-                                "name": "Upload multiple files",
+                                "name": "Chunked editor upload scoped to a record (not implemented).",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/:recordType/:recordId/upload/stream",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        ":recordType",
+        ":recordId",
+        "upload",
+        "stream"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordType",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/upload/image",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Upload an editor image to tenant storage.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2332,24 +2562,43 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/StorageService/RadzenEditor/Uploads/Multiple",
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/upload/image",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "StorageService",
-        "RadzenEditor",
-        "Uploads",
-        "Multiple"
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        "upload",
+        "image"
     ],
     "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "key": "visibility",
+        "value": "visibility_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "socialProfileId",
+        "value": "socialProfileId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "purpose",
+        "value": "purpose_example",
         "description": "",
         "disabled": true
         },
@@ -2361,7 +2610,7 @@
         }
     ]
     },
-    "description": "Uploads multiple files to tenant or user storage."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -2369,11 +2618,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/StorageService/RadzenEditor/Uploads/Single",
-                "description": "Uploads a single file to tenant or user storage.",
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/upload/single",
+                "description": "",
                  "item": [
                             {
-                                "name": "Upload a single file",
+                                "name": "Upload a single editor file to tenant storage.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2400,27 +2649,28 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/StorageService/RadzenEditor/Uploads/Single",
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/upload/single",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "StorageService",
-        "RadzenEditor",
-        "Uploads",
-        "Single"
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        "upload",
+        "single"
     ],
     "variable": [
-    ],
-    "query": [
         {
         "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -2429,7 +2679,7 @@
         }
     ]
     },
-    "description": "Uploads a single file to tenant or user storage."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -2437,11 +2687,74 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/StorageService/RadzenEditor/Uploads/Specific",
-                "description": "Uploads a specific file to tenant or user storage.",
+    "name": "/api/v2/fs/radzen/tenants/:tenantId/upload/stream",
+                "description": "",
                  "item": [
                             {
-                                "name": "Upload a specific file",
+                                "name": "Chunked editor upload (not implemented).",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/tenants/:tenantId/upload/stream",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "fs",
+        "radzen",
+        "tenants",
+        ":tenantId",
+        "upload",
+        "stream"
+    ],
+    "variable": [
+        {
+        "key": "tenantId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/fs/radzen/users/:recordType/:recordId/upload/image",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Upload a user editor image scoped to a record.",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2468,24 +2781,49 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/StorageService/RadzenEditor/Uploads/Specific",
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/users/:recordType/:recordId/upload/image",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "StorageService",
-        "RadzenEditor",
-        "Uploads",
-        "Specific"
+        "fs",
+        "radzen",
+        "users",
+        ":recordType",
+        ":recordId",
+        "upload",
+        "image"
     ],
     "variable": [
+        {
+        "key": "recordType",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "recordId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "key": "visibility",
+        "value": "visibility_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "socialProfileId",
+        "value": "socialProfileId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "purpose",
+        "value": "purpose_example",
         "description": "",
         "disabled": true
         },
@@ -2497,7 +2835,160 @@
         }
     ]
     },
-    "description": "Uploads a specific file to tenant or user storage."
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/fs/radzen/users/upload/image",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "Upload an editor image to user storage.",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/fs/radzen/users/upload/image",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "fs",
+        "radzen",
+        "users",
+        "upload",
+        "image"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "visibility",
+        "value": "visibility_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "socialProfileId",
+        "value": "socialProfileId_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "purpose",
+        "value": "purpose_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "EditorAssets",
+	            "description": "EditorAssets tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/StorageService/EditorAssets/:fileId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "getEditorAssetAsync",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json;odata.metadata&#x3D;minimal;odata.streaming&#x3D;true",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/StorageService/EditorAssets/:fileId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "StorageService",
+        "EditorAssets",
+        ":fileId"
+    ],
+    "variable": [
+        {
+        "key": "fileId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -2511,9 +3002,14 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "",
+			"value": "{server}",
 			"type": "string"
-        }
+        },
+		{
+			"key": "server",
+			"value": "https://absuite.net",
+			"type": "string"
+		}
 	]
 }
 

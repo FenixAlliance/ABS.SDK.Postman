@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "IdentityService",
+		"name": "UblIntegration",
 		"description": {
 		    "content": "",
 		    "type": "text/markdown"
@@ -10,15 +10,15 @@
 	},
 	"item": [
 	        {
-	            "name": "Applications",
-	            "description": "Applications tag",
+	            "name": "Invoices",
+	            "description": "Invoices tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/Applications/:appId",
-                "description": "Retrieves an application by its unique identifier.",
+    "name": "/api/v2/UblService/Invoices/:invoiceId",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get application by ID",
+                                "name": "apiV2UblServiceInvoicesInvoiceIdGet",
                                 "request": {
     "method": "GET",
     "header": [
@@ -39,79 +39,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/Applications/:appId",
+    "raw": "{{baseUrl}}/api/v2/UblService/Invoices/:invoiceId",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "Applications",
-        ":appId"
+        "UblService",
+        "Invoices",
+        ":invoiceId"
     ],
     "variable": [
         {
-        "key": "appId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves an application by its unique identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/Applications/:appId/GrantedPermissions",
-                "description": "Retrieves the list of permissions granted to the specified application within a tenant context.",
-                 "item": [
-                            {
-                                "name": "Get granted tenant permissions for an application",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/Applications/:appId/GrantedPermissions",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "Applications",
-        ":appId",
-        "GrantedPermissions"
-    ],
-    "variable": [
-        {
-        "key": "appId",
+        "key": "invoiceId",
         "value": "",
         "description": ""
         }
@@ -119,7 +60,13 @@
     "query": [
         {
         "key": "tenantId",
-        "value": "tenantId_example",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "profile",
+        "value": "profile_example",
         "description": "",
         "disabled": true
         },
@@ -131,19 +78,25 @@
         }
     ]
     },
-    "description": "Retrieves the list of permissions granted to the specified application within a tenant context."
+    "description": ""
 }
                                 ,"response": [
                             ]
                             }
                             ]
-                        },
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ReceiptAdvices",
+	            "description": "ReceiptAdvices tag",
+	            "item": [
 	                        {
-    "name": "/api/v2/Applications/:appId/GrantedRoles",
-                "description": "Retrieves the list of security roles granted to the specified application within a tenant context.",
+    "name": "/api/v2/UblService/ReceiptAdvices/:itemRestockId",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get granted tenant roles for an application",
+                                "name": "apiV2UblServiceReceiptAdvicesItemRestockIdGet",
                                 "request": {
     "method": "GET",
     "header": [
@@ -164,20 +117,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/Applications/:appId/GrantedRoles",
+    "raw": "{{baseUrl}}/api/v2/UblService/ReceiptAdvices/:itemRestockId",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "Applications",
-        ":appId",
-        "GrantedRoles"
+        "UblService",
+        "ReceiptAdvices",
+        ":itemRestockId"
     ],
     "variable": [
         {
-        "key": "appId",
+        "key": "itemRestockId",
         "value": "",
         "description": ""
         }
@@ -185,7 +138,13 @@
     "query": [
         {
         "key": "tenantId",
-        "value": "tenantId_example",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "profile",
+        "value": "profile_example",
         "description": "",
         "disabled": true
         },
@@ -197,7 +156,7 @@
         }
     ]
     },
-    "description": "Retrieves the list of security roles granted to the specified application within a tenant context."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -205,11 +164,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/Applications/:appId/GrantedRoles/:securityRoleId/GrantedPermissions",
-                "description": "Retrieves the list of permissions granted through a specific security role for the specified application.",
+    "name": "/api/v2/UblService/ReceiptAdvices/:itemRestockId/partitions",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get granted permissions for an application role",
+                                "name": "apiV2UblServiceReceiptAdvicesItemRestockIdPartitionsGet",
                                 "request": {
     "method": "GET",
     "header": [
@@ -230,35 +189,35 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/Applications/:appId/GrantedRoles/:securityRoleId/GrantedPermissions",
+    "raw": "{{baseUrl}}/api/v2/UblService/ReceiptAdvices/:itemRestockId/partitions",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "Applications",
-        ":appId",
-        "GrantedRoles",
-        ":securityRoleId",
-        "GrantedPermissions"
+        "UblService",
+        "ReceiptAdvices",
+        ":itemRestockId",
+        "partitions"
     ],
     "variable": [
         {
-        "key": "appId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "securityRoleId",
+        "key": "itemRestockId",
         "value": "",
         "description": ""
         }
     ],
     "query": [
         {
-        "key": "enrollmentId",
-        "value": "enrollmentId_example",
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "profile",
+        "value": "profile_example",
         "description": "",
         "disabled": true
         },
@@ -270,67 +229,7 @@
         }
     ]
     },
-    "description": "Retrieves the list of permissions granted through a specific security role for the specified application."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/Applications/:appId/RequiredPermissions",
-                "description": "Retrieves the list of permissions required by the specified application.",
-                 "item": [
-                            {
-                                "name": "Get required permissions for an application",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/Applications/:appId/RequiredPermissions",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "Applications",
-        ":appId",
-        "RequiredPermissions"
-    ],
-    "variable": [
-        {
-        "key": "appId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the list of permissions required by the specified application."
+    "description": ""
 }
                                 ,"response": [
                             ]
@@ -1211,24 +1110,18 @@
 	                    ]
 	        },
 	        {
-	            "name": "OAuth",
-	            "description": "OAuth tag",
+	            "name": "DespatchAdvices",
+	            "description": "DespatchAdvices tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/OAuth/:applicationId/Keys",
-                "description": "Retrieves the signing keys (JWKS) for a specific application.",
+    "name": "/api/v2/UblService/DespatchAdvices/:shipmentId",
+                "description": "",
                  "item": [
                             {
-                                "name": "Get JSON Web Key Set",
+                                "name": "apiV2UblServiceDespatchAdvicesShipmentIdGet",
                                 "request": {
     "method": "GET",
     "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
         {
         "key": "x-api-version",
         "value": "",
@@ -1246,156 +1139,23 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/:applicationId/Keys",
+    "raw": "{{baseUrl}}/api/v2/UblService/DespatchAdvices/:shipmentId",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OAuth",
-        ":applicationId",
-        "Keys"
+        "UblService",
+        "DespatchAdvices",
+        ":shipmentId"
     ],
     "variable": [
         {
-        "key": "applicationId",
+        "key": "shipmentId",
         "value": "",
         "description": ""
         }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the signing keys (JWKS) for a specific application."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/:tenantId/:applicationId/.Well-Known/OpenId-Configuration",
-                "description": "Retrieves the OpenID Connect discovery document for a specific application within a tenant.",
-                 "item": [
-                            {
-                                "name": "Get OpenID configuration",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/:tenantId/:applicationId/.Well-Known/OpenId-Configuration",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        ":tenantId",
-        ":applicationId",
-        ".Well-Known",
-        "OpenId-Configuration"
-    ],
-    "variable": [
-        {
-        "key": "tenantId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "applicationId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the OpenID Connect discovery document for a specific application within a tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/Permissions",
-                "description": "Retrieves the list of permission identifiers for a specific user within a tenant context.",
-                 "item": [
-                            {
-                                "name": "Get user permissions",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/Permissions",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        "Permissions"
-    ],
-    "variable": [
     ],
     "query": [
         {
@@ -1405,440 +1165,11 @@
         "disabled": false
         },
         {
-        "key": "userId",
-        "value": "userId_example",
+        "key": "profile",
+        "value": "profile_example",
         "description": "",
         "disabled": true
         },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves the list of permission identifiers for a specific user within a tenant context."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/SignIn",
-                "description": "Verifies sign-in credentials and returns user details without creating a session.",
-                 "item": [
-                            {
-                                "name": "Check password sign-in",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/SignIn",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        "SignIn"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Verifies sign-in credentials and returns user details without creating a session."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/SignIn",
-                "description": "Authenticates a user using email and password credentials.",
-                 "item": [
-                            {
-                                "name": "Sign in with password",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/SignIn",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        "SignIn"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Authenticates a user using email and password credentials."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/Token",
-                "description": "Generates an OAuth token based on the provided credentials or grant type.",
-                 "item": [
-                            {
-                                "name": "Get OAuth token",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"client_id\": \"<string>\",\n \"client_secret\": \"<string>\",\n \"grant_type\": \"<string>\",\n \"requested_scopes\": \"<string>\",\n \"requested_enrollment\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/Token",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        "Token"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Generates an OAuth token based on the provided credentials or grant type."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OAuth/WhoAmI",
-                "description": "Returns the authorization result for the authenticated user, including identity and tenant context.",
-                 "item": [
-                            {
-                                "name": "Get current user identity",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OAuth/WhoAmI",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OAuth",
-        "WhoAmI"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": true
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns the authorization result for the authenticated user, including identity and tenant context."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "Resource",
-	            "description": "Resource tag",
-	            "item": [
-	                        {
-    "name": "/api/v2/IdentityService/Resource/message",
-                "description": "Returns a message confirming the authenticated user's identity. Requires the 'abs_api' scope.",
-                 "item": [
-                            {
-                                "name": "Get authenticated resource message",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/IdentityService/Resource/message",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "IdentityService",
-        "Resource",
-        "message"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns a message confirming the authenticated user's identity. Requires the 'abs_api' scope."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        }
-	                    ]
-	        },
-	        {
-	            "name": "UserInfo",
-	            "description": "UserInfo tag",
-	            "item": [
-	                        {
-    "name": "/connect/userinfo",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "connectUserinfoGet",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/connect/userinfo",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "connect",
-        "userinfo"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/connect/userinfo",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "connectUserinfoPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/connect/userinfo",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "connect",
-        "userinfo"
-    ],
-    "variable": [
-    ],
-    "query": [
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -1857,24 +1188,18 @@
 	                    ]
 	        },
 	        {
-	            "name": "Checker",
-	            "description": "Checker tag",
+	            "name": "CreditNotes",
+	            "description": "CreditNotes tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/Auth/Checker/IsAuthenticated",
-                "description": "Returns whether the current user is authenticated.",
+    "name": "/api/v2/UblService/CreditNotes/:invoiceId",
+                "description": "",
                  "item": [
                             {
-                                "name": "Check if user is authenticated",
+                                "name": "apiV2UblServiceCreditNotesInvoiceIdGet",
                                 "request": {
     "method": "GET",
     "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
         {
         "key": "x-api-version",
         "value": "",
@@ -1892,20 +1217,37 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/Auth/Checker/IsAuthenticated",
+    "raw": "{{baseUrl}}/api/v2/UblService/CreditNotes/:invoiceId",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "Auth",
-        "Checker",
-        "IsAuthenticated"
+        "UblService",
+        "CreditNotes",
+        ":invoiceId"
     ],
     "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "profile",
+        "value": "profile_example",
+        "description": "",
+        "disabled": true
+        },
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -1914,7 +1256,85 @@
         }
     ]
     },
-    "description": "Returns whether the current user is authenticated."
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "DebitNotes",
+	            "description": "DebitNotes tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/UblService/DebitNotes/:invoiceId",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2UblServiceDebitNotesInvoiceIdGet",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/UblService/DebitNotes/:invoiceId",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "UblService",
+        "DebitNotes",
+        ":invoiceId"
+    ],
+    "variable": [
+        {
+        "key": "invoiceId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "profile",
+        "value": "profile_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": ""
 }
                                 ,"response": [
                             ]

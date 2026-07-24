@@ -194,6 +194,55 @@
                             ]
                         },
 	                        {
+    "name": "/api/v2/AIService/Agents/:agentId/agui",
+                "description": "",
+                 "item": [
+                            {
+                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "AIService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": ""
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
@@ -7333,12 +7382,6 @@
         "disabled": false
         },
         {
-        "key": "oDataQueryOptions",
-        "value": "",
-        "description": "",
-        "disabled": true
-        },
-        {
         "key": "apiVersion",
         "value": "apiVersion_example",
         "description": "",
@@ -7704,12 +7747,6 @@
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
-        },
-        {
-        "key": "oDataQueryOptions",
-        "value": "",
-        "description": "",
-        "disabled": true
         },
         {
         "key": "apiVersion",

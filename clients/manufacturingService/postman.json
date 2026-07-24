@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "OrdersService",
+		"name": "ManufacturingService",
 		"description": {
 		    "content": "",
 		    "type": "text/markdown"
@@ -9,6 +9,517 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+	        {
+	            "name": "WorkOrders",
+	            "description": "WorkOrders tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders",
+                "description": "Creates a new work order for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a new work order",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"productionPlanId\": \"<string>\",\n \"workOrderTypeId\": \"<string>\",\n \"workstationId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new work order for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders",
+                "description": "Retrieves all work orders for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all work orders",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all work orders for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
+                "description": "Deletes a work order for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a work order",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a work order for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
+                "description": "Retrieves a specific work order by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get work order by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific work order by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
+                "description": "Patch a work order",
+                 "item": [
+                            {
+                                "name": "Patch a work order",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a work order"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
+                "description": "Updates an existing work order for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a work order",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"taxable\": \"<string>\",\n \"workLocation\": \"<string>\",\n \"productionPlanId\": \"<string>\",\n \"workOrderTypeId\": \"<string>\",\n \"workstationId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing work order for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrders/Count",
+                "description": "Returns the count of work orders for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get work orders count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrders",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of work orders for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
 	        {
 	            "name": "FenixAlliance.ABS.Web",
 	            "description": "FenixAlliance.ABS.Web tag",
@@ -881,15 +1392,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "Orders",
-	            "description": "Orders tag",
+	            "name": "Workstations",
+	            "description": "Workstations tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/OrdersService/Orders",
-                "description": "Creates a new order for the specified tenant.",
+    "name": "/api/v2/ManufacturingService/Workstations",
+                "description": "Creates a new workstation for the specified tenant.",
                  "item": [
                             {
-                                "name": "Creates a new order.",
+                                "name": "Create a new workstation",
                                 "request": {
     "method": "POST",
     "header": [
@@ -904,245 +1415,17 @@
         "value": "application/json",
         "description": "",
         "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"cartId\": \"<string>\",\n \"quoteId\": \"<string>\",\n \"walletId\": \"<string>\",\n \"parentOrderId\": \"<string>\",\n \"shippingMethodId\": \"<string>\",\n \"billingLocationId\": \"<string>\",\n \"customerNotes\": \"<string>\",\n \"orderStatus\": \"<string>\",\n \"quoteStatus\": \"<string>\",\n \"freightTerms\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"qualifiedIdentifier\": \"<string>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"totalDiscountsInUsd\": \"<number>\",\n \"totalSurchargesInUsd\": \"<number>\",\n \"totalShippingCostInUsd\": \"<number>\",\n \"totalShippingTaxInUsd\": \"<number>\",\n \"totalAmountInUsd\": \"<number>\",\n \"effectiveTo\": \"<string>\",\n \"effectiveFrom\": \"<string>\",\n \"orderLines\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Creates a new order for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders",
-                "description": "Retrieves a list of orders for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Gets a list of orders for a tenant.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves a list of orders for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId",
-                "description": "Deletes the specified order.",
-                 "item": [
-                            {
-                                "name": "Deletes an order.",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Deletes the specified order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId",
-                "description": "Retrieves the details of a specific order by its ID.",
-                 "item": [
-                            {
-                                "name": "Gets a specific order by ID.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves the details of a specific order by its ID."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId",
-                "description": "Applies a JSON Patch document to partially update an existing order.",
-                 "item": [
-                            {
-                                "name": "Partially updates an existing order.",
-                                "request": {
-    "method": "PATCH",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
         },
         {
-        "key": "Accept",
-        "value": "application/json",
+        "key": "x-api-version",
+        "value": "",
         "description": "",
-        "disabled": false
+        "disabled": true
         }
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"code\": \"<string>\",\n \"type\": \"<string>\",\n \"description\": \"<string>\",\n \"locationId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1150,408 +1433,17 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId"
+        "ManufacturingService",
+        "Workstations"
     ],
     "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Applies a JSON Patch document to partially update an existing order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId",
-                "description": "Updates the details of an existing order.",
-                 "item": [
-                            {
-                                "name": "Updates an existing order.",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"userId\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"billingLocationId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"shippingMethodId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"cartId\": \"<string>\",\n \"totalAmountInUsd\": \"<number>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"quoteStatus\": \"<string>\",\n \"effectiveTo\": \"<string>\",\n \"effectiveFrom\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Updates the details of an existing order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Calculate",
-                "description": "Performs calculation of totals and taxes for the specified order.",
-                 "item": [
-                            {
-                                "name": "Calculates totals for an order.",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Calculate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Calculate"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Performs calculation of totals and taxes for the specified order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Emails/Preview",
-                "description": "Previews the rendered email template for the specified order. Only users with the 'send_email' permission are permitted.",
-                 "item": [
-                            {
-                                "name": "Preview the rendered email for an Order.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Emails/Preview",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Emails",
-        "Preview"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Previews the rendered email template for the specified order. Only users with the 'send_email' permission are permitted."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Emails/Send",
-                "description": "Sends a transactional email for the specified order. Only users with the 'send_email' permission are permitted.",
-                 "item": [
-                            {
-                                "name": "Send a transactional email for an order.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"message\": \"<string>\",\n \"buttonLink\": \"<string>\",\n \"buttonText\": \"<string>\",\n \"alertMessage\": \"<string>\",\n \"alertType\": \"<string>\",\n \"culture\": \"<string>\",\n \"uiCulture\": \"<string>\",\n \"recipients\": \"<string>\",\n \"contactIds\": \"<string>\",\n \"tenantIds\": \"<string>\",\n \"userIds\": \"<string>\",\n \"templateUrl\": \"<string>\",\n \"emailTemplateId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Emails/Send",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Emails",
-        "Send"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Sends a transactional email for the specified order. Only users with the 'send_email' permission are permitted."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines",
-                "description": "Creates a new line (item) for the specified order.",
-                 "item": [
-                            {
-                                "name": "Creates a new order line.",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"itemId\": \"<string>\",\n \"itemTitle\": \"<string>\",\n \"itemShortDescription\": \"<string>\",\n \"itemPrimaryImageUrl\": \"<string>\",\n \"shippingPolicyId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"free\": \"<string>\",\n \"freeReason\": \"<string>\",\n \"freeReasonCode\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"priceListItemId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"forexRatesSnapshot\": \"<string>\",\n \"totalBaseAmountInUsd\": \"<number>\",\n \"totalProfitInUsd\": \"<number>\",\n \"totalDetailAmountInUsd\": \"<number>\",\n \"totalTaxBaseInUsd\": \"<number>\",\n \"totalDiscountsInUsd\": \"<number>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"totalWithheldTaxesInUsd\": \"<number>\",\n \"totalShippingCostInUsd\": \"<number>\",\n \"totalShippingTaxesInUsd\": \"<number>\",\n \"totalWarrantyCostInUsd\": \"<number>\",\n \"totalReturnCostInUsd\": \"<number>\",\n \"totalRefundCostInUsd\": \"<number>\",\n \"totalSurchargesInUsd\": \"<number>\",\n \"totalAmountInUsd\": \"<number>\",\n \"totalGlobalDiscountsInUsd\": \"<number>\",\n \"totalGlobalSurchargesInUsd\": \"<number>\",\n \"customGlobalSurchargesAmount\": \"<number>\",\n \"customGlobalSurchargesAmountCurrencyId\": \"<string>\",\n \"customGlobalDiscountsAmount\": \"<number>\",\n \"customGlobalDiscountsAmountCurrencyId\": \"<string>\",\n \"returnPolicyId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\",\n \"shipmentPolicyId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"locationId\": \"<string>\",\n \"quoteItemRecordId\": \"<string>\",\n \"parentBillingItemRecordId\": \"<string>\",\n \"orderId\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Creates a new line (item) for the specified order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines",
-                "description": "Retrieves the lines (items) for the specified order.",
-                 "item": [
-                            {
-                                "name": "Gets order lines for an order.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
         {
@@ -1561,14 +1453,14 @@
         "disabled": false
         },
         {
-        "key": "itemId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "key": "apiVersion",
+        "value": "apiVersion_example",
         "description": "",
         "disabled": true
         }
     ]
     },
-    "description": "Retrieves the lines (items) for the specified order."
+    "description": "Creates a new workstation for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -1576,78 +1468,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
-                "description": "Deletes the specified order line.",
+    "name": "/api/v2/ManufacturingService/Workstations",
+                "description": "Retrieves all workstations for the specified tenant.",
                  "item": [
                             {
-                                "name": "Deletes an order line.",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        ":orderLineId"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "orderLineId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Deletes the specified order line."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
-                "description": "Retrieves the details of a specific order line by its ID.",
-                 "item": [
-                            {
-                                "name": "Gets a specific order line.",
+                                "name": "Get all workstations",
                                 "request": {
     "method": "GET",
     "header": [
@@ -1656,6 +1481,12 @@
         "value": "application/json",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
@@ -1668,27 +1499,86 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        ":orderLineId"
+        "ManufacturingService",
+        "Workstations"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all workstations for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/Workstations/:id",
+                "description": "Deletes a workstation for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a workstation",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "Workstations",
+        ":id"
     ],
     "variable": [
         {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "orderLineId",
+        "key": "id",
         "value": "",
         "description": ""
         }
@@ -1699,10 +1589,16 @@
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
         }
     ]
     },
-    "description": "Retrieves the details of a specific order line by its ID."
+    "description": "Deletes a workstation for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -1710,11 +1606,83 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
-                "description": "Applies a JSON Patch document to partially update a specific order line.",
+    "name": "/api/v2/ManufacturingService/Workstations/:id",
+                "description": "Retrieves a specific workstation by its identifier.",
                  "item": [
                             {
-                                "name": "Partially updates an order line.",
+                                "name": "Get workstation by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "Workstations",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific workstation by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/Workstations/:id",
+                "description": "Patch a workstation",
+                 "item": [
+                            {
+                                "name": "Patch a workstation",
                                 "request": {
     "method": "PATCH",
     "header": [
@@ -1729,6 +1697,12 @@
         "value": "application/json",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
@@ -1741,27 +1715,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        ":orderLineId"
+        "ManufacturingService",
+        "Workstations",
+        ":id"
     ],
     "variable": [
         {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "orderLineId",
+        "key": "id",
         "value": "",
         "description": ""
         }
@@ -1772,10 +1739,16 @@
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
         }
     ]
     },
-    "description": "Applies a JSON Patch document to partially update a specific order line."
+    "description": "Patch a workstation"
 }
                                 ,"response": [
                             ]
@@ -1783,11 +1756,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
-                "description": "Updates the details of a specific order line.",
+    "name": "/api/v2/ManufacturingService/Workstations/:id",
+                "description": "Updates an existing workstation for the specified tenant.",
                  "item": [
                             {
-                                "name": "Updates an order line.",
+                                "name": "Update a workstation",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -1802,11 +1775,17 @@
         "value": "application/json",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"closed\": \"<string>\",\n \"title\": \"<string>\",\n \"userId\": \"<string>\",\n \"priceListId\": \"<string>\",\n \"description\": \"<string>\",\n \"individualId\": \"<string>\",\n \"paymentTermId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverTenantId\": \"<string>\",\n \"firstName\": \"<string>\",\n \"lastName\": \"<string>\",\n \"companyName\": \"<string>\",\n \"billingEmail\": \"<string>\",\n \"addressLine1\": \"<string>\",\n \"addressLine2\": \"<string>\",\n \"postalCode\": \"<string>\",\n \"countryId\": \"<string>\",\n \"stateId\": \"<string>\",\n \"cityId\": \"<string>\",\n \"billingLocationId\": \"<string>\",\n \"shippingLocationId\": \"<string>\",\n \"shippingMethodId\": \"<string>\",\n \"forexRate\": \"<number>\",\n \"currencyId\": \"<string>\",\n \"totalDetail\": \"<number>\",\n \"totalDetailCurrencyId\": \"<string>\",\n \"totalProfit\": \"<number>\",\n \"totalProfitCurrencyId\": \"<string>\",\n \"totalDiscounts\": \"<number>\",\n \"totalDiscountsCurrencyId\": \"<string>\",\n \"totalSurcharges\": \"<number>\",\n \"totalSurchargesCurrencyId\": \"<string>\",\n \"totalShippingTax\": \"<number>\",\n \"totalShippingTaxCurrencyId\": \"<string>\",\n \"totalShippingCost\": \"<number>\",\n \"totalShippingCostCurrencyId\": \"<string>\",\n \"totalGlobalDiscounts\": \"<number>\",\n \"totalGlobalDiscountsCurrencyId\": \"<string>\",\n \"totalGlobalSurcharges\": \"<number>\",\n \"totalGlobalSurchargesCurrencyId\": \"<string>\",\n \"totalWithheldTax\": \"<number>\",\n \"totalWithheldTaxCurrencyId\": \"<string>\",\n \"totalTaxBase\": \"<number>\",\n \"totalTaxBaseCurrencyId\": \"<string>\",\n \"totalTaxes\": \"<number>\",\n \"totalTaxesCurrencyId\": \"<string>\",\n \"total\": \"<number>\",\n \"totalCurrencyId\": \"<string>\",\n \"costCalculationMethod\": \"<string>\",\n \"taxCalculationMethod\": \"<string>\",\n \"itemId\": \"<string>\",\n \"itemTitle\": \"<string>\",\n \"itemShortDescription\": \"<string>\",\n \"itemPrimaryImageUrl\": \"<string>\",\n \"shippingPolicyId\": \"<string>\",\n \"quantity\": \"<number>\",\n \"free\": \"<string>\",\n \"freeReason\": \"<string>\",\n \"freeReasonCode\": \"<string>\",\n \"data\": \"<string>\",\n \"dataLabel\": \"<string>\",\n \"data1\": \"<string>\",\n \"data1Label\": \"<string>\",\n \"data2\": \"<string>\",\n \"data2Label\": \"<string>\",\n \"data3\": \"<string>\",\n \"data3Label\": \"<string>\",\n \"data4\": \"<string>\",\n \"data4Label\": \"<string>\",\n \"data5\": \"<string>\",\n \"data5Label\": \"<string>\",\n \"data6\": \"<string>\",\n \"data6Label\": \"<string>\",\n \"data7\": \"<string>\",\n \"data7Label\": \"<string>\",\n \"data8\": \"<string>\",\n \"data8Label\": \"<string>\",\n \"data9\": \"<string>\",\n \"data9Label\": \"<string>\",\n \"itemPriceId\": \"<string>\",\n \"priceListItemId\": \"<string>\",\n \"unitId\": \"<string>\",\n \"unitGroupId\": \"<string>\",\n \"forexRatesSnapshot\": \"<string>\",\n \"totalBaseAmountInUsd\": \"<number>\",\n \"totalProfitInUsd\": \"<number>\",\n \"totalDetailAmountInUsd\": \"<number>\",\n \"totalTaxBaseInUsd\": \"<number>\",\n \"totalDiscountsInUsd\": \"<number>\",\n \"totalTaxesInUsd\": \"<number>\",\n \"totalWithheldTaxesInUsd\": \"<number>\",\n \"totalShippingCostInUsd\": \"<number>\",\n \"totalShippingTaxesInUsd\": \"<number>\",\n \"totalWarrantyCostInUsd\": \"<number>\",\n \"totalReturnCostInUsd\": \"<number>\",\n \"totalRefundCostInUsd\": \"<number>\",\n \"totalSurchargesInUsd\": \"<number>\",\n \"totalAmountInUsd\": \"<number>\",\n \"totalGlobalDiscountsInUsd\": \"<number>\",\n \"totalGlobalSurchargesInUsd\": \"<number>\",\n \"customGlobalSurchargesAmount\": \"<number>\",\n \"customGlobalSurchargesAmountCurrencyId\": \"<string>\",\n \"customGlobalDiscountsAmount\": \"<number>\",\n \"customGlobalDiscountsAmountCurrencyId\": \"<string>\",\n \"returnPolicyId\": \"<string>\",\n \"refundPolicyId\": \"<string>\",\n \"warrantyPolicyId\": \"<string>\",\n \"shipmentPolicyId\": \"<string>\",\n \"locationId\": \"<string>\",\n \"quoteItemRecordId\": \"<string>\",\n \"parentBillingItemRecordId\": \"<string>\"\n}",
+    "raw": "{\n \"code\": \"<string>\",\n \"type\": \"<string>\",\n \"description\": \"<string>\",\n \"locationId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1814,27 +1793,20 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        ":orderLineId"
+        "ManufacturingService",
+        "Workstations",
+        ":id"
     ],
     "variable": [
         {
-        "key": "orderId",
-        "value": "",
-        "description": ""
-        },
-        {
-        "key": "orderLineId",
+        "key": "id",
         "value": "",
         "description": ""
         }
@@ -1845,78 +1817,16 @@
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
-        }
-    ]
-    },
-    "description": "Updates the details of a specific order line."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId/Calculate",
-                "description": "Performs calculation of totals and taxes for the specified order line.",
-                 "item": [
-                            {
-                                "name": "Calculates totals for an order line.",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/:orderLineId/Calculate",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        ":orderLineId",
-        "Calculate"
-    ],
-    "variable": [
-        {
-        "key": "orderId",
-        "value": "",
-        "description": ""
         },
         {
-        "key": "orderLineId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "key": "apiVersion",
+        "value": "apiVersion_example",
         "description": "",
-        "disabled": false
+        "disabled": true
         }
     ]
     },
-    "description": "Performs calculation of totals and taxes for the specified order line."
+    "description": "Updates an existing workstation for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -1924,11 +1834,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/OrdersService/Orders/:orderId/Lines/Count",
-                "description": "Retrieves the total number of lines for the specified order.",
+    "name": "/api/v2/ManufacturingService/Workstations/Count",
+                "description": "Returns the count of workstations for the specified tenant.",
                  "item": [
                             {
-                                "name": "Gets the count of order lines for an order.",
+                                "name": "Get workstations count",
                                 "request": {
     "method": "GET",
     "header": [
@@ -1937,68 +1847,12 @@
         "value": "application/json",
         "description": "",
         "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/:orderId/Lines/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        ":orderId",
-        "Lines",
-        "Count"
-    ],
-    "variable": [
+        },
         {
-        "key": "orderId",
+        "key": "x-api-version",
         "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves the total number of lines for the specified order."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/Count",
-                "description": "Retrieves the total number of orders for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Gets the count of orders for a tenant.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
+        "disabled": true
         }
     ],
     "body": {
@@ -2011,15 +1865,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/Count",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/Count",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
+        "ManufacturingService",
+        "Workstations",
         "Count"
     ],
     "variable": [
@@ -2030,85 +1884,120 @@
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
         }
     ]
     },
-    "description": "Retrieves the total number of orders for the specified tenant."
+    "description": "Returns the count of workstations for the specified tenant."
 }
                                 ,"response": [
                             ]
                             }
                             ]
-                        },
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "ProductionPlans",
+	            "description": "ProductionPlans tag",
+	            "item": [
 	                        {
-    "name": "/api/v2/OrdersService/Orders/Extended",
-                "description": "Retrieves a list of extended order details for the specified tenant.",
+    "name": "/api/v2/ManufacturingService/ProductionPlans",
+                "description": "Creates a new production plan for the specified tenant.",
                  "item": [
                             {
-                                "name": "Gets a list of extended orders for a tenant.",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/Extended",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "OrdersService",
-        "Orders",
-        "Extended"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        }
-    ]
-    },
-    "description": "Retrieves a list of extended order details for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/OrdersService/Orders/SubmitCart",
-                "description": "Submits the specified cart and creates an order for the authenticated user.",
-                 "item": [
-                            {
-                                "name": "Submits a cart and creates an order.",
+                                "name": "Create a new production plan",
                                 "request": {
     "method": "POST",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new production plan for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans",
+                "description": "Retrieves all production plans for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all production plans",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
         }
     ],
     "body": {
@@ -2121,29 +2010,912 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/OrdersService/Orders/SubmitCart",
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "OrdersService",
-        "Orders",
-        "SubmitCart"
+        "ManufacturingService",
+        "ProductionPlans"
     ],
     "variable": [
     ],
     "query": [
         {
-        "key": "cartId",
+        "key": "tenantId",
         "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
         "description": "",
         "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
         }
     ]
     },
-    "description": "Submits the specified cart and creates an order for the authenticated user."
+    "description": "Retrieves all production plans for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
+                "description": "Deletes a production plan for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a production plan",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a production plan for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
+                "description": "Retrieves a specific production plan by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get production plan by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific production plan by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
+                "description": "Patch a production plan",
+                 "item": [
+                            {
+                                "name": "Patch a production plan",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a production plan"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
+                "description": "Updates an existing production plan for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a production plan",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing production plan for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/ProductionPlans/Count",
+                "description": "Returns the count of production plans for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get production plans count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "ProductionPlans",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of production plans for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "WorkOrderTypes",
+	            "description": "WorkOrderTypes tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes",
+                "description": "Creates a new work order type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a new work order type",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new work order type for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes",
+                "description": "Retrieves all work order types for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all work order types",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all work order types for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
+                "description": "Deletes a work order type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a work order type",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a work order type for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
+                "description": "Retrieves a specific work order type by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get work order type by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific work order type by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
+                "description": "Patch a work order type",
+                 "item": [
+                            {
+                                "name": "Patch a work order type",
+                                "request": {
+    "method": "PATCH",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Patch a work order type"
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
+                "description": "Updates an existing work order type for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a work order type",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing work order type for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/ManufacturingService/WorkOrderTypes/Count",
+                "description": "Returns the count of work order types for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get work order types count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "ManufacturingService",
+        "WorkOrderTypes",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of work order types for the specified tenant."
 }
                                 ,"response": [
                             ]
