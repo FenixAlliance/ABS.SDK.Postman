@@ -1825,6 +1825,242 @@
 	                    ]
 	        },
 	        {
+	            "name": "PaymentProviderRegistrations",
+	            "description": "PaymentProviderRegistrations tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentProviderRegistrations",
+                "description": "Stores the BYO signing secret in the tenant options store, creates + activates the registration, and reveals the one-time plaintext webhook key plus its fully-composed inbound URL.",
+                 "item": [
+                            {
+                                "name": "Provisions a provider webhook registration",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"providerCode\": \"<string>\",\n \"externalAccountId\": \"<string>\",\n \"webhookSigningSecret\": \"<string>\",\n \"credentialMode\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentProviderRegistrations",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentProviderRegistrations"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Stores the BYO signing secret in the tenant options store, creates + activates the registration, and reveals the one-time plaintext webhook key plus its fully-composed inbound URL."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentProviderRegistrations",
+                "description": "Gets all provider registrations for the current tenant with OData support (no secret is ever returned).",
+                 "item": [
+                            {
+                                "name": "Lists the tenant's provider registrations",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentProviderRegistrations",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentProviderRegistrations"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Gets all provider registrations for the current tenant with OData support (no secret is ever returned)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentProviderRegistrations/:registrationId/RotateKey",
+                "description": "Mints a fresh webhook key (invalidating the previous one) and reveals it once, plus its composed URL.",
+                 "item": [
+                            {
+                                "name": "Rotates a registration's webhook key",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentProviderRegistrations/:registrationId/RotateKey",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentProviderRegistrations",
+        ":registrationId",
+        "RotateKey"
+    ],
+    "variable": [
+        {
+        "key": "registrationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Mints a fresh webhook key (invalidating the previous one) and reveals it once, plus its composed URL."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/PaymentsService/PaymentProviderRegistrations/Count",
+                "description": "Gets the count of provider registrations for the current tenant (OData sibling of the list).",
+                 "item": [
+                            {
+                                "name": "Counts the tenant's provider registrations",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/PaymentsService/PaymentProviderRegistrations/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "PaymentsService",
+        "PaymentProviderRegistrations",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        }
+    ]
+    },
+    "description": "Gets the count of provider registrations for the current tenant (OData sibling of the list)."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
 	            "name": "PaymentMethods",
 	            "description": "PaymentMethods tag",
 	            "item": [
