@@ -194,55 +194,6 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/AIService/Agents/:agentId/agui",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AIService",
-        "Agents",
-        ":agentId",
-        "agui"
-    ],
-    "variable": [
-        {
-        "key": "agentId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
@@ -954,6 +905,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -962,7 +919,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1260,6 +1217,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -1268,7 +1231,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1381,6 +1344,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -1389,7 +1358,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1687,6 +1656,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -1695,7 +1670,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1808,6 +1783,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -1816,7 +1797,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2114,6 +2095,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -2122,7 +2109,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2169,6 +2156,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -2177,7 +2170,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2290,6 +2283,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -2298,7 +2297,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2596,6 +2595,12 @@
     "method": "GET",
     "header": [
         {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
         "key": "Accept",
         "value": "application/json",
         "description": "",
@@ -2604,7 +2609,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"

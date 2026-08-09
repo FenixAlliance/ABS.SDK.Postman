@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "ManufacturingService",
+		"name": "IntelligenceService",
 		"description": {
 		    "content": "",
 		    "type": "text/markdown"
@@ -10,15 +10,15 @@
 	},
 	"item": [
 	        {
-	            "name": "WorkOrders",
-	            "description": "WorkOrders tag",
+	            "name": "CognitiveSkills",
+	            "description": "CognitiveSkills tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders",
-                "description": "Creates a new work order for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills",
+                "description": "Creates a new reusable cognitive skill for the specified tenant.",
                  "item": [
                             {
-                                "name": "Create a new work order",
+                                "name": "Create a new cognitive skill",
                                 "request": {
     "method": "POST",
     "header": [
@@ -43,7 +43,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"productionPlanId\": \"<string>\",\n \"workOrderTypeId\": \"<string>\",\n \"workstationId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"toolKey\": \"<string>\",\n \"configJson\": \"<string>\",\n \"enabled\": \"<string>\",\n \"tools\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -51,15 +51,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders"
+        "IntelligenceService",
+        "CognitiveSkills"
     ],
     "variable": [
     ],
@@ -78,7 +78,7 @@
         }
     ]
     },
-    "description": "Creates a new work order for the specified tenant."
+    "description": "Creates a new reusable cognitive skill for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -86,11 +86,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders",
-                "description": "Retrieves all work orders for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills",
+                "description": "Retrieves all reusable cognitive skills for the specified tenant.",
                  "item": [
                             {
-                                "name": "Get all work orders",
+                                "name": "Get all cognitive skills",
                                 "request": {
     "method": "GET",
     "header": [
@@ -123,15 +123,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders"
+        "IntelligenceService",
+        "CognitiveSkills"
     ],
     "variable": [
     ],
@@ -150,7 +150,7 @@
         }
     ]
     },
-    "description": "Retrieves all work orders for the specified tenant."
+    "description": "Retrieves all reusable cognitive skills for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -158,11 +158,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
-                "description": "Deletes a work order for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills/:id",
+                "description": "Deletes a reusable cognitive skill for the specified tenant.",
                  "item": [
                             {
-                                "name": "Delete a work order",
+                                "name": "Delete a cognitive skill",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -189,15 +189,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders",
+        "IntelligenceService",
+        "CognitiveSkills",
         ":id"
     ],
     "variable": [
@@ -222,7 +222,7 @@
         }
     ]
     },
-    "description": "Deletes a work order for the specified tenant."
+    "description": "Deletes a reusable cognitive skill for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -230,11 +230,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
-                "description": "Retrieves a specific work order by its identifier.",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills/:id",
+                "description": "Retrieves a specific reusable cognitive skill by its identifier.",
                  "item": [
                             {
-                                "name": "Get work order by ID",
+                                "name": "Get cognitive skill by ID",
                                 "request": {
     "method": "GET",
     "header": [
@@ -261,15 +261,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders",
+        "IntelligenceService",
+        "CognitiveSkills",
         ":id"
     ],
     "variable": [
@@ -294,7 +294,7 @@
         }
     ]
     },
-    "description": "Retrieves a specific work order by its identifier."
+    "description": "Retrieves a specific reusable cognitive skill by its identifier."
 }
                                 ,"response": [
                             ]
@@ -302,89 +302,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
-                "description": "Patch a work order",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills/:id",
+                "description": "Updates an existing reusable cognitive skill for the specified tenant.",
                  "item": [
                             {
-                                "name": "Patch a work order",
-                                "request": {
-    "method": "PATCH",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "WorkOrders",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Patch a work order"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders/:id",
-                "description": "Updates an existing work order for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Update a work order",
+                                "name": "Update a cognitive skill",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -409,7 +331,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\",\n \"instructions\": \"<string>\",\n \"taxable\": \"<string>\",\n \"workLocation\": \"<string>\",\n \"productionPlanId\": \"<string>\",\n \"workOrderTypeId\": \"<string>\",\n \"workstationId\": \"<string>\",\n \"currencyId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"promisedStartDate\": \"<string>\",\n \"promisedEndDate\": \"<string>\"\n}",
+    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\",\n \"toolKey\": \"<string>\",\n \"configJson\": \"<string>\",\n \"enabled\": \"<string>\",\n \"tools\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -417,15 +339,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders",
+        "IntelligenceService",
+        "CognitiveSkills",
         ":id"
     ],
     "variable": [
@@ -450,7 +372,7 @@
         }
     ]
     },
-    "description": "Updates an existing work order for the specified tenant."
+    "description": "Updates an existing reusable cognitive skill for the specified tenant."
 }
                                 ,"response": [
                             ]
@@ -458,11 +380,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrders/Count",
-                "description": "Returns the count of work orders for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveSkills/Count",
+                "description": "Returns the count of reusable cognitive skills for the specified tenant.",
                  "item": [
                             {
-                                "name": "Get work orders count",
+                                "name": "Get cognitive skills count",
                                 "request": {
     "method": "GET",
     "header": [
@@ -495,15 +417,15 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrders/Count",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveSkills/Count",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrders",
+        "IntelligenceService",
+        "CognitiveSkills",
         "Count"
     ],
     "variable": [
@@ -523,7 +445,230 @@
         }
     ]
     },
-    "description": "Returns the count of work orders for the specified tenant."
+    "description": "Returns the count of reusable cognitive skills for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "Capabilities",
+	            "description": "Capabilities tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/Capabilities",
+                "description": "Retrieves the full governed-capability catalog for the specified tenant, optionally narrowed to a single execution surface. Every capability is returned with an Available flag (and a DeniedReason when not available) so callers render disabled-with-reason instead of hiding; entitlement is computed server-side.",
+                 "item": [
+                            {
+                                "name": "Get the annotated capability catalog",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/Capabilities",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "Capabilities"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "surface",
+        "value": "surface_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves the full governed-capability catalog for the specified tenant, optionally narrowed to a single execution surface. Every capability is returned with an Available flag (and a DeniedReason when not available) so callers render disabled-with-reason instead of hiding; entitlement is computed server-side."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/Capabilities/:key",
+                "description": "Retrieves a single governed capability by its stable, dotted key, stamped with the Available / DeniedReason entitlement flag. Returns 404 only when the capability does not exist; an existing capability the actor is not entitled to run is returned annotated as unavailable, not hidden.",
+                 "item": [
+                            {
+                                "name": "Get a capability by key",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/Capabilities/:key",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "Capabilities",
+        ":key"
+    ],
+    "variable": [
+        {
+        "key": "key",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a single governed capability by its stable, dotted key, stamped with the Available / DeniedReason entitlement flag. Returns 404 only when the capability does not exist; an existing capability the actor is not entitled to run is returned annotated as unavailable, not hidden."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/Capabilities/Count",
+                "description": "Returns the number of governed capabilities in the catalog for the specified tenant — the surface-matching total that mirrors the list route's returned-set size (entitled or not), honouring the same optional surface narrowing.",
+                 "item": [
+                            {
+                                "name": "Get the capability catalog count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/Capabilities/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "Capabilities",
+        "Count"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "surface",
+        "value": "surface_example",
+        "description": "",
+        "disabled": true
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the number of governed capabilities in the catalog for the specified tenant — the surface-matching total that mirrors the list route's returned-set size (entitled or not), honouring the same optional surface narrowing."
 }
                                 ,"response": [
                             ]
@@ -1355,15 +1500,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "Workstations",
-	            "description": "Workstations tag",
+	            "name": "CognitiveAgentVariables",
+	            "description": "CognitiveAgentVariables tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations",
-                "description": "Creates a new workstation for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables",
+                "description": "Adds a key/value variable to the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Create a new workstation",
+                                "name": "Add a variable to a cognitive agent",
                                 "request": {
     "method": "POST",
     "header": [
@@ -1388,7 +1533,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"code\": \"<string>\",\n \"type\": \"<string>\",\n \"description\": \"<string>\",\n \"locationId\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"key\": \"<string>\",\n \"value\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1396,17 +1541,24 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations"
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
@@ -1423,7 +1575,7 @@
         }
     ]
     },
-    "description": "Creates a new workstation for the specified tenant."
+    "description": "Adds a key/value variable to the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -1431,11 +1583,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations",
-                "description": "Retrieves all workstations for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables",
+                "description": "Retrieves all key/value variables for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Get all workstations",
+                                "name": "Get all variables for a cognitive agent",
                                 "request": {
     "method": "GET",
     "header": [
@@ -1468,17 +1620,24 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations"
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
@@ -1495,7 +1654,7 @@
         }
     ]
     },
-    "description": "Retrieves all workstations for the specified tenant."
+    "description": "Retrieves all key/value variables for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -1503,11 +1662,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations/:id",
-                "description": "Deletes a workstation for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
+                "description": "Removes a variable from the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Delete a workstation",
+                                "name": "Remove a variable from a cognitive agent",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -1534,18 +1693,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -1567,7 +1733,7 @@
         }
     ]
     },
-    "description": "Deletes a workstation for the specified tenant."
+    "description": "Removes a variable from the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -1575,11 +1741,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations/:id",
-                "description": "Retrieves a specific workstation by its identifier.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
+                "description": "Retrieves a specific variable of a cognitive agent by its identifier.",
                  "item": [
                             {
-                                "name": "Get workstation by ID",
+                                "name": "Get a cognitive agent variable by ID",
                                 "request": {
     "method": "GET",
     "header": [
@@ -1606,18 +1772,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -1639,7 +1812,7 @@
         }
     ]
     },
-    "description": "Retrieves a specific workstation by its identifier."
+    "description": "Retrieves a specific variable of a cognitive agent by its identifier."
 }
                                 ,"response": [
                             ]
@@ -1647,89 +1820,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations/:id",
-                "description": "Patch a workstation",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
+                "description": "Updates the value of a variable for the specified agent and tenant.",
                  "item": [
                             {
-                                "name": "Patch a workstation",
-                                "request": {
-    "method": "PATCH",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "Workstations",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Patch a workstation"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/Workstations/:id",
-                "description": "Updates an existing workstation for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Update a workstation",
+                                "name": "Update a cognitive agent variable",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -1754,7 +1849,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"code\": \"<string>\",\n \"type\": \"<string>\",\n \"description\": \"<string>\",\n \"locationId\": \"<string>\"\n}",
+    "raw": "{\n \"value\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -1762,18 +1857,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -1795,7 +1897,7 @@
         }
     ]
     },
-    "description": "Updates an existing workstation for the specified tenant."
+    "description": "Updates the value of a variable for the specified agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -1803,11 +1905,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/Workstations/Count",
-                "description": "Returns the count of workstations for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/Count",
+                "description": "Returns the count of variables for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Get workstations count",
+                                "name": "Get variable count for a cognitive agent",
                                 "request": {
     "method": "GET",
     "header": [
@@ -1840,18 +1942,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/Workstations/Count",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Variables/Count",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "Workstations",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Variables",
         "Count"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
@@ -1868,7 +1977,7 @@
         }
     ]
     },
-    "description": "Returns the count of workstations for the specified tenant."
+    "description": "Returns the count of variables for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -1878,231 +1987,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "ProductionPlans",
-	            "description": "ProductionPlans tag",
+	            "name": "AiProviders",
+	            "description": "AiProviders tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans",
-                "description": "Creates a new production plan for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/AiProviders",
+                "description": "Returns every AI provider key this instance has a registered adapter for. The set is a property of the deployment, so it is not tenant-scoped; what varies per tenant is the credential for a provider, which is never returned here.",
                  "item": [
                             {
-                                "name": "Create a new production plan",
-                                "request": {
-    "method": "POST",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Creates a new production plan for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans",
-                "description": "Retrieves all production plans for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Get all production plans",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Retrieves all production plans for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
-                "description": "Deletes a production plan for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Delete a production plan",
-                                "request": {
-    "method": "DELETE",
-    "header": [
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Deletes a production plan for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
-                "description": "Retrieves a specific production plan by its identifier.",
-                 "item": [
-                            {
-                                "name": "Get production plan by ID",
+                                "name": "Get the available AI providers",
                                 "request": {
     "method": "GET",
     "header": [
@@ -2129,31 +2022,19 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/AiProviders",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "ProductionPlans",
-        ":id"
+        "IntelligenceService",
+        "AiProviders"
     ],
     "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
     ],
     "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
         {
         "key": "apiVersion",
         "value": "apiVersion_example",
@@ -2162,236 +2043,7 @@
         }
     ]
     },
-    "description": "Retrieves a specific production plan by its identifier."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
-                "description": "Patch a production plan",
-                 "item": [
-                            {
-                                "name": "Patch a production plan",
-                                "request": {
-    "method": "PATCH",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Patch a production plan"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans/:id",
-                "description": "Updates an existing production plan for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Update a production plan",
-                                "request": {
-    "method": "PUT",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"title\": \"<string>\",\n \"description\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Updates an existing production plan for the specified tenant."
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/ProductionPlans/Count",
-                "description": "Returns the count of production plans for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Get production plans count",
-                                "request": {
-    "method": "GET",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/ProductionPlans/Count",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "ProductionPlans",
-        "Count"
-    ],
-    "variable": [
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Returns the count of production plans for the specified tenant."
+    "description": "Returns every AI provider key this instance has a registered adapter for. The set is a property of the deployment, so it is not tenant-scoped; what varies per tenant is the credential for a provider, which is never returned here."
 }
                                 ,"response": [
                             ]
@@ -2401,15 +2053,15 @@
 	                    ]
 	        },
 	        {
-	            "name": "WorkOrderTypes",
-	            "description": "WorkOrderTypes tag",
+	            "name": "CognitiveAgentConversations",
+	            "description": "CognitiveAgentConversations tag",
 	            "item": [
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes",
-                "description": "Creates a new work order type for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations",
+                "description": "Creates a new managed conversation for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Create a new work order type",
+                                "name": "Create a new cognitive agent conversation",
                                 "request": {
     "method": "POST",
     "header": [
@@ -2434,7 +2086,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"channelID\": \"<string>\",\n \"conversationID\": \"<string>\",\n \"state\": \"<string>\",\n \"current\": \"<string>\",\n \"accountHolderId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverBusinessId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2442,17 +2094,24 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes"
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
@@ -2469,7 +2128,7 @@
         }
     ]
     },
-    "description": "Creates a new work order type for the specified tenant."
+    "description": "Creates a new managed conversation for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -2477,11 +2136,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes",
-                "description": "Retrieves all work order types for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations",
+                "description": "Retrieves all managed conversations for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Get all work order types",
+                                "name": "Get all conversations for a cognitive agent",
                                 "request": {
     "method": "GET",
     "header": [
@@ -2514,17 +2173,24 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes"
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
     ],
     "query": [
         {
@@ -2541,7 +2207,7 @@
         }
     ]
     },
-    "description": "Retrieves all work order types for the specified tenant."
+    "description": "Retrieves all managed conversations for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -2549,11 +2215,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
-                "description": "Deletes a work order type for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
+                "description": "Deletes a managed conversation for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Delete a work order type",
+                                "name": "Delete a cognitive agent conversation",
                                 "request": {
     "method": "DELETE",
     "header": [
@@ -2580,18 +2246,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -2613,7 +2286,7 @@
         }
     ]
     },
-    "description": "Deletes a work order type for the specified tenant."
+    "description": "Deletes a managed conversation for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -2621,11 +2294,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
-                "description": "Retrieves a specific work order type by its identifier.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
+                "description": "Retrieves a specific managed conversation of a cognitive agent by its identifier.",
                  "item": [
                             {
-                                "name": "Get work order type by ID",
+                                "name": "Get a cognitive agent conversation by ID",
                                 "request": {
     "method": "GET",
     "header": [
@@ -2652,18 +2325,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -2685,7 +2365,7 @@
         }
     ]
     },
-    "description": "Retrieves a specific work order type by its identifier."
+    "description": "Retrieves a specific managed conversation of a cognitive agent by its identifier."
 }
                                 ,"response": [
                             ]
@@ -2693,89 +2373,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
-                "description": "Patch a work order type",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
+                "description": "Updates an existing managed conversation for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Patch a work order type",
-                                "request": {
-    "method": "PATCH",
-    "header": [
-        {
-        "key": "Content-Type",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "Accept",
-        "value": "application/json",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "x-api-version",
-        "value": "",
-        "description": "",
-        "disabled": true
-        }
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "{\n \n}",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "ManufacturingService",
-        "WorkOrderTypes",
-        ":id"
-    ],
-    "variable": [
-        {
-        "key": "id",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-        {
-        "key": "tenantId",
-        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
-        "description": "",
-        "disabled": false
-        },
-        {
-        "key": "apiVersion",
-        "value": "apiVersion_example",
-        "description": "",
-        "disabled": true
-        }
-    ]
-    },
-    "description": "Patch a work order type"
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes/:id",
-                "description": "Updates an existing work order type for the specified tenant.",
-                 "item": [
-                            {
-                                "name": "Update a work order type",
+                                "name": "Update a cognitive agent conversation",
                                 "request": {
     "method": "PUT",
     "header": [
@@ -2800,7 +2402,7 @@
     ],
     "body": {
     "mode": "raw",
-    "raw": "{\n \"name\": \"<string>\",\n \"description\": \"<string>\"\n}",
+    "raw": "{\n \"channelID\": \"<string>\",\n \"conversationID\": \"<string>\",\n \"state\": \"<string>\",\n \"current\": \"<string>\",\n \"claimed\": \"<string>\",\n \"accountHolderId\": \"<string>\",\n \"individualId\": \"<string>\",\n \"organizationId\": \"<string>\",\n \"receiverBusinessId\": \"<string>\"\n}",
     "options": {
     "raw": {
     "language": "json"
@@ -2808,18 +2410,25 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/:id",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:id",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
         ":id"
     ],
     "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
         {
         "key": "id",
         "value": "",
@@ -2841,7 +2450,7 @@
         }
     ]
     },
-    "description": "Updates an existing work order type for the specified tenant."
+    "description": "Updates an existing managed conversation for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]
@@ -2849,11 +2458,11 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/ManufacturingService/WorkOrderTypes/Count",
-                "description": "Returns the count of work order types for the specified tenant.",
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/Count",
+                "description": "Returns the count of managed conversations for the specified cognitive agent and tenant.",
                  "item": [
                             {
-                                "name": "Get work order types count",
+                                "name": "Get conversation count for a cognitive agent",
                                 "request": {
     "method": "GET",
     "header": [
@@ -2886,15 +2495,467 @@
     }
     },
     "url": {
-    "raw": "{{baseUrl}}/api/v2/ManufacturingService/WorkOrderTypes/Count",
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/Count",
     "host": [
     "{{baseUrl}}"
     ],
     "path": [
         "api",
         "v2",
-        "ManufacturingService",
-        "WorkOrderTypes",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of managed conversations for the specified cognitive agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "CognitiveAgents",
+	            "description": "CognitiveAgents tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents",
+                "description": "Creates a new managed cognitive agent for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Create a new cognitive agent",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"name\": \"<string>\",\n \"avatar\": \"<string>\",\n \"description\": \"<string>\",\n \"soul\": \"<string>\",\n \"providerKey\": \"<string>\",\n \"modelId\": \"<string>\",\n \"engineKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Creates a new managed cognitive agent for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents",
+                "description": "Retrieves all managed cognitive agents for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get all cognitive agents",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents"
+    ],
+    "variable": [
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all managed cognitive agents for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:id",
+                "description": "Deletes a managed cognitive agent for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Delete a cognitive agent",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Deletes a managed cognitive agent for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:id",
+                "description": "Retrieves a specific managed cognitive agent by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get cognitive agent by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific managed cognitive agent by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:id",
+                "description": "Updates an existing managed cognitive agent for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Update a cognitive agent",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"name\": \"<string>\",\n \"avatar\": \"<string>\",\n \"description\": \"<string>\",\n \"soul\": \"<string>\",\n \"providerKey\": \"<string>\",\n \"modelId\": \"<string>\",\n \"engineKey\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates an existing managed cognitive agent for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/Count",
+                "description": "Returns the count of managed cognitive agents for the specified tenant.",
+                 "item": [
+                            {
+                                "name": "Get cognitive agents count",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
         "Count"
     ],
     "variable": [
@@ -2914,7 +2975,906 @@
         }
     ]
     },
-    "description": "Returns the count of work order types for the specified tenant."
+    "description": "Returns the count of managed cognitive agents for the specified tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "IntelligenceService",
+	            "description": "IntelligenceService tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/Agents/:agentId/agui",
+                "description": "Streams a governed agent run as AG-UI server-sent events. Feature-flagged on ABP.Cognitive.AgentSurface.Enable; returns 503 when disabled, 401 when unauthorized and 404 when the agent cannot be resolved. An optional ?projectId= binds the run to a project (resolved tenant-scoped): the project id + name are surfaced to the model as context so it can call the governed project-storage tools; it is never auto-filled into a tool's arguments.",
+                 "item": [
+                            {
+                                "name": "Run a governed agent over the AG-UI protocol",
+                                "request": {
+    "method": "POST",
+    "header": [
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/Agents/:agentId/agui",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "Agents",
+        ":agentId",
+        "agui"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+    ]
+    },
+    "description": "Streams a governed agent run as AG-UI server-sent events. Feature-flagged on ABP.Cognitive.AgentSurface.Enable; returns 503 when disabled, 401 when unauthorized and 404 when the agent cannot be resolved. An optional ?projectId= binds the run to a project (resolved tenant-scoped): the project id + name are surfaced to the model as context so it can call the governed project-storage tools; it is never auto-filled into a tool's arguments."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "CognitiveAgentConversationAttachments",
+	            "description": "CognitiveAgentConversationAttachments tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Attachments",
+                "description": "Uploads a file into the acting user's OWN conversation attachment store, scanned and catalogued through the storage spine. A conversation the caller does not own returns 404. The response carries the new file's id, name, content type and length; the chat UI passes that id as an AttachmentFileIds entry when it sends the referencing user turn.",
+                 "item": [
+                            {
+                                "name": "Upload an attachment to a cognitive agent conversation",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "multipart/form-data",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Attachments",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
+        ":conversationId",
+        "Attachments"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "conversationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Uploads a file into the acting user's OWN conversation attachment store, scanned and catalogued through the storage spine. A conversation the caller does not own returns 404. The response carries the new file's id, name, content type and length; the chat UI passes that id as an AttachmentFileIds entry when it sends the referencing user turn."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "CognitiveAgentMessages",
+	            "description": "CognitiveAgentMessages tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages",
+                "description": "Retrieves all durable messages for the specified conversation, agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Get all messages for a cognitive agent conversation",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
+        ":conversationId",
+        "Messages"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "conversationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all durable messages for the specified conversation, agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages/:id",
+                "description": "Retrieves a specific durable message of a conversation by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a cognitive agent conversation message by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
+        ":conversationId",
+        "Messages",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "conversationId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific durable message of a conversation by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages/Count",
+                "description": "Returns the count of durable messages for the specified conversation, agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Get message count for a cognitive agent conversation",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Conversations/:conversationId/Messages/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Conversations",
+        ":conversationId",
+        "Messages",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "conversationId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of durable messages for the specified conversation, agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        }
+	                    ]
+	        },
+	        {
+	            "name": "CognitiveAgentSkills",
+	            "description": "CognitiveAgentSkills tag",
+	            "item": [
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills",
+                "description": "Assigns a reusable catalog skill to the specified cognitive agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Assign a skill to a cognitive agent",
+                                "request": {
+    "method": "POST",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"id\": \"<string>\",\n \"timestamp\": \"<string>\",\n \"cognitiveSkillId\": \"<string>\",\n \"enabled\": \"<string>\",\n \"configJson\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Assigns a reusable catalog skill to the specified cognitive agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills",
+                "description": "Retrieves all skill assignments for the specified cognitive agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Get all skill assignments for a cognitive agent",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves all skill assignments for the specified cognitive agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+                "description": "Removes a skill assignment from the specified cognitive agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Remove a skill assignment from a cognitive agent",
+                                "request": {
+    "method": "DELETE",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Removes a skill assignment from the specified cognitive agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+                "description": "Retrieves a specific skill assignment of a cognitive agent by its identifier.",
+                 "item": [
+                            {
+                                "name": "Get a cognitive agent skill assignment by ID",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Retrieves a specific skill assignment of a cognitive agent by its identifier."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+                "description": "Updates the per-assignment overrides of a skill assignment for the specified agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Update a cognitive agent skill assignment",
+                                "request": {
+    "method": "PUT",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"enabled\": \"<string>\",\n \"configJson\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/:id",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills",
+        ":id"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        },
+        {
+        "key": "id",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Updates the per-assignment overrides of a skill assignment for the specified agent and tenant."
+}
+                                ,"response": [
+                            ]
+                            }
+                            ]
+                        },
+	                        {
+    "name": "/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/Count",
+                "description": "Returns the count of skill assignments for the specified cognitive agent and tenant.",
+                 "item": [
+                            {
+                                "name": "Get skill assignment count for a cognitive agent",
+                                "request": {
+    "method": "GET",
+    "header": [
+        {
+        "key": "Content-Type",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "x-api-version",
+        "value": "",
+        "description": "",
+        "disabled": true
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "{\n \"top\": \"<number>\",\n \"skip\": \"<number>\",\n \"count\": \"<string>\",\n \"filter\": \"<string>\",\n \"orderBy\": \"<string>\",\n \"search\": \"<string>\",\n \"select\": \"<string>\",\n \"expand\": \"<string>\",\n \"isEmpty\": \"<string>\"\n}",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/api/v2/IntelligenceService/CognitiveAgents/:agentId/Skills/Count",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "api",
+        "v2",
+        "IntelligenceService",
+        "CognitiveAgents",
+        ":agentId",
+        "Skills",
+        "Count"
+    ],
+    "variable": [
+        {
+        "key": "agentId",
+        "value": "",
+        "description": ""
+        }
+    ],
+    "query": [
+        {
+        "key": "tenantId",
+        "value": "38400000-8cf0-11bd-b23e-10b96e4ef00d",
+        "description": "",
+        "disabled": false
+        },
+        {
+        "key": "apiVersion",
+        "value": "apiVersion_example",
+        "description": "",
+        "disabled": true
+        }
+    ]
+    },
+    "description": "Returns the count of skill assignments for the specified cognitive agent and tenant."
 }
                                 ,"response": [
                             ]

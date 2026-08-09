@@ -423,55 +423,6 @@
                             ]
                         },
 	                        {
-    "name": "/api/v2/AIService/Agents/:agentId/agui",
-                "description": "",
-                 "item": [
-                            {
-                                "name": "apiV2AIServiceAgentsAgentIdAguiPost",
-                                "request": {
-    "method": "POST",
-    "header": [
-    ],
-    "body": {
-    "mode": "raw",
-    "raw": "",
-    "options": {
-    "raw": {
-    "language": "json"
-    }
-    }
-    },
-    "url": {
-    "raw": "{{baseUrl}}/api/v2/AIService/Agents/:agentId/agui",
-    "host": [
-    "{{baseUrl}}"
-    ],
-    "path": [
-        "api",
-        "v2",
-        "AIService",
-        "Agents",
-        ":agentId",
-        "agui"
-    ],
-    "variable": [
-        {
-        "key": "agentId",
-        "value": "",
-        "description": ""
-        }
-    ],
-    "query": [
-    ]
-    },
-    "description": ""
-}
-                                ,"response": [
-                            ]
-                            }
-                            ]
-                        },
-	                        {
     "name": "/confirmEmail",
                 "description": "",
                  "item": [
